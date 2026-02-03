@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+
+<html lang="zh-TW">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>設備/儀器/代理貿易｜石墨部件・晶體儀器・晶圓量測｜欣熹科技 SHIN-SI</title>
+<meta content="欣熹科技提供設備、儀器與代理貿易之選型與供應鏈支援，涵蓋 SIAMC 石墨部件代理、丹東新東方晶體儀器代理與晶圓翹曲量測儀等方向，依專案需求協作導入與交付。" name="description"/>
+<link href="/equipment/" rel="canonical"/>
+<style>
+    :root {
+      --main-blue: #003366;
+      --main-red: #c2000f;
+      --text-dark: #333;
+      --text-light: #444;
+      --bg-light: #f8f9fa;
+      --border: #e9ecef;
+    }
+
+    body {
+      font-family: "Microsoft JhengHei", sans-serif;
+      margin: 0;
+      color: var(--text-dark);
+      line-height: 1.7;
+      background: #fff;
+    }
+
+    /* Navbar (match main site) */
+    .navbar {
+      background: var(--main-blue);
+      padding: 0 5%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      height: 70px;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    }
+    .nav-brand {
+      color: white;
+      font-weight: 800;
+      text-decoration: none;
+      font-size: 24px;
+      letter-spacing: 1px;
+    }
+    .nav-menu {
+      display: flex;
+      gap: 20px;
+      align-items: center;
+    }
+    .nav-item {
+      color: #ddd;
+      text-decoration: none;
+      font-size: 18px;
+      transition: 0.3s;
+      white-space: nowrap;
+    }
+    .nav-item:hover { color: white; }
+
+    /* Hero */
+    .hero {
+      background: linear-gradient(135deg, #002244 0%, #004080 100%);
+      color: white;
+      padding: 70px 5%;
+      text-align: center; /* requested: center */
+    }
+    .hero h1 {
+      margin: 0 0 14px 0;
+      font-size: 36px;
+      line-height: 1.25;
+      font-weight: 800;
+    }
+    .hero p {
+      margin: 0 auto;
+      max-width: 980px;
+      color: #e0e0e0;
+      font-size: 20px;
+      line-height: 1.8;
+    }
+
+    /* Layout */
+    .wrap {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 56px 5%;
+    }
+
+    .section { margin-top: 34px; }
+
+    /* Section headings */
+    .section h2 {
+      color: var(--main-blue);
+      font-size: 28px;
+      margin: 0 0 16px 0;
+      border-left: 5px solid var(--main-red);
+      padding-left: 14px;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 18px;
+    }
+
+    /* Clickable cards (future detail pages) */
+    .card-link {
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 20px;
+      background: #fff;
+      text-decoration: none;
+      color: inherit;
+      display: block;
+      transition: 0.25s;
+    }
+    .card-link:hover {
+      box-shadow: 0 10px 20px rgba(0,0,0,0.08);
+      transform: translateY(-3px);
+      border-color: #cbd6e2;
+    }
+    .card-link h3 {
+      margin: 0 0 10px 0;
+      font-size: 20px;
+      color: var(--main-blue);
+    }
+    .card-link p {
+      margin: 0 0 12px 0;
+      font-size: 18px;
+      color: var(--text-light);
+      line-height: 1.7;
+    }
+    .hint {
+      color: var(--main-red);
+      font-weight: 800;
+      font-size: 15px;
+    }
+
+    /* Steps */
+    .steps { margin: 0; padding-left: 20px; }
+    .steps li { font-size: 18px; color: var(--text-light); margin: 10px 0; }
+
+    /* CTA */
+    .cta {
+      margin-top: 22px;
+      padding: 18px;
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      background: var(--bg-light);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 14px;
+      flex-wrap: wrap;
+    }
+    .cta strong { font-size: 18px; }
+    .cta span { font-size: 16px; color: #555; }
+    .cta a {
+      background: var(--main-red);
+      color: white;
+      text-decoration: none;
+      padding: 12px 16px;
+      border-radius: 8px;
+      font-weight: 800;
+      display: inline-block;
+    }
+    .cta a:hover { background: #a0000c; }
+
+    /* Footer */
+    footer {
+      background: var(--main-blue);
+      color: #ddd;
+      padding: 26px 5%;
+      margin-top: 46px;
+    }
+    footer a { color: #fff; text-decoration: none; }
+
+    /* Disabled (until detail pages exist) */
+    .is-planned {
+      cursor: default;
+    }
+
+    @media (max-width: 768px) {
+      .hero h1 { font-size: 28px; }
+      .nav-menu { display: none; }
+    }
+  </style>
+</head>
+<body>
+<nav aria-label="主導覽" class="navbar">
+<a class="nav-brand" href="/">欣熹科技 SHIN-SI</a>
+<div class="nav-menu">
+      <a href="/index.html#telecom" class="nav-item">通訊光纖設備</a>
+      <a href="/index.html#specialty" class="nav-item">特殊/製程應用</a>
+      <a href="/group.html" class="nav-item">關於集團</a>
+      <a href="/contact.html" class="nav-item">聯絡我們</a>
+</div>
+</nav>
+<header class="hero">
+<h1>設備/儀器/代理貿易</h1>
+<p>聚焦半導體製程相關設備與儀器，涵蓋石墨部件、晶體定向/檢測、晶圓翹曲量測、載具清洗與自動上下料等方向。依據實際製程條件與產線節拍，提供選型建議、規格對接與導入協作，協助提升製程穩定性與品質控管效率。</p>
+</header>
+<main class="wrap">
+<section aria-label="代理與供應項目" class="section">
+<h2>代理與供應項目</h2>
+<div class="grid">
+<!-- 先不導向不存在的頁面，避免 404；待你要上線子頁時，把 href 換成對應 URL 即可 -->
+<a class="card-link" href="/">
+<h3>SIAMC 石墨部件代理</h3>
+<p>針對製程/設備所需之石墨部件，提供選型、交期與交付條件協作。</p>
+</a>
+<a class="card-link" href="/">
+<h3>丹東新東方晶體儀器代理</h3>
+<p>面向晶體相關儀器需求，提供選型、採購、交付與售後對接。</p>
+</a>
+<a class="card-link" href="/">
+<h3>晶圓翹曲量測儀</h3>
+<p>欣熹科技自有設備 CST-WME-01，面向 8 吋/12 吋晶圓平坦度與形變監控需求，支援 BOW/WARP/TTV 等量測。</p>
+</a>
+<a class="card-link" href="/">
+  <h3>FOUP/FOSB／Panel FOUP／子母框清洗設備</h3>
+  <p>自動化載具清洗與真空乾燥方案，支援 SECS/GEM 與 MES 對接，適用 FOUP/FOSB、Panel FOUP 與子母框清洗需求。</p>
+</a>
+<a class="card-link" href="/">
+  <h3>DSP 工藝自動上下料設備</h3>
+  <p>面向 DSP 工藝之大尺寸矽片衬底自動取放與穩定傳輸，可與上下游設備聯機使用，降低人工干預。</p>
+</a>
+</div>
+</section>
+<section aria-label="典型導入流程" class="section">
+<h2>典型導入流程</h2>
+<ol class="steps">
+<li>需求定義：量測項目/環境/樣品/驗收條件</li>
+<li>選型建議：依你提供的資料與後續補充資訊對接</li>
+<li>報價交付：交期、交付條件與驗收方式確認</li>
+<li>導入與售後：原廠/代理窗口協作對接</li>
+</ol>
+<div aria-label="聯絡導引" class="cta" role="region">
+<div>
+<strong>需要選型或導入評估？</strong><br/>
+<span>請透過聯絡表單提交需求與現況，我們將儘快回覆。</span>
+</div>
+<a href="/contact.html">前往聯絡表單</a>
+</div>
+</section>
+<section aria-label="常見問題" class="section">
+<h2>常見問題（FAQ）</h2>
+<div class="grid">
+<a aria-disabled="true" class="card-link" href="#" onclick="return false"><h3>是否可協助選型比對？</h3><p>可，依需求條件與可提供之資料進行建議。</p></a>
+<a aria-disabled="true" class="card-link" href="#" onclick="return false"><h3>是否可提供型錄/規格？</h3><p>可，將依你提供或後續補充的必要資料整理呈現。</p></a>
+<a aria-disabled="true" class="card-link" href="#" onclick="return false"><h3>如何聯繫？</h3><p>請至聯絡頁提交需求，我們會安排回覆。</p></a>
+</div>
+</section>
+</main>
+<footer>
+<div>© 欣熹科技 SHIN-SI TECHNOLOGY</div>
+<div style="margin-top:8px;">主線產品： <a href="/index.html#telecom">熔接機</a> ｜ <a href="/index.html#specialty">特殊光纖</a> ｜ <a href="/contact.html">聯絡我們</a></div>
+</footer>
+
+<!-- SSI NAV LINK NORMALIZER (do not remove) -->
+<script>
+(function(){
+  try {
+    var path = (location.pathname || '').replace(/\\/g, '/');
+    var parts = path.split('/').filter(Boolean);
+    var file = parts.length ? parts[parts.length - 1] : '';
+    var inSub = /\/(materials|equipment|telecom|specialty)\//.test(path);
+
+    // Persist the active root index filename for local testing (e.g., index_updated_v14.html)
+    if (!inSub && /^index.*\.html$/i.test(file)) {
+      try { localStorage.setItem('ssi_root_index', file); } catch(e) {}
+    }
+
+    var rootIndex = 'index.html';
+    try {
+      var stored = localStorage.getItem('ssi_root_index');
+      if (stored && /^index.*\.html$/i.test(stored)) rootIndex = stored;
+    } catch(e) {}
+
+    var prefix = inSub ? '../' : '';
+
+    // If we're already on an index*.html at root, prefer in-page anchors
+    var onRootIndex = (!inSub && /^index.*\.html$/i.test(file));
+    var telecomHref  = onRootIndex ? '#telecom'  : (prefix + rootIndex + '#telecom');
+    var specialHref  = onRootIndex ? '#specialty': (prefix + rootIndex + '#specialty');
+    var groupHref    = inSub ? '../group.html'   : 'group.html';
+    var contactHref  = inSub ? '../contact.html' : 'contact.html';
+
+    var map = {
+      '通訊光纖設備': telecomHref,
+      '熔接機': telecomHref,
+      '特殊/製程應用': specialHref,
+      '特殊光纖': specialHref,
+      '關於集團': groupHref,
+      '關於我們': groupHref,
+      '聯絡我們': contactHref
+    };
+
+    // Update nav links by text match
+    var anchors = document.querySelectorAll('nav a, header a');
+    anchors.forEach(function(a){
+      var t = (a.textContent || '').trim();
+      if (map[t]) a.setAttribute('href', map[t]);
+    });
+  } catch (e) {
+    // no-op
+  }
+})();
+</script>
+
+</body>
+</html>

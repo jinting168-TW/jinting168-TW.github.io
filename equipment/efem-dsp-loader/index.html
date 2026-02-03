@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>DSP 工藝自動上下料設備｜大尺寸矽片衬底自動取放與輸送｜欣熹科技 SHIN-SI</title>
+  <meta name="description" content="欣熹科技提供 DSP 工藝用大尺寸矽片衬底自動上下料設備，支援自動取放與穩定傳輸，可與上下游設備聯機使用，降低人工干預並提升產線一致性。"/>
+  <link rel="canonical" href="/equipment/efem-dsp-loader/"/>
+
+  <style>
+    :root {
+      --main-blue: #003366;
+      --main-red: #c2000f;
+      --text-dark: #333;
+      --text-light: #444;
+      --bg-light: #f8f9fa;
+      --border: #e9ecef;
+    }
+
+    body {
+      font-family: "Microsoft JhengHei", sans-serif;
+      margin: 0;
+      color: var(--text-dark);
+      line-height: 1.7;
+      background: #fff;
+    }
+
+    /* Navbar (match main site / equipment index) */
+    .navbar {
+      background: var(--main-blue);
+      padding: 0 5%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      height: 70px;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    }
+    .nav-brand {
+      color: white;
+      font-weight: 800;
+      text-decoration: none;
+      font-size: 24px;
+      letter-spacing: 1px;
+    }
+    .nav-menu {
+      display: flex;
+      gap: 20px;
+      align-items: center;
+    }
+    .nav-item {
+      color: #ddd;
+      text-decoration: none;
+      font-size: 18px;
+      transition: 0.3s;
+      white-space: nowrap;
+    }
+    .nav-item:hover { color: white; }
+
+    /* Hero */
+    .hero {
+      background: linear-gradient(135deg, #002244 0%, #004080 100%);
+      color: white;
+      padding: 70px 5%;
+      text-align: center;
+    }
+    .hero-inner {
+      max-width: 980px;
+      margin: 0 auto;
+    }
+    .hero h1 {
+      margin: 0 0 14px 0;
+      font-size: 36px;
+      line-height: 1.25;
+      font-weight: 800;
+    }
+    .hero p {
+      margin: 0 auto;
+      color: #e0e0e0;
+      font-size: 20px;
+      line-height: 1.8;
+    }
+    .hero-cta {
+      margin-top: 18px;
+      display: inline-flex;
+      gap: 10px;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    .btn {
+      display: inline-block;
+      padding: 12px 16px;
+      border-radius: 8px;
+      font-weight: 800;
+      text-decoration: none;
+    }
+    .btn-primary {
+      background: var(--main-red);
+      color: #fff;
+    }
+    .btn-primary:hover { background: #a0000c; }
+    .btn-ghost {
+      background: #fff;
+      color: var(--main-blue);
+    }
+    .btn-ghost:hover { background: #f0f4f8; }
+
+    /* Layout */
+    .wrap {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 56px 5%;
+    }
+    .section { margin-top: 34px; }
+
+    /* Section headings */
+    .section h2 {
+      color: var(--main-blue);
+      font-size: 28px;
+      margin: 0 0 16px 0;
+      border-left: 5px solid var(--main-red);
+      padding-left: 14px;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 18px;
+    }
+
+    .card {
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 20px;
+      background: #fff;
+    }
+    .card h3 {
+      margin: 0 0 10px 0;
+      font-size: 20px;
+      color: var(--main-blue);
+    }
+    .card p {
+      margin: 0 0 12px 0;
+      font-size: 18px;
+      color: var(--text-light);
+      line-height: 1.7;
+    }
+
+    .media {
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      background: #fff;
+      overflow: hidden;
+      max-width: 980px;
+      margin: 0 auto;
+    }
+    .media img {
+      width: 100%;
+      height: auto;
+      display: block;
+      object-fit: contain;
+      background: #fff;
+      max-height: 520px;
+      padding: 16px;
+      box-sizing: border-box;
+    }
+    .media-cap {
+      padding: 12px 16px;
+      font-size: 16px;
+      color: #666;
+      background: var(--bg-light);
+      border-top: 1px solid var(--border);
+    }
+
+    /* Specs table (clean table) */
+    .spec-table {
+      width: 100%;
+      border-collapse: collapse;
+      background: #fff;
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      overflow: hidden;
+    }
+    .spec-table th, .spec-table td {
+      padding: 14px 14px;
+      border-bottom: 1px solid var(--border);
+      vertical-align: top;
+      font-size: 17px;
+    }
+    .spec-table th {
+      background: var(--bg-light);
+      text-align: left;
+      color: var(--main-blue);
+      width: 28%;
+      font-weight: 800;
+    }
+    .spec-table tr:last-child td, .spec-table tr:last-child th {
+      border-bottom: none;
+    }
+
+    /* Footer (match equipment index) */
+    footer {
+      background: var(--main-blue);
+      color: #ddd;
+      padding: 26px 5%;
+      margin-top: 46px;
+    }
+    footer a { color: #fff; text-decoration: none; }
+    footer .ft-line { margin-top: 10px; font-size: 18px; line-height: 1.8; }
+
+    @media (max-width: 768px) {
+      .hero h1 { font-size: 28px; }
+      .nav-menu { display: none; }
+    }
+  </style>
+</head>
+
+<body>
+  <nav aria-label="主導覽" class="navbar">
+    <a class="nav-brand" href="/">欣熹科技 SHIN-SI</a>
+    <div class="nav-menu">
+      <a href="/index.html#telecom" class="nav-item">通訊光纖設備</a>
+      <a href="/index.html#specialty" class="nav-item">特殊/製程應用</a>
+      <a href="/group.html" class="nav-item">關於集團</a>
+      <a href="/contact.html" class="nav-item">聯絡我們</a>
+    </div>
+  </nav>
+
+  <header class="hero">
+    <div class="hero-inner">
+      <h1>DSP 工藝大尺寸矽片衬底自動上下料設備</h1>
+      <p>面向 DSP 相關製程產線，支援<strong>自動取放</strong>與<strong>穩定傳輸</strong>，有效降低人工干預並提升上/下游設備協同效率；可依產線節拍與介面需求進行整合導入。</p>
+      <div class="hero-cta">
+        <a class="btn btn-primary" href="/contact.html">立即洽詢規格</a>
+        <a class="btn btn-ghost" href="/">返回設備/代理專頁</a>
+      </div>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <section class="section" aria-label="設備外觀">
+      <h2>設備外觀</h2>
+      <div class="media">
+        <img src="/images/efem-dsp-loader.jpg" alt="DSP 工藝自動上下料設備（示意）"/>
+</div>
+    </section>
+
+    <section class="section" aria-label="核心價值">
+      <h2>核心價值</h2>
+      <div class="grid">
+        <div class="card">
+          <h3>降低人工干預，提升一致性</h3>
+          <p>支援自動取放與穩定輸送，降低人工作業造成的節拍波動與接觸風險，協助製程維持一致性。</p>
+        </div>
+        <div class="card">
+          <h3>可與上下游設備聯機</h3>
+          <p>適配 DSP 工藝產線的整合需求，可與上下游設備進行聯機使用，協助導入自動化流程。</p>
+        </div>
+        <div class="card">
+          <h3>面向大尺寸衬底搬運場景</h3>
+          <p>針對大尺寸矽片衬底的搬運與上下料需求設計，提供穩定傳輸機構以支援產線運行。</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" aria-label="重點說明">
+      <h2>重點說明</h2>
+      <table class="spec-table" aria-label="主要規格">
+        <tr>
+          <th>產品定位</th>
+          <td>DSP 工藝用大尺寸矽片衬底自動上下料設備</td>
+        </tr>
+        <tr>
+          <th>主要功能</th>
+          <td>自動取放、穩定傳輸、降低人工干預</td>
+        </tr>
+        <tr>
+          <th>適用場景</th>
+          <td>大硅片衬底 DSP 工藝產線；可與上下游設備聯機使用</td>
+        </tr>
+      </table>
+    </section>
+
+    <section class="section" aria-label="洽詢">
+      <h2>洽詢與導入</h2>
+      <div class="card" style="background: var(--bg-light);">
+        <h3 style="margin-bottom:8px;">需要評估整線對接或節拍？</h3>
+        <p style="margin-bottom:14px;">請提供你的產線流程、上下游設備型式與預期節拍，我們可協助釐清對接方式與交付邊界。</p>
+        <a class="btn btn-primary" href="/contact.html">前往聯絡表單</a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div>© 欣熹科技 SHIN-SI TECHNOLOGY</div>
+    <div class="ft-line">主線產品： <a href="/index.html#telecom">熔接機</a> ｜ <a href="/index.html#specialty">特殊光纖</a> ｜ <a href="/contact.html">聯絡我們</a></div>
+  </footer>
+
+  <!-- SSI NAV LINK NORMALIZER (do not remove) -->
+  <script>
+  (function(){
+    try {
+      var path = (location.pathname || '').replace(/\/g, '/');
+      var parts = path.split('/').filter(Boolean);
+      var file = parts.length ? parts[parts.length - 1] : '';
+
+      function getRootPrefix() {
+        // Find the nearest top-level site section folder and compute how many levels up to site root.
+        var sections = ['materials','equipment','telecom','specialty'];
+        var idx = -1;
+        for (var i=0;i<parts.length;i++){
+          if (sections.indexOf(parts[i]) !== -1) { idx = i; break; }
+        }
+        if (idx === -1) return '';
+        // levels after section folder, excluding filename
+        var levels = (parts.length - 1) - idx;
+        return '../'.repeat(levels);
+      }
+
+      var rootPrefix = getRootPrefix();
+
+      // Remember which root index filename is in use (index.html / index_updated_vX.html, etc.)
+      if (!rootPrefix && /^index.*\.html$/i.test(file)) {
+        try { localStorage.setItem('ssi_root_index', file); } catch(e) {}
+      }
+
+      var rootIndex = 'index.html';
+      try {
+        var stored = localStorage.getItem('ssi_root_index');
+        if (stored && /^index.*\.html$/i.test(stored)) rootIndex = stored;
+      } catch(e) {}
+
+      var onRootIndex = (!rootPrefix && /^index.*\.html$/i.test(file));
+
+      var telecomHref  = onRootIndex ? '#telecom'   : (rootPrefix + rootIndex + '#telecom');
+      var specialHref  = onRootIndex ? '#specialty' : (rootPrefix + rootIndex + '#specialty');
+      var groupHref    = rootPrefix + 'group.html';
+      var contactHref  = rootPrefix + 'contact.html';
+
+      var map = {
+        '通訊光纖設備': telecomHref,
+        '熔接機': telecomHref,
+        '特殊/製程應用': specialHref,
+        '特殊光纖': specialHref,
+        '關於集團': groupHref,
+        '關於我們': groupHref,
+        '聯絡我們': contactHref
+      };
+
+      var anchors = document.querySelectorAll('nav a, header a, footer a');
+      anchors.forEach(function(a){
+        var t = (a.textContent || '').trim();
+        if (map[t]) a.setAttribute('href', map[t]);
+      });
+    } catch (e) {}
+  })();
+  </script>
+</body>
+</html>

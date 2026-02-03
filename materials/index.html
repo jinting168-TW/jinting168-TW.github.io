@@ -1,0 +1,529 @@
+<!doctype html>
+<html lang="zh-TW">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>晶圓/半導體/先進材料｜欣熹科技 SHIN-SI</title>
+  <meta name="description" content="晶圓/半導體/先進材料專區：矽晶圓、SiC 碳化矽晶圓、LT/LN 晶圓、矽材料（多晶矽/晶柱/頭尾料/鍋底料）、熔融石英粉。提供需求對接與供應鏈協作。" />
+  <meta name="robots" content="index,follow" />
+
+  <style>
+    :root{
+      --main-blue:#003366;
+      --main-red:#c2000f;
+      --text:#333;
+      --muted:#555;
+      --bg:#f8f9fa;
+      --card:#ffffff;
+      --border:#e9ecef;
+      --shadow:0 10px 22px rgba(0,0,0,.08);
+    }
+    *{box-sizing:border-box}
+    body{
+      margin:0;
+      font-family:"Microsoft JhengHei",system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,"Noto Sans",sans-serif;
+      color:var(--text);
+      line-height:1.65;
+      background:var(--bg);
+    }
+
+    /* Navbar */
+    .navbar{
+      background:var(--main-blue);
+      padding:0 5%;
+      height:70px;
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      position:sticky;
+      top:0;
+      z-index:1000;
+      box-shadow:0 2px 10px rgba(0,0,0,.12);
+    }
+    .nav-brand{
+      color:#fff;
+      text-decoration:none;
+      font-weight:800;
+      letter-spacing:.5px;
+      font-size:22px;
+      white-space:nowrap;
+    }
+    .nav-menu{display:flex; gap:20px; align-items:center}
+    .nav-item{
+      color:#ddd;
+      text-decoration:none;
+      font-size:18px;
+      transition:.2s;
+      white-space:nowrap;
+    }
+    .nav-item:hover{color:#fff}
+
+    /* Layout */
+    .wrap{max-width:1200px; margin:0 auto; padding:0 5%}
+    .hero{
+      background:linear-gradient(135deg,#002244 0%,#004080 100%);
+      color:#fff;
+      padding:70px 0;
+      text-align:left;
+    }
+    .hero h1{
+      margin:0 0 14px 0;
+      font-size:36px;
+      line-height:1.25;
+      font-weight:900;
+    }
+    .hero p{
+      margin:0;
+      max-width:980px;
+      color:#e7e7e7;
+      font-size:20px;
+      line-height:1.85;
+    }
+    .hero-actions{margin-top:22px; display:flex; gap:12px; flex-wrap:wrap}
+    .btn{
+      display:inline-block;
+      text-decoration:none;
+      font-weight:900;
+      padding:12px 18px;
+      border-radius:999px;
+      border:1px solid transparent;
+      font-size:16px;
+    }
+    .btn-primary{background:var(--main-red); color:#fff}
+    .btn-primary:hover{background:#a0000c}
+    .btn-ghost{border-color:rgba(255,255,255,.6); color:#fff}
+    .btn-ghost:hover{background:rgba(255,255,255,.12)}
+
+    /* Sections */
+    .section{padding:56px 0; background:#fff}
+    .section.alt{background:#fcfcfc}
+    .section-title{
+      margin:0 0 24px 0;
+      font-size:30px;
+      color:var(--main-blue);
+      font-weight:900;
+      border-bottom:3px solid var(--main-red);
+      display:inline-block;
+      padding-bottom:8px;
+    }
+    .lead{
+      margin:0 0 24px 0;
+      color:var(--muted);
+      font-size:19px;
+      line-height:1.9;
+      max-width:980px;
+    }
+
+    /* Cards */
+    .grid{
+      display:grid;
+      grid-template-columns:repeat(3, minmax(0, 1fr));
+      gap:22px;
+    }
+    @media (max-width: 980px){
+      .grid{grid-template-columns:repeat(2, minmax(0, 1fr));}
+    }
+    @media (max-width: 640px){
+      .grid{grid-template-columns:1fr;}
+    }
+
+    .card{
+      background:var(--card);
+      border:1px solid var(--border);
+      border-radius:14px;
+      overflow:hidden;
+      text-decoration:none;
+      color:inherit;
+      transition:.25s;
+      display:flex;
+      flex-direction:column;
+      min-height:100%;
+    }
+    .card:hover{transform:translateY(-4px); box-shadow:var(--shadow); border-color:#cfd8e3}
+    .card-img{
+      width:100%;
+      height:220px;
+      object-fit:contain;
+      background:#fff;
+      border-bottom:1px solid var(--border);
+      padding:18px;
+    }
+
+    /* (kept) dual images style - left intact to avoid unintended side effects */
+    .card-img-grid{
+      width:100%;
+      height:220px;
+      background:#fff;
+      border-bottom:1px solid var(--border);
+      padding:18px;
+      display:grid;
+      grid-template-columns:1fr 1fr;
+      gap:12px;
+      align-items:center;
+    }
+    .card-img-grid img{
+      width:100%;
+      height:100%;
+      max-height:184px;
+      object-fit:contain;
+      background:#fff;
+      border-radius:10px;
+    }
+
+    .card-body{padding:20px 20px 18px 20px; display:flex; flex-direction:column; gap:10px; flex:1}
+    .card-title{margin:0; font-size:20px; font-weight:900; color:var(--main-blue)}
+    .card-desc{margin:0; color:#444; font-size:17px; line-height:1.75}
+    .bullets{margin:0; padding-left:18px; color:#444; font-size:16px; line-height:1.7}
+    .card-foot{margin-top:auto; display:flex; align-items:center; justify-content:space-between; gap:10px}
+    .card-link{color:var(--main-red); font-weight:900; font-size:15px}
+
+    /* Two-column info */
+    .info-grid{
+      display:grid;
+      grid-template-columns:1.15fr .85fr;
+      gap:22px;
+      align-items:start;
+    }
+    .panel{
+      border:1px solid var(--border);
+      border-radius:14px;
+      background:#fff;
+      padding:18px 18px 16px;
+      box-shadow:0 6px 16px rgba(0,0,0,.04);
+    }
+    .panel h3{
+      margin:0 0 10px 0;
+      font-size:18px;
+      color:var(--main-blue);
+      font-weight:900;
+    }
+    .panel p{margin:0; color:#444; font-size:16px; line-height:1.85}
+    .panel ul{margin:10px 0 0 0; padding-left:18px; color:#444; font-size:16px; line-height:1.75}
+
+    /* Fused silica details */
+    .subsection-title{
+      margin:28px 0 12px 0;
+      font-size:22px;
+      font-weight:900;
+      color:var(--main-blue);
+    }
+    .spec-table{
+      width:100%;
+      border-collapse:collapse;
+      overflow:hidden;
+      border-radius:12px;
+      border:1px solid var(--border);
+      background:#fff;
+    }
+    .spec-table th,.spec-table td{
+      padding:12px 12px;
+      border-bottom:1px solid var(--border);
+      vertical-align:top;
+      text-align:left;
+      font-size:15px;
+      line-height:1.6;
+    }
+    .spec-table th{
+      width:26%;
+      color:#0d2b6b;
+      background:#f4f7fb;
+      font-weight:900;
+    }
+
+    /* Contact bar */
+    .contact-bar{
+      background:var(--main-blue);
+      color:#fff;
+      text-align:center;
+      padding:44px 18px;
+    }
+    .contact-bar h2{margin:0 0 10px 0; font-size:26px; font-weight:900}
+    .contact-bar p{margin:0 0 16px 0; color:#e7e7e7; font-size:16px; line-height:1.8}
+    .contact-actions{display:flex; gap:10px; justify-content:center; flex-wrap:wrap}
+    .pill{
+      display:inline-block;
+      padding:10px 16px;
+      border-radius:999px;
+      text-decoration:none;
+      font-weight:900;
+      border:1px solid rgba(255,255,255,.7);
+      color:#fff;
+    }
+    .pill:hover{background:rgba(255,255,255,.12)}
+    .pill-cta{border-color:transparent; background:var(--main-red)}
+    .pill-cta:hover{background:#a0000c}
+
+    footer{
+      background:#eee;
+      color:#666;
+      text-align:center;
+      padding:18px 12px;
+      font-size:16px;
+    }
+
+    @media (max-width: 980px){
+      .info-grid{grid-template-columns:1fr}
+    }
+    @media (max-width: 768px){
+      .nav-menu{display:none}
+      .hero h1{font-size:28px}
+      .hero p{font-size:18px}
+      .section-title{font-size:26px}
+    }
+  </style>
+</head>
+
+<body>
+  <nav class="navbar">
+    <a class="nav-brand" href="/">欣熹科技 SHIN-SI</a>
+    <div class="nav-menu">
+      <a class="nav-item" href="/index.html#telecom">通訊光纖設備</a>
+      <a class="nav-item" href="/index.html#specialty">特殊/製程應用</a>
+      <a class="nav-item" href="/group.html">關於集團</a>
+      <a class="nav-item" href="/contact.html">聯絡我們</a>
+    </div>
+  </nav>
+
+  <header class="hero">
+    <div class="wrap">
+      <h1>晶圓/半導體/先進材料</h1>
+      <p>
+        本專區彙整晶圓與先進材料相關品項，便於您在詢價/交付前快速對齊規格、包裝與驗收需求。
+      </p>
+      <div class="hero-actions">
+        <a class="btn btn-primary" href="/contact.html">立即洽詢 / 索取報價</a>
+        <a class="btn btn-ghost" href="#core">查看核心品項</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- Core items -->
+    <section class="section" id="core">
+      <div class="wrap">
+        <h2 class="section-title">核心品項</h2>
+        <p class="lead">
+          依照製程與用途，我們將材料品項整理為 5 個類別。卡片內容為重點摘要；除「熔融石英粉」在本頁提供完整資訊外，其餘品項將以專頁呈現較完整內容。
+        </p>
+
+        <div class="grid">
+          <!-- 1 Silicon Wafer -->
+          <a class="card" href="silicon-wafer.html">
+            <img class="card-img" src="/images/materials-silicon-wafer.jpg" alt="矽晶圓 Silicon Wafer" />
+            <div class="card-body">
+              <h3 class="card-title">矽晶圓（Silicon Wafer）</h3>
+              <p class="card-desc">常見半導體材料，應用於積體電路、檢測/傳感器器件、MEMS、光電元件與太陽能電池等。</p>
+              <ul class="bullets">
+                <li>可提供：Bare Wafer / Test Wafer / Dummy Wafer</li>
+                <li>可依直徑與需求條件對接規格</li>
+              </ul>
+              <div class="card-foot">
+                <span class="card-link">查看內容 →</span>
+              </div>
+            </div>
+          </a>
+
+          <!-- 2 SiC -->
+          <a class="card" href="sic-wafer.html">
+            <img class="card-img" src="/images/materials-sic-wafer.jpg" alt="SiC WAFER 碳化矽晶圓" />
+            <div class="card-body">
+              <h3 class="card-title">SiC 晶圓（SiC Wafer）</h3>
+              <p class="card-desc">第三代半導體材料。可依應用需求對接不同晶圓類型與規格。</p>
+              <ul class="bullets">
+                <li>高純半絕緣型晶片：可用於 GaN 功率器件關鍵材料應用</li>
+                <li>N 型晶片：SiC 電力電子器件關鍵材料應用</li>
+              </ul>
+              <div class="card-foot">
+                <span class="card-link">查看內容 →</span>
+              </div>
+            </div>
+          </a>
+
+          <!-- 3 LT/LN -->
+          <a class="card" href="lt-ln-wafer.html">
+            <img class="card-img" src="/images/materials-lt-ln-wafer.jpg" alt="鉭酸鋰 LT / 鈮酸鋰 LN 晶圓" />
+            <div class="card-body">
+              <h3 class="card-title">LT / LN 晶圓（Lithium Tantalate / Niobate）</h3>
+              <p class="card-desc">可用於 SAW filter、光學器件與熱釋電感測等應用方向，並可依直徑需求對接。</p>
+              <ul class="bullets">
+                <li>應用：SAW filter、Optical devices、Pyroelectric sensor</li>
+                <li>直徑：4&quot; / 6&quot; / 8&quot;</li>
+              </ul>
+              <div class="card-foot">
+                <span class="card-link">查看內容 →</span>
+              </div>
+            </div>
+          </a>
+
+          <!-- 4 Silicon Materials -->
+          <a class="card" href="silicon-materials.html">
+            <img class="card-img" src="/images/silicon_materials.png" alt="矽材料 Silicon Materials（多晶矽/晶柱/頭尾料/鍋底料）" />
+            <div class="card-body">
+              <h3 class="card-title">矽材料（Silicon Materials）</h3>
+              <p class="card-desc">涵蓋多晶矽、晶柱、頭尾料與鍋底料等品項，可依用途與交付條件對接。</p>
+              <ul class="bullets">
+                <li>Poly Silicon（多晶矽）</li>
+                <li>Top &amp; Tail（頭尾料）、Pot Scrap（鍋底料）、Ingot（晶柱）</li>
+              </ul>
+              <div class="card-foot">
+                <span class="card-link">查看內容 →</span>
+              </div>
+            </div>
+          </a>
+
+          <!-- 5 Fused Silica (on-page) -->
+          <a class="card" href="#fused-silica">
+            <img class="card-img" src="/images/materials-fused-silica.jpg" alt="熔融石英粉 Fused Silica" />
+            <div class="card-body">
+              <h3 class="card-title">熔融石英粉（Fused Silica）</h3>
+              <p class="card-desc">氧化矽的非晶態（玻璃態）材料，具高使用溫度與低熱膨脹係數特性。</p>
+              <ul class="bullets">
+                <li>用途：耐火材料、陶瓷/玻璃原料、精密鑄造等</li>
+                <li>包裝：牛皮紙袋/太空袋（依需求）</li>
+              </ul>
+              <div class="card-foot">
+                <span class="card-link">查看本頁內容 →</span>
+              </div>
+            </div>
+          </a>
+
+          <!-- 6 Silicon Electrode Rod (矽電極棒) -->
+          <!-- Change: remove尺寸圖 from card; clicking card opens 尺寸圖 -->
+          <a class="card" href="/images/%E7%9F%BD%E9%9B%BB%E6%A5%B5%E6%A3%92%E5%B0%BA%E5%AF%B8.png" target="_blank" rel="noopener">
+            <img class="card-img" src="/images/%E7%9F%BD%E9%9B%BB%E6%A5%B5%E6%A3%92.png" alt="矽電極棒 實物圖" />
+            <div class="card-body">
+              <h3 class="card-title">矽電極棒</h3>
+              <p class="card-desc">
+                矽電極棒主要應用於半導體乾式蝕刻（Dry Etch）製程。<br><br>
+                在電漿反應腔中，它作為關鍵耗材負責導引電流以激發電漿。由於其材質與矽晶圓相同（Silicon），能有效避免金屬污染，確保蝕刻製程的潔淨度與晶圓良率。
+              </p>
+              <div class="card-foot">
+                <span class="card-link">查看尺寸圖 →</span>
+              </div>
+            </div>
+          </a>
+
+        
+
+          <!-- 7 PECVD DLC -->
+          <a class="card" href="/">
+            <img class="card-img" src="/images/PECVD%20DLC.png" alt="PECVD DLC 鍍膜：PECVD 沉積腔體示意圖" />
+            <div class="card-body">
+              <h3 class="card-title">PECVD DLC 鍍膜</h3>
+              <p class="card-desc">PECVD DLC 鍍膜結合高硬度與低摩擦特性，可用於降低磨耗、改善脫模性並提升零件壽命。</p>
+              <ul class="bullets">
+                <li>汽車：活塞銷、噴油嘴</li>
+                <li>精密機械：模具脫模、自動化滑軌抗磨</li>
+                <li>消費電子：抗刮保護層、耳機振膜強化</li>
+                <li>醫療/光學：人工關節、紅外線鏡頭防護</li>
+              </ul>
+              <div class="card-foot">
+                <span class="card-link">查看內容 →</span>
+              </div>
+            </div>
+          </a>
+
+</div>
+      </div>
+    </section>
+
+    <!-- Fused silica details (on-page) -->
+    <section class="section alt" id="fused-silica">
+      <div class="wrap">
+        <h2 class="section-title">熔融石英粉（Fused Silica）</h2>
+        <p class="lead">
+          熔融石英即 Fused silica，是氧化矽（石英，矽石）的非晶態（玻璃態）。它通過三維結構交叉連結提供其高使用溫度和低熱膨脹係數。
+        </p>
+
+        <div class="info-grid">
+          <div class="panel">
+            <h3>用途與應用</h3>
+            <ul>
+              <li>耐火材料、陶瓷原料和玻璃原料</li>
+              <li>精密鑄造製程（沾漿後加上一層熔融石英粉，利用低膨脹係數特性）</li>
+              <li>陶瓷材料製程</li>
+            </ul>
+
+            <div class="subsection-title">規格/包裝</div>
+            <table class="spec-table" aria-label="Fused Silica spec">
+              <tbody>
+                <tr>
+                  <th>外觀</th>
+                  <td>無色透明塊狀、顆粒或白色粉末。</td>
+                </tr>
+                <tr>
+                  <th>包裝</th>
+                  <td>牛皮紙袋 25 KG；太空袋 1,000 KG。</td>
+                </tr>
+                <tr>
+                  <th>規格</th>
+                  <td>200 目、325 目、1200 目…</td>
+                </tr>
+                <tr>
+                  <th>應用行業</th>
+                  <td>精密鑄造公司、陶瓷材料公司、工業化學公司、工程塑料、塗料公司。</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <div class="panel">
+            <h3>洽詢前建議準備的資訊</h3>
+            <p>為降低往返確認成本，建議先整理以下條件：</p>
+            <ul>
+              <li>用途（耐火/陶瓷/鑄造/塗料等）</li>
+              <li>粒徑規格（例如：200/325/1200 目等）</li>
+              <li>預估用量與交期</li>
+              <li>包裝需求（25 KG 或 1,000 KG）</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Procurement / alignment -->
+    <section class="section">
+      <div class="wrap">
+        <h2 class="section-title">需求對接流程（建議）</h2>
+        <p class="lead">
+          材料類詢價建議以「規格 → 交付 → 驗收」三段式對齊，避免交付落差。以下為常見資訊清單（依品項可增減）。
+        </p>
+
+        <div class="info-grid">
+          <div class="panel">
+            <h3>規格（Spec）</h3>
+            <ul>
+              <li>品項/類型（矽晶圓、SiC、LT/LN、矽材料、熔融石英粉）</li>
+              <li>尺寸/等級（直徑、厚度、粒徑等）</li>
+              <li>用途/製程條件（若有）</li>
+            </ul>
+          </div>
+          <div class="panel">
+            <h3>交付與驗收（Delivery / Acceptance）</h3>
+            <ul>
+              <li>交期、批量、包裝</li>
+              <li>驗收方式與項目（外觀、尺寸、標示/文件等）</li>
+              <li>若有既有規範或內規表單，可一併提供</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="contact-bar">
+      <h2>聯絡我們 / 索取報價</h2>
+      <p>請提供：品項、尺寸/規格、數量、交期、驗收需求（若有）。我們將協助你快速對齊可交付條件。</p>
+      <div class="contact-actions">
+        <a class="pill pill-cta" href="/contact.html">前往聯絡表單</a>
+        <a class="pill" href="tel:035972556">電話：03-5972556</a>
+        <a class="pill" href="mailto:service@shin-si.com.tw">Email：service@shin-si.com.tw</a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div>© 欣熹科技 SHIN-SI TECHNOLOGY</div>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,5041 @@
+跳至內容
+聊天歷程紀錄
+
+
+
+你說：
+shin-si-v4.html
+檔案
+欣熹科技 (Shin-Si) 官網專案：進度與核心設定
+1. 公司背景與定位
+品牌名稱： 欣熹科技 (SHIN-SI TECHNOLOGY)。
+
+企業架構： 為「錦霆集團 (Jinting Group)」關係企業，強調集團穩健資源與半導體等級的嚴謹服務。
+
+核心目標： 建立獨立官網，衝刺 Fujikura (台灣代理) 及特定型號的 SEO/AI 搜尋排名。
+
+聯絡資訊： * 地址：新竹縣湖口鄉中華路13號
+
+電話：03-5972556
+
+2. 產品線規劃 (Top-Down 架構)
+通訊工程類： 100S+ (最新旗艦), 90S+, 90R (帶狀), 45S (FTTH)。
+
+特種/研發類： FSM-100 系列 (ARCMaster™), CT-110 系列 (大管徑切刀), FSR-115 系列 (塗覆機)。
+
+未來擴展： 預留半導體材料區塊 (Poly Silicon, Ingot, 石英粉等)。
+
+3. 網頁技術狀態 (目前版本：V4)
+已完成： * 具備 RWD 自適應功能 (手機觀看優化)。
+
+植入 Schema Markup (JSON-LD) 結構化資料，利於 AI 搜尋引擎抓取。
+
+整合「集團資源」與「省力方案」的行銷文案。
+
+設計了包含產品分類、關於我們、及聯絡詢價表單的佈局。
+
+4. 下一階段行動方案 (Next Steps)
+內容深化： 使用 NotebookLM 上傳 Fujikura 官方 PDF，將 AI 產出的「高準確度技術規格」與「FAQ」填充進 V4 網頁。
+
+架網準備： 傾向採用 「方案 B」(買網址 + 租主機)，預計註冊 .com.tw 域名，以維持企業專業感與 SEO 控制權。
+
+功能實作： 需要將網頁表單串接到後端 (如 Google 表單或 Email 轉寄服務)。我現在要進行下一階段行動方案 (Next Steps)
+內容深化： 使用 NotebookLM 上傳 Fujikura 官方 PDF，將 AI 產出的「高準確度技術規格」與「FAQ」填充進 V4 網頁
+ChatGPT 說：
+
+已思考 22s
+以下提供一套可落地、可驗證、可直接回填到 V4 單頁的「NotebookLM → 技術規格/FAQ → 網頁內容」流程與版型建議（以你目前的 V4 結構為準 
+shin-si-v4
+
+；檔案亦可直接開啟：shin-si-v4.html）。
+
+1) 內容深化的目標與原則
+你要達成的兩個 SEO/AI 搜尋關鍵
+高密度、可掃描的規格內容（表格化、欄位一致、單位一致、可比較）
+
+高意圖 FAQ（對應「台灣買家/工程商/實驗室」常問問題，並用結構化資料讓 AI 更容易抓）
+
+嚴謹原則（避免 AI 亂寫，確保可被信任）
+所有數字/規格必須能追溯到 Fujikura 官方 PDF（至少「頁碼/章節」能對照）。
+
+不在官方文件中的資訊一律標註：官方文件未載明 / 需依實際配置，不要硬補。
+
+你目前 V4 文案中如「施工速度提升 30%」等效益型敘述，若 PDF 沒寫，建議改為條件式/非量化描述，或加註來源依據（避免被專業客戶挑戰）。
+shin-si-v4
+
+
+2) NotebookLM 作業流程（建議用「模板化輸出」避免混亂）
+Step A — 檔案分組上傳（強烈建議）
+為了減少混淆，建議每一個主產品線一個 NotebookLM 專案或至少一個集合：
+
+100S+（專屬）
+
+90S+（專屬）
+
+90R（專屬）
+
+45S（專屬）
+
+FSM-100 系列（專屬）
+
+CT-110/111（專屬）
+
+FSR-115（專屬）
+
+Step B — 用「規格欄位清單」強制 NotebookLM 以同一格式輸出
+你要的不是長文，而是可直接貼到網頁的結構化內容。建議每台機器都要求它輸出兩份：
+
+輸出 1：Spec JSON（用於生成表格 + 後續 schema）
+要求 NotebookLM 以固定欄位輸出（不足就填 官方文件未載明）：
+
+定位/用途（Use case）
+
+對準方式（Core/Clad/其他）
+
+適用光纖類型（SM/MM/DS/NZDS/PM/LDF…以文件為準）
+
+典型熔接損耗（依纖種分列）
+
+熔接時間（秒）
+
+加熱時間（秒）
+
+夾具/切割/加熱爐重點（文件用語）
+
+顯示/介面、資料儲存
+
+電池/供電
+
+尺寸/重量
+
+操作環境（溫度/濕度/海拔等）
+
+防護等級（若有）
+
+標配/選配（配件清單）
+
+維修/校正（若文件有）
+
+備註（如「依配置不同」）
+
+輸出 2：FAQ（每台 8–12 題，專注採購決策）
+題型建議固定包含：
+
+這台適合哪些工程/場景？
+
+與上一代或同級差異（若 PDF 有對照）
+
+支援哪些光纖/纖芯規格？
+
+現場施工需要哪些耗材/配件？
+
+電池續航/更換方式？
+
+熔接品質如何判讀/紀錄？
+
+維修校正流程與週期（若 PDF 有）
+
+常見錯誤/警示（若 PDF 有）
+
+關鍵要求句：答案必須引用文件；文件未載明就明確寫未載明。
+這是你內容可信度的核心。
+
+3) NotebookLM 可直接複製使用的 Prompt 模板
+你可以對每份 PDF 複製貼上以下兩段（把 {MODEL} 換成 100S+ 等）：
+
+Prompt 1：抽取規格（嚴格）
+請從我上傳的 Fujikura 官方 PDF 中，針對 {MODEL} 抽取「可量化規格」與「功能規格」，並用 JSON 輸出。
+
+JSON 欄位請固定為：
+positioning, alignment_method, supported_fibers, splice_loss_typical, splice_time, heat_time, heater, clamps, cleaver, display_ui, data_storage, connectivity, battery_power, dimensions_weight, operating_environment, protection_rating, standard_accessories, optional_accessories, calibration_service, notes
+
+每一個欄位後面請附上來源頁碼/章節（格式例如："splice_time": {"value":"XX s", "source":"p.12"}）。
+
+若官方文件未載明，請填：{"value":"官方文件未載明","source":"—"}。
+
+禁止自行推測或引用非本 PDF 的資訊。
+
+Prompt 2：產出 FAQ（嚴格）
+以 {MODEL} 的台灣買家/工程施工/實驗室採購為主，列出 10 個 FAQ。
+
+每一題回答必須引用此 PDF 的頁碼/章節；若找不到，回答請寫「官方文件未載明」並建議詢問代理商確認。
+
+回答風格：短句、可直接放到官網，避免過度行銷形容詞。
+
+4) 回填到 V4 網頁的內容版型（不改架構、直接加內容）
+你目前 V4 是「卡片式總覽」
+shin-si-v4
+
+。最省事的做法是：每張卡片新增兩個可折疊區塊：
+
+技術規格（表格）
+
+FAQ（手風琴/折疊）
+
+建議新增的版型（你貼入 HTML 的位置）
+在每一張 .card-body 的描述段落 <p class="desc">…</p> 後面，追加：
+
+<div class="detail-block">
+  <details>
+    <summary>技術規格（官方數據）</summary>
+    <table class="spec-table">
+      <tr><th>對準方式</th><td><!-- 填入 NotebookLM 的 alignment_method --></td></tr>
+      <tr><th>熔接時間</th><td><!-- splice_time --></td></tr>
+      <tr><th>加熱時間</th><td><!-- heat_time --></td></tr>
+      <tr><th>適用光纖</th><td><!-- supported_fibers --></td></tr>
+      <tr><th>尺寸/重量</th><td><!-- dimensions_weight --></td></tr>
+      <tr><th>操作環境</th><td><!-- operating_environment --></td></tr>
+    </table>
+    <p class="spec-note">註：以上規格以 Fujikura 官方文件為準，實際依配置可能不同。</p>
+  </details>
+
+  <details>
+    <summary>FAQ（常見問題）</summary>
+    <div class="faq">
+      <p><strong>Q1：</strong><!-- 問題 --></p>
+      <p><strong>A：</strong><!-- 答案 --></p>
+      <!-- 重複 8–12 組 -->
+    </div>
+  </details>
+</div>
+並在 <style> 補上（不會破壞你現有風格）：
+
+.detail-block { margin-top: 12px; }
+details { background: #fafafa; border: 1px solid #eee; border-radius: 8px; padding: 10px 12px; margin-top: 10px; }
+summary { cursor: pointer; font-weight: bold; color: #003366; }
+.spec-table { width: 100%; border-collapse: collapse; margin-top: 10px; font-size: 14px; }
+.spec-table th, .spec-table td { border-bottom: 1px solid #eee; padding: 8px 6px; vertical-align: top; }
+.spec-table th { width: 30%; color: #333; }
+.spec-note { font-size: 12px; color: #666; margin: 8px 0 0 0; }
+.faq p { margin: 6px 0; }
+5) 結構化資料升級（AI 搜尋會更吃這套）
+你 V4 已有 Corporation/LocalBusiness 的 JSON-LD 
+shin-si-v4
+
+。下一階段建議新增：
+
+FAQPage schema（至少針對 100S+、90S+、FSM-100 三個主戰產品先做）
+
+（可選）Product schema（不放價格也可以，只放 brand/model/description）
+
+FAQPage JSON-LD 範例（一台機器一段）
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"FAQPage",
+  "mainEntity":[
+    {
+      "@type":"Question",
+      "name":"100S+ 適合哪些工程場景？",
+      "acceptedAnswer":{"@type":"Answer","text":"（填入 FAQ A1）"}
+    }
+    // ...共 8–12 題
+  ]
+}
+</script>
+做法：先把 NotebookLM 產出的 FAQ 定稿，再貼到 schema，確保內容一致。
+
+6) 你現在就可以照做的「最短路徑」清單（不等我、你也能推進）
+先從 100S+ / 90S+ / FSM-100 三個產品開始（SEO 影響最大、也最符合你策略）。
+
+NotebookLM：每台跑完「規格 JSON + FAQ 10 題」兩份輸出，並人工快速檢查：
+
+數字單位（秒 / dB / mm / g）
+
+是否有「未載明」被硬寫成肯定句
+
+把每台內容貼回 V4：每張卡新增「技術規格 + FAQ」兩個 details 區塊。
+
+追加 FAQPage JSON-LD（先三台即可）。
+
+最後再把 90R / 45S / CT-110 / FSR-115 依序補齊。
+
+7) 你把 NotebookLM 產出的內容貼回來後，我可以直接幫你做兩件事
+把規格 JSON 轉成漂亮且一致的表格內容（同欄位、同語氣、同單位）
+
+把 FAQ 同步生成 FAQPage JSON-LD（避免你手工複製出錯）
+
+你下一步只要貼其中一台（例如 100S+）的 NotebookLM 輸出（規格 JSON + FAQ），我就能用你現有 V4 結構 
+shin-si-v4
+
+ 直接給你「可貼回 HTML 的完整片段」，並同時附上對應的 FAQPage schema。
+
+
+資料來源
+你說：
+NotebookLM免費版限制?
+ChatGPT 說：
+
+已思考 16s
+以下以 **NotebookLM 免費版（NotebookLM Standard）**為準，整理目前主要使用限制（Google 官方說明，且標註為 Usage limits subject to change）。
+Google 支援
++1
+
+NotebookLM 免費版（Standard）主要限制
+容量與資料來源
+**Notebooks：**每位使用者最多 100 本
+Google 支援
++1
+
+**Sources：**每本 Notebook 最多 50 個來源
+Google 支援
++1
+
+單一來源上限：
+
+最高 500,000 words/每來源
+Google 支援
+
+本機上傳檔案：最高 200MB/每檔（官方亦提到無頁數上限）
+Google 支援
+
+每日/每月使用額度（互動與產出）
+**Chat queries：**每日 50 次
+Google 支援
++1
+
+**Audio Overviews（音訊摘要/雙主持人音訊）：**每日 3 次
+Google 支援
++1
+
+**Video Overviews：**每日 3 次
+Google 支援
+
+**Reports：**每日 10 次
+Google 支援
+
+**Flashcards：**每日 10 次
+Google 支援
+
+**Quizzes：**每日 10 次
+Google 支援
+
+**Mind Maps：**官方標示 No limits
+Google 支援
+
+**Deep Research：**每月 10 次
+Google 支援
+
+實務提醒（避免踩到限制）
+你做「官網內容深化」這種工作，最容易先撞到的是 Chat 50/日 與 Audio 3/日。
+Google 支援
++1
+
+來源數（每本 50）通常夠用，但如果你把每個型號的 PDF、配件、切刀、塗覆機等拆很多份，建議**以「型號一個 Notebook」**來管理，避免來源數被耗光。
+Google 支援
+
+若你想確認自己帳號當下的上限，官方建議可參考「Upgrade NotebookLM」頁面與產品內提示；且額度屬於「可能調整」的政策。
+Google 支援
+
+如果你告訴我：你目前 NotebookLM 的入口是 個人 Gmail、Google Workspace、還是 Google AI 訂閱方案，我可以把「你實際會看到的等級（Standard/Plus/Pro/Ultra）」與對應限制差異精準對齊到你目前環境。
+
+你說：
+個人 Gmail
+ChatGPT 說：
+
+已思考 8s
+用 個人 Gmail 的情況下，你在 NotebookLM 預設是 免費版（Standard），其核心限制如下（Google 官方 Help Center）。
+Google 支援
++1
+
+你（個人 Gmail）NotebookLM 免費版 Standard：主要限制
+Notebook / 來源容量
+**Notebooks：**最多 100 本 / 使用者 
+Google 支援
++1
+
+**Sources：**每本最多 50 個來源 
+Google 支援
++1
+
+**單一來源大小：**每來源最多 500,000 words，或本機上傳檔案 200MB（官方亦說明 沒有頁數上限） 
+Google 支援
+
+每日互動/產出額度
+**Chat queries：**每日 50 次 
+Google 支援
++1
+
+**Audio Overviews：**每日 3 次 
+Google 支援
++1
+
+**Video Overviews：**每日 3 次 
+Google 支援
+
+**Reports / Flashcards / Quizzes：**每日上限（官方在升級頁面列出各項目） 
+Google 支援
+
+與你官網「內容深化」最相關的兩個瓶頸
+Chat 50 次/日：如果你用「逐台型號 → 規格 JSON → FAQ」的模板化抽取，通常一天做 2–4 台就會接近上限。
+Google 支援
++1
+
+Sources 50/本：若你把同一型號拆成「主型錄、配件、維修手冊、切刀手冊」多份來源，會很快把單本用滿。
+Google 支援
+
+若要提高額度：你（個人帳號）可升級到哪裡
+Google 官方「Upgrade NotebookLM」頁面列出不同方案的上限（例如 Chats、Sources、Notebooks、Audio/Video Overviews 的上限都會提高）。
+Google 支援
+
+另外，NotebookLM 的升級版曾被納入 Google One AI Premium/Google AI 方案（依地區與方案供應）。
+The Verge
++1
+
+你如何在介面上快速確認自己是哪一種方案
+到 NotebookLM 的 Upgrade / Plans（升級）頁面即可看到你目前可用的等級與對應額度表（Google 官方指引）。
+Google 支援
+
+如果你願意，我可以依你要做的產品線（先 100S+ / 90S+ / FSM-100？）幫你把「每天 50 次 query」的用量切分成一個可執行的排程（每台機器需要幾次 query、怎麼避免重問浪費額度）。
+
+你說：
+免費標準款
+ChatGPT 說：
+
+已思考 6s
+你用「個人 Gmail + 免費標準款（NotebookLM Standard）」時，主要限制如下（Google 官方 Help Center；並註明 Usage limits subject to change）。
+Google 支援
++1
+
+免費標準款（Standard）核心限制
+容量
+**Notebooks：**每位使用者最多 100 本
+Google 支援
++1
+
+**Sources：**每本最多 50 個來源
+Google 支援
++1
+
+單一來源大小：
+
+每來源最多 500,000 words
+Google 支援
++1
+
+本機上傳檔案最多 200MB/檔，且官方說明沒有頁數上限
+Google 支援
++1
+
+每日互動/產出
+**Chat queries：**每日 50 次
+Google 支援
++1
+
+**Audio generations（Audio Overviews）：**每日 3 次
+Google 支援
++1
+
+你先前提到的「內容深化：抽技術規格 + FAQ」主要會吃到的就是 Chat 50/日 與 Sources 50/本。
+Google 支援
++1
+
+針對你官網內容深化（Fujikura PDF → 規格/FAQ）如何不浪費額度
+每台機型用 1–2 次 Query 產出完整套件
+
+第 1 次：要求「規格 JSON + 各欄位頁碼」
+
+第 2 次：要求「10 題 FAQ + 每題頁碼」
+這樣一台大概 2 次 query；你一天可穩定做 20 台以內（實務上含校對會更少）。
+Google 支援
++1
+
+不要用 Audio Overview 做規格抽取
+Audio 每日只有 3 次，留給「快速聽整份型錄摘要」即可；規格與 FAQ 用文字 query 產出最有效。
+Google 支援
++1
+
+來源控制：同一機型 PDF 不要切太碎
+免費版每本 50 sources，很容易被「主型錄 + 配件 + 維修 + 切刀 + 塗覆機」拆光。建議：
+
+「機型主型錄」先作為主來源
+
+真的需要再補「配件/切刀/塗覆」各 1 份來源即可（避免來源爆表）。
+Google 支援
++1
+
+如果你要我把「你現在要先打的 100S+ / 90S+ / FSM-100」做成最省 query 的 NotebookLM 提問腳本（一台只用 2 次 query 就能直接貼回 V4 的規格表 + FAQ + FAQPage schema），你回我你打算先做哪 3 台型號即可。
+
+你說：
+https://www.fujikura.co.jp/en/sustainability/我需先到官網抓資料
+ChatGPT 說：
+
+已思考 30s
+可以，但我這邊直接打開你貼的「Sustainability Top」頁面時遇到 403 Forbidden（網站對自動抓取/部分區域 IP 有存取限制）。在這種情況下，最穩定的作法是改抓 Fujikura 官網同一區塊提供的「官方 PDF」與可開啟的子頁面，再丟進 NotebookLM 做規格/FAQ/摘要。
+
+下面給你一套「先抓資料 → 再丟 NotebookLM」的最短路徑。
+
+1) 你應該先抓哪些「官方可用資料」
+A. Integrated Report（整合報告 PDF）
+Fujikura 官網在 Integrated Report 頁面提供 Integrated Report 2025 的 PDF 下載（同頁還列出 Sustainability 相關主題入口）。
+fujikura.co.jp
+
+B. ESG Data（數據 PDF）
+Integrated Report 2023 頁面有提供獨立的 ESG Data PDF（5 頁的數據表，非常適合直接引用關鍵指標）。
+fujikura.co.jp
++1
+
+C. 氣候與環境目標（網頁子頁面，可直接引用關鍵句）
+例如「Responding to Climate Change」頁面明確寫到：
+
+2030 年再生能源比率目標（45%）
+
+Scope 1&2、Scope 3 的減量目標與基準年度等
+這類內容適合你在官網做「品牌背書/供應鏈合規」摘要。
+fujikura.co.jp
+
+2) 你如何「自己在瀏覽器」把資料抓下來（避免 403 影響）
+用你平常的 Chrome（建議先關 VPN/公司代理）開 Fujikura 的 Sustainability / Report 相關頁面。
+
+優先下載 PDF（PDF 通常不會像 Top page 一樣擋）。
+
+檔名建議統一，方便管理與 NotebookLM 專案對應，例如：
+
+Fujikura_IntegratedReport_2025.pdf
+
+Fujikura_ESG_Data_2023.pdf
+
+你的目標不是「把整個 sustainability 網站抓完」，而是抓可引用且可追溯的來源（PDF + 關鍵子頁面）即可。
+
+3) 直接給你可用的官方來源連結（用於下載/貼進 NotebookLM）
+依規則我把 URL 放在 code block，你可以直接複製開啟。
+
+Integrated Report 匯總頁（含 2025 PDF 下載入口）
+https://www.fujikura.co.jp/en/sustainability/report/
+
+Responding to Climate Change（含減碳/再生能源目標）
+https://www.fujikura.co.jp/en/sustainability/climate-change/
+
+ESG Data（Fujikura Group ESG data PDF，5頁）
+https://www.fujikura.co.jp/sustainability/pdf/report/en/2023/esg_data.pdf
+以上三個來源都可作為你「先抓資料」的起點。
+fujikura.co.jp
++2
+fujikura.co.jp
++2
+
+4) 抓到資料後，怎麼丟 NotebookLM 才最省額度
+你是免費標準款（Chat 50/日），建議每個主題 2 個 Query 解決：
+
+Query #1（摘要 + 可引用要點）：要求 NotebookLM 以「條列 + 原文引用 + 頁碼/段落」整理（例如：減碳目標、RE100、SBT、Scope 方法）。
+
+Query #2（官網可用文案 + FAQ）：生成「可貼到欣熹官網」的短文與 6–10 題 FAQ，但必須標註來源（頁碼/段落），文件沒寫就寫「官方未載明」。
+
+5) 重要合規提醒（你官網會更專業、也避免踩線）
+你是 Fujikura 台灣代理/合作方時，建議官網呈現方式用：
+
+「Fujikura 集團永續方向（摘錄官方報告）」＋來源連結/引用
+
+避免寫成「欣熹的永續績效」或把 Fujikura 的目標直接變成你公司的承諾（除非你有自己的 ESG 證據與數據）
+
+如果你把你抓到的 PDF（或你要引用的段落）丟上來，我可以直接幫你產出兩個可貼到 V4 的區塊：
+1)「Fujikura 永續摘要（100–200 字）」 2)「FAQ + FAQPage JSON-LD（可被 AI 搜尋抓）」并確保每一條都有可追溯來源。
+
+你說：
+Fujikura 集團永續方向（摘錄官方報告）是必要的?
+ChatGPT 說：
+不「必然必要」，但在你的專案目標與客群情境下，它屬於高信任加分項，而不是 SEO 的硬門檻。
+
+下面用決策角度把它講清楚。
+
+結論
+對你目前的核心目標（Fujikura 型號 SEO/AI 搜尋排名）
+不是必要項。
+你要衝的是「100S+ / 90S+ / 90R / 45S…」等型號關鍵字與意圖搜尋，最有效的內容仍是：
+技術規格表 + FAQ + 應用場景 + 比較表 + 維修/校正流程。
+
+對你要建立的企業可信度（代理商、工程/企業採購）
+建議有，但做精簡版本即可。
+尤其在以下採購情境，永續/合規資訊會被拿來當「供應商初審」材料：
+
+電信/公部門/大型系統整合商（投標、供應商審查）
+
+半導體/電子製造供應鏈（ESG/碳盤查問卷）
+
+跨國客戶或集團採購（合規與風險控管）
+
+什麼情況「應該做」（建議做的判斷條件）
+符合任一條，就值得做（但不必做很大）：
+
+你常被客戶問「你們是原廠授權嗎？有沒有長期供應與維修保障？」
+
+你的客戶需要填供應商表單（CSR/ESG/合規）或投標文件
+
+你希望網站不只是產品型錄，而是「可用於採購審核」的公司門面
+
+你想強化「錦霆集團關係企業」的穩健印象（這是信任訊號）
+
+什麼情況「可以先不做」
+若你現階段主要客群是：
+
+FTTH 施工隊、外包工程商、小型通訊承包商
+且成交決策主要看：
+
+價格、交期、售後、耗材供應、現場支援
+那永續段落的轉換效益通常較低，可延後。
+
+最務實做法：做「最小可行版本」即可
+建議放哪裡
+放在「關於我們 / 集團資源」頁面底部或獨立一頁（例如：/sustainability-partner）
+
+不要放在每個型號卡片內，以免稀釋主題（產品頁要專注在規格/FAQ）
+
+內容怎麼寫才不會踩雷
+標題建議：「Fujikura 集團永續方向（摘要）」
+
+長度：200–400 字 + 3–5 個要點 + 官方來源連結
+
+一定要加一句界線清楚的註記：
+「以下為 Fujikura 官方公開資料摘要，欣熹科技依實際服務/供應範圍提供在地支援；集團目標不等同本公司自有 ESG 績效聲明。」
+
+對 SEO/AI 的實際價值在哪裡（不誇大）
+它對「型號關鍵字排名」的直接拉升通常不大；更可能提升的是：
+
+E-E-A-T / 信任度（在 AI 摘要、採購審核、品牌背書情境）
+
+降低跳出率/提高詢價轉換（客戶願意相信你是長期供應商）
+
+但如果你時間/額度有限，優先級仍是：
+
+產品規格與 FAQ（每台）
+
+施工/應用情境與比較表
+
+維修校正/耗材配件/服務流程
+
+再來才是永續摘要（做最小版）
+
+建議你現在採用的決策（以你正在做的 Next Steps 來看）
+先不把永續當「必要交付」。
+
+先把「Fujikura 官方 PDF → 高準確規格 + FAQ → 回填 V4」跑通（這才是你 SEO 主戰場）。
+
+永續段落：做成一個可插拔模組，你後續若開始接到採購審查/投標需求，再補上即可。
+
+如果你希望我幫你把「最小可行永續摘要」寫成可直接貼進 V4 的版型，我可以給你一個不超過 400 字、含來源引用位置的模板，你只要把你下載到的 Integrated Report/ESG Data 的關鍵頁碼貼給我即可。
+
+你說：
+你已了解我的需求,接下來按你的規劃按步驟來做,一次一個動作,給我詳盡操作指引,首先你官方來源連結程式碼我該怎麼做
+ChatGPT 說：
+以下是你要做的第一個動作：把我提供的「官方來源連結程式碼」變成可下載/可引用的官方資料檔（PDF + 子頁面），並整理成可丟 NotebookLM 的素材。
+
+動作 1：使用官方來源連結（你現在只要做這件事）
+1) 先理解：那段「程式碼」是什麼
+我先前給你的內容是放在 code block 裡的純文字網址清單，目的只有兩個：
+
+讓你不被聊天介面自動斷行或誤判
+
+讓你可以精準複製貼上到瀏覽器（或貼到 NotebookLM 當來源）
+
+你不需要把它「執行」，它不是程式，只是「網址」。
+
+2) 在 Windows / Chrome 的正確做法（最穩）
+Step 2.1 建立資料夾（避免後面亂）
+在桌面或 D:\ 建一個資料夾，例如：
+Shin-Si_Web_Source\Fujikura_Sustainability
+
+之後所有下載的 PDF 都放進這個資料夾，避免混檔。
+
+Step 2.2 逐一開啟連結
+打開 Chrome
+
+複製下方其中一條 URL（整行）
+
+貼到網址列，按 Enter
+
+請用這三條（你先做這三條就夠）：
+
+https://www.fujikura.co.jp/en/sustainability/report/
+https://www.fujikura.co.jp/en/sustainability/climate-change/
+https://www.fujikura.co.jp/sustainability/pdf/report/en/2023/esg_data.pdf
+3) 每個連結你要做到什麼程度（很重要）
+A) .../report/（Report 匯總頁）
+你要做的是：
+
+在頁面中找到 Integrated Report（通常有年度列表或 PDF 下載）
+
+**下載 Integrated Report（PDF）**到你剛剛的資料夾
+
+下載後請把檔名改成：
+
+Fujikura_IntegratedReport_YYYY.pdf（YYYY 用年份）
+
+若該頁面你開得到但找不到下載鈕：
+先用頁面內搜尋（Ctrl+F）找 PDF 或 Integrated 或 Download。
+
+B) .../climate-change/（氣候變遷子頁）
+你要做的是：
+
+先不用下載（因為它是網頁）
+
+只要確認你能正常開啟，並且把網址保留，之後可直接貼到 NotebookLM 當來源
+
+建議你做一個純文字檔記錄（最省事）：
+
+在資料夾內新增 sources.txt
+
+貼上三條網址（含這條 climate-change）
+
+C) .../esg_data.pdf（ESG Data PDF）
+你要做的是：
+
+開啟後應該會直接顯示 PDF
+
+下載到資料夾
+
+改檔名為：
+Fujikura_ESG_Data_2023.pdf
+
+4) 若你遇到「打不開 / 403 / 無法下載」怎麼處理（立即排除）
+依經驗最有效的順序：
+
+關 VPN、關公司代理（若你在公司網路）
+
+用手機 4G/5G 開一次（確認是不是網路環境擋）
+
+Chrome 無痕模式開啟
+
+如果 PDF 可開但下載失敗：
+在 PDF 視窗右上角「下載」改用「列印 → 另存 PDF」（少見，但有時有效）
+
+你完成這個動作的「驗收標準」
+你的資料夾裡應該至少有：
+
+Fujikura_ESG_Data_2023.pdf
+
+Fujikura_IntegratedReport_YYYY.pdf（如果你已找到並下載）
+
+sources.txt（三條網址已貼上）
+
+完成後，你只要回覆我一行即可（不需要貼檔案內容）：
+
+你已下載到的檔名（列出檔名），以及 Integrated Report 你抓到的是哪一年。
+
+你說：
+Fujikura_ESG_Data_2024.pdf
+PDF
+檔名2024是我改的,裡面是2024/10,是否正確?Fujikura_IntegratedReport_YYYY.pdf官網標明2025
+ChatGPT 說：
+
+已思考 54s
+你這裡其實是「兩種不同文件」混在同一個命名邏輯下，所以才會看起來矛盾。
+
+1) 你改成 2024，且內文是 2024/10：對「ESG Data」來說是正確的
+你上傳的這份是 Fujikura Group ESG data，文件首頁明確標示「※2024年10月22日更新 (*As of 22th October 2024)」
+Fujikura_ESG_Data_2024
+
+
+而且表格內容是 FY2021–FY2023 的數據欄位
+Fujikura_ESG_Data_2024
+
+，所以它的「2024/10」是更新日期，不是代表它是「FY2024 數據」。
+
+建議命名（避免誤解）
+
+不要用 ..._2024.pdf 讓人以為是「FY2024」
+
+改成這種格式更精準：
+
+Fujikura_ESG_Data_AsOf_2024-10-22.pdf（推薦）
+
+或 Fujikura_ESG_Data_FY2021-2023_AsOf_2024-10-22.pdf
+
+你目前這份檔案在這裡（可直接下載/轉存）：
+Fujikura_ESG_Data_2024.pdf
+
+2) 官網標明 2025：那是「Integrated Report」的年度標題，你應該跟著官網用 2025 命名
+Fujikura 官網「Sustainability / Report」頁面清楚寫的是 Integrated Report 2025，並提供 PDF 下載。
+富士川株式会社
+
+對應的 PDF 檔案也以 csr2025_all.pdf 命名（官方檔）。
+富士川株式会社
+
+因此：
+
+你「Integrated Report」那份，檔名應命名為：Fujikura_IntegratedReport_2025.pdf（以官網年度為準）
+
+即便報告內部出現 2024/10 之類日期，也不影響它被歸類為「Integrated Report 2025」（那通常是更新/製作/數據截至日，不是報告系列年度）
+
+你現在要做的「單一步驟」確認（不會走錯）
+請打開你那份「你命名為 2024 的 Integrated Report」PDF：
+
+看封面或前 1–2 頁的大標題是否寫：Fujikura Group Integrated Report 2025
+
+若封面寫 2025：立刻把檔名改成 Fujikura_IntegratedReport_2025.pdf
+
+若封面寫 2024：代表你下載到的是上一年度，需回到官網 report 頁重新下載 2025 版
+富士川株式会社
+
+你回我一句「封面寫 2025 / 2024」，我再給你下一個動作（把 Integrated Report + ESG Data 丟進 NotebookLM 的最低 query 成本提問腳本）。
+
+
+資料來源
+你說：
+Fujikura_ESG_Data_AsOf_2024-10-22.pdf.pdf
+PDF
+ChatGPT 說：
+
+已思考 12s
+你這份檔案內容本身是正確的 ESG Data，但檔名需要修正（你現在的檔名尾端多了一個 .pdf）。
+
+你上傳的檔名是：Fujikura_ESG_Data_AsOf_2024-10-22.pdf.pdf
+
+文件首頁清楚標示「※2024年10月22日更新 / As of 22th October 2024」，且表格欄位是 FY2021–FY2023。
+Fujikura_ESG_Data_AsOf_2024-10-…
+
+
+你這份檔案在這裡：
+Fujikura_ESG_Data_AsOf_2024-10-22.pdf.pdf
+
+目前只做一個動作：把檔名改對（避免後面引用混亂）
+你要改成什麼檔名（建議）
+改成：
+Fujikura_ESG_Data_AsOf_2024-10-22.pdf
+
+不建議用 ..._2024.pdf，因為這份是「2024/10 更新」，內容數據年度仍是 FY2021–FY2023（容易被誤解成 FY2024）。
+Fujikura_ESG_Data_AsOf_2024-10-…
+
+
+Windows 改檔名操作
+打開你的資料夾（你存 Fujikura 永續資料那個資料夾）
+
+找到該 PDF 檔
+
+右鍵 → 重新命名
+
+把最後的 .pdf.pdf 改成單一 .pdf
+
+從：...2024-10-22.pdf.pdf
+
+改為：...2024-10-22.pdf
+
+你完成後回我一句即可（驗收）
+請回覆我：
+「ESG 檔名已改好」
+
+我就給你下一個動作（仍一次一個動作）：
+確認 Integrated Report 封面到底是 2025 還是 2024，並用正確年度命名（這一步會直接決定你 NotebookLM 的來源組織方式與引用方式）。
+
+
+資料來源
+你說：
+我上傳給你確認,我不懂日文
+ChatGPT 說：
+
+已思考 19s
+我已確認你上傳的這份 不是 Integrated Report，而是 Fujikura 集團的 ESG Data（ESG 數據表）。
+
+你上傳檔案內容是什麼（我替你把日文關鍵句翻成中文）
+文件首頁第一行寫的是：
+
+「フジクラグループESGデータ」= Fujikura 集團 ESG 數據
+
+「※2024年10月22日更新」= 2024/10/22 更新
+
+英文也同時標示「As of 22th October 2024」
+Fujikura_ESG_Data_AsOf_2024-10-…
+
+
+而且它的數據欄位是以年度 FY2021 / FY2022 / FY2023 編排
+Fujikura_ESG_Data_AsOf_2024-10-…
+
+，所以「2024/10」代表更新日，不是「FY2024 的數據」。
+
+你檔名現在的問題
+你目前檔名是：Fujikura_ESG_Data_AsOf_2024-10-22.pdf.pdf
+這表示副檔名多了一次（.pdf.pdf）。
+
+建議你最後使用的正確檔名
+Fujikura_ESG_Data_AsOf_2024-10-22.pdf
+
+你現在只要做一個動作：改檔名（Windows）
+在檔案總管找到該 PDF
+
+右鍵 → 重新命名
+
+把最後的 .pdf.pdf 改成 .pdf（只留一個）
+
+下一個動作（你做完改檔名後再做）
+請把你下載的 Integrated Report（官網標 2025 那份）PDF 也上傳，我會直接幫你確認封面是不是 Integrated Report 2025，並給你正確命名規則（避免你現在遇到的「2024/10 vs 2025」混淆）。
+
+
+資料來源
+你說：
+Fujikura_IntegratedReport_2025.pdf
+PDF
+ChatGPT 說：
+
+已思考 2 秒鐘
+已確認：你上傳的這份 確實是「Fujikura Group Integrated Report 2025」，所以官網標示 2025 是正確的，你用 Fujikura_IntegratedReport_2025.pdf 這個檔名也正確。證據在封面頁（第 1 頁）清楚寫「2025 FUJIKURA GROUP INTEGRATED REPORT」。
+Fujikura_IntegratedReport_2025
+
+
+下一步（一次一個動作）：把這份 PDF 丟進 NotebookLM（並用最省額度的提問模板）
+動作 2：在 NotebookLM 建立一個新 Notebook 並上傳這份 PDF
+Step 2.1 建 Notebook
+開啟 NotebookLM（用你的個人 Gmail 登入）
+
+點 New notebook（新增筆記本）
+
+Notebook 名稱請直接用：
+Fujikura_IntegratedReport_2025
+（這樣後續引用與管理不會亂）
+
+Step 2.2 上傳來源（Source）
+進到該 Notebook 後，找到 Add sources / Upload（新增來源/上傳）
+
+選你電腦中的 Fujikura_IntegratedReport_2025.pdf 上傳
+
+等待上傳與索引完成（看到來源出現在 Sources 清單即成功）
+
+Step 2.3（同一個動作內）只做 1 次 Query：請它產出「可上官網」的摘要（帶頁碼）
+上傳完成後，在 NotebookLM 的聊天框貼以下這段（整段複製即可）：
+
+NotebookLM Query #1（官網摘要版，省額度）
+
+請從我上傳的《Fujikura Group Integrated Report 2025》整理「可放在欣熹科技官網的 Fujikura 集團永續方向摘要」。
+
+請輸出三個區塊：
+
+100–150 字中文摘要（商務語氣、避免浮誇）
+
+5 個要點條列（每點 1 句）
+
+每個要點都要附上來源頁碼（格式如：p.X）
+
+僅能根據這份 PDF；找不到就寫「官方文件未載明」。
+
+你做完後回覆我「兩項結果」即可（我才給你下一個動作）
+請你把 NotebookLM 的輸出貼回來（不用全貼很長，照下面格式即可）：
+
+中文摘要（那 100–150 字）
+
+5 個要點 + 各自頁碼
+
+我會在下一步把它改寫成：
+
+可直接貼進你 V4 網頁的 HTML 區塊（含註記）
+
+並同步做 FAQPage JSON-LD（若你要 FAQ）
+
+
+資料來源
+你說：
+Fujikura 集團永續方向摘要
+Fujikura 集團以「Tsunagu」（連接）技術為核心，致力於解決全球社會課題並創造長期價值。永續戰略以「ESG+F」（環境、社會、治理與財務/未來）為框架，積極落實「2050 長期環境願景」，核心目標是於 2050 年達成全球工廠零二氧化碳排放。透過擴大環保產品認證（如 Green PLUS 系列）與強化全球供應鏈的人權管理，集團旨在實現先進資訊社會與碳中和目標，同時深化人才培育以確保企業的永續競爭力。
+5 個要點條列
+1. 環境願景目標：設定「2050 長期環境願景」，承諾於 2050 年實現集團全球工廠二氧化碳零排放。 (p.69, p.237)
+2. 能源轉型承諾：加入 RE100 倡議，目標在 2050 年將業務活動所使用的電力 100% 轉向再生能源。 (p.228, p.242)
+3. 環保產品擴大：推動「Green PLUS」認證計畫，開發對環境友善且能解決社會課題的高附加價值產品。 (p.226, p.243)
+4. 人權與供應鏈管理：建立人權盡職調查體系，並透過合作夥伴會議強化供應鏈在社會責任與環境保護的協作。 (p.80, p.290)
+5. 人才多元化發展：積極培養具備全球競爭力的專業人才，並推動多元與包容（D&I）的工作環境以驅動創新。 (p.75, p.250)
+ChatGPT 說：
+
+已思考 24s
+好，下一步只做一個動作：把你剛剛產出的「Fujikura 集團永續方向摘要 + 5 點」插入到 V4 的「關於我們」區塊（也就是 shin-si-v4.html 內的 <div id="about" class="about-box">）。該區塊目前已存在於檔案中。
+shin-si-v4
+
+
+動作 3：把永續摘要插入 V4（一次完成）
+Step 3.1 開啟你的 V4 檔案
+用 VS Code（或記事本++）打開 shin-si-v4.html
+
+用搜尋（Ctrl+F）找這段：
+
+id="about"
+你會看到類似下面這段「關於欣熹科技」的區塊
+shin-si-v4
+
+
+Step 3.2 在 about 區塊中「第二段 <p> 之後」貼上內容
+你現在的 about 區塊大概長這樣（節錄）：
+shin-si-v4
+
+
+<div id="about" class="about-box">
+  <h3 ...>關於欣熹科技 (Shin-Si)</h3>
+  <p>...</p>
+  <p>...</p>
+  <!-- 你要把新內容貼在這裡（第二個 <p> 後面） -->
+</div>
+請把以下整段 原封不動貼上（建議就貼在第二個 <p> 後、</div> 前）：
+
+<hr style="margin: 24px 0; border: none; border-top: 1px solid #ddd;">
+
+<h4 style="margin: 0 0 10px 0; color: var(--main-blue);">
+  Fujikura 集團永續方向（摘錄官方報告）
+</h4>
+
+<p style="margin-top: 0;">
+  Fujikura 集團以「Tsunagu」（連接）技術為核心，致力於解決全球社會課題並創造長期價值。永續戰略以「ESG+F」（環境、社會、治理與財務/未來）為框架，積極落實「2050 長期環境願景」，核心目標是於 2050 年達成全球工廠零二氧化碳排放。透過擴大環保產品認證（如 Green PLUS 系列）與強化全球供應鏈的人權管理，集團旨在實現先進資訊社會與碳中和目標，同時深化人才培育以確保企業的永續競爭力。
+</p>
+
+<ol style="margin: 10px 0 0 18px; padding: 0;">
+  <li style="margin: 6px 0;">
+    環境願景目標：設定「2050 長期環境願景」，承諾於 2050 年實現集團全球工廠二氧化碳零排放。（p.69, p.237）
+  </li>
+  <li style="margin: 6px 0;">
+    能源轉型承諾：加入 RE100 倡議，目標在 2050 年將業務活動所使用的電力 100% 轉向再生能源。（p.228, p.242）
+  </li>
+  <li style="margin: 6px 0;">
+    環保產品擴大：推動「Green PLUS」認證計畫，開發對環境友善且能解決社會課題的高附加價值產品。（p.226, p.243）
+  </li>
+  <li style="margin: 6px 0;">
+    人權與供應鏈管理：建立人權盡職調查體系，並透過合作夥伴會議強化供應鏈在社會責任與環境保護的協作。（p.80, p.290）
+  </li>
+  <li style="margin: 6px 0;">
+    人才多元化發展：積極培養具備全球競爭力的專業人才，並推動多元與包容（D&amp;I）的工作環境以驅動創新。（p.75, p.250）
+  </li>
+</ol>
+
+<p style="margin: 12px 0 0 0; font-size: 12px; color: #666;">
+  註：本段為 Fujikura Group Integrated Report 2025 之公開內容摘要，頁碼僅供對照原始資料；欣熹科技提供在地銷售與服務支援，不將集團目標表述為本公司自有 ESG 績效聲明。
+</p>
+這樣貼的好處：不需要額外改 CSS，會直接沿用你現有的 about-box 風格設定。
+shin-si-v4
+
+
+Step 3.3 存檔並驗收
+儲存 shin-si-v4.html
+
+用 Chrome 打開該檔案（或重新整理）
+
+點導覽列「關於我們」跳到該段，確認：
+
+標題顯示正常
+
+五點條列縮排正常
+
+註記字體較小、顏色偏灰
+
+你完成後回覆我一句（作為驗收）
+請回我：「已貼上，畫面正常 / 或哪裡顯示不正常（截圖也可）」
+
+下一個動作我會再帶你做（仍一次一個動作）：把這段做成 Schema（About/Article 或引用資訊），讓 AI 搜尋抓取更穩定。
+
+
+資料來源
+你說：
+給我完整程式碼
+ChatGPT 說：
+
+已思考 1m 11s
+已將「Fujikura 集團永續方向（摘錄官方報告）」完整插入到你 V4 的 about 區塊中。你可以直接下載更新版 HTML，或把以下整份程式碼覆蓋回 shin-si-v4.html。
+
+下載更新版 shin-si-v4（含永續摘要）
+
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Fujikura 台灣授權代理 | 欣熹科技 - 100S+, 90S+ 與特種熔接機</title>
+
+    <!-- SEO Meta -->
+    <meta name="description" content="欣熹科技 Shin-Si 為 Fujikura 台灣授權代理，專營 100S+, 90S+, 90R, 45S 等光纖熔接機與研發級設備，提供工程導入、耗材與售後校正。">
+    <meta name="keywords" content="Fujikura 台灣, Fujikura 代理, 100S+, 90S+, 90R, 45S, 光纖熔接機, 欣熹科技">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Fujikura 台灣授權代理 | 欣熹科技 Shin-Si">
+    <meta property="og:description" content="台灣 Fujikura 授權代理，提供熔接機導入與完整售後服務。">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.shin-si.com.tw">
+    <meta property="og:image" content="https://www.shin-si.com.tw/logo.png">
+
+    <!-- JSON-LD Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Corporation",
+      "name": "欣熹科技 (SHIN-SI TECHNOLOGY)",
+      "url": "https://www.shin-si.com.tw",
+      "logo": "https://www.shin-si.com.tw/logo.png",
+      "description": "欣熹科技為 Fujikura 台灣授權代理，提供光纖熔接設備與研發級解決方案。",
+      "parentOrganization": {
+        "@type": "Organization",
+        "name": "錦霆集團 (Jinting Group)"
+      },
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "telephone": "+886-3-5972556",
+        "contactType": "customer service",
+        "areaServed": "TW",
+        "availableLanguage": ["Chinese"]
+      },
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "新竹縣湖口鄉中華路13號",
+        "addressLocality": "湖口鄉",
+        "addressRegion": "新竹縣",
+        "postalCode": "303",
+        "addressCountry": "TW"
+      }
+    }
+    </script>
+
+    <style>
+        :root {
+            --main-blue: #003366;
+            --light-gray: #f4f4f4;
+            --card-bg: #ffffff;
+            --border: #dddddd;
+        }
+
+        body {
+            font-family: "Microsoft JhengHei", sans-serif;
+            margin: 0;
+            padding: 0;
+            background: var(--light-gray);
+            color: #333;
+        }
+
+        header {
+            background: var(--main-blue);
+            color: white;
+            text-align: center;
+            padding: 20px 10px;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 26px;
+        }
+
+        header p {
+            margin: 8px 0 0;
+            font-size: 14px;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            gap: 12px;
+            background: white;
+            padding: 10px;
+            border-bottom: 1px solid var(--border);
+            position: sticky;
+            top: 0;
+            z-index: 999;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: var(--main-blue);
+            font-weight: bold;
+            padding: 6px 12px;
+            border-radius: 6px;
+        }
+
+        nav a:hover {
+            background: var(--main-blue);
+            color: white;
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: auto;
+            padding: 20px;
+        }
+
+        .section-title {
+            font-size: 22px;
+            color: var(--main-blue);
+            margin-top: 40px;
+            margin-bottom: 10px;
+        }
+
+        .cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 18px;
+        }
+
+        .card {
+            background: var(--card-bg);
+            border: 1px solid var(--border);
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+            display: flex;
+            flex-direction: column;
+        }
+
+        .card img {
+            width: 100%;
+            height: 170px;
+            object-fit: cover;
+            background: #eaeaea;
+        }
+
+        .card-body {
+            padding: 14px;
+            flex: 1;
+        }
+
+        .card-body h3 {
+            margin: 0;
+            font-size: 18px;
+            color: var(--main-blue);
+        }
+
+        .card-body p.desc {
+            font-size: 14px;
+            margin: 10px 0;
+            line-height: 1.6;
+        }
+
+        .tag {
+            display: inline-block;
+            background: #e0ecff;
+            color: var(--main-blue);
+            font-size: 12px;
+            padding: 4px 8px;
+            border-radius: 6px;
+            margin-top: 8px;
+        }
+
+        .about-box {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            border: 1px solid var(--border);
+            line-height: 1.7;
+        }
+
+        .form-box {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            border: 1px solid var(--border);
+        }
+
+        .form-box label {
+            display: block;
+            margin-top: 12px;
+            font-weight: bold;
+        }
+
+        .form-box input, .form-box textarea {
+            width: 100%;
+            padding: 8px;
+            margin-top: 5px;
+            border: 1px solid #ccc;
+            border-radius: 6px;
+            font-size: 14px;
+        }
+
+        .form-box button {
+            margin-top: 15px;
+            padding: 10px 16px;
+            border: none;
+            background: var(--main-blue);
+            color: white;
+            border-radius: 6px;
+            font-size: 15px;
+            cursor: pointer;
+        }
+
+        .form-box button:hover {
+            background: #001f44;
+        }
+
+        footer {
+            margin-top: 50px;
+            padding: 20px;
+            text-align: center;
+            background: var(--main-blue);
+            color: white;
+            font-size: 13px;
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h1>欣熹科技 Shin-Si | Fujikura 台灣授權代理</h1>
+    <p>專注 100S+, 90S+ 旗艦熔接機與研發級特種設備，提供完整工程導入與售後校正服務</p>
+</header>
+
+<nav>
+    <a href="#products">產品分類</a>
+    <a href="#about">關於我們</a>
+    <a href="#contact">聯絡詢價</a>
+</nav>
+
+<div class="container">
+
+    <!-- Products -->
+    <h2 id="products" class="section-title">產品分類</h2>
+
+    <h3 class="section-title">通訊工程類</h3>
+    <div class="cards">
+        <div class="card">
+            <img src="https://via.placeholder.com/400x200?text=Fujikura+100S%2B" alt="100S+">
+            <div class="card-body">
+                <h3>100S+ (最新旗艦)</h3>
+                <p class="desc">全球最快熔接與加熱速度，適用大量工程施工。搭載自動調整與智慧維護功能，大幅提升現場效率。</p>
+                <span class="tag">主打 SEO：100S+</span>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="https://via.placeholder.com/400x200?text=Fujikura+90S%2B" alt="90S+">
+            <div class="card-body">
+                <h3>90S+ (工程旗艦)</h3>
+                <p class="desc">高可靠性工程熔接機，適合中華電信、FTTx、戶外通信施工，支援全自動清潔與抗風設計。</p>
+                <span class="tag">主打 SEO：90S+</span>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="https://via.placeholder.com/400x200?text=Fujikura+90R" alt="90R">
+            <div class="card-body">
+                <h3>90R (帶狀光纖)</h3>
+                <p class="desc">專為 Ribbon 帶狀光纖設計，提升大量纖芯佈建效率，適合機房與大型骨幹工程。</p>
+                <span class="tag">Ribbon / 90R</span>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="https://via.placeholder.com/400x200?text=Fujikura+45S" alt="45S">
+            <div class="card-body">
+                <h3>45S (FTTH)</h3>
+                <p class="desc">輕量便攜，適用 FTTH 小型工程與到府施工，成本效益高、操作簡易。</p>
+                <span class="tag">FTTH / 45S</span>
+            </div>
+        </div>
+    </div>
+
+    <h3 class="section-title">特種 / 研發類</h3>
+    <div class="cards">
+        <div class="card">
+            <img src="https://via.placeholder.com/400x200?text=FSM-100+ARCMaster" alt="FSM-100">
+            <div class="card-body">
+                <h3>FSM-100 系列 (ARCMaster™)</h3>
+                <p class="desc">研發級光纖熔接平台，支援自訂放電參數與高精度對準，適用光纖雷射、感測與研究單位。</p>
+                <span class="tag">研發 / FSM-100</span>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="https://via.placeholder.com/400x200?text=CT-110+Cleaver" alt="CT-110">
+            <div class="card-body">
+                <h3>CT-110 系列 (大管徑切刀)</h3>
+                <p class="desc">針對大直徑光纖與特殊纖材設計，切割穩定且壽命長，適合工業級與研究用途。</p>
+                <span class="tag">切割 / CT-110</span>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="https://via.placeholder.com/400x200?text=FSR-115+Recoater" alt="FSR-115">
+            <div class="card-body">
+                <h3>FSR-115 系列 (塗覆機)</h3>
+                <p class="desc">適用研發與特殊光纖加工，提供高一致性塗覆與固化，提升熔接後強度與可靠度。</p>
+                <span class="tag">塗覆 / FSR-115</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- About -->
+    <h2 class="section-title">關於我們</h2>
+    <div id="about" class="about-box">
+        <h3 style="color: var(--main-blue); margin-top: 0;">關於欣熹科技 (Shin-Si)</h3>
+        <p>欣熹科技整合了<strong>錦霆科技集團 (Jinting Group)</strong> 在半導體與高科技產業的深厚供應鏈資源，致力於打造台灣最專業的光纖設備服務平台。</p>
+        <p>我們不只銷售設備，更提供從<strong>「產線規劃、設備導入、到售後校正」</strong>的一站式服務。無論是中華電信的戶外工程，或是科學園區內的光纖雷射研發，欣熹科技都能提供最適合的 Fujikura 原廠解決方案。</p>
+<hr style="margin: 24px 0; border: none; border-top: 1px solid #ddd;">
+
+<h4 style="margin: 0 0 10px 0; color: var(--main-blue);">
+  Fujikura 集團永續方向（摘錄官方報告）
+</h4>
+
+<p style="margin-top: 0;">
+  Fujikura 集團以「Tsunagu」（連接）技術為核心，致力於解決全球社會課題並創造長期價值。永續戰略以「ESG+F」（環境、社會、治理與財務/未來）為框架，積極落實「2050 長期環境願景」，核心目標是於 2050 年達成全球工廠零二氧化碳排放。透過擴大環保產品認證（如 Green PLUS 系列）與強化全球供應鏈的人權管理，集團旨在實現先進資訊社會與碳中和目標，同時深化人才培育以確保企業的永續競爭力。
+</p>
+
+<ol style="margin: 10px 0 0 18px; padding: 0;">
+  <li style="margin: 6px 0;">
+    環境願景目標：設定「2050 長期環境願景」，承諾於 2050 年實現集團全球工廠二氧化碳零排放。（p.69, p.237）
+  </li>
+  <li style="margin: 6px 0;">
+    能源轉型承諾：加入 RE100 倡議，目標在 2050 年將業務活動所使用的電力 100% 轉向再生能源。（p.228, p.242）
+  </li>
+  <li style="margin: 6px 0;">
+    環保產品擴大：推動「Green PLUS」認證計畫，開發對環境友善且能解決社會課題的高附加價值產品。（p.226, p.243）
+  </li>
+  <li style="margin: 6px 0;">
+    人權與供應鏈管理：建立人權盡職調查體系，並透過合作夥伴會議強化供應鏈在社會責任與環境保護的協作。（p.80, p.290）
+  </li>
+  <li style="margin: 6px 0;">
+    人才多元化發展：積極培養具備全球競爭力的專業人才，並推動多元與包容（D&amp;I）的工作環境以驅動創新。（p.75, p.250）
+  </li>
+</ol>
+
+<p style="margin: 12px 0 0 0; font-size: 12px; color: #666;">
+  註：本段為 Fujikura Group Integrated Report 2025 之公開內容摘要，頁碼僅供對照原始資料；欣熹科技提供在地銷售與服務支援，不將集團目標表述為本公司自有 ESG 績效聲明。
+</p>
+    </div>
+
+    <!-- Contact -->
+    <h2 class="section-title">聯絡詢價</h2>
+    <div id="contact" class="form-box">
+        <p><strong>地址：</strong>新竹縣湖口鄉中華路13號</p>
+        <p><strong>電話：</strong>03-5972556</p>
+
+        <form>
+            <label for="name">姓名 / 公司</label>
+            <input type="text" id="name" placeholder="請輸入您的姓名或公司名稱">
+
+            <label for="email">Email</label>
+            <input type="email" id="email" placeholder="請輸入您的 Email">
+
+            <label for="message">需求內容</label>
+            <textarea id="message" rows="4" placeholder="請描述您需要的型號/用途/數量"></textarea>
+
+            <button type="submit">送出詢價</button>
+        </form>
+    </div>
+
+</div>
+
+<footer>
+    © 2025 欣熹科技 SHIN-SI TECHNOLOGY | 錦霆集團關係企業 | Fujikura 台灣授權代理
+</footer>
+
+</body>
+</html>
+你說：
+空白
+ChatGPT 說：
+
+已思考 2m 3s
+你說「空白」，最常見原因不是內容本身，而是 你貼到本機檔案時發生了「存檔格式/副檔名/貼上截斷」，導致瀏覽器實際讀到的是空檔或錯誤格式。
+
+我已用你原本的 V4 原檔 shin-si-v4.html 直接做「最小修改」：只在 #about 區塊插入永續摘要，其餘程式碼完全保留，這樣能最大幅度避免你現在遇到的空白問題。
+
+你現在只做一個動作：下載並用這份檔案取代你本機的 V4
+下載：shin-si-v4_patched_sustainability.html
+
+取代方式（Windows）
+下載後把檔名改成：shin-si-v4.html
+
+覆蓋你原本的 shin-si-v4.html
+
+用 Chrome 重新開啟（或 Ctrl+F5 強制刷新）
+
+如果你取代後仍然空白（用這個方法一秒確認原因）
+在 Chrome 空白頁面按 Ctrl+U（檢視原始碼）：
+
+若原始碼也是空的 → 代表你開到的不是正確檔案（或存成 .txt）
+
+若原始碼有內容 → 右鍵「檢查」→ Console 看是否有報錯（我再針對錯誤行數修正）
+
+你先照上面「下載取代」做完，回我一句：「取代後是否仍空白」。我再給你下一個動作（一次一個）。
+
+你說：
+正常顯示
+ChatGPT 說：
+很好。下一個動作（一次一個）：加上 FAQPage 結構化資料（JSON-LD），讓你剛放進去的「Fujikura 集團永續方向」更容易被 AI/搜尋引擎抓到重點（不影響畫面顯示）。
+
+動作 4：在 HTML 加入 FAQPage JSON-LD
+Step 4.1 開啟你現在正常顯示的檔案
+請用 VS Code/記事本++ 開啟你目前使用的 shin-si-v4.html（就是剛才取代後那份）。
+
+Step 4.2 找到原本的 JSON-LD 區塊
+用 Ctrl+F 搜尋：
+
+application/ld+json
+
+你會看到原本的 Corporation JSON-LD（你 V4 已有）。
+
+Step 4.3 在原本 JSON-LD 後面，貼上「第二段 JSON-LD」
+請把下面這整段貼在 </script> 後面、</head> 前面即可（建議緊接著原本那段 JSON-LD 後面）。
+
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"FAQPage",
+  "mainEntity":[
+    {
+      "@type":"Question",
+      "name":"Fujikura 集團的永續策略核心是什麼？",
+      "acceptedAnswer":{
+        "@type":"Answer",
+        "text":"Fujikura 集團以「Tsunagu」（連接）技術為核心，並以「ESG+F」（環境、社會、治理與財務/未來）作為永續戰略框架，致力於解決社會課題並創造長期價值。（Integrated Report 2025：p.69、p.237）"
+      }
+    },
+    {
+      "@type":"Question",
+      "name":"Fujikura 的 2050 環境願景目標是什麼？",
+      "acceptedAnswer":{
+        "@type":"Answer",
+        "text":"Fujikura 設定「2050 長期環境願景」，承諾於 2050 年實現集團全球工廠二氧化碳零排放。（Integrated Report 2025：p.69、p.237）"
+      }
+    },
+    {
+      "@type":"Question",
+      "name":"Fujikura 是否加入 RE100？目標為何？",
+      "acceptedAnswer":{
+        "@type":"Answer",
+        "text":"Fujikura 加入 RE100 倡議，目標在 2050 年將業務活動所使用的電力 100% 轉向再生能源。（Integrated Report 2025：p.228、p.242）"
+      }
+    },
+    {
+      "@type":"Question",
+      "name":"Green PLUS 是什麼？",
+      "acceptedAnswer":{
+        "@type":"Answer",
+        "text":"Fujikura 推動「Green PLUS」認證計畫，用於辨識與擴大對環境友善、且能解決社會課題的高附加價值產品。（Integrated Report 2025：p.226、p.243）"
+      }
+    },
+    {
+      "@type":"Question",
+      "name":"Fujikura 如何管理人權與供應鏈？",
+      "acceptedAnswer":{
+        "@type":"Answer",
+        "text":"Fujikura 建立人權盡職調查體系，並透過合作夥伴會議等機制，強化供應鏈在社會責任與環境保護的協作。（Integrated Report 2025：p.80、p.290）"
+      }
+    },
+    {
+      "@type":"Question",
+      "name":"Fujikura 的人才策略與 D&I（多元與包容）方向為何？",
+      "acceptedAnswer":{
+        "@type":"Answer",
+        "text":"Fujikura 積極培養具全球競爭力的專業人才，並推動多元與包容（D&I）的工作環境以驅動創新。（Integrated Report 2025：p.75、p.250）"
+      }
+    },
+    {
+      "@type":"Question",
+      "name":"這些永續內容是否代表欣熹科技自身的 ESG 績效？",
+      "acceptedAnswer":{
+        "@type":"Answer",
+        "text":"否。本段為 Fujikura Group Integrated Report 2025 的公開內容摘要。欣熹科技提供在地銷售與服務支援，不將集團目標表述為本公司自有 ESG 績效聲明。"
+      }
+    }
+  ]
+}
+</script>
+Step 4.4 存檔與驗收
+存檔
+
+重新整理頁面（Ctrl+F5）
+
+畫面應該「完全不變」——因為 JSON-LD 不會影響前端呈現
+
+你完成後回覆我一句（驗收）
+請回覆：「FAQPage 已貼上」
+
+下一個動作我會帶你做：開始做 產品頁的規格表 + FAQ（100S+ 先做），並把 NotebookLM 的輸出轉成可直接貼回 V4 的 details 區塊（你最主要的 SEO 主戰場）。
+
+你說：
+為避免我操作錯誤,請都給我完整程式碼
+ChatGPT 說：
+
+已思考 46s
+以下是完整 HTML 程式碼（已包含：你原本 V4 + 永續摘要區塊 + FAQPage JSON-LD）。你只要用這份覆蓋你目前的檔案即可。
+
+下載完整檔案：shin-si-v4_full_with_FAQPage.html
+
+使用方式：把檔案另存為 shin-si-v4.html 覆蓋你現有版本，然後用 Chrome 重新開啟（或 Ctrl+F5）。
+
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Fujikura 台灣授權代理 | 欣熹科技 - 100S+, 90S+ 與特種熔接機</title>
+
+    <!-- SEO Meta -->
+    <meta name="description" content="欣熹科技 Shin-Si 為 Fujikura 台灣授權代理，專營 100S+, 90S+, 90R, 45S 等光纖熔接機與研發級設備，提供工程導入、耗材與售後校正。">
+    <meta name="keywords" content="Fujikura 台灣, Fujikura 代理, 100S+, 90S+, 90R, 45S, 光纖熔接機, 欣熹科技">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Fujikura 台灣授權代理 | 欣熹科技 Shin-Si">
+    <meta property="og:description" content="台灣 Fujikura 授權代理，提供熔接機導入與完整售後服務。">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.shin-si.com.tw">
+    <meta property="og:image" content="https://www.shin-si.com.tw/logo.png">
+
+    <!-- JSON-LD Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Corporation",
+      "name": "欣熹科技 (SHIN-SI TECHNOLOGY)",
+      "url": "https://www.shin-si.com.tw",
+      "logo": "https://www.shin-si.com.tw/logo.png",
+      "description": "欣熹科技為 Fujikura 台灣授權代理，提供光纖熔接設備與研發級解決方案。",
+      "parentOrganization": {
+        "@type": "Organization",
+        "name": "錦霆集團 (Jinting Group)"
+      },
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "telephone": "+886-3-5972556",
+        "contactType": "customer service",
+        "areaServed": "TW",
+        "availableLanguage": ["Chinese"]
+      },
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "新竹縣湖口鄉中華路13號",
+        "addressLocality": "湖口鄉",
+        "addressRegion": "新竹縣",
+        "postalCode": "303",
+        "addressCountry": "TW"
+      }
+    }
+    </script>
+
+    <!-- FAQPage JSON-LD (Sustainability excerpt) -->
+    <script type="application/ld+json">
+    {
+      "@context":"https://schema.org",
+      "@type":"FAQPage",
+      "mainEntity":[
+        {
+          "@type":"Question",
+          "name":"Fujikura 集團的永續策略核心是什麼？",
+          "acceptedAnswer":{
+            "@type":"Answer",
+            "text":"Fujikura 集團以「Tsunagu」（連接）技術為核心，並以「ESG+F」（環境、社會、治理與財務/未來）作為永續戰略框架，致力於解決社會課題並創造長期價值。（Integrated Report 2025：p.69、p.237）"
+          }
+        },
+        {
+          "@type":"Question",
+          "name":"Fujikura 的 2050 環境願景目標是什麼？",
+          "acceptedAnswer":{
+            "@type":"Answer",
+            "text":"Fujikura 設定「2050 長期環境願景」，承諾於 2050 年實現集團全球工廠二氧化碳零排放。（Integrated Report 2025：p.69、p.237）"
+          }
+        },
+        {
+          "@type":"Question",
+          "name":"Fujikura 是否加入 RE100？目標為何？",
+          "acceptedAnswer":{
+            "@type":"Answer",
+            "text":"Fujikura 加入 RE100 倡議，目標在 2050 年將業務活動所使用的電力 100% 轉向再生能源。（Integrated Report 2025：p.228、p.242）"
+          }
+        },
+        {
+          "@type":"Question",
+          "name":"Green PLUS 是什麼？",
+          "acceptedAnswer":{
+            "@type":"Answer",
+            "text":"Fujikura 推動「Green PLUS」認證計畫，用於辨識與擴大對環境友善、且能解決社會課題的高附加價值產品。（Integrated Report 2025：p.226、p.243）"
+          }
+        },
+        {
+          "@type":"Question",
+          "name":"Fujikura 如何管理人權與供應鏈？",
+          "acceptedAnswer":{
+            "@type":"Answer",
+            "text":"Fujikura 建立人權盡職調查體系，並透過合作夥伴會議等機制，強化供應鏈在社會責任與環境保護的協作。（Integrated Report 2025：p.80、p.290）"
+          }
+        },
+        {
+          "@type":"Question",
+          "name":"Fujikura 的人才策略與 D&I（多元與包容）方向為何？",
+          "acceptedAnswer":{
+            "@type":"Answer",
+            "text":"Fujikura 積極培養具全球競爭力的專業人才，並推動多元與包容（D&I）的工作環境以驅動創新。（Integrated Report 2025：p.75、p.250）"
+          }
+        },
+        {
+          "@type":"Question",
+          "name":"這些永續內容是否代表欣熹科技自身的 ESG 績效？",
+          "acceptedAnswer":{
+            "@type":"Answer",
+            "text":"否。本段為 Fujikura Group Integrated Report 2025 的公開內容摘要。欣熹科技提供在地銷售與服務支援，不將集團目標表述為本公司自有 ESG 績效聲明。"
+          }
+        }
+      ]
+    }
+    </script>
+
+    <style>
+        :root {
+            --main-blue: #003366;
+            --light-gray: #f4f4f4;
+            --card-bg: #ffffff;
+            --border: #dddddd;
+        }
+
+        body {
+            font-family: "Microsoft JhengHei", sans-serif;
+            margin: 0;
+            padding: 0;
+            background: var(--light-gray);
+            color: #333;
+        }
+
+        header {
+            background: var(--main-blue);
+            color: white;
+            text-align: center;
+            padding: 20px 10px;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 26px;
+        }
+
+        header p {
+            margin: 8px 0 0;
+            font-size: 14px;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            gap: 12px;
+            background: white;
+            padding: 10px;
+            border-bottom: 1px solid var(--border);
+            position: sticky;
+            top: 0;
+            z-index: 999;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: var(--main-blue);
+            font-weight: bold;
+            padding: 6px 12px;
+            border-radius: 6px;
+        }
+
+        nav a:hover {
+            background: var(--main-blue);
+            color: white;
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: auto;
+            padding: 20px;
+        }
+
+        .section-title {
+            font-size: 22px;
+            color: var(--main-blue);
+            margin-top: 40px;
+            margin-bottom: 10px;
+        }
+
+        .cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 18px;
+        }
+
+        .card {
+            background: var(--card-bg);
+            border: 1px solid var(--border);
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+            display: flex;
+            flex-direction: column;
+        }
+
+        .card img {
+            width: 100%;
+            height: 170px;
+            object-fit: cover;
+            background: #eaeaea;
+        }
+
+        .card-body {
+            padding: 14px;
+            flex: 1;
+        }
+
+        .card-body h3 {
+            margin: 0;
+            font-size: 18px;
+            color: var(--main-blue);
+        }
+
+        .card-body p.desc {
+            font-size: 14px;
+            margin: 10px 0;
+            line-height: 1.6;
+        }
+
+        .tag {
+            display: inline-block;
+            background: #e0ecff;
+            color: var(--main-blue);
+            font-size: 12px;
+            padding: 4px 8px;
+            border-radius: 6px;
+            margin-top: 8px;
+        }
+
+        .about-box {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            border: 1px solid var(--border);
+            line-height: 1.7;
+        }
+
+        .form-box {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            border: 1px solid var(--border);
+        }
+
+        .form-box label {
+            display: block;
+            margin-top: 12px;
+            font-weight: bold;
+        }
+
+        .form-box input, .form-box textarea {
+            width: 100%;
+            padding: 8px;
+            margin-top: 5px;
+            border: 1px solid #ccc;
+            border-radius: 6px;
+            font-size: 14px;
+        }
+
+        .form-box button {
+            margin-top: 15px;
+            padding: 10px 16px;
+            border: none;
+            background: var(--main-blue);
+            color: white;
+            border-radius: 6px;
+            font-size: 15px;
+            cursor: pointer;
+        }
+
+        .form-box button:hover {
+            background: #001f44;
+        }
+
+        footer {
+            margin-top: 50px;
+            padding: 20px;
+            text-align: center;
+            background: var(--main-blue);
+            color: white;
+            font-size: 13px;
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h1>欣熹科技 Shin-Si | Fujikura 台灣授權代理</h1>
+    <p>專注 100S+, 90S+ 旗艦熔接機與研發級特種設備，提供完整工程導入與售後校正服務</p>
+</header>
+
+<nav>
+    <a href="#products">產品分類</a>
+    <a href="#about">關於我們</a>
+    <a href="#contact">聯絡詢價</a>
+</nav>
+
+<div class="container">
+
+    <!-- Products -->
+    <h2 id="products" class="section-title">產品分類</h2>
+
+    <h3 class="section-title">通訊工程類</h3>
+    <div class="cards">
+        <div class="card">
+            <img src="https://via.placeholder.com/400x200?text=Fujikura+100S%2B" alt="100S+">
+            <div class="card-body">
+                <h3>100S+ (最新旗艦)</h3>
+                <p class="desc">全球最快熔接與加熱速度，適用大量工程施工。搭載自動調整與智慧維護功能，大幅提升現場效率。</p>
+                <span class="tag">主打 SEO：100S+</span>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="https://via.placeholder.com/400x200?text=Fujikura+90S%2B" alt="90S+">
+            <div class="card-body">
+                <h3>90S+ (工程旗艦)</h3>
+                <p class="desc">高可靠性工程熔接機，適合中華電信、FTTx、戶外通信施工，支援全自動清潔與抗風設計。</p>
+                <span class="tag">主打 SEO：90S+</span>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="https://via.placeholder.com/400x200?text=Fujikura+90R" alt="90R">
+            <div class="card-body">
+                <h3>90R (帶狀光纖)</h3>
+                <p class="desc">專為 Ribbon 帶狀光纖設計，提升大量纖芯佈建效率，適合機房與大型骨幹工程。</p>
+                <span class="tag">Ribbon / 90R</span>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="https://via.placeholder.com/400x200?text=Fujikura+45S" alt="45S">
+            <div class="card-body">
+                <h3>45S (FTTH)</h3>
+                <p class="desc">輕量便攜，適用 FTTH 小型工程與到府施工，成本效益高、操作簡易。</p>
+                <span class="tag">FTTH / 45S</span>
+            </div>
+        </div>
+    </div>
+
+    <h3 class="section-title">特種 / 研發類</h3>
+    <div class="cards">
+        <div class="card">
+            <img src="https://via.placeholder.com/400x200?text=FSM-100+ARCMaster" alt="FSM-100">
+            <div class="card-body">
+                <h3>FSM-100 系列 (ARCMaster™)</h3>
+                <p class="desc">研發級光纖熔接平台，支援自訂放電參數與高精度對準，適用光纖雷射、感測與研究單位。</p>
+                <span class="tag">研發 / FSM-100</span>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="https://via.placeholder.com/400x200?text=CT-110+Cleaver" alt="CT-110">
+            <div class="card-body">
+                <h3>CT-110 系列 (大管徑切刀)</h3>
+                <p class="desc">針對大直徑光纖與特殊纖材設計，切割穩定且壽命長，適合工業級與研究用途。</p>
+                <span class="tag">切割 / CT-110</span>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="https://via.placeholder.com/400x200?text=FSR-115+Recoater" alt="FSR-115">
+            <div class="card-body">
+                <h3>FSR-115 系列 (塗覆機)</h3>
+                <p class="desc">適用研發與特殊光纖加工，提供高一致性塗覆與固化，提升熔接後強度與可靠度。</p>
+                <span class="tag">塗覆 / FSR-115</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- About -->
+    <h2 class="section-title">關於我們</h2>
+    <div id="about" class="about-box">
+        <h3 style="color: var(--main-blue); margin-top: 0;">關於欣熹科技 (Shin-Si)</h3>
+        <p>欣熹科技整合了<strong>錦霆科技集團 (Jinting Group)</strong> 在半導體與高科技產業的深厚供應鏈資源，致力於打造台灣最專業的光纖設備服務平台。</p>
+        <p>我們不只銷售設備，更提供從<strong>「產線規劃、設備導入、到售後校正」</strong>的一站式服務。無論是中華電信的戶外工程，或是科學園區內的光纖雷射研發，欣熹科技都能提供最適合的 Fujikura 原廠解決方案。</p>
+
+        <hr style="margin: 24px 0; border: none; border-top: 1px solid #ddd;">
+
+        <h4 style="margin: 0 0 10px 0; color: var(--main-blue);">
+          Fujikura 集團永續方向（摘錄官方報告）
+        </h4>
+
+        <p style="margin-top: 0;">
+          Fujikura 集團以「Tsunagu」（連接）技術為核心，致力於解決全球社會課題並創造長期價值。永續戰略以「ESG+F」（環境、社會、治理與財務/未來）為框架，積極落實「2050 長期環境願景」，核心目標是於 2050 年達成全球工廠零二氧化碳排放。透過擴大環保產品認證（如 Green PLUS 系列）與強化全球供應鏈的人權管理，集團旨在實現先進資訊社會與碳中和目標，同時深化人才培育以確保企業的永續競爭力。
+        </p>
+
+        <ol style="margin: 10px 0 0 18px; padding: 0;">
+          <li style="margin: 6px 0;">
+            環境願景目標：設定「2050 長期環境願景」，承諾於 2050 年實現集團全球工廠二氧化碳零排放。（p.69, p.237）
+          </li>
+          <li style="margin: 6px 0;">
+            能源轉型承諾：加入 RE100 倡議，目標在 2050 年將業務活動所使用的電力 100% 轉向再生能源。（p.228, p.242）
+          </li>
+          <li style="margin: 6px 0;">
+            環保產品擴大：推動「Green PLUS」認證計畫，開發對環境友善且能解決社會課題的高附加價值產品。（p.226, p.243）
+          </li>
+          <li style="margin: 6px 0;">
+            人權與供應鏈管理：建立人權盡職調查體系，並透過合作夥伴會議強化供應鏈在社會責任與環境保護的協作。（p.80, p.290）
+          </li>
+          <li style="margin: 6px 0;">
+            人才多元化發展：積極培養具備全球競爭力的專業人才，並推動多元與包容（D&amp;I）的工作環境以驅動創新。（p.75, p.250）
+          </li>
+        </ol>
+
+        <p style="margin: 12px 0 0 0; font-size: 12px; color: #666;">
+          註：本段為 Fujikura Group Integrated Report 2025 之公開內容摘要，頁碼僅供對照原始資料；欣熹科技提供在地銷售與服務支援，不將集團目標表述為本公司自有 ESG 績效聲明。
+        </p>
+    </div>
+
+    <!-- Contact -->
+    <h2 class="section-title">聯絡詢價</h2>
+    <div id="contact" class="form-box">
+        <p><strong>地址：</strong>新竹縣湖口鄉中華路13號</p>
+        <p><strong>電話：</strong>03-5972556</p>
+
+        <form>
+            <label for="name">姓名 / 公司</label>
+            <input type="text" id="name" placeholder="請輸入您的姓名或公司名稱">
+
+            <label for="email">Email</label>
+            <input type="email" id="email" placeholder="請輸入您的 Email">
+
+            <label for="message">需求內容</label>
+            <textarea id="message" rows="4" placeholder="請描述您需要的型號/用途/數量"></textarea>
+
+            <button type="submit">送出詢價</button>
+        </form>
+    </div>
+
+</div>
+
+<footer>
+    © 2025 欣熹科技 SHIN-SI TECHNOLOGY | 錦霆集團關係企業 | Fujikura 台灣授權代理
+</footer>
+
+</body>
+</html>
+下一個動作我會做「100S+ 產品卡片加入：技術規格（表格）+ FAQ（可折疊）」——你只要把 100S+ 官方 PDF 上傳（或把 NotebookLM 產出的規格 JSON + FAQ 貼給我），我會同樣給你完整程式碼版本。
+
+你說：
+沒有看到FAQPage JSON-LD
+ChatGPT 說：
+你「看不到 FAQPage JSON-LD」有兩種可能，我先把觀念釐清：JSON-LD 本來就不會顯示在網頁畫面上，它只存在於 HTML 原始碼 <head> 裡，給 Google/AI 抓取用。
+
+下面用最短方式讓你確認「到底有沒有」與「你現在開到的是哪一份檔」。
+
+1) 正常情況：你在畫面上本來就看不到
+FAQPage JSON-LD 是長這樣的：
+
+<script type="application/ld+json">
+{ "@type":"FAQPage", ... }
+</script>
+它不會出現在頁面任何文字區塊，這是正常的。
+
+2) 你要用這 2 個方法確認「原始碼裡有沒有」
+方法 A：Chrome 檢視原始碼（最簡單）
+用 Chrome 打開你的 shin-si-v4.html
+
+按 Ctrl+U（檢視原始碼）
+
+按 Ctrl+F 搜尋 FAQPage
+
+找得到 → 代表已成功埋入
+
+找不到 → 代表你現在開到的不是「含 FAQPage」的那份檔案
+
+方法 B：檢查工具（Console/Elements）
+右鍵 → 檢查
+
+切到 Elements
+
+展開 <head>，再搜尋 application/ld+json 或 FAQPage
+
+3) 最常見的真因：你目前用的是「patched」那份，不是「full_with_FAQPage」那份
+你先前成功顯示的是我給你的 patched 版本（只保證畫面正常，未必含 FAQPage）。
+現在要有 FAQPage，你必須改用我給你的這份完整檔：
+
+請下載並覆蓋成你正在使用的檔案：
+shin-si-v4_full_with_FAQPage.html
+
+覆蓋方式（避免再開錯檔）
+下載後 改名成 shin-si-v4.html
+
+覆蓋你目前的 shin-si-v4.html
+
+用 Chrome 重新開啟，然後照「方法 A」用 Ctrl+U 搜 FAQPage
+
+4) 你回覆我一句就能定位問題
+請你回覆我這兩項其中之一：
+
+「Ctrl+U 搜 FAQPage：找到了」
+
+或「Ctrl+U 搜 FAQPage：找不到」（並告訴我你目前開的檔名是什麼）
+
+我再依結果給你下一個完整檔（確保你永遠不會再開錯版本）。
+
+你說：
+
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Fujikura 台灣授權代理 | 欣熹科技 - 100S+, 90S+ 與特種光纖熔接 FSM-100 系列</title>
+    <meta name="description" content="欣熹科技承襲錦霆集團資源，為 Fujikura 台灣專業代理。提供 100S+, 90S+ 熔接機、FSM-100 特種光纖熔接、CT-110 大管徑切刀及 FSR-115 塗覆機。在地原廠維修，滿足電信工程與實驗室研發需求。">
+    <meta name="keywords" content="欣熹科技, 錦霆集團, Fujikura 台灣代理, 100S+, 90S+, 90R, 45S, FSM-100, 特種光纖熔接, 光纖塗覆機, 大芯徑光纖">
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "Corporation",
+          "name": "欣熹科技 SHIN-SI TECHNOLOGY",
+          "url": "http://www.shin-si.com.tw",
+          "parentOrganization": { "@type": "Corporation", "name": "錦霆科技 JINTING Group" }
+        },
+        {
+          "@type": "LocalBusiness",
+          "name": "欣熹科技 - 光纖事業部",
+          "telephone": "+886-3-5972556",
+          "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "中華路13號",
+            "addressLocality": "湖口鄉",
+            "addressRegion": "新竹縣",
+            "postalCode": "303",
+            "addressCountry": "TW"
+          }
+        }
+      ]
+    }
+    </script>
+
+    <script type="application/ld+json">
+    {
+      "@context":"https://schema.org",
+      "@type":"FAQPage",
+      "mainEntity":[
+        {
+          "@type":"Question",
+          "name":"Fujikura 集團的永續策略核心是什麼？",
+          "acceptedAnswer":{
+            "@type":"Answer",
+            "text":"Fujikura 集團以「Tsunagu」（連接）技術為核心，並以「ESG+F」（環境、社會、治理與財務/未來）作為永續戰略框架，致力於解決社會課題並創造長期價值。（Integrated Report 2025：p.69、p.237）"
+          }
+        },
+        {
+          "@type":"Question",
+          "name":"Fujikura 的 2050 環境願景目標是什麼？",
+          "acceptedAnswer":{
+            "@type":"Answer",
+            "text":"Fujikura 設定「2050 長期環境願景」，承諾於 2050 年實現集團全球工廠二氧化碳零排放。（Integrated Report 2025：p.69、p.237）"
+          }
+        },
+        {
+          "@type":"Question",
+          "name":"Fujikura 是否加入 RE100？目標為何？",
+          "acceptedAnswer":{
+            "@type":"Answer",
+            "text":"Fujikura 加入 RE100 倡議，目標在 2050 年將業務活動所使用的電力 100% 轉向再生能源。（Integrated Report 2025：p.228、p.242）"
+          }
+        },
+        {
+          "@type":"Question",
+          "name":"Green PLUS 是什麼？",
+          "acceptedAnswer":{
+            "@type":"Answer",
+            "text":"Fujikura 推動「Green PLUS」認證計畫，用於辨識與擴大對環境友善、且能解決社會課題的高附加價值產品。（Integrated Report 2025：p.226、p.243）"
+          }
+        },
+        {
+          "@type":"Question",
+          "name":"Fujikura 如何管理人權與供應鏈？",
+          "acceptedAnswer":{
+            "@type":"Answer",
+            "text":"Fujikura 建立人權盡職調查體系，並透過合作夥伴會議等機制，強化供應鏈在社會責任與環境保護的協作。（Integrated Report 2025：p.80、p.290）"
+          }
+        },
+        {
+          "@type":"Question",
+          "name":"Fujikura 的人才策略與 D&I（多元與包容）方向為何？",
+          "acceptedAnswer":{
+            "@type":"Answer",
+            "text":"Fujikura 積極培養具全球競爭力的專業人才，並推動多元與包容（D&I）的工作環境以驅動創新。（Integrated Report 2025：p.75、p.250）"
+          }
+        },
+        {
+          "@type":"Question",
+          "name":"這些永續內容是否代表欣熹科技自身的 ESG 績效？",
+          "acceptedAnswer":{
+            "@type":"Answer",
+            "text":"否。本段為 Fujikura Group Integrated Report 2025 的公開內容摘要。欣熹科技提供在地銷售與服務支援，不將集團目標表述為本公司自有 ESG 績效聲明。"
+          }
+        }
+      ]
+    }
+    </script>
+
+
+    <style>
+        :root { --main-blue: #003366; --main-red: #e60012; --dark-gray: #333; --light-bg: #f5f7fa; }
+        body { font-family: "Microsoft JhengHei", sans-serif; margin: 0; color: var(--dark-gray); line-height: 1.6; }
+
+        /* 導覽列 */
+        .navbar { background: var(--main-blue); padding: 0 5%; display: flex; justify-content: space-between; align-items: center; position: sticky; top: 0; z-index: 999; box-shadow: 0 2px 10px rgba(0,0,0,0.2); }
+        .nav-brand { color: white; font-size: 20px; font-weight: bold; padding: 15px 0; }
+        .nav-menu { display: flex; gap: 20px; }
+        .nav-item { color: #ddd; text-decoration: none; font-size: 15px; padding: 15px 0; transition: 0.3s; }
+        .nav-item:hover { color: white; }
+
+        /* HERO 主視覺：整合文案的核心區域 */
+        .hero { 
+            background: linear-gradient(135deg, #002244 0%, #004080 100%);
+            color: white; 
+            padding: 80px 5%; 
+            text-align: center; 
+        }
+        .hero h1 { font-size: 36px; margin-bottom: 20px; line-height: 1.3; }
+        .hero p { font-size: 18px; max-width: 900px; margin: 0 auto; color: #e0e0e0; }
+        .hero-highlight { color: #ffcc00; font-weight: bold; }
+
+        .container { max-width: 1200px; margin: auto; padding: 40px 5%; }
+
+        /* 產品分類標題 */
+        .category-header { 
+            text-align: center; 
+            margin: 60px 0 30px 0; 
+            position: relative; 
+        }
+        .category-header h2 { 
+            display: inline-block; 
+            background: white; 
+            padding: 0 20px; 
+            position: relative; 
+            z-index: 1; 
+            color: var(--main-blue);
+        }
+        .category-header::after { 
+            content: ""; 
+            position: absolute; 
+            top: 50%; left: 0; right: 0; 
+            height: 2px; 
+            background: #eee; 
+            z-index: 0; 
+        }
+
+        /* 網格系統 */
+        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; }
+        
+        /* 產品卡片設計 */
+        .card { 
+            background: white; 
+            border: 1px solid #eee; 
+            border-radius: 10px; 
+            overflow: hidden; 
+            transition: 0.3s; 
+            position: relative;
+        }
+        .card:hover { transform: translateY(-5px); box-shadow: 0 10px 25px rgba(0,0,0,0.1); border-color: var(--main-blue); }
+        .card-header { background: #f8f9fa; padding: 15px 20px; border-bottom: 1px solid #eee; font-weight: bold; color: var(--main-blue); display: flex; justify-content: space-between; align-items: center; }
+        .card-body { padding: 20px; }
+        .model-name { font-size: 24px; color: var(--main-red); margin: 0 0 10px 0; }
+        .desc { font-size: 14px; color: #666; margin-bottom: 15px; }
+        
+        /* 標籤 */
+        .badge { font-size: 12px; padding: 4px 10px; border-radius: 20px; color: white; font-weight: normal; }
+        .badge-telecom { background: #0066cc; } /* 通訊藍 */
+        .badge-special { background: #663399; } /* 特種紫 */
+
+        /* 關於區塊 */
+        .about-box { background: var(--light-bg); padding: 40px; border-radius: 12px; border-left: 5px solid var(--main-blue); margin-top: 60px; }
+
+        /* 聯絡區塊 */
+        .cta-section { text-align: center; background: var(--main-blue); color: white; padding: 50px 20px; margin-top: 80px; border-radius: 10px; }
+        .cta-btn { display: inline-block; background: var(--main-red); color: white; padding: 15px 40px; text-decoration: none; font-weight: bold; border-radius: 5px; margin-top: 20px; transition: 0.3s; }
+        .cta-btn:hover { background: #c2000f; }
+
+        /* RWD */
+        @media (max-width: 768px) {
+            .navbar { flex-direction: column; padding: 15px; }
+            .nav-menu { flex-wrap: wrap; justify-content: center; gap: 15px; margin-top: 10px; }
+            .hero h1 { font-size: 26px; }
+        }
+    </style>
+</head>
+<body>
+
+<nav class="navbar">
+    <div class="nav-brand">欣熹科技 SHIN-SI</div>
+    <div class="nav-menu">
+        <a href="#telecom" class="nav-item">通訊光纖設備</a>
+        <a href="#specialty" class="nav-item">特種/工廠光纖</a>
+        <a href="#about" class="nav-item">關於我們</a>
+        <a href="#contact" class="nav-item">聯絡詢價</a>
+    </div>
+</nav>
+
+<header class="hero">
+    <h1>Fujikura 全球頂尖光纖技術．台灣專業代理</h1>
+    <p>承襲 <span class="hero-highlight">錦霆集團 (Jinting Group)</span> 豐富產業資源，為您的光纖通訊工程提供最精準、最快速、最節省人力的解決方案，並享有原廠授權的完整維修保障。</p>
+</header>
+
+<div class="container">
+
+    <div id="telecom" class="category-header">
+        <h2>通訊工程與 FTTH 解決方案</h2>
+    </div>
+    <div class="grid">
+        <div class="card">
+            <div class="card-header">
+                <span>最新旗艦機型</span>
+                <span class="badge badge-telecom">Core Alignment</span>
+            </div>
+            <div class="card-body">
+                <h3 class="model-name">Fujikura 100S+</h3>
+                <p class="desc"><strong>雙加熱爐設計：</strong> 具備雙獨立加熱器，極致縮短等待時間。專為超大規模幹線工程設計，定義了熔接效率的新標準。</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-header">
+                <span>業界標準首選</span>
+                <span class="badge badge-telecom">Active Blade</span>
+            </div>
+            <div class="card-body">
+                <h3 class="model-name">Fujikura 90S+</h3>
+                <p class="desc"><strong>智慧自動化：</strong> 搭載主動式葉片管理技術與自動開閉蓋功能。有效降低人為操作失誤，大幅節省現場人力成本。</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-header">
+                <span>多芯帶狀專用</span>
+                <span class="badge badge-telecom">Ribbon Fiber</span>
+            </div>
+            <div class="card-body">
+                <h3 class="model-name">Fujikura 90R</h3>
+                <p class="desc"><strong>數據中心神器：</strong> 支援 12 芯帶狀光纖同步熔接。獨家 V 槽設計解決帶狀光纖捲曲問題，施工速度提升 30%。</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-header">
+                <span>FTTH 輕便型</span>
+                <span class="badge badge-telecom">Clad Alignment</span>
+            </div>
+            <div class="card-body">
+                <h3 class="model-name">Fujikura 45S</h3>
+                <p class="desc"><strong>入戶工程專用：</strong> 輕巧機身與長效電池，單人即可輕鬆作業。具備快速加熱模式，適合狹窄空間與高處作業。</p>
+            </div>
+        </div>
+    </div>
+
+    <div id="specialty" class="category-header">
+        <h2>特種光纖與實驗室應用 (R&D / Factory)</h2>
+    </div>
+    <div class="grid">
+        <div class="card">
+            <div class="card-header">
+                <span>特種熔接大師</span>
+                <span class="badge badge-special">PM / LDF Fiber</span>
+            </div>
+            <div class="card-body">
+                <h3 class="model-name">FSM-100 系列</h3>
+                <p class="desc"><strong>ARCMaster™ 技術：</strong> 專為保偏光纖 (PM) 與大芯徑光纖 (LDF) 設計。廣泛應用於光纖雷射製造、醫療器材及大學實驗室。</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-header">
+                <span>大管徑切刀</span>
+                <span class="badge badge-special">High Precision</span>
+            </div>
+            <div class="card-body">
+                <h3 class="model-name">CT-110 / CT-111</h3>
+                <p class="desc"><strong>高張力切割：</strong> 配備自動夾持系統，專門應對大直徑光纖的切割需求，確保切割端面鏡面般平整。</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-header">
+                <span>光纖塗覆機</span>
+                <span class="badge badge-special">Recoater</span>
+            </div>
+            <div class="card-body">
+                <h3 class="model-name">FSR-115 系列</h3>
+                <p class="desc"><strong>恢復光纖強度：</strong> 用於熔接後的再塗覆製程。具備高精度模具與 UV 固化系統，確保塗層直徑一致性。</p>
+            </div>
+        </div>
+    </div>
+
+    <div id="about" class="about-box">
+        <h3 style="color: var(--main-blue); margin-top: 0;">關於欣熹科技 (Shin-Si)</h3>
+        <p>欣熹科技整合了<strong>錦霆科技集團 (Jinting Group)</strong> 在半導體與高科技產業的深厚供應鏈資源，致力於打造台灣最專業的光纖設備服務平台。</p>
+        <p>我們不只銷售設備，更提供從<strong>「產線規劃、設備導入、到售後校正」</strong>的一站式服務。無論是中華電信的戶外工程，或是科學園區內的光纖雷射研發，欣熹科技都能提供最適合的 Fujikura 原廠解決方案。</p>
+<hr style="margin: 24px 0; border: none; border-top: 1px solid #ddd;">
+
+<h4 style="margin: 0 0 10px 0; color: var(--main-blue);">
+  Fujikura 集團永續方向（摘錄官方報告）
+</h4>
+
+<p style="margin-top: 0;">
+  Fujikura 集團以「Tsunagu」（連接）技術為核心，致力於解決全球社會課題並創造長期價值。永續戰略以「ESG+F」（環境、社會、治理與財務/未來）為框架，積極落實「2050 長期環境願景」，核心目標是於 2050 年達成全球工廠零二氧化碳排放。透過擴大環保產品認證（如 Green PLUS 系列）與強化全球供應鏈的人權管理，集團旨在實現先進資訊社會與碳中和目標，同時深化人才培育以確保企業的永續競爭力。
+</p>
+
+<ol style="margin: 10px 0 0 18px; padding: 0;">
+  <li style="margin: 6px 0;">
+    環境願景目標：設定「2050 長期環境願景」，承諾於 2050 年實現集團全球工廠二氧化碳零排放。（p.69, p.237）
+  </li>
+  <li style="margin: 6px 0;">
+    能源轉型承諾：加入 RE100 倡議，目標在 2050 年將業務活動所使用的電力 100% 轉向再生能源。（p.228, p.242）
+  </li>
+  <li style="margin: 6px 0;">
+    環保產品擴大：推動「Green PLUS」認證計畫，開發對環境友善且能解決社會課題的高附加價值產品。（p.226, p.243）
+  </li>
+  <li style="margin: 6px 0;">
+    人權與供應鏈管理：建立人權盡職調查體系，並透過合作夥伴會議強化供應鏈在社會責任與環境保護的協作。（p.80, p.290）
+  </li>
+  <li style="margin: 6px 0;">
+    人才多元化發展：積極培養具備全球競爭力的專業人才，並推動多元與包容（D&amp;I）的工作環境以驅動創新。（p.75, p.250）
+  </li>
+</ol>
+
+<p style="margin: 12px 0 0 0; font-size: 12px; color: #666;">
+  註：本段為 Fujikura Group Integrated Report 2025 之公開內容摘要，頁碼僅供對照原始資料；欣熹科技提供在地銷售與服務支援，不將集團目標表述為本公司自有 ESG 績效聲明。
+</p>
+    </div>
+
+    <div id="contact" class="cta-section">
+        <h2>需要專業的光纖設備建議？</h2>
+        <p>無論是 100S+ 旗艦機或 FSM-100 特種應用，歡迎聯繫欣熹光纖部</p>
+        <a href="tel:035972556" class="cta-btn">📞 03-5972556 立即諮詢</a>
+        <p style="margin-top: 20px; font-size: 14px; opacity: 0.8;">
+            📍 新竹縣湖口鄉中華路13號 | ✉️ sales@shin-si.com.tw
+        </p>
+    </div>
+
+</div>
+
+<footer style="text-align: center; padding: 20px; color: #888; font-size: 13px; background: #eee;">
+    © 欣熹科技 SHIN-SI TECHNOLOGY. All Rights Reserved. | 關係企業：錦霆科技
+</footer>
+
+</body>
+</html>
+ChatGPT 說：
+
+已思考 6s
+你貼出的這份原始碼裡，FAQPage JSON-LD 已經存在，而且位置是正確的：就在 <head> 裡、第一段 @graph（Corporation/LocalBusiness）之後、<style> 之前，這一整段就是 FAQPage：
+
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"FAQPage",
+  "mainEntity":[ ... ]
+}
+</script>
+所以你先前說「沒有看到」的原因，多半是因為：
+
+你在「畫面」本來就看不到（這是正常現象）
+JSON-LD 是給搜尋引擎/AI 讀的「結構化資料」，不會顯示在網頁視覺內容。
+你只能在「原始碼」看到它。
+
+你要如何 100% 確認（本機檔也可）
+你現在這份檔，用 Chrome 開啟後：
+
+Ctrl+U（檢視原始碼）
+
+Ctrl+F 搜尋：FAQPage
+
+你一定會找到（因為你已貼出來了）。
+
+重要提醒（避免之後上線被忽略）
+Google 對 FAQPage 的實務規則是：結構化資料中的 FAQ，最好在頁面上也有對應可見的 FAQ 內容（否則有機會不顯示或不採用）。
+
+你目前的做法是「JSON-LD 有 FAQ，但畫面沒有 FAQ 區塊」，這不是語法錯誤，但有風險「搜尋結果不一定展現」。
+
+下一步（我照你規則：給你完整程式碼）
+你只要回我一句：「要不要我把這 7 題 FAQ 也做成頁面上可見的 FAQ 區塊（放在 About 永續段落下方）」
+我就直接給你完整 HTML 程式碼（一次到位：畫面有 FAQ + JSON-LD 對應一致）。
+
+你說：
+好
+ChatGPT 說：
+
+已思考 10s
+你目前這份原始碼其實 已經有 FAQPage JSON-LD（你貼出來的 <head> 裡那段 @type":"FAQPage" 就是），只是它本來就不會顯示在畫面上。
+
+你剛剛也同意要「把 FAQ 做成頁面可見」，我已經把 可見 FAQ（可折疊） 加到「關於我們」→「永續摘要」段落下方，並確保 可見 FAQ 與 FAQPage JSON-LD 內容一致。
+
+下載完整檔（已完成）：
+shin-si-v4_visibleFAQ_and_FAQPage.html
+
+你要做的唯一動作
+下載上面檔案
+
+改名成 index.html 或 shin-si-v4.html（看你原本檔名）
+
+覆蓋你現在使用的檔案並重新開啟（Ctrl+F5）
+
+完成後你會在「關於我們」的永續段落下方看到「永續常見問答（FAQ）」並可展開/收合。
+
+
+
+你說：
+我想釐清1個問題,你原先設計FAQ為不可見但GOOGLE搜尋時有SEO加分?
+ChatGPT 說：
+你的理解需要修正：「不可見 FAQ + FAQPage JSON-LD」不是一個可靠的 SEO 加分手段，而且在實務上有「不被採用」甚至「被視為不合規」的風險。
+
+核心原則
+FAQPage 結構化資料的目的，是讓搜尋引擎把「頁面上實際存在的問答內容」結構化地理解。
+
+如果你只放 JSON-LD，但頁面上沒有對應的可見 FAQ，搜尋引擎通常不一定採用，甚至可能忽略整段 FAQPage。
+
+換句話說：
+不可見 FAQ ≠ 穩定 SEO 加分。你最多只是「送出一個訊號」，但是否被採用取決於搜尋引擎的判斷。
+
+什麼情況會發生
+1) 你做「不可見 FAQ + FAQPage JSON-LD」
+可能結果：
+
+搜尋引擎 忽略 FAQPage（最常見）
+
+或採用率很不穩定（有時有、有時沒）
+
+在較嚴格的情況下，可能被判定為「內容不一致/隱藏」，導致該 rich result 不被顯示（通常不會整站被懲罰，但你想要的加分就拿不到）
+
+2) 你做「可見 FAQ + FAQPage JSON-LD（內容一致）」（我們現在做的）
+可能結果：
+
+被採用機率最高
+
+對 AI 摘要與搜尋結果理解也更一致
+
+不會踩到「結構化資料與頁面內容不一致」的風險
+
+你原先問的「當初我為什麼先做不可見？」
+原因只是：不影響畫面、最快先把結構化資料埋進去，作為「可插拔模組」。
+但如果你的目標是「確定拿到 SEO/富媒體結果的加分」，正確做法仍是：FAQ 要在頁面上可見，且和 JSON-LD 一致。
+
+建議決策（以你目前專案目標）
+你要衝 Fujikura 型號與 AI 搜尋抓取：
+可見 FAQ + FAQPage JSON-LD 是較穩妥的配置。
+
+可見 FAQ 不一定要很大段；用我們現在的 details/summary 折疊就能兼顧美觀與合規。
+
+如果你要再更進一步，我下一步可以把 FAQPage 從「永續」延伸到你的 100S+ / 90S+ 產品頁（或同頁的機型區塊），並以「技術規格 + 安裝/維修常見問題」去做真正對排名更有用的 FAQ。
+
+你說：
+以增加SEO分數來講,目前的FAQ都是有關Fujikura永續方向,可否換成更有利我推展銷售的方面?如欣熹跟Fujikura的關係,跟我們欣熹這家有Fujikura原廠授權及支援在保固跟維修跟水貨差異,為何要換100S+,等等跟銷售產品相關,是否更好?
+ChatGPT 說：
+
+已思考 2m 0s
+可以，而且對你的 SEO / 轉換率通常更好。
+
+你目前的 FAQ 主題是「Fujikura 集團永續」，它比較偏 品牌形象與企業治理，對「要買 100S+ / 90S+ / 90R / FSM-100」這類搜尋意圖的直接助益相對有限。
+若你的核心目標是衝 型號關鍵字 + 詢價轉單，FAQ 的主題更建議改成：
+
+欣熹 × Fujikura 的供貨/服務關係（用較保守、可驗證的措辭）
+
+公司貨 vs 水貨的風險與差異
+
+保固、維修、校正流程
+
+為何選 100S+ / 90S+ / 90R（依使用場景）
+
+詢價需要提供哪些資訊（提升轉換）
+
+我已經把你的頁面更新成「可見 FAQ（可折疊） + FAQPage JSON-LD」兩者內容一致，且 FAQ 內容改成更利於銷售的版本（同時避免在網頁上做你無法立即證明的過度宣稱；保固/服務以「依原廠政策與出貨條件為準」做風險控管）。
+
+下載完整檔（已替你改好）
+shin-si-v4_salesFAQ_visible_and_JSONLD.html
+
+你要做的唯一動作
+下載後覆蓋你目前的 HTML（改名成你正在用的檔名，例如 index.html 或 shin-si-v4.html），然後 Ctrl+F5 重新整理。
+
+你會看到的變更
+「關於我們」區塊下方 FAQ 標題變成：採購與售後常見問答（FAQ）
+
+FAQ 問題改成：
+
+欣熹與 Fujikura 關係
+
+公司貨與水貨差異
+
+如何確認序號/保固
+
+維修/校正流程
+
+為何選 100S+
+
+90S+ 適用情境
+
+詢價需要哪些資料
+
+<head> 內 FAQPage JSON-LD 也同步更新（內容一致，利於採用）
+
+如果你下一步要把 FAQ 移到每個機型卡片下方（例如 100S+ 專屬 FAQ），那會更貼近「型號關鍵字」的搜尋意圖，通常比放在 About 更有效。我可以一樣給你「完整程式碼」版本。
+
+你說：
+我覺得現在的模板很好,這幾個FAQ適合放於首頁,在通訊工程與 FTTH 解決方案及特種光纖與實驗室應用 (R&D / Factory)底下個別項目,希望配上那機型的圖片(每一項或每一系列一張),點擊後會看到詳細規格及該型號的FAQ
+ChatGPT 說：
+
+已思考 25s
+我已把你要的「首頁每個機型/系列有圖片 → 點擊後跳出詳細規格 + 該型號 FAQ」做成單一 HTML 檔（避免你操作時漏貼或貼錯）。你直接下載、覆蓋原檔即可測試。
+
+Download 完整程式碼：shin-si-v4_click_model_details_FAQ.html
+
+你會看到的效果
+首頁維持你喜歡的模板風格（兩大分類 + 卡片）
+
+每張卡片都有圖片
+
+點卡片會彈出「機型詳情視窗（Modal）」
+
+分三個頁籤：概覽與選型 / 規格摘要 / FAQ
+
+首頁分類底下也有一組「採購/售後 FAQ」（對 SEO 與轉換更直接）
+
+你接下來只要做兩件事
+換成你的圖片
+
+目前我用的是 placeholder 圖（避免亂用原廠圖造成授權風險）。
+
+你把圖片放進同資料夾，例如：
+
+images/100splus.jpg
+
+images/90splus.jpg …
+
+然後把檔案內這種字串替換掉即可：
+https://via.placeholder.com/800x500?text=Fujikura+100S%2B → images/100splus.jpg
+
+把規格表回填（最安全）
+
+我刻意不寫任何「可能不精準的數值規格」，避免你網站上出現錯誤資訊。
+
+你只要在檔案最下方的 JS 區塊 MODEL_DATA 裡，把每個機型的 spec 陣列逐項改成官方規格即可（它會自動生成表格）。
+
+如果你希望下一步我直接幫你「把你上傳的 Fujikura PDF 內各型號規格表欄位抽出來、回填到這份 HTML 的 MODEL_DATA」，你把你要用來放上網站的型錄/規格 PDF（針對 100S+、90S+、90R、45S、FSM-100、CT-110/111、FSR-115）上傳即可。我會一次產出完整可直接上線的版本。
+
+
+
+你說：
+這個對話裡,有時我提出的是個概念,請你依SEO及可行性做評估,確認後再給我成果或操作動作,我的想法是概念-邏輯-評估-修正-執行
+ChatGPT 說：
+了解。接下來我會用你指定的節奏來合作：概念 → 邏輯 → SEO/可行性評估 → 修正 → 執行，而且會遵守你先前的要求：一旦進入「執行」，就給你完整程式碼/完整成果，避免你操作貼錯。
+
+我之後每次回覆的固定格式
+1) 你的概念（我先精準重述）
+我會把你這次提出的想法濃縮成「可落地的需求句」，確保我們對齊。
+
+2) 邏輯（為什麼這樣做）
+這個設計如何影響：
+
+SEO（索引、富摘要、E-E-A-T、內鏈/外鏈、內容對應搜尋意圖）
+
+轉換率（詢價、電話、信任訊號）
+
+維護成本（規格更新、圖片/檔案管理）
+
+3) 評估（可行性與風險）
+SEO 評估：會加分還是扣分？原因是什麼？
+
+技術可行性：V4 單頁能做嗎？需不需要拆分多頁？
+
+風險點：例如 FAQPage 適用條件、內容一致性、圖片授權、宣稱可驗證性等
+
+替代方案：若你這方案風險高，我會給更穩健方案
+
+4) 修正（我建議的調整版）
+我會把你的概念「微調成更 SEO/更安全/更好維護」的版本
+
+只提出必要的修改，不做無謂改動
+
+5) 執行（只有在評估通過後才做）
+我會給你「下一個唯一動作」或「完整程式碼」
+
+你回覆「OK/執行」或你確認方向後，我才進到這一步
+
+（如果你當次就明確說“直接做”，我也會直接進執行）
+
+先把你剛剛那個「卡片點擊彈窗」方案，用此框架快速評估（作為示範）
+概念
+首頁每個機型/系列：圖片 + 點擊後看詳細規格 + 該型號 FAQ。
+
+邏輯
+提升停留時間、降低跳出率、提升對應搜尋意圖的內容密度，並把「FAQ」貼近型號決策點。
+
+評估
+SEO：中性到小幅加分
+
+加分：內容更完整、使用者互動更好
+
+限制：若所有內容仍在單頁的 JS 彈窗內，Google 多半仍能讀到 DOM 內容，但「機型獨立頁」仍是更強的 SEO 結構（可做各自 Product + FAQPage）。
+
+技術可行性：高（單頁即可做）
+
+風險：可控
+
+FAQPage 的最佳實務是「頁面可見內容與 JSON-LD 一致」；彈窗仍算可見，但要避免 JSON-LD 跟實際 FAQ 不一致。
+
+圖片授權必須注意（原廠圖需確認授權或用你自製/你拍攝/你可用素材）
+
+修正（最佳化方向）
+短期：單頁彈窗 OK（你現在的階段最有效率）
+
+中期：做 機型獨立頁（/100splus、/90splus…），每頁放：
+
+Product schema（含 image/url/mpn）
+
+FAQPage schema（只放該型號 FAQ）
+
+內鏈回首頁與跨型號比較頁
+這會是 SEO 上最「可預測」的提升。
+
+執行
+我已先做出單頁彈窗版本（你已拿到完整檔）。下一步若你同意走「中期拆獨立頁」，我會先提出 sitemap/URL 結構與內鏈策略，再進入產出完整程式碼。
+
+以後你只要把想法用一句話丟給我即可，我會先做評估，你同意後再執行產出完整成果。
+
+你說：
+1.我並非要彈窗,而是引導至專頁(剛好SEO更好?),專頁裡可放更多訊息,除該型號重點及強項外還有詳細規格(如SEO沒多大加分,我覺得針對這型號的FAQ沒必要,但還是要考慮SEO).2.不用擔心授權,我們本來就是合法代理
+ChatGPT 說：
+
+已思考 29s
+收到。你這兩點（不要彈窗、要導到專頁；FAQ 是否值得做要看 SEO 實際效益）我用你要的流程做一次完整評估，確認後再進入「執行」產出整套專頁程式碼。
+
+1) 你的概念（重述對齊）
+首頁只做「分類 + 型號卡片 + 圖片 + 強 CTA」
+
+每個型號卡片點擊後導向該型號專頁（不是彈窗）
+
+專頁承載更多資訊：
+
+型號定位/強項
+
+詳細規格（由原廠 PDF 校對後填入）
+
+若 SEO 沒太大加分，型號 FAQ 可選擇不做（但仍需綜合判斷）
+
+2) 邏輯（為什麼導向專頁通常更好）
+專頁的核心價值不是「規格表本身」，而是：
+
+讓每個型號有清楚的「主題聚焦」（Topical focus），更容易對應搜尋意圖：
+
+「100S+ 台灣 代理 / 維修 / 保固 / 公司貨」
+
+「FSM-100 ARCMaster PM 光纖 熔接」
+
+讓首頁能把權重（內鏈）集中導向你最想推的型號頁，形成可爬取的站內結構（內鏈策略是基本功）。
+Yoast
+
+專頁更容易做 Product structured data（每頁一個產品）與對應內容一致性，降低「同頁多產品混雜」造成的訊號稀釋。
+Google for Developers
++1
+
+結論：導到專頁通常比彈窗更有利 SEO，也更有利承載深內容與轉換。
+
+3) 評估（SEO/可行性/風險）
+A. SEO 評估：專頁 = 明顯正向
+排名面：每個型號頁可以鎖定更精準的關鍵字組合（型號 + 代理 + 保固 + 維修 + 校正 + 水貨風險 + 地區）。
+
+收錄面：Google 對「獨立 URL」的理解、索引與內鏈權重傳遞通常更直接、更可控（比單頁內段落/彈窗穩）。
+Yoast
+
+轉換面：型號頁能做到「內容 → 信任 → CTA」更線性（詢價/電話/加 Line/下載型錄）。
+
+B. 「詳細規格」本身的 SEO 加分：中等、但不是主因
+規格表的加分通常來自：
+
+內容完整且可驗證（降低跳出、提升停留）
+
+更容易被其他網站引用/連結（型錄級內容）
+
+可被 Google 以結構化理解（但前提仍是頁面內容本身要夠有用）。
+Google for Developers
++1
+
+如果規格只是「薄薄一張表」，而缺乏選型、使用情境、售後、真假辨識等內容，反而可能接近「thin content」風險（頁面多但價值少）。
+Google for Developers
+
+C. FAQ 的 SEO 實際效益（重要）：要改期待值
+FAQ rich results（搜尋結果展開式 FAQ）在 2023 年後已大幅限縮，多數一般商業網站不會再得到可見的 FAQ 富摘要展示。
+Google for Developers
+
+因此「做 FAQPage JSON-LD 就能加分」這種期待要調整：
+
+對可見 SERP 的直接加分：較小
+
+對內容覆蓋搜尋疑慮、提升轉換與降低客服成本：仍有價值
+
+仍建議：若你要放 FAQ schema，務必確保
+
+FAQ 在頁面上「可見」且與 JSON-LD 一致
+
+不要塞與頁面主題不相干的 QA（避免觸碰結構化資料品質/政策風險）。
+Google for Developers
+
+結論：FAQ 不必為了“分數”硬做；要做就做「會促成成交、會被問到」的 QA，3–6 題精準即可。
+
+D. 授權/圖片（你說不用擔心）
+你是合法代理這點有利於「可信度與供應鏈敘事」。我在執行時會把文案採「可驗證」表述，避免不必要的爭議與誤解；圖片只要你端確保可用即可。
+
+4) 修正（把你的概念調成更 SEO、也更好維護）
+我建議你採用「首頁導流 + 型號專頁深內容」的兩層架構，並把每個型號頁都固定成同一套模板（你後面擴充最快）：
+
+型號專頁模板（建議必備區塊）
+H1：型號 + 台灣在地服務定位（不要只寫型號）
+
+3–5 個關鍵賣點（效率/人力/風險/一致性）
+
+適用情境（工程/FTTH/機房/研發/產線）
+
+規格表（由 PDF 校對後填入）
+
+公司貨/水貨風險與保固維修流程（可驗證版）
+
+配件/耗材/校正建議
+
+下載（型錄、datasheet、操作手冊：可選）
+
+FAQ（可選）：只放成交相關、真會被問的 3–6 題
+
+結構化資料（每個型號頁）
+Product：每頁一個產品（最乾淨、最好維護）。
+Google for Developers
+
+FAQPage：只有當你真的在頁面上放了 FAQ 區塊且內容一致才加。
+Google for Developers
+
+5) 執行前的「下一個唯一動作」
+你現在先做一個決策即可（我給你預設方案，你只要回覆「OK」就能進入執行，不需要你再設計）：
+
+我建議的 URL 結構（預設）
+/ 首頁
+
+/telecom/100splus.html
+
+/telecom/90splus.html
+
+/telecom/90r.html
+
+/telecom/45s.html
+
+/specialty/fsm-100.html
+
+/specialty/ct-110.html
+
+/specialty/fsr-115.html
+
+你回覆：「OK 用這個結構，先做 100S+ 專頁」
+我下一則就會進入「執行」：產出
+
+更新後的首頁（卡片連到專頁）完整程式碼
+
+100splus.html 完整專頁程式碼（含 Product schema、規格表區塊與可選 FAQ 區塊）
+並且全都給你「完整檔案」，避免你貼錯。
+
+你說：
+OK
+ChatGPT 說：
+
+已思考 12s
+已按你確認的 URL 結構先完成「首頁導流 → 100S+ 專頁」兩個完整檔案（無彈窗、點卡片直接進專頁）。
+
+Download 首頁（已改為連到各型號專頁）：shin-si-index_links_to_model_pages.html
+
+Download 100S+ 專頁（含 Product JSON-LD + 可見 FAQ 區塊 + FAQPage JSON-LD）：telecom_100splus.html
+
+你本機/上線時的資料夾結構（照這樣放就會全部連得起來）
+/ (網站根目錄)
+  index.html                      ← 把 shin-si-index... 改名成 index.html
+  /telecom/
+    100splus.html                 ← 把 telecom_100splus.html 改名成 100splus.html
+  /images/
+    100splus.jpg
+    90splus.jpg
+    90r.jpg
+    45s.jpg
+    fsm-100.jpg
+    ct-110.jpg
+    fsr-115.jpg
+目前首頁已經預先連到：
+telecom/100splus.html、telecom/90splus.html、telecom/90r.html、telecom/45s.html、specialty/...
+（其餘專頁我會依你流程「逐頁評估後再執行」產出。）
+
+關於你提的「FAQ 要不要做」：我在 100S+ 專頁的做法
+FAQ 有做，但刻意控制在 4 題，且全部是成交/風險控管導向（保固、公司貨/水貨、升級效益、適用情境）。
+
+這樣做的原因：FAQ 不再主要為了 SERP 展開，而是為了
+
+覆蓋常見疑慮、提升轉換
+
+讓頁面內容更完整（避免專頁變薄頁）
+
+如果你要「完全不放 FAQ」也可以，我下一版會把 FAQ 區塊 + FAQPage JSON-LD 一起移除，保留 Product schema。
+
+下一個「唯一動作」（照你的方法：概念→評估→執行）
+你回覆一句就好：
+
+A. 先做 90S+ 專頁（通訊主力）
+或
+B. 先做 100S+ 的規格回填（把表格欄位用原廠 datasheet 逐欄補齊）
+
+你回覆 A 或 B，我會先做 SEO/可行性評估與修正，通過後再給你下一個完整檔案。
+
+
+
+你說：
+1.「首頁導流 → 100S+ 專頁」兩個完整檔案,我覺得很好,但"進入系列專頁"改成"點我",字要改大,底色鮮紅,2.在補這些資料時,何時開始用NotebookLM?
+ChatGPT 說：
+
+已思考 17s
+1) 首頁按鈕已改：「進入系列專頁」→「點我」，字更大、底色鮮紅
+我已把首頁檔完整更新好（給你完整程式碼檔，避免你手動改錯）：
+
+Download 更新後首頁：shin-si-index_links_to_model_pages_redCTA.html
+
+本版改動重點：
+
+.btn-mini 變成 鮮紅底色（#e60012）、字體加大（16px）、加粗、padding 加大
+
+三個「系列卡」（FSM-100 / CT-110 / FSR-115）按鈕文字改為 「點我」
+
+通訊類型號卡的按鈕文字仍是「進入型號專頁」，但也套用同樣的紅色大按鈕（視覺一致）
+
+你若也想把「進入型號專頁」一律改成「點我」，我可以再給你一份「全部統一點我」的完整檔案。
+
+2) 補資料時，何時開始用 NotebookLM？
+結論：現在就可以開始用 NotebookLM，但要用在「會影響正確性、且你不想手打」的部分；也就是：
+
+最佳啟動點（建議）
+當你已經有：
+
+專頁模板（我們已做好 100S+ 專頁）
+
+你要填的欄位（例如「詳細規格表」的每一列）
+
+以及原廠 PDF（datasheet / brochure / manual）
+
+此時用 NotebookLM 的效益最大：你可以把它當成「PDF 規格抽取機」，直接輸出你要的表格格式。
+
+你接下來的實際操作節奏（最省事）
+先把各型號專頁骨架做出來（不填數值）
+
+90S+、90R、45S…先複製 100S+ 模板，先完成版型與段落結構
+
+再用 NotebookLM 一次處理一個型號的規格回填
+
+你把該型號 datasheet PDF 丟進 NotebookLM
+
+用同一套 prompt 讓它按「規格表欄位」逐欄輸出
+
+最後再決定 FAQ 要不要加
+
+原則：FAQ 不為了「SEO 分數」而硬塞
+
+只有在「成交常見疑慮」明顯、且內容能寫得精準時才加（3–6 題）
+
+一句話判斷：何時該用 NotebookLM？
+只要你準備開始填「數值規格」或「很容易寫錯的技術敘述」時，就開始用。
+
+像「型號定位、導入情境、售後流程、公司貨/水貨風險」這類偏商務敘事，你可以先由我們寫，再用 PDF/官方文字做校對補強即可。
+
+你下一個動作只要回覆我一句：
+下一頁先做 90S+ 專頁骨架 或 先把 100S+ 規格用 NotebookLM 回填完成。
+我會先做 SEO/可行性評估與修正後，再給你下一個「完整檔案」。
+
+
+
+你說：
+1.通訊工程與 FTTH 解決方案底下各卡沒改"點我",2.字再大些(跟卡裡型號一樣大),顏色太鮮紅了,稍微修改
+ChatGPT 說：
+已依你兩點調整完成，並提供完整檔案（避免你手動改錯）。
+
+通訊工程與 FTTH 解決方案底下 4 張卡：按鈕文字已全部改成 「點我」
+
+按鈕字體已加到跟型號字一樣大（22px）
+
+紅色已改成較沉穩、沒那麼鮮紅（由 #e60012 調整為 #c2000f，hover 為更深紅）
+
+下載：
+
+Download 最新首頁：shin-si-index_links_to_model_pages_btn_tuned.html
+
+若你覺得還要再「更暗一點」或「偏酒紅」，我可以再把 --cta-red 改成你指定的色碼（或我給你 2–3 個候選色讓你選一個）。
+
+
+
+你說：
+1.移到那張卡時,它有浮動的效果,謝謝你很棒的設計,是否可以點擊那張卡就導入專頁?如果可以,就直接取消"點我"按紐,2.給我紅色系列候選色
+ChatGPT 說：
+1) 可以，而且其實「卡片本來就已經可點」
+你目前首頁的每一張卡片是用 <a class="card" href="..."> 包起來的，所以整張卡已經是連結（滑入浮動只是 hover 視覺效果）。
+
+依你要求，我已經把首頁的 「點我」按鈕整個移除，保留卡片 hover 浮動，並加上：
+
+cursor: pointer;（更明確告訴使用者「可點」）
+
+:focus-visible 外框（鍵盤操作也更友善）
+
+下載完整檔案：
+
+Download 首頁（卡片整張可點、已移除按鈕）：shin-si-index_links_cards_clickable_no_button.html
+
+2) 紅色系列候選色（由亮到沉穩）
+你可用於「品牌強調色」或「CTA 按鈕色」，我把常用的紅系分成 3 個層級：
+
+A. 亮紅（較醒目、偏促銷感）
+#E60012（你目前主紅，最亮）
+
+#D6001C
+
+#CC001B
+
+B. 企業紅（醒目但不刺眼，建議優先）
+#C2000F（我上版給你的沉穩紅）
+
+#B10016
+
+#A8000D
+
+C. 酒紅/深紅（更穩重、高級感）
+#8B0013
+
+#7A0011
+
+#64000E
+
+如果你告訴我你希望偏向：
+
+「更像 Fujikura 的紅」或
+
+「更像半導體/企業官網的紅（穩重）」
+我可以把整站的 --main-red 與 CTA/hover 一起統一成同一套色階（並給你完整檔案）。
+
+
+
+你說：
+色
+ChatGPT 說：
+你說：
+1.顏色挑選是為了"點我"按紐,既然取消,已無必要,2.先暫停,NotebookLM怎麼關?
+ChatGPT 說：
+1) 顏色
+了解。既然「點我」按鈕已取消，紅色候選色這段就不再需要了；首頁目前僅保留型號字的紅色與整體品牌色。
+
+2) NotebookLM 怎麼關？
+NotebookLM 本身不需要「關閉」才能停止計費或運作；你只要退出或關掉分頁即可。依你要達成的目標，做法分三種：
+
+A. 只是要停止使用（最簡單）
+直接關掉 NotebookLM 分頁（Chrome/Edge 的那一頁）。
+
+若你用的是手機 App：回到首頁後關閉 App。
+
+B. 你不想它再「保留/引用」你上傳的 PDF（清資料）
+在 NotebookLM 左側（Sources/來源）：
+
+找到你上傳的 Fujikura PDF（例如 Integrated Report / ESG Data）。
+
+點該來源右側的 ⋯（更多）
+
+選 Remove / Delete source（移除/刪除來源）
+
+這會把 PDF 從該 NotebookLM 筆記本中移掉；你之後再問，它就不會再用那份 PDF 回答。
+
+C. 你要把整個 Notebook（筆記本）刪掉（最乾淨）
+回到 NotebookLM 的首頁/清單（Notebooks list）。
+
+在你那個筆記本旁邊點 ⋯
+
+選 Delete notebook（刪除筆記本）
+
+補充：如果你是用 Google 帳號登入
+你只要登出 Google 帳號或關閉瀏覽器，也等同於「停止使用」NotebookLM。
+
+如果你告訴我你是在 電腦瀏覽器 還是 手機 用 NotebookLM，我可以把上述步驟改成對應畫面用語（但不影響你現在先暫停的需求）。
+
+你說：
+OK,Happy New Year!See you next year!
+ChatGPT 說：
+Happy New Year. See you next year.
+
+你說：
+在逐步建立網站的過程中,我在桌面設了一個資料夾"欣熹網站",分層及圖片或pdf等都放此資料夾,未來寄信給同事展示時他們能看到所有網站細節嗎?
+ChatGPT 說：
+你目前桌面上的「欣熹網站」資料夾，同事不會自動看到。他們能否看到「所有網站細節」，取決於你用什麼方式分享。以下用最實務的角度拆解：
+
+先釐清：網站細節分兩種
+檔案層級細節：HTML、CSS、JS、圖片、PDF、資料夾結構（例如 images/、telecom/）
+
+瀏覽器看到的結果：開首頁、點卡片進專頁、圖片是否顯示、連結是否可點
+
+若你只寄「一個 HTML 檔」給同事，通常 圖片會全部不見、內頁連結也可能失效（因為缺少相對路徑的檔案與資料夾）。
+
+方案 A（最推薦）：把整個資料夾「打包成 ZIP」寄出
+同事就能在自己電腦解壓縮後，開 index.html 看到完整網站、可點進每一頁，圖片也會正常顯示。
+
+你要做的事
+右鍵你的「欣熹網站」資料夾
+
+選 傳送到 → 壓縮 (zipped) 資料夾（Windows）
+
+寄出產生的 .zip
+
+同事要做的事
+下載 .zip 並解壓縮
+
+開資料夾中的 index.html（建議用 Chrome）
+
+這是最接近「完整交付」的方式，能看到幾乎所有細節。
+
+方案 B：用雲端分享整個資料夾（Google Drive/OneDrive）
+適合檔案大、或你要頻繁更新（同事永遠看最新版本）。
+
+上傳整個「欣熹網站」資料夾到 Drive/OneDrive
+
+分享資料夾連結給同事
+
+同事可「下載整包」或直接同步到本機後開 index.html
+
+注意：Drive 網頁介面「直接點 HTML」有時會被瀏覽器安全限制；最穩是讓同事下載或同步到電腦再開。
+
+方案 C（展示最像真正網站）：放到一個可公開/內部的測試網址
+同事不需要下載任何檔案，直接點網址就能看；也最接近 SEO 上線後的行為。
+
+常見做法：
+
+主機商的測試站
+
+GitHub Pages（如果內容不涉密）
+
+Cloudflare Pages / Netlify（快速）
+
+若你們之後要做 SEO、讓 Google 收錄，最終一定會走到「有 URL 的上線環境」。
+
+你寄信前的「最低檢查清單」
+不論用 ZIP 或雲端，建議你先自己測一次：
+
+從資料夾打開 index.html
+
+每張卡都能點進去（例如 telecom/100splus.html）
+
+每張卡圖片都顯示（images/*.jpg 路徑正確）
+
+內頁的返回連結正常（回首頁/回段落）
+
+結論
+只寄信附上一個 HTML 檔：不行，同事看不到全部細節。
+
+寄整個資料夾（ZIP）或雲端共享資料夾：可以，同事能看到完整網站結構與畫面。
+
+要最像正式網站：上測試網址。
+
+如果你告訴我你目前「欣熹網站」資料夾內的檔名與結構（貼一張目錄樹狀即可），我可以直接判斷你用 ZIP 交付後，同事打開會不會有任何路徑問題。
+
+你說：
+你誤會我的意思,我們有nas,所以我只要把資料夾轉nas就好了,問題是同事們在nas裡打開這個資料夾index.html就可看到我所能看到的?我的意思是你建HTML時是否在程式碼裡包含某些路徑?
+ChatGPT 說：
+理解你的意思。你把整個「欣熹網站」資料夾放到 NAS 後，同事在 NAS 上打開 index.html 原則上可以看到與你相同的內容，前提是：我在 HTML 裡用的是「相對路徑」，而且你在 NAS 上保留同樣的資料夾結構。
+
+下面我把你最關心的「程式碼路徑」講清楚，並列出會踩雷的情境。
+
+1) 我們目前的 HTML 連結/圖片路徑屬於哪一種？
+以我最近給你的首頁/專頁版本來看，都是這種形式：
+
+內頁連結：href="telecom/100splus.html"
+
+圖片：src="images/100splus.jpg"
+
+專頁圖片：src="../images/100splus.jpg"
+
+這些都是相對路徑。
+
+相對路徑的結論
+只要你把整包資料夾搬到 NAS 並維持結構，例如：
+
+欣熹網站/
+  index.html
+  telecom/100splus.html
+  images/100splus.jpg
+同事在 NAS 上用檔案方式開 index.html，就會跟你一樣：卡片能點、圖片能顯示、可進專頁。
+
+2) 什麼情況會「同事看到的不一樣」？
+通常是以下幾類路徑寫法造成的（你現在問的核心點）：
+
+A. 絕對路徑（以網域為主）
+例如：src="http://www.shin-si.com.tw/images/100splus.jpg"
+
+離線/未上線時一定壞（因為它會去抓網域上的檔案，而不是 NAS 裡的檔案）。
+
+你目前的版本不是這種做法（圖片是相對路徑），所以不用擔心。
+
+B. 本機硬碟路徑（只在你電腦有效）
+例如：src="C:\Users\Jesse\Desktop\欣熹網站\images\100splus.jpg"
+
+這種同事一定看不到（因為每台電腦路徑不同）。
+
+我們的版本沒有用這種寫法。
+
+C. 站台根目錄路徑（以 / 開頭）
+例如：src="/images/100splus.jpg"
+
+這在「正式網站」通常沒問題，但在 file:// 或 NAS 檔案方式 可能會失效或行為不一致（因為 / 變成「檔案系統根」而不是網站根）。
+
+我們的版本沒有用 /images/...，所以也安全。
+
+3) NAS 開啟方式會影響嗎？
+只用純 HTML/CSS（我們目前就是）
+通常沒問題。
+
+但如果你未來加入「JS 讀取檔案」或「AJAX 載入 JSON」
+Chrome 對 file:// 或網路磁碟有安全限制，可能會擋跨來源讀取。
+這不是路徑寫錯，是瀏覽器安全政策。
+
+規避方式：用簡單的內部 Web server 開（NAS 上或同事電腦開），但你目前階段不需要。
+
+4) 你要的「快速自檢」方法（最保險）
+你把資料夾搬到 NAS 後，做一次測試：
+
+同事用檔案總管打開 NAS 資料夾
+
+雙擊 index.html
+
+檢查：
+
+首頁 7 張卡圖片都顯示
+
+點卡片能進專頁（例如 telecom/100splus.html）
+
+100S+ 專頁的圖片也顯示（../images/100splus.jpg）
+
+若首頁正常、但專頁圖片不顯示，99% 是「NAS 上資料夾結構沒放對」或「檔名大小寫不一致」（尤其你若有人用 macOS 上傳，大小寫問題比較常見）。
+
+5) 一個你可能會注意到的「看起來像路徑但不影響」項目
+HTML 裡的：
+
+<link rel="canonical" href="http://www.shin-si.com.tw/" />
+這是給搜尋引擎看的，不影響你們在 NAS 上瀏覽頁面內容；同事看得到的畫面不會因此改變。
+
+如果你願意，我可以直接替你做一次「路徑健檢」：
+
+你把 NAS 上的資料夾結構（用文字貼出檔案樹狀，或截圖）貼給我
+
+我會逐項指出：哪些連結/圖片會在 NAS 檔案模式下正常、哪些需要調整成相對路徑。
+
+你說：
+過去所存是否可刪除保留目前進度裡的文件?如果是,是哪幾個該保留?
+ChatGPT 說：
+可以刪，而且建議你只保留「目前要繼續往下做的那一套」，其餘全部移到「archive」或直接刪除，避免未來混用版本造成路徑錯誤。
+
+下面我用「你目前進度」來判斷：你現在的網站核心是 首頁（卡片整張可點、已取消點我按鈕）+ 100S+ 專頁。
+
+你應該保留的「最小必備集合」
+A. 網站必備（同事在 NAS 開 index.html 必須能正常看到）
+首頁：
+
+建議保留並命名為：index.html
+
+來源檔是我給你的最新版：shin-si-index_links_cards_clickable_no_button.html（你可改名成 index.html）
+
+100S+ 專頁：
+
+建議路徑與檔名：telecom/100splus.html
+
+來源檔是我之前給你的：telecom_100splus.html（你可改名成 100splus.html 並放入 telecom 資料夾）
+
+圖片資料夾（目前是必要的）：
+
+images/100splus.jpg
+
+images/90splus.jpg
+
+images/90r.jpg
+
+images/45s.jpg
+
+images/fsm-100.jpg
+
+images/ct-110.jpg
+
+images/fsr-115.jpg
+你若暫時沒有正式圖片，也可先放「占位圖」，否則卡片會顯示空白區塊。
+
+上面三項不齊，同事打開 NAS 裡的 index.html 會出現「圖片不見」或「點進去找不到頁」等問題。
+
+你可以刪除/不必放進網站資料夾的內容
+B. 可刪除的「舊版 HTML」(避免混亂)
+如果你已採用「卡片整張可點、無按鈕」的首頁版本，那以下這類舊版首頁就不必留在主資料夾：
+
+任何帶「點我按鈕」的首頁版本（例如 redCTA、btn_tuned 等）
+
+先前修補 FAQ 顯示、永續段落、FAQPage JSON-LD 的中間過渡版（若你不打算回退）
+
+你要留備份也可以，但建議移到 archive/，不要放在網站根目錄。
+
+C. PDF（不必放在網站根目錄）
+你上傳的 Fujikura ESG / Integrated Report PDF：
+
+不需要放進「網站公開/展示」的資料夾（除非你真的要讓同事在網頁上點下載 PDF）。
+
+建議放在另外一個資料夾，例如：source-pdf/ 或 reference/，供你做 NotebookLM/規格回填用。
+
+建議你在「欣熹網站」資料夾採用的結構（最不容易出錯）
+欣熹網站/
+  index.html
+  telecom/
+    100splus.html
+  specialty/                 (先保留空資料夾，後續會用到)
+  images/
+    100splus.jpg
+    90splus.jpg
+    90r.jpg
+    45s.jpg
+    fsm-100.jpg
+    ct-110.jpg
+    fsr-115.jpg
+  archive/                   (放舊版HTML，避免誤用)
+  reference/                 (放PDF/規格來源，不公開也不影響瀏覽)
+安全刪除流程（避免你刪錯）
+先把「欣熹網站」整包 複製一份到 NAS（或壓成 zip 當備份）。
+
+在主資料夾只留「最小必備集合」(index + telecom/100splus + images)。
+
+其餘所有 HTML 舊版本全部丟進 archive/。
+
+確認 NAS 上能開 index.html 且可點進 telecom/100splus.html、圖片都正常後，再把 archive/ 裡不需要的刪掉。
+
+如果你願意貼一下你「欣熹網站」資料夾目前的檔案清單（或截圖），我可以直接逐項標註：必留 / 可移到 archive / 可刪，讓你一次整理乾淨。
+
+你說：
+Fujikura_ESG_Data_AsOf_2024-10-22跟Fujikura_IntegratedReport_2025這2個PDF放根目錄還是也要設資料夾?
+ChatGPT 說：
+建議 不要放根目錄，改放一個獨立資料夾（例如 reference/ 或 docs/）。原因是：這兩份 PDF 目前的用途是「內容來源與校對」，不是網站瀏覽必需檔案；放根目錄容易讓專案結構變亂、也增加同事誤點/誤用的機率。
+
+建議放置方式
+在「欣熹網站」底下新增：
+
+欣熹網站/
+  index.html
+  telecom/
+  specialty/
+  images/
+  reference/
+    Fujikura_ESG_Data_AsOf_2024-10-22.pdf
+    Fujikura_IntegratedReport_2025.pdf
+什麼情況才需要放根目錄？
+只有在你打算在網頁上提供下載連結，而且你想用最短連結時才會放根目錄。但即使要提供下載，我仍建議放 reference/ 或 downloads/，再在 HTML 用相對路徑連結即可。
+
+例如你未來要做下載按鈕：
+
+<a href="reference/Fujikura_IntegratedReport_2025.pdf" target="_blank" rel="noopener">
+  下載 Fujikura Integrated Report 2025（PDF）
+</a>
+你放到 NAS 後同事能否打開？
+可以。只要同事在 NAS 上有讀取權限，點 reference/ 內 PDF 就能開；也不影響他們開 index.html 瀏覽網站。
+
+結論：兩份 PDF 都放 reference/（或你想叫 source-pdf/ 也可以），不要放根目錄。
+
+你說：
+我已在欣熹網站資料夾內新增這幾個資料夾 telecom 
+  specialty 
+  images 
+  reference
+ChatGPT 說：
+好的。下一步你可以用「最不會出錯」的方式把檔案放到正確位置，確保你和同事在 NAS 開啟都一致。
+
+1) 建議的完整結構（你已建立的資料夾版本）
+欣熹網站/
+  index.html
+  telecom/
+    100splus.html
+  specialty/
+  images/
+    100splus.jpg
+    90splus.jpg
+    90r.jpg
+    45s.jpg
+    fsm-100.jpg
+    ct-110.jpg
+    fsr-115.jpg
+  reference/
+    Fujikura_ESG_Data_AsOf_2024-10-22.pdf
+    Fujikura_IntegratedReport_2025.pdf
+2) 你現在要做的「唯一動作」
+把檔案依下列規則放好並改名（若你已改名可跳過）：
+
+A. 首頁
+把我給你的最新版首頁檔放到根目錄，並改名：
+index.html
+（來源檔名：shin-si-index_links_cards_clickable_no_button.html）
+
+B. 100S+ 專頁
+放到：telecom/
+
+改名為：100splus.html
+（來源檔名：telecom_100splus.html）
+
+C. 圖片
+全部放到：images/
+
+檔名請與 HTML 一致（大小寫一致）
+
+D. PDF
+兩份 PDF 放到：reference/（你已建立）
+
+3) 立刻驗證是否正確（你自己先測一次）
+直接雙擊開 欣熹網站/index.html
+
+檢查：
+
+7 張卡片圖片是否都顯示
+
+點 100S+ 卡片 是否能進 telecom/100splus.html
+
+100S+ 專頁中的圖片是否顯示（若專頁有引用）
+
+若「首頁圖片正常，但點進去顯示找不到頁面」：通常是 telecom/ 裡的檔名未改成 100splus.html。
+若「頁面正常但圖片不見」：通常是 images/ 檔名與程式碼不一致（大小寫或副檔名）。
+
+4) 下一步我需要你提供的唯一資訊（不用上傳檔案也可）
+請你貼出目前「欣熹網站」的目錄樹狀（用文字即可），類似：
+
+index.html
+
+telecom/100splus.html
+
+images/100splus.jpg …
+
+我就能一次確認：路徑是否全對、同事在 NAS 開啟是否會完全一致。
+
+你說：
+OK了,圖片是否在命名時考慮以下" 優化圖片 SEO
+目前的圖片對 Google 來說只是檔案。請務必在圖片的 alt 屬性（替代文字）加上關鍵字，例如 alt="Fujikura 90S+ 光纖熔接機"，這能讓你出現在 Google 圖片搜尋 的首位。"
+ChatGPT 說：
+要，而且建議你把「圖片 SEO」當成一個可控、低成本、但回報穩定的工作項目來做。不過有兩個重點需要釐清：
+
+檔名與 alt 都有價值，但權重與風險不同
+
+「Google 圖片搜尋首位」這種說法過度保證；正確做法是把可控因素做到位，提升被收錄與排名機率
+
+1) 檔名要不要為 SEO 設計？
+要，但不要為了 SEO 破壞可維護性。
+
+建議原則
+用英文小寫 + 連字號（避免中文檔名在不同系統/NAS/瀏覽器出現編碼問題）
+
+檔名包含型號 + 類別關鍵字即可，不要塞太長
+
+一旦上線，檔名不要頻繁更改（避免 404/快取/舊連結失效）
+
+建議命名範例
+fujikura-100splus-fusion-splicer.jpg
+
+fujikura-90splus-fusion-splicer.jpg
+
+fujikura-90r-ribbon-fusion-splicer.jpg
+
+fujikura-45s-ftth-fusion-splicer.jpg
+
+fujikura-fsm-100-arc-master.jpg
+
+fujikura-ct-110-fiber-cleaver.jpg
+
+fujikura-fsr-115-recoater.jpg
+
+你現在已用 100splus.jpg 這種短名也可以，不是錯；只是「多加一些關鍵字」會更完整。
+若你準備近期上線，我會建議現在就定稿檔名，避免日後改來改去。
+
+2) alt 屬性要不要做？怎麼寫才有效？
+一定要做。 alt 對圖片理解與無障礙都重要；而且對圖片搜尋/語意理解有加分。
+
+alt 寫法準則（務實版）
+描述圖片內容 + 帶入型號/關鍵字（自然語句）
+
+每張圖的 alt 不要完全一樣（避免被視為模板灌水）
+
+不要堆疊關鍵字（keyword stuffing）
+
+你網站的建議 alt 範例（可直接用）
+100S+：alt="Fujikura 100S+ 光纖熔接機（台灣代理欣熹科技）"
+
+90S+：alt="Fujikura 90S+ 光纖熔接機（通訊工程與FTTH）"
+
+90R：alt="Fujikura 90R 帶狀光纖熔接機（Ribbon Fiber）"
+
+45S：alt="Fujikura 45S FTTH 入戶工程光纖熔接機"
+
+FSM-100：alt="Fujikura FSM-100 系列特種光纖熔接平台（ARCMaster）"
+
+CT-110：alt="Fujikura CT-110 大管徑光纖切刀（高精度端面）"
+
+FSR-115：alt="Fujikura FSR-115 光纖再塗覆機（Recoater）"
+
+3) 你目前程式碼其實已經有 alt
+你現在首頁的圖片寫法是：
+
+<img class="card-img" src="images/100splus.jpg" alt="Fujikura 100S+">
+所以「有 alt」只是還不夠完整。你要的是把 alt 升級成關鍵字友善版本。
+
+4) 我建議的執行策略（避免你改到混亂）
+若你已確定近期要上線
+先不改檔名（避免大量改動導致連結對不上）
+
+先把所有 alt 改成我上面那套（最穩、立刻加分）
+
+若你還在內部測試階段（現在）
+可以一次把檔名改成「含關鍵字版本」
+
+同步把 HTML 的 src 全部更新一致
+
+這樣上線後就不需要改名造成歷史連結問題
+
+如果你告訴我你想採用哪種策略：
+
+只改 alt、不改檔名，或
+
+檔名與 alt 一起最佳化
+
+我可以直接回傳「完整 index.html + 100splus.html」兩份更新版（完全套好、你只要覆蓋檔案即可）。
+
+你說：
+檔名與 alt 一起最佳化
+ChatGPT 說：
+
+已思考 1m 58s
+已完成「檔名 + alt 一起最佳化」，並輸出兩個完整 HTML 檔（你可直接覆蓋原檔使用）。
+
+下載檔案
+Download 首頁（已更新圖片檔名與 alt）：index_optimized_images_alt.html
+
+Download 100S+ 專頁（已更新圖片檔名與 alt，含 Product JSON-LD + FAQPage JSON-LD）：telecom_100splus_optimized_images_alt.html
+
+你必須同步做的「圖片檔名改名清單」（非常重要）
+請把 images/ 資料夾內的圖片依下列 舊 → 新 改名（或直接用新檔名放入）：
+
+100splus.jpg → fujikura-100splus-fusion-splicer.jpg
+
+90splus.jpg → fujikura-90splus-fusion-splicer.jpg
+
+90r.jpg → fujikura-90r-ribbon-fusion-splicer.jpg
+
+45s.jpg → fujikura-45s-ftth-fusion-splicer.jpg
+
+fsm-100.jpg → fujikura-fsm-100-arc-master.jpg
+
+ct-110.jpg → fujikura-ct-110-fiber-cleaver.jpg
+
+fsr-115.jpg → fujikura-fsr-115-recoater.jpg
+
+若你只改 HTML、沒改圖片檔名，頁面圖片會全部變成空白。
+
+檔案放置位置（避免 NAS 開啟失效）
+請依你已建立的結構放置：
+
+根目錄：把 index_optimized_images_alt.html 改名為 index.html
+
+telecom/：把 telecom_100splus_optimized_images_alt.html 改名為 100splus.html
+
+images/：放入上述新檔名的圖片
+
+我已替你做的 alt（範例）
+例如首頁 90S+ 圖片已變成：
+
+檔名：fujikura-90splus-fusion-splicer.jpg
+
+alt：Fujikura 90S+ 光纖熔接機（通訊工程與FTTH）
+
+100S+ 專頁主圖 alt 也已完整化。
+
+如果你希望我下一步把「100S+ 專頁」的 規格表欄位再做成「可直接貼入 NotebookLM 的抽取模板」（一段 prompt + 欄位對應），我可以直接給你可複製使用的 NotebookLM 指令稿。
+
+你說：
+圖還未下載,其他都已改好,未來該存何處,檔名等都要依此原則,到時依舊請你給我適合的檔名
+ChatGPT 說：
+可以。你現在已確立「檔名 + alt 一起最佳化」的規則，後續圖片與文件就照同一套治理方式走，會最乾淨、最不容易出錯（尤其你有 NAS 與多人協作）。
+
+1) 圖片未下載前，先放哪裡？
+建議你在專案內新增兩個資料夾（都放在「欣熹網站」底下）：
+
+欣熹網站/
+  images/              ← 上線用（檔名固定、會被 HTML 引用）
+  assets_inbox/        ← 暫存/待處理（原始圖片、廠商傳來的、未命名的）
+使用規則
+所有新拿到的圖片先丟 assets_inbox/
+
+你確認要用在網站後，我再給你「標準化檔名」
+
+你把圖片改名後，移入 images/（這裡只放「定稿、可用、檔名穩定」的圖）
+
+這樣可以避免 images/ 裡混雜一堆未定稿檔名，導致 HTML 連結頻繁壞掉。
+
+2) 檔名原則（你之後都依此）
+你之後只要提供「型號 + 圖片用途」，我就能給你一組一致的檔名。
+
+圖片檔名建議格式
+fujikura-{model}-{category}-{view}.jpg
+model：100splus / 90splus / 90r / 45s / fsm-100 / ct-110 / fsr-115
+
+category：fusion-splicer / ribbon-fusion-splicer / fiber-cleaver / recoater 等
+
+view（可選）：front / angle / kit / screen / case 等（若只有一張可省略）
+
+範例（你已採用的）
+fujikura-100splus-fusion-splicer.jpg
+
+fujikura-90r-ribbon-fusion-splicer.jpg
+
+3) alt 原則（你不用自己想，我可一併給你）
+你每張圖提供「用途/位置」，我會給你：
+
+對應的檔名
+
+對應的 alt（自然語句，不堆關鍵字）
+
+若需要，我也可一併更新完整 HTML 檔讓你直接覆蓋
+
+4) PDF/規格文件要放哪？
+你已經有 reference/ 很好。建議再分層：
+
+reference/
+  fujikura/
+    reports/
+    datasheets/
+    manuals/
+報告類：Integrated Report、ESG Data（你現在這兩份）
+
+Datasheet：各型號規格表來源（NotebookLM 主要吃這個）
+
+Manual：操作手冊（如果你要寫「維修/校正/使用 FAQ」會用到）
+
+5) 你之後怎麼把「我給你的檔名」用在流程裡（最省事）
+你只要每次把新圖片丟到 assets_inbox/，然後丟給我：
+
+型號：例如 90S+
+
+圖片內容：例如「機台正面照 / 施工情境 / 配件套件」
+
+你要放的位置：首頁卡片 or 專頁主圖 or 規格段落
+
+我會回你一份「命名清單」，例如：
+
+檔名：fujikura-90splus-fusion-splicer-front.jpg
+
+alt：Fujikura 90S+ 光纖熔接機（正面機身）
+
+一句話結論
+暫存放 assets_inbox/
+
+定稿放 images/
+
+檔名與 alt 依你現在這套規則走；未來你要命名時直接丟圖用途，我會給你最適合的檔名與 alt。
+
+你說：
+好了,第一步：建立「光纖熔接機」專屬網頁-OK!第二步：增加產品詳細文字
+不要只放 PDF。每個型號下方至少寫 200-300 字的中文字介紹，包含：
+
+應用場景： 電信幹線、FTTH 入戶、數據中心。
+
+技術優勢： 防風蓋自動開閉、觸控螢幕操作、電池續航力。
+
+服務關鍵字： 「台灣原廠保固」、「技術教育訓練」、「熔接機校正服務」。-後續請你留意,第三步：優化圖片 SEO-OK,第四步：建置「技術知識庫」或「案例分享」之類的東西,在官網增加一個部落格或新聞區。撰寫如：
+
+「2024 年光纖熔接機選購指南：為什麼 Fujikura 是工程首選？」
+
+「光纖施工常見問題：如何降低熔接損耗？」 這類內容會帶來大量「搜尋問題」的潛在客戶，進而轉化為購買。-後續請你留意.就TOP-DOWN原則分層需求來說,現在該先進行第四步還是該準備我該下載FUJIKURA官網的圖片或文件?
+ChatGPT 說：
+
+已思考 24s
+就你目前的「Top-Down 分層需求」與 SEO/轉換效益來看：先準備 Fujikura 官方素材（圖片/型錄/規格 PDF）再做第 4 步，會更符合效率與風險控管。
+
+原因很務實：
+
+第 2 步（每型號 200–300 字）與後續專頁「詳細規格」都需要可引用的官方依據；沒有素材，你寫得再好也容易反覆改稿。
+
+**第 4 步（知識庫/部落格）**確實對 SEO 很有幫助，但它是「長尾」與「索引累積」工作；你如果先做，文章也會需要引用產品特性/規格/圖示，仍然會回頭卡在素材上。
+
+建議排序
+先把官方素材與規格來源蒐集齊（現在做）
+
+再把各型號專頁補滿 200–300 字（第 2 步）
+
+同時建立部落格區的「架構空殼」（第 4 步：分類、URL、頁面模板先做好）
+
+最後開始寫第 1–2 篇文章並發佈（讓 Google 早點看到新的內容區塊）
+
+這樣做，你既不會延後第 4 步太久，又不會因缺素材造成第 2 步與專頁反覆返工。
+
+你現在的「下一個唯一動作」：下載官方 PDF/型錄（作為規格與文案依據）
+A. 去官方「Catalog Download」頁一次抓齊
+Fujikura 官方有集中提供 Telecommunication / R&D, Factory 用途的 catalog/brochure 下載，且列表包含你要的 100S、90R、45S、CT110/111、FSR115 等（以及通用 catalog）。
+Fujikura
+
+你要做的事（一步一步）
+
+打開 Fujikura 官方的 catalog download 頁（就是上面來源頁）。
+Fujikura
+
+針對你網站要用的型號，逐一下載 Brochure（或 Catalog）PDF：
+
+100S Kit
+
+90R Kit series
+
+45S Kit
+
+CT110/111
+
+FSR115/116/117（至少先抓 FSR115 對應）
+
+R&D/Factory general catalog（若你要寫 FSM-100/特種應用段落會很有用）
+
+存到你專案的：
+reference/fujikura/datasheets/
+
+B. 檔名規則（你先照存，之後我再幫你定稿命名）
+先用這種「不會亂」的格式：
+
+fujikura_100splus_brochure_official.pdf
+
+fujikura_90r_brochure_official.pdf
+
+fujikura_45s_brochure_official.pdf
+
+fujikura_ct110-111_brochure_official.pdf
+
+fujikura_fsr115_brochure_official.pdf
+
+圖片/授權的風險提醒（你是合法代理也建議走保守路線）
+不同 Fujikura 相關網站的 legal/terms 條款表述可能不一致；有的頁面允許在特定條件下複製文件、有的則強調不得將圖片/內容用於商業再散布。
+fujikura.co.jp
++1
+
+因此最穩的做法是：
+
+優先用官方提供的 brochure/cata log 的可下載素材（通常就是希望合作夥伴拿來介紹產品）。
+Fujikura
+
+圖片若不是明確可下載的媒體包，建議你用「代理/合作夥伴管道」向原廠/區域公司要官方產品圖包（這是企業端最標準流程；AFL 的 press kit 也明確提到 logo/素材需授權方可使用）。
+aflglobal.com
+
+你問的「第四步要不要先做」：我的折衷做法
+素材下載完成後，你可以立刻做第 4 步的“架構空殼”（不必等所有文章寫完）：
+
+/blog/ 或 /knowledge/
+
+分類：選購指南、施工技巧、維修校正、案例分享
+
+先上線 1 篇「選購指南」＋ 1 篇「降低熔接損耗」
+這樣 Google 會更早開始抓取新區塊，但內容品質會更高、引用也更準。
+
+你現在只要回我一句
+你完成下載後，回覆我：「PDF 已下載完成」（不需要貼內容）。
+我下一步就按你第 2 步要求，直接開始把各型號頁面補上 200–300 字中文介紹（含應用場景/技術優勢/服務關鍵字），並維持你指定的關鍵字策略（台灣原廠保固／技術教育訓練／熔接機校正服務）。
+
+你說：
+之前不是說下載後給NOTEBOOKLM?
+ChatGPT 說：
+是的，流程沒有改：官方 PDF 下載後就是丟 NotebookLM。我上一則的意思是「先把素材蒐集齊」，而蒐集齊之後的下一步動作就是 NotebookLM。
+
+下面把你要的「概念→邏輯→評估→執行」用最短路徑講清楚，並給你可直接照做的操作步驟。
+
+你現在的正確順序（不走冤枉路）
+下載官方 PDF（datasheet / brochure / catalog）
+
+上傳到 NotebookLM（建立產品資料庫）
+
+用固定 Prompt 產出：每型號 200–300 字介紹 + 規格表欄位
+
+我把產出內容放進專頁 HTML（你要我給完整程式碼）
+
+為什麼一定要先下載再上傳 NotebookLM？
+NotebookLM 需要「來源文件」才能高準確抽取規格與功能敘述。你若只靠記憶或網頁零散資訊，會：
+
+規格容易寫錯（後續返工成本高）
+
+文字無法對應資料來源（可信度/可核對性差）
+
+你現在要做的「唯一動作」：把下載的 PDF 丟進 NotebookLM
+A. 檔案整理（你已經有 reference 資料夾）
+請放到：
+欣熹網站/reference/fujikura/datasheets/（沒有就新增）
+
+檔名先用你看得懂就好（之後我可統一命名）。
+
+B. NotebookLM 上傳步驟（免費標準款）
+開 NotebookLM
+
+開一個新 Notebook（建議命名：Fujikura 產品規格庫）
+
+點 Add sources / 新增來源
+
+選 Upload files / 上傳檔案
+
+一次選取你剛下載的 PDF（100S+、90S+、90R、45S、FSM-100、CT-110/111、FSR-115…）
+
+上傳完成後，先不要問太複雜問題，先做「校驗」：
+
+問它：「列出此 PDF 的型號與你能抽到的主要規格欄位有哪些？」
+目的是確認它真的讀到內容。
+
+我給你一段「固定 Prompt」（貼進 NotebookLM 就能用）
+你對每個型號都用同一段，產出直接可貼進網站：
+
+Prompt 1：200–300 字中文介紹（含你要的三類）
+
+應用場景：電信幹線/FTTH/數據中心
+
+技術優勢：自動開閉、防風蓋、觸控、續航等（以 PDF 為準）
+
+服務關鍵字：台灣原廠保固/技術教育訓練/熔接機校正服務（自然放入）
+
+你在 NotebookLM 直接貼這段：
+
+請根據來源 PDF，為「{型號}」撰寫 200–300 字繁體中文產品介紹，用於欣熹科技官網。內容必須包含：
+
+應用場景（至少涵蓋：電信幹線、FTTH 入戶、數據中心中符合者）
+
+技術優勢（僅能寫 PDF 有明確提及者；若未提及請不要編造）
+
+服務關鍵字自然融入（必須包含：台灣原廠保固、技術教育訓練、熔接機校正服務）
+最後請用條列列出 5 個「SEO 關鍵短語」（不超過 8 個字/條）。
+
+Prompt 2：規格抽取（做成表格欄位）
+
+請從來源 PDF 抽取「{型號}」的規格，輸出為兩欄表格：欄位名稱 / 規格值。若 PDF 沒有該欄位請標示「PDF 未提供」。請至少包含：熔接方式、適用光纖類型、平均熔接時間、加熱時間、電池續航（可熔接/可加熱次數）、重量、尺寸、螢幕/操作介面、防風/防塵設計、資料輸出/連線功能、適用情境。
+
+你做完後回我什麼，我就能直接產出 HTML
+你完成上傳與第一次抽取後，不用把整份 PDF 貼給我，你只要回覆我：
+
+「100S+ 的 200–300 字介紹與規格表結果」（貼 NotebookLM 生成的文字即可）
+
+我就會把內容：
+
+放進 telecom/100splus.html
+
+維持你既有的 SEO 結構（Product JSON-LD、FAQPage）
+
+並給你完整程式碼檔（你可直接覆蓋）。
+
+如果你要更省事：你下一則直接告訴我「你已經把哪些型號 PDF 上傳到 NotebookLM」，我就按那個清單，給你每個型號的「一鍵 Prompt 清單」（逐型號填 {型號} 版本），你照貼就能批次產出。
+
+你說：
+1.你之前有提到NotebookLM免費版限制,要我一次只做2個,請幫我留意,2.下載的檔案存reference/fujikura/datasheets/?你之前要我做的是fujikura跟datasheets是reference底下2個同層級資料夾
+ChatGPT 說：
+1) NotebookLM 免費版限制：我會按「一次兩個型號」節奏控管
+你說得對：為了避免免費版在「來源數量/處理量」上卡住，我們後續採用批次節奏：
+
+每一輪只處理 2 個型號（例如：100S+ + 90S+）
+
+每輪產出固定三樣：
+
+各 200–300 字中文介紹（含你指定服務關鍵字）
+
+規格表欄位（表格形式）
+
+該型號 FAQ（若你決定要）
+
+這樣做的好處：不會因上傳太多來源而降低準確性或超出免費額度；你也能快速把網站逐頁完成上線。
+
+2) 資料夾結構：你講得對，我之前的寫法是「建議版」，你現有做法也完全可行
+你目前是：reference/ 底下 同層級有 fujikura/ 與 datasheets/（或你原本規劃是這樣）。這樣也可以，只要我們把規則「定死」避免混亂。
+
+建議你現在就選一個，後面全部照同一套
+我給你兩個等價方案，你已經做了哪一個就選那個，不要混用：
+
+方案 A（分品牌再分文件類型，擴充性最好）—我偏好
+reference/
+  fujikura/
+    datasheets/
+    manuals/
+    reports/
+優點：未來如果加入其他品牌（例如其他熔接機或半導體材料供應商）非常好擴充。
+
+方案 B（先分文件類型，再分品牌）
+reference/
+  datasheets/
+    fujikura/
+  manuals/
+    fujikura/
+  reports/
+    fujikura/
+優點：你習慣「先看文件類型」的人會覺得直覺。
+
+你現在該怎麼做（不問你、直接給最佳行動）
+因為你已提到「你之前要我做的是 fujikura 跟 datasheets 在 reference 底下同層級」，我建議你採用 方案 B（符合你既有認知，減少返工）：
+
+請你在 reference/ 底下整理成：
+reference/
+  datasheets/
+    fujikura/
+  reports/
+    fujikura/
+然後：
+
+你剛下載的「各型號 brochure/datasheet」放：
+reference/datasheets/fujikura/
+
+你那兩份 ESG / Integrated Report 放：
+reference/reports/fujikura/
+
+下一步（只做一個動作）
+請先挑第一輪兩個型號（我建議先：100S+ + 90S+），把它們的 PDF 放到：
+reference/datasheets/fujikura/
+
+做完後回我一句：
+「第一輪兩個 PDF 已就位：100S+、90S+」
+
+我就會接著給你「NotebookLM 專用的兩份 Prompt（已填好型號）」讓你直接貼上去產出內容。
+
+你說：
+我想用方案 A
+ChatGPT 說：
+可以，方案 A 是最適合你後續擴充（含半導體材料區塊、其他品牌/文件類型）的長期結構。我直接把你要做的「唯一動作」寫清楚，照做即可。
+
+方案 A 最終目錄（請以此為準）
+在你的「欣熹網站/reference/」底下建立：
+
+reference/
+  fujikura/
+    datasheets/
+    manuals/
+    reports/
+你現在要做的唯一動作：移動/整理這兩份報告 PDF
+把你目前的兩份報告移到：
+
+reference/fujikura/reports/
+
+Fujikura_ESG_Data_AsOf_2024-10-22.pdf
+
+Fujikura_IntegratedReport_2025.pdf
+
+（檔名可先不改，先把位置正確即可。）
+
+接下來（下一輪的兩個型號 PDF）
+你之後每次下載的型號規格/型錄（100S+、90S+、90R、45S、FSM-100、CT-110/111、FSR-115…）全部放到：
+
+reference/fujikura/datasheets/
+
+操作手冊（若你有）放到：
+
+reference/fujikura/manuals/
+
+快速自檢（30 秒）
+你整理完後，確認 reference/fujikura/ 底下只會看到三個資料夾：
+
+datasheets
+
+manuals
+
+reports
+
+你完成上述「唯一動作」後回我一句：
+「方案 A 結構完成，reports 已移入」
+
+我就會按「NotebookLM 免費版一次兩個型號」的節奏，從 100S+ + 90S+ 開始，給你第一輪的 NotebookLM prompts（已填好型號），讓你直接貼上產出 200–300 字介紹 + 規格表欄位。
+
+你說：
+官網100S檔名是YPE33B,我改成YPE33B(100S)是否OK?
+ChatGPT 說：
+可以改成 YPE33B(100S)，但我不建議把它當作「主檔名標準」。原因是括號在跨系統/URL/批次處理時偶爾會造成不便（雖不一定會出錯，但不夠乾淨），而且你後續還要做 SEO/可維護的命名一致性。
+
+建議做法（兩層命名：內部保存 vs 對外引用）
+A. 內部保存（reference 裡的原始來源檔）
+你要保留原廠代碼與人看得懂的型號，建議用「底線/連字號」取代括號：
+
+推薦：YPE33B_100Splus.pdf 或 YPE33B-100Splus.pdf
+
+也可以：YPE33B_Fujikura_100Splus.pdf
+
+優點：
+
+Windows/NAS/雲端都穩
+
+之後若要在網頁上做下載連結或上傳 NotebookLM 不會被符號干擾
+
+你看得出原廠代碼（YPE33B）與型號（100S+）
+
+B. 若你堅持要用括號
+YPE33B(100S).pdf 也能用，NotebookLM 通常也能吃，但我會建議改成：
+
+YPE33B(100Splus).pdf（避免只寫 100S，與 100S+ 混淆）
+
+你目前情境下的最務實結論
+OK 可以改，不會影響你把檔案放進 reference/fujikura/datasheets/ 或上傳 NotebookLM。
+
+但若你要建立長期一致的檔名規則，我建議從現在開始採用：
+YPE33B_100Splus.pdf（最乾淨、最不會出問題）
+
+如果你把「90S+ / 90R / 45S」的官方檔名（或代碼）也貼給我，我可以一次給你整套「原廠代碼 + 型號」的統一命名清單，後面全部照抄即可。
+
+你說：
+命名原則須兼顧SEO跟不易發生錯誤,請你留意,後續我每下載一個檔案就傳官方檔名給你,請你幫我命名
+ChatGPT 說：
+了解。後續你每下載一個檔案，只要把「官方檔名」貼給我，我會回你一個可直接套用的建議檔名，並確保同時滿足：
+
+不易出錯（跨 Windows/NAS/瀏覽器/上線環境都穩）
+
+兼顧 SEO（對外可被索引的資產：尤其圖片與可下載文件）
+
+下面先把「我們共同遵守的命名規則」定義清楚，後面你丟檔名我就照這套規則產出。
+
+命名總原則（兼顧 SEO + 低錯誤）
+1) 只用 ASCII 小寫 + 數字 + 連字號（-）
+避免：空白、括號 ()、+、&、逗號、中文、全形符號
+
+原因：NAS/URL/不同作業系統最不容易出問題
+
+2) + 一律寫成 plus
+例如 100s+ → 100splus、90s+ → 90splus
+
+3) 內容要可讀、可排序、可追溯來源
+型號（model）是核心
+
+原廠代碼（如 YPE33B）可以保留在檔名中（利於追溯）
+
+文件類型要標註（datasheet / brochure / manual / catalog / report）
+
+如有年份或版本日，納入（例如 2025、2024-10-22）
+
+PDF（放 reference）建議命名格式
+PDF 本身通常不直接影響 SEO（除非你在官網提供下載並被索引），但用同樣的 SEO 友善格式能讓你未來上線更省事。
+
+格式 A（含原廠代碼，最適合你）
+fujikura-{model}-{doc-type}-{oemcode}-{lang}-{yyyymmdd}.pdf
+{model}：100splus / 90splus / 90r / 45s / fsm-100 / ct-110 / fsr-115 …
+
+{doc-type}：datasheet / brochure / manual / catalog / report
+
+{oemcode}：ype33b 這種原廠代碼（有就放）
+
+{lang}：en / ja / zh（不確定可先省略）
+
+{yyyymmdd}：有日期就放，沒有就省略
+
+你舉例的 YPE33B（100S）
+假設它是 100S+ 的 brochure、英文版、無日期：
+
+建議：fujikura-100splus-brochure-ype33b-en.pdf
+
+若你只想保留最必要資訊（更短但仍穩）：
+
+fujikura-100splus-ype33b.pdf
+
+圖片（放 images，會影響圖片 SEO）建議命名格式
+fujikura-{model}-{category}-{view}.jpg
+{category}：fusion-splicer / ribbon-fusion-splicer / fiber-cleaver / recoater …
+
+{view}：front / angle / kit / screen / case / field（可省略）
+
+例如：
+
+fujikura-100splus-fusion-splicer-front.jpg
+
+你每次傳給我哪些資訊，我就能一次命名到位
+你貼「官方檔名」之外，若你能順便補一句（可選）：
+
+型號（100S+ / 90S+ …）
+
+文件類型（規格表/型錄/手冊/報告）
+
+語言（日/英/中）
+
+日期/版本（若檔名或封面有）
+
+即使你只貼官方檔名也可以，我會依內容推定；不確定就給「短版穩定命名」讓你先用。
+
+你接下來的做法
+從下一個檔案開始，你直接貼像這樣即可：
+
+官方檔名：YPE33B.pdf（或任何原廠檔名）
+
+你認為它對應：100S+ brochure（如果你知道）
+
+我會回覆你：
+
+建議檔名（最終版、可直接改檔）
+
+若需要上官網下載，我也會給你對應的「顯示標題」（人看的那種）
+
+你可以現在就把這份 YPE33B 的「官方完整檔名（含副檔名）」貼我一次，我會依上述規則給你定稿命名。
+
+你說：
+90R_kit_91330_2411_0098_14_E
+ChatGPT 說：
+收到。以「兼顧 SEO + 不易出錯」原則，這份檔案我建議這樣命名（全小寫、連字號、可追溯原廠代碼與版本）：
+
+建議檔名（推薦）
+fujikura-90r-ribbon-fusion-splicer-kit-91330-2411-0098-14-en.pdf
+
+命名邏輯（供你核對）
+fujikura：品牌
+
+90r：型號
+
+ribbon-fusion-splicer：類別（利於日後官網下載/SEO）
+
+kit：文件主題（你原檔名含 kit）
+
+91330-2411-0098-14：保留原廠識別碼/版本資訊（追溯來源）
+
+en：原檔名尾碼 E 通常代表英文版（我用 en 表示）
+
+更短版本（若你想簡化）
+fujikura-90r-kit-91330-2411-0098-14-en.pdf
+
+放置位置（方案 A）
+請放到：reference/fujikura/datasheets/
+
+如果你告訴我這份檔案的副檔名確實是 .pdf（通常是），我也可以把它加入你「命名對照清單」的標準格式，後續你只要貼官方檔名我就照同樣規則輸出。
+
+你說：
+為避免錯誤,我都直接用你給的檔名,這2個已下載檔案該上傳到NOTEBOOKLM了?
+ChatGPT 說：
+
+已思考 13s
+是，現在就可以把這 2 份 PDF 上傳到 NotebookLM，而且這正符合我們先前採用的「免費版一次做 2 個型號」節奏（避免一次塞太多來源、降低可控性）。
+
+另外補充一點：NotebookLM 免費版不是只能放 2 個來源；官方說明是每個 notebook 可放 50 個 sources、每日 chats 等也有上限（限制會變動）。
+Google 支援
+
+我們採「一次兩個型號」是你的專案管理策略：降低錯誤、提高每輪產出品質，不是工具硬限制。
+
+你現在的下一個唯一動作：上傳這 2 份 PDF（100S+、90R）
+1) 檔案放置（你本機資料夾已 OK）
+把兩份檔案放在你選定的方案 A 路徑即可：
+
+reference/fujikura/datasheets/
+
+2) NotebookLM 上傳步驟（個人 Gmail／免費）
+打開 NotebookLM
+
+建立或打開 notebook（建議：Fujikura 產品規格庫）
+
+點 Add sources / 新增來源
+
+選 Upload files / 上傳檔案
+
+一次選取這兩份 PDF 上傳（本輪只上傳 2 份）
+
+上傳完成後，先做「驗證問句」（確認讀得到）：
+
+「請列出這兩份 PDF 各自涵蓋的型號名稱，以及你能辨識的主要規格欄位有哪些？」
+
+上傳前的小提醒（避免你後面改檔名造成混亂）
+你已決定「我給的檔名你就直接用」：很好。
+
+上傳到 NotebookLM 前就先把檔名定稿（上傳後改名雖不一定影響，但容易讓你本機/NAS/NotebookLM 對不上）。
+
+你目前兩份我建議的命名方向是：
+
+90R：fujikura-90r-ribbon-fusion-splicer-kit-91330-2411-0098-14-en.pdf
+
+100S+（YPE33B）：建議用 fujikura-100splus-brochure-ype33b-en.pdf 這種格式（比括號穩定、也更 SEO/維護友善）。
+
+上傳完成後你回我什麼，我就能接著推進第 2 步內容
+你上傳完後回覆我一句即可：
+「兩份 PDF 已上傳 NotebookLM」
+
+我就會給你「本輪兩個型號專用的 NotebookLM Prompt（已填型號）」用來產出：
+
+每型號 200–300 字中文介紹（含：應用場景、技術優勢、服務關鍵字）
+
+規格表欄位（可直接貼入專頁）
+
+（並持續幫你控管：每輪最多兩個型號。）
+
+你說：
+這兩份 PDF 文件分別詳細介紹了 Fujikura 品牌的不同光纖融接機型號、隨附配件以及技術規格。以下為您整理各文件涵蓋的型號名稱與可辨識的主要規格欄位：
+1. YPE33B_100Splus.pdf
+這份文件主要介紹單芯對芯光纖融接機及其配套工具。
+• 涵蓋型號名稱：
+    ◦ 核心設備： 核心對齊光纖融接機 100S,。
+    ◦ 標準配套工具： 單芯光纖剝線鉗 SS05、光纖切割刀 CT60,,。
+    ◦ 配件： 電池組 BTR-19、AC 電源轉接器 ADC-22、備用電極棒 ELCT2-16C、光纖夾具板 SP-05 等。
+• 能辨識的主要規格與功能欄位：
+    ◦ 切割刀規格： 切割刀片位置數量（28 個位置）,。
+    ◦ 操作速度： 操作速度提升比例（較舊型號提升 20%）。
+    ◦ 自動化功能： 自動防風蓋（自動開關）、光纖放置導引（手指放置導引）,。
+    ◦ 連網與管理： 藍牙連線功能、GPS 融接位置紀錄（GPS Splice Coach）、智慧型手機 App（Splice+）聯動,,。
+    ◦ 電源兼容性： 可使用標準行動電源充電。
+
+--------------------------------------------------------------------------------
+2. fujikura-90r-ribbon-fusion-splicer-kit...pdf
+這份文件詳細列出了多芯光纖（帶狀光纖）融接機系列的規格。
+• 涵蓋型號名稱：
+    ◦ 核心設備： 多芯光纖融接機 90R16 與 90R12,,。
+    ◦ 標準配套工具： 光纖切割刀 CT50、帶狀光纖剝線鉗 RS03、單芯光纖剝線鉗 SS03 或 SS01,。
+    ◦ 配件與選擇性組件： 可更換式 V 型槽（如 VG16-01, VG12-01 等）、各類光纖夾具（FH-70 系列）以及帶狀化工具（FAT-04, RT-02）,,,。
+• 能辨識的主要規格欄位：
+    ◦ 光纖基本特性： 適用光纖類型（單模、多模）、融接芯數（最高 12 芯或 16 芯）、包層直徑、塗覆層直徑,,,。
+    ◦ 融接效能： 融接損耗（依據 ITU-T 不同標準）、融接時間（快速模式與自動模式）、抗拉力測試,,,。
+    ◦ 加熱效能： 適用保護套管類型（長度、直徑）、加熱時間,。
+    ◦ 硬體特徵： 電極棒壽命（融接次數）、設備尺寸、重量（含電池）,。
+    ◦ 環境條件： 操作與儲存溫度、濕度、最高使用海拔高度,。
+    ◦ 電力規格： 電池類型與容量（融接與加熱循環次數）、AC 轉接器輸入參數,,。
+    ◦ 顯示與介面： LCD 螢幕尺寸（觸控式）、影像放大倍率、傳輸介面（USB 2.0、無線藍牙 4.1 LE）,,。
+    ◦ 資料儲存： 融接模式數量、加熱模式數量、結果紀錄數、影像儲存量,,。
+這兩份文件共同展示了 Fujikura 融接機具備的 Active Fusion Control（主動融接控制）與 Active Blade Management（主動刀片管理）等核心技術指標,,。
+為了方便理解，您可以將這些規格想像成手機的硬體規格表：有的欄位描述效能（如融接速度與損耗），有的描述耐用度（如電極棒與刀片壽命），而連網功能（藍牙與 GPS）則讓這些工具更具備智慧管理的特性。
+ChatGPT 說：
+
+已思考 13s
+你這段 NotebookLM 輸出「驗證通過」：兩份 PDF 都已被正確理解並可用於第 2 步（每型號 200–300 字產品文字 + 規格欄位）。我已依你提供的摘要，直接把內容落地成「兩個可上線的專頁 HTML（含 Product/FAQPage JSON-LD）」。
+
+下載：兩個完整專頁（可直接放進 telecom/）
+100S+ 專頁（已加入 200–300 字介紹 + 規格欄位 + FAQ JSON-LD）
+Download telecom_100splus_with_200_300_and_specs.html
+
+90R 專頁（90R12/90R16，已加入 200–300 字介紹 + 規格欄位 + FAQ JSON-LD）
+Download telecom_90r_with_200_300_and_specs.html
+
+你現在的唯一動作（放到 NAS/資料夾即可）
+把檔案放到你的網站資料夾結構：
+
+telecom/100splus.html ← 用我給你的 100S+ 檔案覆蓋/存成此檔名
+
+telecom/90r.html ← 用我給你的 90R 檔案存成此檔名
+
+你先前首頁已做「點卡片導入專頁」，只要檔名與路徑一致，點卡就會進入專頁。
+
+圖片尚未下載也沒關係，但你要預留檔名
+兩個專頁我已先引用「SEO 友善圖檔名」（你之後下載圖片就照這個命名放入 images/）：
+
+images/fujikura-100splus-fusion-splicer.jpg
+
+images/fujikura-90r-ribbon-fusion-splicer.jpg
+
+等你拿到原廠圖片，你只要：
+
+放到 images/
+
+改成以上檔名
+
+專頁就會自動顯示（不需再改 HTML）
+
+重要提醒（避免 SEO 反噬）
+你貼的摘要裡，有些欄位「存在但未給數值」（例如 90R 的損耗、時間、尺寸重量等）。我在頁面中刻意不硬填數字，以免未來被客戶或競品抓錯。
+等你下一輪用 NotebookLM 把 PDF 的數值抽出來，我再把「規格表」補齊到“可投標/可交付”的版本。
+
+你做完上述「唯一動作」（把兩個檔案放到 telecom/ 並改成對應檔名）後回我一句：
+「100S+ / 90R 專頁已放入 telecom 並可正常開啟」
+
+我就按既定節奏進入下一輪：90S+ + 45S（同樣一次兩個型號，控品質、控錯誤）。
+
+
+
+你說：
+telecom/100splus裡面有"/",我存成telecom100splus,90R也如此
+ChatGPT 說：
+了解。你現在的作法（把檔名存成 telecom100splus.html、telecom90r.html）可以用，但它會牽動兩件事：
+
+首頁連結（href）要跟著改，不然點卡片會 404
+
+SEO 結構會變差一點（路徑分層消失、canonical/結構化資料 URL 也要一致）
+
+我給你一個「不改你現有檔名」的最穩修正方式：只要改首頁 index.html 的連結即可（先讓網站可用），canonical/JSON-LD URL 我們下一步再一起統一。
+
+你現在的唯一動作：改首頁 index.html 的連結
+把首頁中導到 100S+、90R 的連結，改成你實際檔名：
+
+你目前的檔名
+telecom100splus.html
+
+telecom90r.html
+
+所以 index.html 內要用
+href="telecom100splus.html"
+
+href="telecom90r.html"
+
+你要改哪裡（兩種情況）
+情況 A：首頁是用 <a href="telecom/100splus.html"> 這種
+直接改成：
+
+<a href="telecom100splus.html">
+
+<a href="telecom90r.html">
+
+情況 B：首頁是「整張卡可點」(onclick 或 a 包住整卡)
+你會看到類似：
+
+onclick="window.location.href='telecom/100splus.html'"
+改成：
+
+onclick="window.location.href='telecom100splus.html'"
+
+強烈建議（下階段）你回到正規路徑命名
+你剛剛提到的「檔名裡有 /」其實是我給你的路徑，不是檔名本身。
+
+正確做法是：
+
+檔案放在資料夾 telecom 裡
+
+檔名叫 100splus.html
+所以完整路徑是：telecom/100splus.html（這不是檔名，是檔案位置）
+
+這樣 SEO 更好、也最不會亂。
+
+你如果願意一次到位（不改你做過的內容）
+把檔案搬回去即可：
+
+建立資料夾：telecom（你已經有）
+
+把
+
+telecom100splus.html → 移到 telecom/ 裡並改名 100splus.html
+
+telecom90r.html → 移到 telecom/ 裡並改名 90r.html
+
+首頁連結維持原本 telecom/100splus.html、telecom/90r.html
+
+你現在先選「最省事」方案
+你已經存成 telecom100splus.html、telecom90r.html，那就先做我上面說的：
+只改 index.html 的 href / onclick 連結，先讓點卡正常進入專頁。
+
+你把你目前 index.html 內那兩段「100S+ 與 90R 的連結片段」貼上來（只要那幾行，不用全檔），我就直接回你「改好後可貼回去的完整段落」。
+
+你說：
+你給的telecom/100splus檔名不被接受,WINDOW回有特殊字元
+ChatGPT 說：
+
+已思考 9s
+你遇到的狀況是正常的：在 Windows 裡 / 不是檔名的一部分，而是「資料夾路徑分隔符號」，所以你不能把檔名存成 telecom/100splus.html（Windows 會說含特殊字元）。
+
+我先把概念釐清：
+
+telecom/100splus.html 不是檔名
+
+它代表：在 telecom 資料夾裡，有一個檔案叫 100splus.html
+
+正確做法（建議用這個，最省事、也不會改壞連結）
+目標目錄結構（你目前也已經建立了資料夾）
+欣熹網站/
+  index.html
+  telecom/
+    100splus.html
+    90r.html
+  images/
+    fujikura-100splus-fusion-splicer.jpg
+    fujikura-90r-ribbon-fusion-splicer.jpg
+  reference/
+    ...
+你現在要做的唯一動作（Windows 檔案總管）
+打開你的「欣熹網站」資料夾
+
+進入 telecom 資料夾
+
+將檔案存成（或移入後重新命名成）：
+
+100splus.html
+
+90r.html
+
+注意：檔名只寫 100splus.html，不要包含 telecom/。
+
+為什麼我強烈建議你用 telecom/100splus.html 這種「放在資料夾裡」的方式？
+因為我給你的兩個專頁內部連結是依「資料夾分層」設計的，例如：
+
+圖片路徑使用 ../images/...
+
+回首頁使用 ../index.html
+
+這些在「檔案位於 telecom/ 資料夾」時都會 正常。
+
+如果你把檔案放在根目錄（例如 telecom100splus.html），那麼：
+
+../images/... 會指向錯位置
+
+../index.html 也會指向錯位置
+你就必須再手動修改一堆相對路徑，反而更容易出錯。
+
+你已經存成 telecom100splus、telecom90r 怎麼辦？
+最佳做法：把它們搬進 telecom 資料夾並改名（不用改內容）
+
+把 telecom100splus.html 移到 telecom\
+
+在 telecom\ 裡把它改名成 100splus.html
+
+把 telecom90r.html 移到 telecom\
+
+在 telecom\ 裡把它改名成 90r.html
+
+做完後，首頁連結照我原本設計的 telecom/100splus.html、telecom/90r.html 就能直接用。
+
+你照上面把檔案放進 telecom 資料夾並改名完成後，回我一句：
+「已放入 telecom/100splus.html 與 telecom/90r.html」
+
+我下一步就接著幫你檢查：首頁點卡是否正確導流、兩頁圖片路徑是否一致，並開始規劃下一輪兩個型號（90S+、45S）。
+
+你說：
+檔名已改,官網有各型號圖片嗎?
+ChatGPT 說：
+
+已思考 19s
+是的，Fujikura 官網（更精準地說是 Fujikura 的官方「Fusion Splicer」產品站）有各型號的產品頁，頁面本身就包含機型圖片，且通常也提供 Brochure/Datasheet 下載。
+Fujikura
++1
+
+
+https://www.fusionsplicer.fujikura.com/wp-content/uploads/2025/10/TE_100S_Kit_J_0001_2.png
+
+https://www.fusionsplicer.fujikura.com/wp-content/uploads/2025/10/Top_fusionsplicer_002-1.jpg
+
+https://www.fusionsplicer.fujikura.com/wp-content/uploads/2020/10/TE_90R_0031.png
+
+https://www.fusionsplicer.fujikura.com/wp-content/uploads/2021/03/TE_90S_plus_E_0001-600x600.png
+你現在可直接用的「官方來源」路徑（建議）
+A. 直接用 Fujikura 官方產品頁的圖片與 Brochure（優先）
+100S（你稱 100S+ 的那份 kit）官方頁：頁面含多張產品圖、並提供 Download Brochure。
+Fujikura
+
+90R 官方頁：同樣含產品圖、並提供 Download Brochure。
+
+45S 官方頁：有產品介紹與圖片區塊（並可取得 Brochure/資料）。
+Fujikura
+
+90S+ 官方頁：官方站明確標示此型號「已停產」，並指出後繼為 100S。
+Fujikura
+
+這條路的好處：來源最乾淨（官方）、圖片與規格一致、你後續做 SEO/NotebookLM 也最容易管理。
+
+B. 如果你要找「某型號更多角度圖」
+官方站有時角度不多，可以補充參考「大型通路/代理商頁」作為比對（但不建議直接搬圖到你網站，除非取得授權或確認可用條款）：
+
+例：AFL 的 90R / 90S+ 產品頁有圖文與說明。
+aflglobal.com
++1
+
+給你一個務實的規則（避免版權與一致性風險）
+網站用圖：優先使用 Fujikura 官方產品頁或官方 brochure 內的圖片（最可控）。
+Fujikura
+
+若官方圖解析度不足：用同一份官方 PDF 抽圖，或向原廠/總代理索取「官方素材包」（你們是合法代理，通常能拿到更完整圖檔）。
+
+你要我幫你做命名時：你只要回報「你抓到的官方圖片原始檔名」或貼下載連結（官方頁/官方 PDF），我就會依你既定原則回你「不易出錯 + 有 SEO 的檔名」。
+
+你下一個「單一步驟」
+你現在先選一個型號（建議先從 100S / 90R），把你打算用的「官方圖片來源」貼給我（二選一即可）：
+
+方案 1：貼 官方產品頁網址
+
+方案 2：貼 你下載的 brochure/PDF 檔名（你已在 reference/ 裡也可以）
+
+我就直接回你：
+
+該型號圖片建議下載哪一張（主圖/次圖）
+
+你應該存到 images/ 的最終檔名（含 alt 文案）
+
+若需要，我也可以把你該型號專頁的 <img src> 對應更新成你最後定稿的檔名。
+
+你說：
+我去你給的官網連結沒看到你列出來的圖,你列的圖很好,夠做我們網頁附圖需求嗎?
+ChatGPT 說：
+
+已思考 36s
+你會「看不到我列的圖」，原因通常是你開到 Fujikura 集團企業官網（例如永續頁），但我先前列的機型圖片來源其實是 Fujikura 的官方 Fusion Splicer 產品站（不同網域/站台）。在那個官方產品站，每個機型頁面上方就有產品主圖，並且常見有 Download Brochure。
+Fujikura
++1
+
+這些「官方圖」夠不夠做你們網頁附圖？
+以你目前的網站需求（首頁卡片 + 型號專頁 Hero 圖）來說：夠用。
+
+100S（你現在用的 100S/100S+ kit PDF）官方產品頁就有清楚的主圖（設備/kit）
+Fujikura
+
+90R 官方產品頁也有主圖（設備/kit）
+Fujikura
+
+這兩張等級的圖，已足以支撐：
+
+首頁每張卡「一張代表圖」
+
+專頁 hero 圖（主視覺）
+
+不需要一開始就追求多角度相簿
+
+你可以用的「最小圖片清單」（SEO/可行性最佳平衡）
+必要（先上線）
+每個型號/系列：1 張產品主圖（首頁卡片 + 專頁 hero 共用）
+
+100S：用官方產品頁主圖即可
+Fujikura
+
+90R：用官方產品頁主圖即可
+Fujikura
+
+加分（第二階段再補）
+每個型號再補 1 張「特寫/情境」圖
+例如 100S 的新聞稿/介紹文常有更適合當橫幅的近拍圖
+
+如果你進官方產品頁還是「沒看到圖」
+請留意兩點（這是最常見的誤會）：
+
+**你開的是否是“Fusion Splicer 產品站”**而不是企業官網永續頁（兩者不同站）。
+Fujikura
++1
+
+在產品頁通常「第一屏」就是主圖 + 型號標題；往下才是規格與下載按鈕。
+Fujikura
++1
+
+實務建議（避免版權/一致性風險）
+網站用圖：優先用 Fujikura 官方產品站頁面上的主圖（來源最乾淨、也和你要做的型號頁一致）。
+
+若你想要「每頁 2–3 張」：第二張起建議從 官方 Brochure/PDF 擷取（同一份規格來源，錯誤率最低）。
+Fujikura Europe
++1
+
+你們是合法代理，若要更高品質素材，最佳做法是向原廠/區域窗口索取 marketing assets（press kit）。
+
+下一個動作（一次一個）
+你先回我：你要先處理 100S 還是 90R 的圖片？
+我就依你現有資料夾結構（images/）給你：
+
+這張圖建議存哪裡
+
+最終檔名（兼顧 SEO + 不易出錯）
+
+對應的 alt 文字（你已採用的最佳化規則）
+
+你說：
+先100S
+ChatGPT 說：
+
+已思考 21s
+可以，先做 100S。
+
+你目前網頁的圖片需求是「首頁卡片 + 100S 專頁 Hero 圖」——用 Fujikura 官方 100S 產品頁的主圖就足夠支撐這兩個位置（清晰、背景乾淨、含機身與 kit 配件）。
+Fujikura
+
+100S 圖片來源與你該用哪一張
+建議用圖（最適合當網站主圖）
+100S Kit 主圖（白底/含配件）：適合首頁卡片與專頁 Hero，辨識度最高。
+Fujikura
+
+你若想要「只機身、不含配件」的版本，也可以用同頁另一張主圖（視覺更乾淨）。
+Fujikura
+
+你現在的唯一動作：下載並放到 images/
+打開 Fujikura 官方 100S 產品頁（100S Kit）。
+Fujikura
+
+在頁面主圖上 右鍵 → 另存圖片（或「在新分頁開啟圖片」再另存）。
+
+存到你的網站資料夾：
+
+欣熹網站/images/
+
+檔名（我建議你直接用這個，避免後續改程式）
+因為我先前給你的 100S 專頁已引用這個路徑：
+
+檔名請存成： fujikura-100splus-fusion-splicer.jpg
+
+存放位置： images/fujikura-100splus-fusion-splicer.jpg
+
+這樣你不用回頭改任何 HTML，圖片立刻就會顯示。
+
+型號命名上，Fujikura 官方常寫 100S，你網站行銷寫 100S+ 沒問題；檔名先以「你現有程式碼已引用」為最高優先，才能降低出錯率。
+
+alt（你已採用的 SEO 原則）
+你專頁圖片 alt 建議用：
+
+alt="Fujikura 100S 光纖熔接機｜台灣授權代理欣熹科技｜原廠保固與校正維修"
+
+（首頁卡片 alt 可再短一點：Fujikura 100S 光纖熔接機）
+
+圖片「夠不夠用」的結論
+現在就夠用：每型號 1 張官方主圖即可完成「卡片 + 專頁主視覺」。
+Fujikura
+
+第二階段再加分：你要做更像品牌官網的質感時，再加 1 張「近拍/細節圖」（例如官方新聞稿的特寫圖）。
+
+你完成後回我一句：「100S 圖已放到 images/」，我就接著帶你做下一個型號（90R）的圖片命名與放置。
+
+你說：
+我知道原因了,卡巴斯基擋,沒關係,我就用你列的圖
+ChatGPT 說：
+了解。既然你的環境被卡巴斯基攔下來，你仍然可以用「我列出的官方產品圖」作為網站附圖；但請用本機儲存、不要外連（hotlink），避免日後圖片失效或被對方站台阻擋。
+
+下面我把「可行性最佳」的做法整理成你下一步可直接做的動作。
+
+建議做法：用官方圖，但改成「本機檔案」
+1) 先把圖存到你的網站資料夾
+把你要用的 100S 圖片，存到：
+
+欣熹網站/images/
+
+2) 檔名請照你目前 HTML 已引用的版本（避免再改程式）
+請直接存成：
+
+images/fujikura-100splus-fusion-splicer.jpg
+
+這樣你目前的 100S 專頁與首頁卡片會自動顯示，不用回頭再改 <img src="">。
+
+若你存下來是 .png（或檔名不同），最保險是「改檔名 + 轉成 jpg」，確保與 HTML 完全一致。
+
+卡巴斯基擋下載時，你可用的替代路徑（依穩定性排序）
+方案 A（最穩）：從官方 Brochure/PDF 抽圖
+你已經有 100S 的 PDF（YPE33B 相關）。用 PDF 裡的圖片做官網圖，通常不會被攔：
+
+優點：來源一致、規格與圖片同一份文件、最不會出錯
+
+缺點：有時解析度不如原圖
+
+方案 B：請原廠/區域窗口給「素材包」
+你們是合法代理，直接向對口要 marketing assets（產品照/情境照/LOGO 使用規範）最省時間、畫質最好。
+
+方案 C：用你們自己拍的實機照
+如果你們手上有 demo 機或交機照片，自拍照更安全也更具可信度（同時能避免版權爭議）。
+
+快速檢查（避免「圖放了但頁面不顯示」）
+你的資料夾結構確認：
+
+欣熹網站/
+  index.html
+  telecom/
+    100splus.html
+    90r.html
+  images/
+    fujikura-100splus-fusion-splicer.jpg
+你用瀏覽器開：
+
+index.html（首頁卡片應顯示圖）
+
+telecom/100splus.html（Hero 圖應顯示）
+
+若不顯示，九成是：
+
+檔名大小寫不一致（Windows 不敏感，但上線到 Linux 主機後會出錯）
+
+副檔名不一致（HTML 用 .jpg，你實際存成 .png）
+
+你下一步要我做什麼（一次一個動作）
+你把你「實際存下來的 100S 圖檔檔名（含副檔名）」回我，例如：
+
+100S.jpg 或 image.png
+
+我就直接回你：
+
+你應該改成的最終檔名（完全符合你目前 HTML）
+
+若副檔名不同，要不要我改 HTML（我可以給你完整檔案）或你直接改檔案副檔名（較不建議硬改副檔名，應轉檔）
+
+你說：
+100S 圖已放到 images
+ChatGPT 說：
+收到。既然 100S 圖已放到 images/，下一步就按同一套規則處理 90R，讓「首頁卡片 + 90R 專頁」都能穩定顯示，且不需要改動程式碼。
+
+下一個動作：放 90R 圖到 images（並用固定檔名）
+請把你要用的 90R 圖片放到：
+
+欣熹網站/images/
+
+並命名為（請完全一致，含小寫與副檔名）：
+
+fujikura-90r-ribbon-fusion-splicer.jpg
+
+這個檔名是我先前 90R 專頁預設引用的名稱。你照這樣命名，通常不必回頭改 HTML。
+
+90R 圖的 alt 建議（SEO + 精準描述）
+專頁 Hero 圖：
+alt="Fujikura 90R 帶狀光纖熔接機（90R12/90R16）｜台灣授權代理欣熹科技｜原廠保固與校正維修"
+
+首頁卡片（短版）：
+alt="Fujikura 90R 帶狀光纖熔接機"
+
+放好後的快速驗證（30 秒）
+開 index.html：首頁 90R 卡片應顯示圖
+
+開 telecom/90r.html：專頁 Hero 圖應顯示
+
+若你同樣被卡巴斯基擋下載（替代來源）
+直接用你已下載的 90R 規格 PDF（你前面那份 90R kit PDF）擷取圖片，存成上面的檔名即可。
+
+你完成後回我一句：「90R 圖已放到 images」。
+我就接著帶你做下一個兩台（依你先前規劃）：90S+、45S 的專頁文字（200–300 字）與規格欄位落地，並同步把圖片命名一併規格化。
+
+你說：
+90R 圖已放到 images,開 index.html-2個圖都沒完整出現,圖上半段約1/3看不到,2個圖裡機器大小不一致(90R可以小一些),卡片裡對該型號的說明文字太小,開 telecom/90r.html-專頁 Hero 圖一樣,上半段約1/3看不到,卡片說明文字太小,網頁上面主欄內說明文字要放大成原有2倍
+ChatGPT 說：
+
+已思考 1m 43s
+了解，你描述的現象（圖片上方被裁掉 1/3）是典型的 CSS object-fit: cover + 固定高度造成的「裁切」。我已把 首頁卡片與 90R 專頁 Hero 圖改成「完整顯示（不裁切）」；同時也依你要求：
+
+首頁兩張圖完整顯示（不再裁上半段）
+
+90R 圖在首頁卡片與專頁 Hero 圖都稍微縮小
+
+卡片內型號說明文字放大
+
+上方主欄（Hero 區）說明文字放大約 2 倍
+
+90R 專頁內的卡片/區塊文字放大
+
+下面給你三個「完整檔案」下載，覆蓋你目前對應檔案即可。
+
+下載：更新後的完整檔案（請直接覆蓋）
+首頁 index.html（修正圖片裁切 + 文字放大 + 90R縮小）
+Download index_fix_images_text.html
+
+100S+ 專頁（修正 Hero 圖裁切 + 主欄文字放大）
+Download telecom_100splus_fix_images_text.html
+
+90R 專頁（修正 Hero 圖裁切 + 主欄/卡片文字放大 + Hero 圖縮小）
+Download telecom_90r_fix_images_text.html
+
+你現在的唯一動作（照做就會立刻改善）
+把檔案放到你網站資料夾並覆蓋：
+
+index_fix_images_text.html → 改名覆蓋成 index.html
+
+telecom_100splus_fix_images_text.html → 覆蓋成 telecom/100splus.html
+
+telecom_90r_fix_images_text.html → 覆蓋成 telecom/90r.html
+
+這次改了什麼（讓你能快速驗證）
+1) 圖片不再裁切
+首頁卡片：object-fit: contain（完整顯示，可能會有上下留白，但不裁切）
+
+專頁 Hero：object-fit: contain + 高度略加大（完整顯示）
+
+2) 90R 視覺比例調小
+首頁 90R 圖加了 scale(0.90)
+
+90R 專頁 Hero 圖也加了 scale(0.90)
+
+3) 文字放大
+首頁 Hero 說明文字：放大
+
+首頁卡片描述文字：放大
+
+專頁 Hero 說明文字 + 內容區塊（列表、表格）：放大
+
+你覆蓋後請用瀏覽器依序開：
+
+index.html
+
+telecom/100splus.html
+
+telecom/90r.html
+
+若你覺得「字放大 2 倍太大」或「卡片圖高度要再高/再低」，我下一步可以用同樣方式精調到你要的比例（但你先看這版是否已符合“完整顯示 + 可讀性提升”的目標）。
+
+
+
+你說：
+1.INDEX裡面機器圖片沒顯示,卡裡面的字OK,但上面bar裡面的說明文如"承襲 錦霆集團 (Jinting Group) 產業資源，提供通訊工程、FTTH 與研發/工廠級特種光纖應用之選型建議、交付與維修校正支援。"字太大,應縮小約30%,2.100splus.html圖正常顯示,大小ok,但bar裡的說明文如"100S+ 以高效率與一致性為定位，強調自動化操作與施工管理能力。欣熹科技提供台灣在地選型、導入與售後支援，協助工程團隊降低停機與交付風險。"太大,應縮小約30%,但底下條列文如"自動防風蓋開閉、光纖放置導引，降低人為操作變異
+藍牙連線、GPS Splice Coach、Splice+ App 聯動，利於施工與品管追溯
+支援行動電源充電；配套含 CT60 切割刀（28 刀片位置）與常用配件"ok
+ChatGPT 說：
+
+已思考 33s
+已修正你回報的兩點：(1) index 圖片不顯示、(2) 上方主欄（bar/hero）說明文字太大需縮小約 30%。我同時把 90R 專頁的 bar 說明文字也一併做同樣縮小（一致性更好；條列維持不動）。
+
+下載：修正版完整檔案（v2）
+index（修正圖片路徑 + bar 文字縮小 30%）
+Download index_fix_images_text_v2.html
+
+100S+ 專頁（bar 文字縮小 30%，條列維持原大小）
+Download telecom_100splus_fix_images_text_v2.html
+
+90R 專頁（bar 文字縮小 30%，條列維持原大小）
+Download telecom_90r_fix_images_text_v2.html
+
+你現在的唯一動作（覆蓋檔案）
+index_fix_images_text_v2.html → 覆蓋成 index.html
+
+telecom_100splus_fix_images_text_v2.html → 覆蓋成 telecom/100splus.html
+
+telecom_90r_fix_images_text_v2.html → 覆蓋成 telecom/90r.html
+
+為什麼 index 圖片先前不顯示（已修掉）
+你目前 index.html 原本指向的是：
+
+images/100splus.jpg
+
+images/90r.jpg
+
+但你實際放到 images/ 的檔名是：
+
+images/fujikura-100splus-fusion-splicer.jpg
+
+images/fujikura-90r-ribbon-fusion-splicer.jpg
+
+所以瀏覽器找不到檔案就不顯示。v2 已把 index 的圖片路徑改成與你實際檔名一致。
+
+你覆蓋後請再開一次：
+
+index.html（兩張圖應可完整顯示）
+
+telecom/100splus.html（bar 文字縮小、條列維持）
+
+telecom/90r.html（同上）
+
+如果你覺得「bar 說明文字」還要再微調（例如再小 10% 或行距更緊），我下一步就直接按你的比例再調一次。
+
+
+
+你說：
+index已經ok,100s跟90r專頁裡,圖跟上面的bar都ok,卡裡面的說明文小一些,標題大一些
+ChatGPT 說：
+
+分析已暫停
+你說：
+index已經ok,100s跟90r專頁裡,圖跟上面的bar都ok,產品介紹（200–300 字）,應把"（200–300 字）"刪除,卡裡面的說明文小一些,標題大一些
+ChatGPT 說：
+已按你的要求更新兩個專頁：
+
+「產品介紹（200–300 字）」→ 改成「產品介紹」（刪除括號字樣）
+
+卡片內說明文字再小一些
+
+標題再大一些
+
+下載：兩個專頁 v4（完整檔案）
+100S+ 專頁（v4）
+Download telecom_100splus_fix_images_text_v4.html
+
+90R 專頁（v4）
+Download telecom_90r_fix_images_text_v4.html
+
+你現在的唯一動作（覆蓋）
+telecom_100splus_fix_images_text_v4.html → 覆蓋成 telecom/100splus.html
+
+telecom_90r_fix_images_text_v4.html → 覆蓋成 telecom/90r.html
+
+如果你希望「卡片文字」再小 10% 或「標題再大 10%」，我可以再給你一版 v5 直接微調比例。
+
+
+
+你說：
+可以了,典型應用場景底下的說明牽涉到規格或配件,它們都來自於notebooklm?
+ChatGPT 說：
+部分是，部分不是；我把來源拆清楚，避免你在對外文案上踩到「未經文件支撐」的風險。
+
+1)「典型應用場景」本身是不是來自 NotebookLM？
+不是必然。
+這一段多數屬於「情境化用途」與「選型邏輯」：例如電信幹線、FTTH、數據中心/機房維護，這類通常是行業通用分類 + 你要做 SEO 的關鍵字佈局。它不一定在 PDF 明寫，但合理、且對 SEO 有利。
+
+2) 什麼內容是「確定來自你貼的 NotebookLM 摘要（也就是 PDF）」？
+這些我在頁面中寫法是「文件提及/文件摘要指出」或以「欄位存在」表達，目的就是把“有來源的事實”與“行業建議”切開：
+
+100S 頁面（來自你提供的摘要）
+自動防風蓋（自動開關）
+
+光纖放置導引
+
+操作速度提升約 20%（相較舊型號）
+
+藍牙、GPS Splice Coach、Splice+ App
+
+可用標準行動電源充電
+
+CT60 切割刀（28 刀片位置）
+
+Kit/配件：SS05、BTR-19、ADC-22、ELCT2-16C、SP-05（你摘要列出的那批）
+
+90R 頁面（來自你提供的摘要）
+90R12 / 90R16（芯數差異：12/16）
+
+規格欄位：光纖類型、融接芯數、融接損耗（依 ITU-T）、融接/加熱時間、抗拉測試、環境條件、電力規格、資料儲存
+
+介面：觸控 LCD、USB 2.0、藍牙 4.1 LE
+
+配件/選配：CT50、RS03、SS03/SS01、可更換 V 槽（VG16-01 等）、FH-70 夾具、FAT-04/RT-02 工具
+
+以上這些就是「可以放心說是規格/配件來源於文件」的部分。
+
+3) 哪些是我基於 SEO/可行性做的「合理推論」？
+「適合幹線/大量佈建」「適合數據中心」這類場景定位通常是合理的市場語言，但不一定在 PDF 逐字寫。
+
+「降低交付風險、節拍管理、品管追溯」這類是把你要的服務關鍵字（保固/校正/訓練）融入情境的銷售表述。
+
+為了保守起見，我在涉及規格或配件處理時已用「文件提及/摘要」的語氣；涉及情境就用一般敘述，避免混在一起。
+
+建議的控風險規則（你後續擴寫時照這個就不會出錯）
+規格數字、配件型號、介面版本、時間/損耗等：必須能在 PDF 找到對應欄位或文字 → 才能用肯定句。
+
+應用場景/選型建議/效益描述：可以寫，但用「適合/常見/建議」語氣，不要寫成「原廠保證/必然」或硬塞未出現的數字。
+
+如果你願意，我下一步可以把 100S 與 90R 兩頁中「屬於文件來源」的句子加上更一致的標記（例如在頁面底部加一行「規格/配件來源：Fujikura 官方 Datasheet（檔名：XXX）」），讓你未來交接給同事或對外引用更安心。
+
+你說：
+我主要關切的是如100s-"施工管理與連網
+藍牙連線功能
+GPS Splice Coach 融接位置紀錄
+Splice+ 手機 App 聯動"跟"機動電源與配套
+可使用標準行動電源充電
+配套切割刀 CT60（28 刀片位置）"這類牽涉到規格或性能數據的,必須正確
+ChatGPT 說：
+
+已思考 1m 4s
+你舉的這幾條屬於「規格/功能宣告」，確實必須以原廠文件為準。結論是：以 Fujikura 官方資料來看，這些點是有明確依據的；而且其中幾項在官方文件裡寫得非常直接（可當作你官網文案的「鎖定規格」）。
+
+100S：你列的每一條是否「有官方依據」？
+A) 施工管理與連網
+藍牙連線功能：100S 官方 datasheet 有列 Wireless connectivity：Bluetooth® 5.2 LE。
+Fujikura Europe
+
+GPS Splice Coach / 融接位置紀錄：官方資料有列 GPS：Record splice location；並且官方 100S Kit 產品頁也寫明「內建 GPS、可儲存熔接時位置資訊」。
+Fujikura Europe
++1
+
+Splice+ 手機 App 聯動：官方 100S Kit 產品頁明載 Linked with smartphone app… Splice+，可查看位置資訊與熔接結果。
+Fujikura
+
+重點：這一組（Bluetooth / GPS / Splice+）不是「行銷推論」，而是原廠功能描述，可以放心放在官網。
+
+B) 機動電源與配套
+可使用標準行動電源充電：官方 100S Kit 產品頁明載 Compatible with mobile batteries，並提醒需符合 USB PD 標準。
+Fujikura
+
+配套切割刀 CT60（28 刀片位置）：100S+CT60 官方型錄/資料中寫明刀片位置「由 16 增加到 28」，並明確提到 28 positions。
+Opternus
+
+你問「是否都來自 NotebookLM？」
+嚴格講：NotebookLM 是加速整理的工具，不是權威來源。
+對於你這類「規格/性能」文案，我的建議流程是：
+
+NotebookLM 先萃取（快）
+
+以原廠 datasheet / 官方產品頁做交叉驗證（確）
+
+官網落字時，用「與文件一致」的措辭（避免誤差）
+
+你剛點名的條目，我已用官方 datasheet 與官方產品頁的描述來「鎖定」它們的真實性（上面已逐條給你來源）。
+Fujikura Europe
++2
+Opternus
++2
+
+我建議你官網用的「更穩妥」寫法（避免版本/措辭風險）
+如果你不想把版本號寫死（例如 Bluetooth 5.2），但又要保持完全正確，建議：
+
+「無線連網：Bluetooth® LE（用於施工資料/刀片管理等）」
+Fujikura Europe
++1
+
+「內建 GPS：可記錄熔接位置，利於施工管理與追溯」
+Fujikura Europe
++1
+
+「Splice+ App：可檢視位置資訊與熔接結果」
+Fujikura
+
+「支援行動電源充電（請使用符合 USB PD 的行動電源）」
+Fujikura
+
+「配套 CT60 切割刀：28 刀片位置」
+Opternus
+
+如果你同意，我下一步可以把你 100S 專頁中所有「規格/功能」段落再做一次逐條鎖定：每一條後面在 HTML 註解中加上「來源文件（檔名）+ 對應頁/段落」，確保你日後交接同事、或被客戶質疑時能直接回溯原廠依據。
+
+你說：
+不需要,我只是想了解也提醒你這類型的說明必須正確,而不是你創造或渲染的,不須提警語或來源或修改語氣
+ChatGPT 說：
+了解。你的要求很明確：
+
+凡是涉及規格、性能、功能宣告（例如 Bluetooth/GPS/App、充電方式、刀片位置數、融接/加熱時間、損耗等），我後續都會以原廠 datasheet/官方文件為唯一依據來撰寫與填入，不自行創造、不渲染、不補數字。
+
+這類內容在你未提供可驗證的官方資料前，我只會先以「待補欄位」的方式保留版面，不會先寫成肯定句。
+
+你也不希望我在頁面上加警語、加來源、或刻意改寫語氣；我會把這些控管留在我內部流程，不影響你官網呈現。
+
+你接下來只要照你既定流程：每下載一份官方檔案 → 丟檔名給我命名/分類 → 上傳 NotebookLM/或直接提供內容，我就按上述原則產出可上線文字與規格欄位。
+
+你說：
+同理,專頁裡技術優勢（依文件摘要）,隨附配件（摘要）跟主要規格欄位（可辨識摘要）,這3個後面括弧文字都刪除,常見問題（FAQ）不動
+ChatGPT 說：
+已完成：把專頁中這三個標題後面的括弧文字全部刪除（FAQ 不動），並且保留你先前確認過的版型（圖、bar、字級邏輯）。
+
+下載：兩個專頁（完整檔案 v5）
+100S+ 專頁（v5）
+Download telecom_100splus_final_v5.html
+
+90R 專頁（v5）
+Download telecom_90r_final_v5.html
+
+你現在的唯一動作（覆蓋）
+telecom_100splus_final_v5.html → 覆蓋成 telecom/100splus.html
+
+telecom_90r_final_v5.html → 覆蓋成 telecom/90r.html
+
+
+
+你說：
+90S+的圖的檔名?
+ChatGPT 說：
+依你目前的命名規則（品牌-型號-類別，全部小寫、用連字號、放 images/），90S+ 建議用這個檔名：
+
+fujikura-90splus-fusion-splicer.jpg
+
+如果你抓到的原圖是 PNG，就對應：
+
+fujikura-90splus-fusion-splicer.png
+
+（之後我在 HTML 的 <img src> 也會用同一個檔名，降低出錯率。）
+
+你說：
+給我官網上90S+跟45S的圖
+ChatGPT 說：
+
+已思考 47s
+
+https://www.fusionsplicer.fujikura.com/wp-content/uploads/2023/12/Telecom_spl_001_E.jpg
+
+https://www.fusionsplicer.fujikura.com/wp-content/uploads/2021/03/TE_90S_plus_De_0001-600x600.png
+
+https://www.fusionsplicer.fujikura.com/wp-content/uploads/2025/10/Top_fusionsplicer_002-1.jpg
+
+https://www.fusionsplicer.fujikura.com/wp-content/uploads/2023/09/TE_45S_E_0056.png
+以上 4 張皆取自 Fujikura 官方 fusionsplicer.fujikura.com（90S+ 與 45S 產品/相關頁面圖片資源）。
+Fujikura
++1
+
+建議你存檔的檔名（放 images/）
+90S+
+fujikura-90splus-fusion-splicer.jpg（對應：turn2image4）
+
+fujikura-90splus-fusion-splicer-kit.jpg（對應：turn2image0）
+
+45S
+fujikura-45s-fusion-splicer.jpg（對應：turn1image7）
+
+fujikura-45s-fusion-splicer-kit.jpg（對應：turn1image1）
+
+你若希望我「只留每型號 1 張、最適合放卡片/hero 的版本」，我會直接指定你應該用哪一張（含檔名）。
+
+你說：
+fujikura-90splus-fusion-splicer-kit.jpg是圖裡面有附件的?
+ChatGPT 說：
+是的。以 Fujikura 官方「90S+ Kit」頁面上的主圖來看，圖中除了主機 90S+，還同框放了配件（可清楚看到 CT50 切割刀與一支剝線鉗/工具）。
+
+所以你命名成 fujikura-90splus-fusion-splicer-kit.jpg 用來代表「含附件的 Kit 圖」是合理且直覺的。
+
+你說：
+存在image了,但只有這張45S的圖,裡面卻有附件,是否INDEX的卡片名稱應改為Fujikura 45S+ ?
+ChatGPT 說：
+
+已思考 22s
+不需要把卡片名稱改成 45S+。
+
+原因很簡單：Fujikura 官方的命名是「45S」，而且官方產品頁本身就以 “45S Kit” 的形式呈現（圖片通常會把主機與配件一起放在同一張主圖）。
+Fujikura
++2
+Fujikura
++2
+
+建議你在 INDEX 的呈現方式（兼顧正確性與銷售）
+你現在只有「含附件」的 45S 圖，也完全沒問題，做法是：
+
+卡片標題維持： Fujikura 45S（不要加 +）
+Fujikura
+
+用一行小字/標籤補充： Kit（含附件） 或 45S Kit（可放在 badge 或描述第一句）
+
+alt 文字建議： Fujikura 45S Kit 光纖熔接機（含配件）
+
+這樣你既不會「創造不存在的型號」，也能讓客戶一眼看懂「你賣的是 Kit 方案」。
+
+若你未來拿到「單機不含附件」的官方圖，再把首頁卡片換成單機圖即可；但名稱仍然是 45S。
+Fujikura
+
+你說：
+沒關係,都不用改動,圖我先存好了,今天先暫停,之後再依序補這2個型號的其他資料
+ChatGPT 說：
+了解。今天就先停在「圖片已就位、頁面不改動」這個穩定版本。
+
+你下次回來要接續時，直接告訴我你要先做 90S+ 或 45S，並貼上你已下載的官方檔名（PDF/規格表）或你從 NotebookLM 整理出的摘要，我就會依序補上該型號的：
+
+產品介紹（200–300 字）
+
+技術優勢 / 隨附配件 / 主要規格欄位
+
+專頁 FAQ（如需要）
+
+並且仍然遵守你已強調的原則：涉及規格/性能/配件型號者一律以原廠文件為準，不自行創作。
+
+
+
+
+
+未選擇任何檔案未選擇任何檔案
+ChatGPT 可能會出錯。請查核重要資訊。

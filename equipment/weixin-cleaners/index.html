@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>載具清洗設備｜FOUP/FOSB・Panel FOUP・子母框｜欣熹科技 SHIN-SI</title>
+  <meta name="description" content="FOUP/FOSB、Panel FOUP、子母框清洗設備：純水濕式清洗 + CDA/N2 去水 + 真空乾燥；支援 SECS/GEM 與 MES 對接。"/>
+  <style>
+    :root{
+      --main-blue:#003d73;
+      --deep-blue:#002b52;
+      --accent-red:#c20000;
+      --text:#1b1f23;
+      --muted:#4b5563;
+      --bg:#ffffff;
+      --card:#ffffff;
+      --border:#e6e8eb;
+      --shadow:0 8px 20px rgba(0,0,0,0.06);
+      --radius:18px;
+      --maxw:1080px;
+    }
+    *{box-sizing:border-box}
+    body{
+      margin:0;
+      font-family:system-ui,-apple-system,"Segoe UI",Roboto,"Noto Sans TC","PingFang TC","Microsoft JhengHei",Arial,sans-serif;
+      color:var(--text);
+      background:var(--bg);
+    }
+
+    /* Navbar (match SIAMC / other pages) */
+    .navbar{
+      background:var(--main-blue);
+      padding:0 5%;
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+      height:70px;
+      position:sticky;
+      top:0;
+      z-index:1000;
+      box-shadow:0 2px 10px rgba(0,0,0,0.10);
+    }
+    .nav-brand{
+      color:#fff;
+      font-weight:800;
+      text-decoration:none;
+      font-size:24px;
+      letter-spacing:1px;
+      white-space:nowrap;
+    }
+    .nav-menu{
+      display:flex;
+      gap:22px;
+      align-items:center;
+    }
+    .nav-item{
+      color:#e5e7eb;
+      text-decoration:none;
+      font-size:18px;
+      transition:.2s;
+      white-space:nowrap;
+    }
+    .nav-item:hover{color:#fff}
+
+    .container{
+      max-width:var(--maxw);
+      margin:0 auto;
+      padding:0 22px;
+    }
+
+    /* Hero */
+    .hero-wrap{
+      padding:44px 0 26px;
+    }
+    .hero{
+      background:linear-gradient(180deg,var(--main-blue),var(--deep-blue));
+      border-radius:22px;
+      padding:44px 44px 38px;
+      color:#fff;
+      box-shadow:var(--shadow);
+      text-align:center;
+    }
+    .hero h1{
+      margin:0 0 14px;
+      font-size:38px;
+      letter-spacing:.4px;
+    }
+    .hero p{
+      margin:0 auto 22px;
+      max-width:820px;
+      line-height:1.8;
+      font-size:18px;
+      color:#f3f4f6;
+    }
+    .cta-row{
+      display:flex;
+      gap:14px;
+      justify-content:center;
+      flex-wrap:wrap;
+      margin-top:10px;
+    }
+    .btn{
+      display:inline-flex;
+      align-items:center;
+      justify-content:center;
+      padding:10px 16px;
+      border-radius:12px;
+      font-weight:800;
+      text-decoration:none;
+      border:1px solid transparent;
+      transition:.2s;
+      font-size:16px;
+      min-width:150px;
+    }
+    .btn-primary{
+      background:var(--accent-red);
+      color:#fff;
+    }
+    .btn-primary:hover{filter:brightness(0.95)}
+    .btn-secondary{
+      background:#fff;
+      color:var(--main-blue);
+      border-color:#d1d5db;
+    }
+    .btn-secondary:hover{background:#f8fafc}
+
+    /* Section */
+    .section{
+      padding:18px 0 8px;
+    }
+    .section h2{
+      font-size:24px;
+      margin:18px 0 14px;
+      display:flex;
+      align-items:center;
+      gap:12px;
+      color:var(--main-blue);
+    }
+    .section h2:before{
+      content:"";
+      width:5px;
+      height:26px;
+      background:var(--accent-red);
+      border-radius:8px;
+      display:inline-block;
+    }
+
+    /* Grid cards */
+    .grid{
+      display:grid;
+      grid-template-columns:repeat(3,1fr);
+      gap:18px;
+    }
+    @media (max-width: 980px){
+      .grid{grid-template-columns:1fr}
+      .hero{padding:34px 22px}
+      .hero h1{font-size:30px}
+    }
+    .card{
+      background:var(--card);
+      border:1px solid var(--border);
+      border-radius:var(--radius);
+      padding:18px 18px 16px;
+      box-shadow:0 3px 14px rgba(0,0,0,0.04);
+    }
+    .card h3{
+      margin:0 0 10px;
+      color:var(--main-blue);
+      font-size:20px;
+      letter-spacing:.2px;
+    }
+    .card p{
+      margin:0 0 12px;
+      color:var(--muted);
+      line-height:1.75;
+      font-size:16px;
+    }
+    .bullets{
+      margin:0;
+      padding-left:18px;
+      color:#2f3640;
+      line-height:1.75;
+    }
+
+    /* Specs table (match 100splus style: clean, readable) */
+    .spec-wrap{
+      background:#f8fafc;
+      border:1px solid var(--border);
+      border-radius:18px;
+      overflow:hidden;
+    }
+    table{
+      width:100%;
+      border-collapse:collapse;
+      font-size:16px;
+    }
+    th, td{
+      padding:14px 14px;
+      border-bottom:1px solid var(--border);
+      vertical-align:top;
+    }
+    th{
+      background:#eef2f7;
+      color:var(--main-blue);
+      text-align:left;
+      font-weight:900;
+      white-space:nowrap;
+    }
+    tr:last-child td{border-bottom:none}
+
+    /* Footer (match SIAMC style) */
+    footer{
+      margin-top:34px;
+      background:var(--main-blue);
+      color:#fff;
+      padding:20px 0;
+    }
+    footer .container{
+      text-align:center;
+    }
+    footer a{
+      color:#fff;
+      text-decoration:none;
+      border-bottom:1px solid rgba(255,255,255,0.35);
+      padding-bottom:1px;
+    }
+    footer a:hover{border-bottom-color:#fff}
+    .footer-line{
+      margin-top:10px;
+      font-size:18px;
+      line-height:1.7;
+    }
+  </style>
+</head>
+
+<body>
+  <nav class="navbar" aria-label="主導覽">
+    <a class="nav-brand" href="/">欣熹科技 SHIN-SI</a>
+    <div class="nav-menu">
+      <a class="nav-item" href="/index.html#telecom">通訊光纖設備</a>
+      <a class="nav-item" href="/index.html#specialty">特殊/製程應用</a>
+      <a class="nav-item" href="/group.html">關於集團</a>
+      <a class="nav-item" href="/contact.html">聯絡我們</a>
+    </div>
+  </nav>
+
+  <div class="container hero-wrap">
+    <section class="hero" aria-label="主視覺">
+      <h1>載具清洗設備｜FOUP/FOSB・Panel FOUP・子母框</h1>
+      <p>
+        提供半導體載具之清洗/去水/乾燥整合方案，支援 <b>純水（DI Water）濕式清洗</b>、<b>CDA 或 N2 去水吹乾</b>，並可依設備規劃
+        <b>SECS/GEM 與 MES</b> 對接。產能與尺寸依來料潔淨度與配置而異，以正式報價與規格書為準。
+      </p>
+      <div class="cta-row">
+        <a class="btn btn-primary" href="/contact.html">立即洽詢規格</a>
+        <a class="btn btn-secondary" href="/">返回設備/代理專頁</a>
+      </div>
+    </section>
+  </div>
+
+  <main class="container">
+    <section class="section" aria-label="核心品項">
+      <h2>核心品項</h2>
+      <div class="grid">
+        <article class="card">
+          <h3>FOUP / FOSB Cleaner</h3>
+          <p>面向晶圓與載板載具之自動化清洗與真空乾燥，提供產線潔淨度與交付節拍的平衡配置。</p>
+          <ul class="bullets">
+            <li>參考產能：12–16 pcs/hr（依來料潔淨度）</li>
+            <li>設備佔地：6m × 5.3m × 4m（含維修空間）</li>
+            <li>清洗/乾燥：DI Water 濕洗 + CDA/N2 去水 + 熱風/真空烘乾</li>
+          </ul>
+        </article>
+
+        <article class="card">
+          <h3>Panel FOUP Cleaner</h3>
+          <p>面向 ABF/PCB/玻璃載板等大型載具清洗需求，適配面板型 FOUP 的清洗與乾燥節拍。</p>
+          <ul class="bullets">
+            <li>參考產能：8 pcs/hr（依來料潔淨度）</li>
+            <li>設備佔地：8.9m × 8.9m × 3m（含維修空間）</li>
+            <li>去水介質：CDA 或 N2（依配置）</li>
+          </ul>
+        </article>
+
+        <article class="card">
+          <h3>Frame Cleaner（子母框）</h3>
+          <p>面向子框/母框（Frame）之精密清洗與乾燥，適合製程對微粒與殘水控制要求較高之場景。</p>
+          <ul class="bullets">
+            <li>參考產能：12 pcs/hr（依來料潔淨度）</li>
+            <li>設備佔地：9m × 7.6m × 3.1m（含維修空間）</li>
+            <li>清洗方式：超音波（Ultrasonic）+ DI Water 清洗（依機型）</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <section class="section" aria-label="主要規格">
+      <h2>主要規格</h2>
+      <div class="spec-wrap" role="region" aria-label="規格表">
+        <table>
+          <thead>
+            <tr>
+              <th>規格項目</th>
+              <th>FOUP/FOSB Cleaner</th>
+              <th>Panel FOUP Cleaner</th>
+              <th>Frame Cleaner（子母框）</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th>適用載具</th>
+              <td>晶圓/載板 FOUP、FOSB</td>
+              <td>ABF/PCB/玻璃載板 FOUP</td>
+              <td>ABF/PCB/玻璃載板 子框/母框</td>
+            </tr>
+            <tr>
+              <th>參考產能</th>
+              <td>12–16 pcs/hr</td>
+              <td>8 pcs/hr</td>
+              <td>12 pcs/hr</td>
+            </tr>
+            <tr>
+              <th>設備佔地（含維修空間）</th>
+              <td>6m × 5.3m × 4m</td>
+              <td>8.9m × 8.9m × 3m</td>
+              <td>9m × 7.6m × 3.1m</td>
+            </tr>
+            <tr>
+              <th>清洗介質</th>
+              <td colspan="3">純水（DI Water）濕式清洗</td>
+            </tr>
+            <tr>
+              <th>去水/乾燥</th>
+              <td colspan="3">CDA 或 N2 去水吹乾；並可搭配熱風與真空烘乾（依機型/配置）</td>
+            </tr>
+            <tr>
+              <th>自動化整合</th>
+              <td colspan="3">可支援 SECS/GEM 與 MES 對接（依設備規劃）</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="section" aria-label="模組與對接">
+      <h2>模組與對接</h2>
+      <div class="card">
+        <p style="margin:0 0 12px;">
+          系列設備採模組化規劃，可依產線需求配置：Load/Unload、自動取放、層距檢測、NG Port、Particle 檢測、暫存區等（依機型）。
+        </p>
+        <ul class="bullets" style="margin:0;">
+          <li><b>SECS/GEM & MES</b>：資訊串流與設備對接（依規劃）。</li>
+          <li><b>清洗/乾燥路徑</b>：DI Water 濕洗、CDA/N2 去水、熱風/真空烘乾（依配置）。</li>
+          <li><b>備註</b>：產能為參考值，實際依來料潔淨度與配置而異；驗收條件以報價與規格書為準。</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="section" aria-label="頁尾洽詢">
+      <div class="cta-row" style="margin:18px 0 8px;">
+        <a class="btn btn-primary" href="/contact.html">前往聯絡表單</a>
+        <a class="btn btn-secondary" href="/">返回設備/代理專頁</a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <div>© 欣熹科技 SHIN-SI TECHNOLOGY</div>
+      <div class="footer-line">
+        主線產品：
+        <a href="/index.html#telecom">熔接機</a> ｜ <a href="/index.html#specialty">特殊光纖</a> ｜ <a href="/contact.html">聯絡我們</a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

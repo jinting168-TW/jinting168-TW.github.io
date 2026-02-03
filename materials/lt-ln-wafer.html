@@ -1,0 +1,539 @@
+<!doctype html>
+<html lang="zh-TW">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>鉭酸鋰 (LT) 與 鈮酸鋰 (LN) 晶圓｜高頻通訊與光電應用的關鍵基材｜欣熹科技 SHIN-SI</title>
+  <meta name="description" content="鉭酸鋰 (LiTaO₃) 與鈮酸鋰 (LiNbO₃) 晶圓：面向 5G SAW 濾波器與光通訊調變器等應用，提供 4/6/8 吋尺寸與客製切角服務。" />
+  <meta name="robots" content="index,follow" />
+
+  <style>
+    :root{
+      --main-blue:#003366;
+      --main-red:#c2000f;
+      --text:#333;
+      --muted:#555;
+      --bg:#f8f9fa;
+      --border:#e9ecef;
+      --head-bg:#0b58a2;
+      --soft-blue:#d9e8f7;
+      --soft-blue-accent:#6aa6d9;
+    }
+    *{box-sizing:border-box}
+    body{
+      margin:0;
+      font-family:"Microsoft JhengHei",system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,"Noto Sans",sans-serif;
+      background:var(--bg);
+      color:var(--text);
+      line-height:1.65;
+    }
+
+    /* Navbar */
+    .navbar{
+      background:var(--main-blue);
+      padding:0 5%;
+      height:70px;
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      position:sticky;
+      top:0;
+      z-index:1000;
+      box-shadow:0 2px 10px rgba(0,0,0,.12);
+    }
+    .nav-brand{
+      color:#fff;
+      text-decoration:none;
+      font-weight:900;
+      font-size:22px;
+      letter-spacing:.5px;
+      white-space:nowrap;
+    }
+    .nav-menu{display:flex;gap:20px;align-items:center}
+    .nav-item{
+      color:#ddd;
+      text-decoration:none;
+      font-size:18px;
+      transition:.2s;
+      white-space:nowrap;
+    }
+    .nav-item:hover{color:#fff}
+
+    /* Layout */
+    .wrap{max-width:1100px;margin:0 auto;padding:0 5%}
+
+    /* Hero */
+    .hero{
+      background:linear-gradient(135deg,#002244 0%,#004080 100%);
+      color:#fff;
+      padding:58px 0 52px;
+    }
+    .hero h1{
+      margin:0 0 10px 0;
+      font-size:34px;
+      line-height:1.25;
+      font-weight:900;
+    }
+    .hero .subtitle{
+      margin:0 0 12px 0;
+      font-size:20px;
+      font-weight:900;
+      color:#eaf2ff;
+      letter-spacing:.2px;
+    }
+    .hero p{
+      margin:0;
+      color:#e7e7e7;
+      font-size:19px;
+      line-height:1.85;
+      max-width:980px;
+    }
+    .hero-actions{
+      margin-top:18px;
+      display:flex;
+      gap:10px;
+      flex-wrap:wrap;
+    }
+    .btn{
+      display:inline-block;
+      text-decoration:none;
+      font-weight:900;
+      padding:12px 18px;
+      border-radius:999px;
+      border:1px solid transparent;
+      font-size:16px;
+    }
+    .btn-primary{background:var(--main-red);color:#fff}
+    .btn-primary:hover{background:#a0000c}
+    .btn-ghost{border-color:rgba(255,255,255,.6);color:#fff}
+    .btn-ghost:hover{background:rgba(255,255,255,.12)}
+
+    /* Sections */
+    .section{background:#fff;padding:52px 0}
+
+    /* Panels */
+    .stack{display:flex;flex-direction:column;gap:16px}
+    .panel{
+      background:#fff;
+      border:1px solid var(--border);
+      border-radius:14px;
+      overflow:hidden;
+      box-shadow:0 6px 18px rgba(0,0,0,.04);
+    }
+    .panel-pad{padding:18px 18px 18px}
+
+    /* Fixed standards */
+    .card-title{
+      margin:0 0 10px 0;
+      font-size:22px; /* 卡片標題 22px */
+      color:var(--main-blue);
+      font-weight:900;
+      line-height:1.35;
+    }
+    .subtable-title{
+      margin:14px 0 10px 0;
+      font-size:16px; /* 表格段標題 16px */
+      font-weight:900;
+      color:#0d2b6b;
+      line-height:1.35;
+    }
+
+    /* Left text right image block */
+    .lr{
+      display:flex;
+      gap:16px;
+      align-items:stretch;
+    }
+    .lr .left{
+      flex:1 1 60%;
+      min-width:0;
+    }
+    .lr .right{
+      flex:0 0 340px;
+      max-width:340px;
+      border-left:1px solid var(--border);
+      background:#fbfcff;
+      display:flex;
+      flex-direction:column;
+      justify-content:center;
+      padding:14px;
+    }
+    .lr .right img{
+      width:100%;
+      height:260px;
+      object-fit:contain;
+      display:block;
+      background:#fff;
+      border:1px solid var(--border);
+      border-radius:12px;
+      padding:10px;
+    }
+    .img-cap{
+      margin-top:10px;
+      font-size:14px;
+      color:#444;
+      font-weight:900;
+      text-align:center;
+    }
+
+    /* Lists */
+    .lead{
+      margin:0 0 10px 0;
+      color:#333;
+      font-size:16px;
+      line-height:1.9;
+    }
+    ul.clean{
+      margin:8px 0 0 18px;
+      padding:0;
+    }
+    ul.clean li{
+      margin:6px 0;
+      color:#333;
+      font-size:15px;
+      line-height:1.75;
+    }
+
+    /* Image-top card (screenshot style) */
+    .grid-2{
+      display:grid;
+      grid-template-columns:1fr 1fr;
+      gap:16px;
+    }
+    .media-card{
+      border:1px solid var(--border);
+      border-radius:14px;
+      overflow:hidden;
+      background:#fff;
+      box-shadow:0 6px 18px rgba(0,0,0,.04);
+    }
+    .media-card .photo{
+      width:100%;
+      height:220px;
+      object-fit:cover;
+      display:block;
+      background:#fff;
+    }
+    .media-card .bar{
+      display:flex;
+      align-items:center;
+      gap:10px;
+      padding:10px 12px;
+      background:var(--soft-blue);
+      border-top:1px solid var(--border);
+      border-bottom:1px solid var(--border);
+      font-weight:900;
+      color:#0f2a5a;
+      font-size:16px;
+    }
+    .media-card .bar::before{
+      content:"";
+      width:6px;
+      height:18px;
+      background:var(--soft-blue-accent);
+      border-radius:2px;
+      display:inline-block;
+    }
+    .media-card .body{
+      padding:10px 12px 12px;
+    }
+    ul.icon-list{
+      list-style:none;
+      margin:0;
+      padding:0;
+    }
+    ul.icon-list li{
+      display:flex;
+      gap:8px;
+      align-items:flex-start;
+      padding:10px 0;
+      border-bottom:1px dashed #cfd6df;
+      font-size:15px;
+      color:#333;
+      line-height:1.7;
+    }
+    ul.icon-list li:last-child{border-bottom:none}
+    ul.icon-list li::before{
+      content:"⦿";
+      color:#333;
+      font-weight:900;
+      line-height:1.2;
+      margin-top:2px;
+    }
+    .info-bar{
+      margin:10px 0 0;
+      padding:10px 12px;
+      background:var(--soft-blue);
+      border:1px solid var(--border);
+      border-radius:10px;
+      font-weight:900;
+      color:#0f2a5a;
+      display:flex;
+      gap:10px;
+      align-items:center;
+    }
+    .info-bar::before{
+      content:"";
+      width:6px;
+      height:18px;
+      background:var(--soft-blue-accent);
+      border-radius:2px;
+      display:inline-block;
+    }
+
+    /* ✅ 產品優勢：左右各半（對稱），且右側圖片「滿寬」呈現，視覺與下方卡片一致 */
+    /* 修正：加入 margin: 0 18px，讓整體寬度內縮，與下方 grid-2 (在 panel-pad 內) 的寬度對齊 */
+    .lr-adv {
+      margin: 0 18px;
+    }
+    .lr-adv .left{ flex:1 1 50%; }
+    .lr-adv .right{
+      flex:1 1 50%;
+      max-width:none;                 /* 取消 340px 限制 */
+      padding:0;                      /* 取消右欄 padding，避免圖片縮在中間 */
+      background:#fff;                /* 與下方卡片一致 */
+      /* 保留原本 lr .right 的 border-left 分隔線（你目前畫面也有此分隔感） */
+    }
+    .lr-adv .right img{
+      width:100%;
+      height:220px;                   /* 與下方 .media-card .photo 一樣高 */
+      object-fit:cover;               /* 與下方卡片一致的“滿版”視覺 */
+      border:none;                    /* 不要內框，避免縮小 */
+      border-radius:0;
+      padding:0;
+      background:#fff;
+      display:block;
+    }
+    /* 圖說改成下方卡片 bar 的同系統視覺 */
+    .lr-adv .right .img-cap{
+      margin:0;
+      padding:10px 12px;
+      background:var(--soft-blue);
+      border-top:1px solid var(--border);
+      font-weight:900;
+      color:#0f2a5a;
+      font-size:16px;
+      text-align:center;
+    }
+    /* 左側字稍大（只影響產品優勢） */
+    .lr-adv ul.clean li{
+      font-size:16px;
+      line-height:1.8;
+    }
+
+    /* Contact bar */
+    .contact-bar{
+      background:var(--main-blue);
+      color:#fff;
+      text-align:center;
+      padding:44px 18px;
+    }
+    .contact-bar h2{margin:0 0 10px 0;font-size:26px;font-weight:900}
+    .contact-bar p{margin:0 0 16px 0;color:#e7e7e7;font-size:16px;line-height:1.8}
+    .contact-actions{display:flex;gap:10px;justify-content:center;flex-wrap:wrap}
+    .pill{
+      display:inline-block;
+      padding:10px 16px;
+      border-radius:999px;
+      text-decoration:none;
+      font-weight:900;
+      border:1px solid rgba(255,255,255,.7);
+      color:#fff;
+    }
+    .pill:hover{background:rgba(255,255,255,.12)}
+    .pill-cta{border-color:transparent;background:var(--main-red)}
+    .pill-cta:hover{background:#a0000c}
+
+    footer{
+      background:#eee;
+      color:#666;
+      text-align:center;
+      padding:18px 12px;
+      font-size:16px;
+    }
+
+    @media (max-width: 980px){
+      .lr{flex-direction:column}
+      .lr .right{
+        max-width:none;
+        border-left:none;
+        border-top:1px solid var(--border);
+      }
+      .lr .right img{height:280px}
+      .grid-2{grid-template-columns:1fr}
+      .media-card .photo{height:240px}
+
+      /* 手機時：產品優勢圖也跟下方卡片同高 */
+      .lr-adv .right img{height:240px}
+    }
+    @media (max-width: 768px){
+      .nav-menu{display:none}
+      .hero h1{font-size:28px}
+      .hero p{font-size:18px}
+    }
+  </style>
+</head>
+
+<body>
+  <nav class="navbar">
+    <a class="nav-brand" href="/">欣熹科技 SHIN-SI</a>
+    <div class="nav-menu">
+      <a class="nav-item" href="/index.html#telecom">通訊光纖設備</a>
+      <a class="nav-item" href="/index.html#specialty">特殊/製程應用</a>
+      <a class="nav-item" href="/group.html">關於集團</a>
+      <a class="nav-item" href="/contact.html">聯絡我們</a>
+    </div>
+  </nav>
+
+  <header class="hero">
+    <div class="wrap">
+      <h1>鉭酸鋰 (LT) 與 鈮酸鋰 (LN) 晶圓</h1>
+      <div class="subtitle">高頻通訊與光電應用的關鍵基材</div>
+      <p>
+        我們提供高品質的鉭酸鋰 (LiTaO₃) 與鈮酸鋰 (LiNbO₃) 晶圓，專為滿足 5G 射頻濾波器 (SAW Filters) 及光通訊調變器的嚴苛製程需求而生。
+      </p>
+
+      <div class="hero-actions">
+        <a class="btn btn-primary" href="/contact.html">立即洽詢</a>
+        <a class="btn btn-ghost" href="/">返回晶圓/材料專區</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="section">
+      <div class="wrap">
+        <div class="stack">
+
+          <div class="panel">
+            <div class="lr lr-adv">
+              <div class="left">
+                <div class="panel-pad">
+                  <div class="card-title">產品優勢</div>
+                  <ul class="clean">
+                    <li>高精準居禮溫度控制</li>
+                    <li>高精度晶體晶向控制與平邊晶向控制</li>
+                    <li>高精度雷刻</li>
+                    <li>8”φ LT LN 晶圓 進入量產</li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="right">
+                <img src="/images/lt-ln-advantages.jpg" alt="LT/LN 產品示意" />
+                <div class="img-cap">LT / LN 產品示意</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="panel">
+            <div class="panel-pad">
+              <div class="card-title">相關材料與應用</div>
+
+              <div class="grid-2" aria-label="Related materials cards">
+                <article class="media-card" aria-label="LiTaO3 LiNbO3 card">
+                  <img class="photo" src="/images/lt-ln-card-photo.jpg" alt="LiTaO3 LiNbO3 materials photo" />
+                  <div class="bar">LiTaO₃ · LiNbO₃</div>
+                  <div class="body">
+                    <ul class="icon-list">
+                      <li>SAW filter</li>
+                      <li>Optical devices (LN modulator, SHG)</li>
+                      <li>Pyroelectric sensor</li>
+                    </ul>
+                  </div>
+                </article>
+
+                <article class="media-card" aria-label="Al2O3 card">
+                  <img class="photo" src="/images/al2o3-card-photo.jpg" alt="Al2O3 materials photo" />
+                  <div class="bar">Al₂O₃</div>
+                  <div class="body">
+                    <ul class="icon-list">
+                      <li>LED</li>
+                      <li>SOS (Silicon On Sapphire)</li>
+                    </ul>
+
+                    <div class="info-bar">Diameter : 4”, 6”, 8”</div>
+
+                    <ul class="icon-list" style="margin-top:10px;">
+                      <li>SAW filter</li>
+                      <li>Optical devices (LN modulator, SHG)</li>
+                      <li>Pyroelectric sensor</li>
+                    </ul>
+                  </div>
+                </article>
+              </div>
+            </div>
+          </div>
+
+          <div class="panel">
+            <div class="lr">
+              <div class="left">
+                <div class="panel-pad">
+                  <div class="card-title">鉭酸鋰 (LT)</div>
+                  <p class="lead">
+                    具備高機電耦合係數，針對 RF 射頻應用最佳化，確保訊號傳輸的穩定性。
+                  </p>
+
+                  <div class="subtable-title">規格與應用（摘要）</div>
+                  <ul class="clean">
+                    <li><strong>Diameter：</strong>4” / 6” / 8”</li>
+                    <li><strong>Application：</strong></li>
+                    <li>SAW filter</li>
+                    <li>Optical devices（LN modulator, SHG）</li>
+                    <li>Pyroelectric sensor</li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="right">
+                <img src="/images/lt-crystal-boule.jpg" alt="鉭酸鋰 LT 晶體示意" />
+                <div class="img-cap">鉭酸鋰 (LT) 晶體示意</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="panel">
+            <div class="lr">
+              <div class="left">
+                <div class="panel-pad">
+                  <div class="card-title">鈮酸鋰 (LN)</div>
+                  <p class="lead">
+                    擁有卓越的電光效應，是高速光通訊與雷射光學領域的首選材料。 提供多種切角 (Cut Angle) 與尺寸客製服務，協助客戶提升元件效能與良率。
+                  </p>
+
+                  <div class="subtable-title">規格與應用（摘要）</div>
+                  <ul class="clean">
+                    <li><strong>Diameter：</strong>4” / 6” / 8”</li>
+                    <li><strong>Application：</strong></li>
+                    <li>SAW filter</li>
+                    <li>Optical devices（LN modulator, SHG）</li>
+                    <li>Pyroelectric sensor</li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="right">
+                <img src="/images/ln-crystal-boule.jpg" alt="鈮酸鋰 LN 晶體示意" />
+                <div class="img-cap">鈮酸鋰 (LN) 晶體示意</div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <section class="contact-bar">
+      <h2>聯絡我們 / 索取報價</h2>
+      <p>如需對接尺寸、切角、厚度、拋光與驗收條件，請直接填寫表單或以電話/Email 聯繫。</p>
+      <div class="contact-actions">
+        <a class="pill pill-cta" href="/contact.html">前往聯絡表單</a>
+        <a class="pill" href="tel:035972556">電話：03-5972556</a>
+        <a class="pill" href="mailto:service@shin-si.com.tw">Email：service@shin-si.com.tw</a>
+      </div>
+    </section>
+  </main>
+
+  <footer>© 欣熹科技 SHIN-SI TECHNOLOGY</footer>
+</body>
+</html>

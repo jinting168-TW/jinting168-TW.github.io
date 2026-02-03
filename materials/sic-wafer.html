@@ -1,0 +1,745 @@
+<!doctype html>
+<html lang="zh-TW">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>SiC WAFER 碳化矽晶圓｜4H-SiC Substrate / Epitaxial Wafer｜欣熹科技 SHIN-SI</title>
+  <meta name="description" content="SiC WAFER 碳化矽晶圓專頁：4H-SiC Substrate（半絕緣 / N 型）與 N-type Epitaxial Wafer（650V / 1200V）規格整理。" />
+  <meta name="robots" content="index,follow" />
+
+  <style>
+    :root{
+      --main-blue:#003366;
+      --main-red:#c2000f;
+      --text:#333;
+      --muted:#555;
+      --bg:#f8f9fa;
+      --border:#e9ecef;
+      --head-bg:#0b58a2;
+    }
+    *{box-sizing:border-box}
+    body{
+      margin:0;
+      font-family:"Microsoft JhengHei",system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,"Noto Sans",sans-serif;
+      background:var(--bg);
+      color:var(--text);
+      line-height:1.65;
+    }
+
+    /* Navbar */
+    .navbar{
+      background:var(--main-blue);
+      padding:0 5%;
+      height:70px;
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      position:sticky;
+      top:0;
+      z-index:1000;
+      box-shadow:0 2px 10px rgba(0,0,0,.12);
+    }
+    .nav-brand{
+      color:#fff;
+      text-decoration:none;
+      font-weight:900;
+      font-size:22px;
+      letter-spacing:.5px;
+      white-space:nowrap;
+    }
+    .nav-menu{display:flex;gap:20px;align-items:center}
+    .nav-item{
+      color:#ddd;
+      text-decoration:none;
+      font-size:18px;
+      transition:.2s;
+      white-space:nowrap;
+    }
+    .nav-item:hover{color:#fff}
+
+    /* Layout */
+    .wrap{max-width:1100px;margin:0 auto;padding:0 5%}
+
+    .hero{
+      background:linear-gradient(135deg,#002244 0%,#004080 100%);
+      color:#fff;
+      padding:58px 0 52px;
+    }
+    .hero h1{
+      margin:0 0 12px 0;
+      font-size:34px;
+      line-height:1.25;
+      font-weight:900;
+    }
+    .hero p{
+      margin:0;
+      color:#e7e7e7;
+      font-size:19px;
+      line-height:1.85;
+      max-width:980px;
+    }
+    .hero-actions{
+      margin-top:18px;
+      display:flex;
+      gap:10px;
+      flex-wrap:wrap;
+    }
+    .btn{
+      display:inline-block;
+      text-decoration:none;
+      font-weight:900;
+      padding:12px 18px;
+      border-radius:999px;
+      border:1px solid transparent;
+      font-size:16px;
+    }
+    .btn-primary{background:var(--main-red);color:#fff}
+    .btn-primary:hover{background:#a0000c}
+    .btn-ghost{border-color:rgba(255,255,255,.6);color:#fff}
+    .btn-ghost:hover{background:rgba(255,255,255,.12)}
+
+    /* Sections */
+    .section{background:#fff;padding:52px 0}
+
+    /* Panels */
+    .stack{
+      display:flex;
+      flex-direction:column;
+      gap:16px;
+    }
+    .panel{
+      background:#fff;
+      border:1px solid var(--border);
+      border-radius:14px;
+      overflow:hidden;
+      box-shadow:0 6px 18px rgba(0,0,0,.04);
+      color:var(--text);
+    }
+
+    /* Fixed standards */
+    .card-title{
+      margin:0 0 10px 0;
+      font-size:22px; /* 卡片標題 22px */
+      color:var(--main-blue);
+      font-weight:900;
+      line-height:1.35;
+    }
+    .subtable-title{
+      margin:16px 0 10px 0;
+      font-size:16px; /* 表格段標題 16px */
+      font-weight:900;
+      color:#0d2b6b;
+      line-height:1.35;
+    }
+
+    /* Tables */
+    .table-wrap{padding:16px 18px 18px}
+    .spec-table{
+      width:100%;
+      border-collapse:collapse;
+      border:1px solid var(--border);
+      border-radius:12px;
+      overflow:hidden;
+      background:#fff;
+    }
+    .spec-table th,
+    .spec-table td{
+      padding:12px 12px;
+      border-bottom:1px solid var(--border);
+      border-right:1px solid var(--border);
+      vertical-align:top;
+      text-align:left;
+      font-size:15px;
+      line-height:1.6;
+      color:#333;
+      background:#fff;
+    }
+    .spec-table tr:last-child th,
+    .spec-table tr:last-child td{border-bottom:none}
+    .spec-table th:last-child,
+    .spec-table td:last-child{border-right:none}
+    .spec-table thead th{
+      background:var(--head-bg);
+      color:#fff;
+      font-weight:900;
+      border-right:1px solid rgba(255,255,255,.25);
+    }
+    .spec-table thead th:last-child{border-right:none}
+    .mono{font-variant-numeric:tabular-nums}
+
+    /* Only two images row (only place we use images on this page) */
+    .img-grid{
+      display:grid;
+      grid-template-columns: 1fr 1fr;
+      gap:12px;
+      margin-top:12px;
+    }
+    .img-box{
+      border:1px solid var(--border);
+      border-radius:12px;
+      background:#fff;
+      overflow:hidden;
+    }
+    .img-box img{
+      width:100%;
+      height:220px;
+      object-fit:contain;
+      display:block;
+      background:#fff;
+      padding:12px;
+    }
+    .img-cap{
+      border-top:1px solid var(--border);
+      padding:10px 12px;
+      font-size:14px;
+      color:#444;
+      background:#f9fafc;
+      font-weight:900;
+    }
+
+    /* Contact bar */
+    .contact-bar{
+      background:var(--main-blue);
+      color:#fff;
+      text-align:center;
+      padding:44px 18px;
+    }
+    .contact-bar h2{margin:0 0 10px 0;font-size:26px;font-weight:900}
+    .contact-bar p{margin:0 0 16px 0;color:#e7e7e7;font-size:16px;line-height:1.8}
+    .contact-actions{display:flex;gap:10px;justify-content:center;flex-wrap:wrap}
+    .pill{
+      display:inline-block;
+      padding:10px 16px;
+      border-radius:999px;
+      text-decoration:none;
+      font-weight:900;
+      border:1px solid rgba(255,255,255,.7);
+      color:#fff;
+    }
+    .pill:hover{background:rgba(255,255,255,.12)}
+    .pill-cta{border-color:transparent;background:var(--main-red)}
+    .pill-cta:hover{background:#a0000c}
+
+    footer{
+      background:#eee;
+      color:#666;
+      text-align:center;
+      padding:18px 12px;
+      font-size:16px;
+    }
+
+    @media (max-width: 980px){
+      .img-grid{grid-template-columns:1fr}
+      .img-box img{height:240px}
+    }
+    @media (max-width: 768px){
+      .nav-menu{display:none}
+      .hero h1{font-size:28px}
+      .hero p{font-size:18px}
+    }
+  </style>
+</head>
+
+<body>
+  <nav class="navbar">
+    <a class="nav-brand" href="/">欣熹科技 SHIN-SI</a>
+    <div class="nav-menu">
+      <a class="nav-item" href="/index.html#telecom">通訊光纖設備</a>
+      <a class="nav-item" href="/index.html#specialty">特殊/製程應用</a>
+      <a class="nav-item" href="/group.html">關於集團</a>
+      <a class="nav-item" href="/contact.html">聯絡我們</a>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <header class="hero">
+    <div class="wrap">
+      <h1>SiC WAFER 碳化矽晶圓</h1>
+      <p>
+        碳化矽是三代半導體材料，具有禁頻寬、擊穿電場強度高、飽和電子遷移率高、熱導率大、介電常數小、抗輻射能力強等優點。
+      </p>
+
+      <div class="hero-actions">
+        <a class="btn btn-primary" href="/contact.html">立即洽詢</a>
+        <!-- FIX: return to materials index in the same folder -->
+        <a class="btn btn-ghost" href="/">返回晶圓/材料專區</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="section">
+      <div class="wrap">
+        <div class="stack">
+
+          <!-- ONLY TWO IMAGES ON THIS PAGE -->
+          <div class="panel">
+            <div class="table-wrap">
+              <div class="card-title">產品示意</div>
+              <div class="img-grid" aria-label="SiC wafer images">
+                <div class="img-box">
+                  <img src="/images/sic-wafer-slide12.jpg" alt="SiC wafer image" />
+                  <div class="img-cap">6英吋 SIC wafer</div>
+                </div>
+                <div class="img-box">
+                  <img src="/images/sic-wafer-slide14.jpg" alt="SiC wafer image" />
+                  <div class="img-cap">4英吋 SIC wafer</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Substrate tables (use previous version values) -->
+          <div class="panel">
+            <div class="table-wrap">
+              <div class="card-title">4 英寸高純半絕緣 4H-SiC Substrate（Production Grade）</div>
+              <table class="spec-table" aria-label="4 inch semi-insulating 4H-SiC substrate table">
+                <thead>
+                  <tr>
+                    <th scope="col">Parameter</th>
+                    <th scope="col">Value</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr><th scope="row">Diameter</th><td class="mono">99.5 ~ 100 mm</td></tr>
+                  <tr><th scope="row">Thickness</th><td class="mono">500 ± 25 &mu;m</td></tr>
+                  <tr><th scope="row">Resistivity</th><td class="mono">&ge; 1E9 ohm&middot;cm</td></tr>
+                  <tr><th scope="row">Micro-pipe Density</th><td class="mono">&le; 0.5 ea/cm&sup2;</td></tr>
+                  <tr><th scope="row">TTV</th><td class="mono">&le; 5 &mu;m</td></tr>
+                  <tr><th scope="row">LTV</th><td class="mono">&le; 2 &mu;m (5mm &times; 5mm)</td></tr>
+                  <tr><th scope="row">Bow</th><td class="mono">-15 &mu;m ~ 15 &mu;m</td></tr>
+                  <tr><th scope="row">Warp</th><td class="mono">&le; 20 &mu;m</td></tr>
+                  <tr><th scope="row">Roughness</th><td class="mono">&le; 0.2 nm (5&mu;m &times; 5&mu;m)</td></tr>
+                  <tr><th scope="row">Note</th><td>Research &amp; Dummy Grade is also available. Please consult to your sales.</td></tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+
+          <div class="panel">
+            <div class="table-wrap">
+              <div class="card-title">6 英寸高純半絕緣 4H-SiC Substrate（Production Grade）</div>
+              <table class="spec-table" aria-label="6 inch semi-insulating 4H-SiC substrate table">
+                <thead>
+                  <tr>
+                    <th scope="col">Parameter</th>
+                    <th scope="col">Value</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr><th scope="row">Diameter</th><td class="mono">150 ± 0.2 mm</td></tr>
+                  <tr><th scope="row">Thickness</th><td class="mono">500 ± 25 &mu;m</td></tr>
+                  <tr><th scope="row">Primary flat orientation</th><td class="mono">[1-100] ± 5&deg; or Notch</td></tr>
+                  <tr><th scope="row">Resistivity</th><td class="mono">&ge; 1E8 ohm&middot;cm</td></tr>
+                  <tr><th scope="row">Micro-pipe Density</th><td class="mono">&le; 0.5 ea/cm&sup2;</td></tr>
+                  <tr><th scope="row">TTV</th><td class="mono">&le; 3 &mu;m (5mm &times; 5mm)</td></tr>
+                  <tr><th scope="row">LTV</th><td class="mono">&le; 5 &mu;m</td></tr>
+                  <tr><th scope="row">Bow</th><td class="mono">-25 &mu;m ~ 25 &mu;m</td></tr>
+                  <tr><th scope="row">Warp</th><td class="mono">&le; 35 &mu;m</td></tr>
+                  <tr><th scope="row">Roughness</th><td class="mono">&le; 0.2 nm (5&mu;m &times; 5&mu;m)</td></tr>
+                  <tr><th scope="row">Note</th><td>Research &amp; Dummy Grade is also available. Please consult to your sales.</td></tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+
+          <div class="panel">
+            <div class="table-wrap">
+              <div class="card-title">4 英寸 N 型 4H-SiC Substrate（Production Grade）</div>
+              <table class="spec-table" aria-label="4 inch N-type 4H-SiC substrate table">
+                <thead>
+                  <tr>
+                    <th scope="col">Parameter</th>
+                    <th scope="col">Value</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr><th scope="row">Diameter</th><td class="mono">99.5 ~ 100 mm</td></tr>
+                  <tr><th scope="row">Thickness</th><td class="mono">350 ± 25 &mu;m</td></tr>
+                  <tr><th scope="row">Resistivity</th><td class="mono">0.015 ~ 0.025 ohm&middot;cm</td></tr>
+                  <tr><th scope="row">Micro-pipe Density</th><td class="mono">&le; 0.5 ea/cm&sup2;</td></tr>
+                  <tr><th scope="row">TTV</th><td class="mono">&le; 2 &mu;m (5mm &times; 5mm)</td></tr>
+                  <tr><th scope="row">LTV</th><td class="mono">&le; 5 &mu;m</td></tr>
+                  <tr><th scope="row">Bow</th><td class="mono">-15 &mu;m ~ 15 &mu;m</td></tr>
+                  <tr><th scope="row">Warp</th><td class="mono">&le; 20 &mu;m</td></tr>
+                  <tr><th scope="row">Roughness</th><td class="mono">&le; 0.2 nm (5&mu;m &times; 5&mu;m)</td></tr>
+                  <tr><th scope="row">Note</th><td>Research &amp; Dummy Grade is also available. Please consult to your sales.</td></tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+
+          <div class="panel">
+            <div class="table-wrap">
+              <div class="card-title">6 英寸 N 型 4H-SiC Substrate（Production Grade）</div>
+              <table class="spec-table" aria-label="6 inch N-type 4H-SiC substrate table">
+                <thead>
+                  <tr>
+                    <th scope="col">Parameter</th>
+                    <th scope="col">Value</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr><th scope="row">Diameter</th><td class="mono">150.0 ± 0.2 mm</td></tr>
+                  <tr><th scope="row">Thickness</th><td class="mono">350 ± 25 &mu;m</td></tr>
+                  <tr><th scope="row">Resistivity</th><td class="mono">0.015 ~ 0.025 ohm&middot;cm</td></tr>
+                  <tr><th scope="row">Micro-pipe Density</th><td class="mono">&le; 0.5 ea/cm&sup2;</td></tr>
+                  <tr><th scope="row">TTV</th><td class="mono">&le; 3 &mu;m (5mm &times; 5mm)</td></tr>
+                  <tr><th scope="row">LTV</th><td class="mono">&le; 5 &mu;m</td></tr>
+                  <tr><th scope="row">Bow</th><td class="mono">-25 &mu;m ~ 25 &mu;m</td></tr>
+                  <tr><th scope="row">Warp</th><td class="mono">&le; 35 &mu;m</td></tr>
+                  <tr><th scope="row">Roughness</th><td class="mono">&le; 0.2 nm (5&mu;m &times; 5&mu;m)</td></tr>
+                  <tr><th scope="row">Note</th><td>Research &amp; Dummy Grade is also available. Please consult to your sales.</td></tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+
+          <!-- Epitaxial wafer (650V) - Item cells merged (rowspan) per SIC.xlsx -->
+          <div class="panel">
+            <div class="table-wrap">
+              <div class="card-title">6 英寸 N 型 4H-SiC N-type Epitaxial Wafer（Specification 650V）</div>
+              <div class="subtable-title">Epitaxial Wafer Specification</div>
+
+              <table class="spec-table" aria-label="Epitaxial wafer 650V specification table">
+                <thead>
+                  <tr>
+                    <th scope="col">Item (項目)</th>
+                    <th scope="col">Parameter (參數)</th>
+                    <th scope="col">Unit (單位)</th>
+                    <th scope="col">Poshing Specification Value (規格值)</th>
+                    <th scope="col">Reference information (參考資訊)</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Type</td>
+                    <td>Condutivity / Dopant</td>
+                    <td class="mono">-</td>
+                    <td class="mono">N-type / Nitrogen</td>
+                    <td class="mono">/</td>
+                  </tr>
+
+                  <tr>
+                    <td rowspan="2">Buffer layer</td>
+                    <td>Epi Layer Thickness Average</td>
+                    <td class="mono">&mu;m</td>
+                    <td class="mono">0.5 (0.4-0.6)</td>
+                    <td class="mono">/</td>
+                  </tr>
+                  <tr>
+                    <td>Epi Layer Doping Average</td>
+                    <td class="mono">cm<sup>-3</sup></td>
+                    <td class="mono">1.0E18 (±10%) 0.9E18-1.1E18</td>
+                    <td class="mono">/</td>
+                  </tr>
+
+                  <tr>
+                    <td rowspan="6">Drift layer</td>
+                    <td>Epi Layers Thickness Average</td>
+                    <td class="mono">&mu;m</td>
+                    <td class="mono">5~6</td>
+                    <td class="mono">/</td>
+                  </tr>
+                  <tr>
+                    <td>Epi Layers Thickness Uniformity (&sigma;/mean)</td>
+                    <td class="mono">%</td>
+                    <td class="mono">&le; 2.0</td>
+                    <td>by FTIR, 25 points</td>
+                  </tr>
+                  <tr>
+                    <td>Epi Layers Thickness Accuracy (mean/target)</td>
+                    <td class="mono">%</td>
+                    <td class="mono">±8.0</td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td>Epi Layers Net Average Doping</td>
+                    <td class="mono">cm<sup>-3</sup></td>
+                    <td class="mono">5E14~1E18</td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td>Epi Layers Net Doping Uniformity (&sigma;/mean)</td>
+                    <td class="mono">%</td>
+                    <td class="mono">&le; 8.0</td>
+                    <td>by Hg-CV, 15 points</td>
+                  </tr>
+                  <tr>
+                    <td>Epi Layers Net Doping Accuracy (mean/target)</td>
+                    <td class="mono">%</td>
+                    <td class="mono">±10.0</td>
+                    <td></td>
+                  </tr>
+
+                  <tr>
+                    <td rowspan="4">Epitaxial Wafer Shape</td>
+                    <td>Warp</td>
+                    <td class="mono">&mu;m</td>
+                    <td class="mono">&le; 35.0</td>
+                    <td>Corning Tropel Flat Master 100</td>
+                  </tr>
+                  <tr>
+                    <td>Bow</td>
+                    <td class="mono">&mu;m</td>
+                    <td class="mono">±30.0</td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td>TTV</td>
+                    <td class="mono">&mu;m</td>
+                    <td class="mono">&le; 15.0</td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td>LTV</td>
+                    <td class="mono">&mu;m</td>
+                    <td class="mono">&le; 4.0 (10mm×10mm)</td>
+                    <td></td>
+                  </tr>
+
+                  <tr>
+                    <td rowspan="3">Surface Inspection</td>
+                    <td>Scratches</td>
+                    <td class="mono">-</td>
+                    <td>&le; 5 scratches, Cumulative length &le; Wafer diameter</td>
+                    <td>by SICA88</td>
+                  </tr>
+                  <tr>
+                    <td>Roughness</td>
+                    <td class="mono">nm</td>
+                    <td class="mono">&le; 0.5 (10um×10um)</td>
+                    <td>AFM on a 10um×10um scan size at 5 sites</td>
+                  </tr>
+                  <tr>
+                    <td>Edge Chips</td>
+                    <td class="mono">-</td>
+                    <td>&le; 2 chips, Each radius &le; 1.5 mm</td>
+                    <td>by high-intensity light unaided eye</td>
+                  </tr>
+
+                  <tr>
+                    <td>Epitaxial Layer Surface and Defect Inspection</td>
+                    <td>Surface metal concentration (Al∗, Cr, Fe, Ni, Cu, Zn, Hg, Na*, K, Ti, Ca &amp; Mn)</td>
+                    <td class="mono">atom cm<sup>-2</sup></td>
+                    <td class="mono">5.00E+10</td>
+                    <td class="mono">/</td>
+                  </tr>
+
+                  <tr>
+                    <td rowspan="2">Defect Inspection</td>
+                    <td>Triangles / Downfalls / Particles / Carrots</td>
+                    <td class="mono">cm<sup>-2</sup></td>
+                    <td>Total Defect Density &le; 1.0</td>
+                    <td>by SICA88</td>
+                  </tr>
+                  <tr>
+                    <td>Cumulative Surface Defects (Yield)(2*2mm), include triangles, downfalls, particles and carrots</td>
+                    <td class="mono">%</td>
+                    <td class="mono">&ge; 95.0</td>
+                    <td></td>
+                  </tr>
+
+                  <tr>
+                    <td>Back Surface Inspection</td>
+                    <td>Contamination</td>
+                    <td class="mono">%</td>
+                    <td>None Permitted</td>
+                    <td class="mono">/</td>
+                  </tr>
+
+                  <tr>
+                    <td>Packaging</td>
+                    <td>Packaging</td>
+                    <td class="mono">-</td>
+                    <td>Using the multiple boxes</td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+
+          <!-- Epitaxial wafer (1200V) - Item cells merged (rowspan) per SIC.xlsx -->
+          <div class="panel">
+            <div class="table-wrap">
+              <div class="card-title">6 英寸 N 型 4H-SiC N-type Epitaxial Wafer（Specification 1200V）</div>
+              <div class="subtable-title">Epitaxial Wafer Specification</div>
+
+              <table class="spec-table" aria-label="Epitaxial wafer 1200V specification table">
+                <thead>
+                  <tr>
+                    <th scope="col">Item (項目)</th>
+                    <th scope="col">Parameter (參數)</th>
+                    <th scope="col">Unit (單位)</th>
+                    <th scope="col">Poshing Specification Value (規格值)</th>
+                    <th scope="col">Reference information (參考資訊)</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Type</td>
+                    <td>Condutivity / Dopant</td>
+                    <td class="mono">-</td>
+                    <td class="mono">N-type / Nitrogen</td>
+                    <td class="mono">/</td>
+                  </tr>
+
+                  <tr>
+                    <td rowspan="2">Buffer layer</td>
+                    <td>Epi Layer Thickness Average</td>
+                    <td class="mono">&mu;m</td>
+                    <td class="mono">0.5 (0.4-0.6)</td>
+                    <td class="mono">/</td>
+                  </tr>
+                  <tr>
+                    <td>Epi Layer Doping Average</td>
+                    <td class="mono">cm<sup>-3</sup></td>
+                    <td class="mono">1.0E18 (±10%) 0.9E18-1.1E18</td>
+                    <td class="mono">/</td>
+                  </tr>
+
+                  <tr>
+                    <td rowspan="6">Drift layer</td>
+                    <td>Epi Layers Thickness Average</td>
+                    <td class="mono">&mu;m</td>
+                    <td class="mono">10~12</td>
+                    <td class="mono">/</td>
+                  </tr>
+                  <tr>
+                    <td>Epi Layers Thickness Uniformity (&sigma;/mean)</td>
+                    <td class="mono">%</td>
+                    <td class="mono">&le; 2.0</td>
+                    <td>by FTIR, 25 points</td>
+                  </tr>
+                  <tr>
+                    <td>Epi Layers Thickness Accuracy (mean/target)</td>
+                    <td class="mono">%</td>
+                    <td class="mono">±8.0</td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td>Epi Layers Net Average Doping</td>
+                    <td class="mono">cm<sup>-3</sup></td>
+                    <td class="mono">5E14~1E18</td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td>Epi Layers Net Doping Uniformity (&sigma;/mean)</td>
+                    <td class="mono">%</td>
+                    <td class="mono">&le; 8.0</td>
+                    <td>by Hg-CV, 15 points</td>
+                  </tr>
+                  <tr>
+                    <td>Epi Layers Net Doping Accuracy (mean/target)</td>
+                    <td class="mono">%</td>
+                    <td class="mono">±10.0</td>
+                    <td></td>
+                  </tr>
+
+                  <tr>
+                    <td rowspan="4">Epitaxial Wafer Shape</td>
+                    <td>Warp</td>
+                    <td class="mono">&mu;m</td>
+                    <td class="mono">&le; 35.0</td>
+                    <td>Corning Tropel Flat Master 100</td>
+                  </tr>
+                  <tr>
+                    <td>Bow</td>
+                    <td class="mono">&mu;m</td>
+                    <td class="mono">±30.0</td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td>TTV</td>
+                    <td class="mono">&mu;m</td>
+                    <td class="mono">&le; 15.0</td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td>LTV</td>
+                    <td class="mono">&mu;m</td>
+                    <td class="mono">&le; 4.0 (10mm×10mm)</td>
+                    <td></td>
+                  </tr>
+
+                  <tr>
+                    <td rowspan="3">Surface Inspection</td>
+                    <td>Scratches</td>
+                    <td class="mono">-</td>
+                    <td>&le; 5 scratches, Cumulative length &le; Wafer diameter</td>
+                    <td>by SICA88</td>
+                  </tr>
+                  <tr>
+                    <td>Roughness</td>
+                    <td class="mono">nm</td>
+                    <td class="mono">&le; 0.5 (10um×10um)</td>
+                    <td>AFM on a 10um×10um scan size at 5 sites</td>
+                  </tr>
+                  <tr>
+                    <td>Edge Chips</td>
+                    <td class="mono">-</td>
+                    <td>&le; 2 chips, Each radius &le; 1.5 mm</td>
+                    <td>by high-intensity light unaided eye</td>
+                  </tr>
+
+                  <tr>
+                    <td>Epitaxial Layer Surface and Defect Inspection</td>
+                    <td>Surface metal concentration (Al∗, Cr, Fe, Ni, Cu, Zn, Hg, Na*, K, Ti, Ca &amp; Mn)</td>
+                    <td class="mono">atom cm<sup>-2</sup></td>
+                    <td class="mono">5.00E+10</td>
+                    <td class="mono">/</td>
+                  </tr>
+
+                  <tr>
+                    <td rowspan="2">Defect Inspection</td>
+                    <td>Triangles / Downfalls / Particles / Carrots</td>
+                    <td class="mono">cm<sup>-2</sup></td>
+                    <td>Total Defect Density &le; 1.0</td>
+                    <td>by SICA88</td>
+                  </tr>
+                  <tr>
+                    <td>Cumulative Surface Defects (Yield)(2*2mm), include triangles, downfalls, particles and carrots</td>
+                    <td class="mono">%</td>
+                    <td class="mono">&ge; 95.0</td>
+                    <td></td>
+                  </tr>
+
+                  <tr>
+                    <td>Back Surface Inspection</td>
+                    <td>Contamination</td>
+                    <td class="mono">%</td>
+                    <td>None Permitted</td>
+                    <td class="mono">/</td>
+                  </tr>
+
+                  <tr>
+                    <td>Packaging</td>
+                    <td>Packaging</td>
+                    <td class="mono">-</td>
+                    <td>Using the multiple boxes</td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <section class="contact-bar">
+      <h2>聯絡我們 / 索取報價</h2>
+      <p>如需對接尺寸、等級、交期與驗收條件，請直接填寫表單或以電話/Email 聯繫。</p>
+      <div class="contact-actions">
+        <a class="pill pill-cta" href="/contact.html">前往聯絡表單</a>
+        <a class="pill" href="tel:035972556">電話：03-5972556</a>
+        <a class="pill" href="mailto:service@shin-si.com.tw">Email：service@shin-si.com.tw</a>
+      </div>
+    </section>
+  </main>
+
+  <footer>© 欣熹科技 SHIN-SI TECHNOLOGY</footer>
+</body>
+</html>

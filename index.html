@@ -1,0 +1,640 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>欣熹科技｜Fujikura 台灣授權代理．光纖熔接機銷售與維修中心</title>
+<meta content="欣熹科技是 Fujikura 台灣授權代理，隸屬錦霆集團。專注於光纖熔接機 (90S+, 45S, 100S+, FSM-100) 銷售。提供原廠級技術支援、保固維修、校正服務與 ESG 永續解決方案。" name="description"/>
+<meta content="Fujikura, 台灣代理, 光纖熔接機, 錦霆集團, 90S+, 45S, FSM-100, 熔接機維修, ESG, 永續發展" name="keywords"/>
+<script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Corporation",
+        "name": "錦霆科技 JINTING Group",
+        "url": "http://www.shin-si.com.tw/group.html",
+        "logo": "http://www.shin-si.com.tw/images/logo.png"
+      },
+      {
+        "@type": "LocalBusiness",
+        "name": "欣熹科技 SHIN-SI TECHNOLOGY",
+        "parentOrganization": {
+          "@type": "Corporation",
+          "name": "錦霆科技 JINTING Group"
+        },
+        "telephone": "+886-3-5972556",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "中華路13號",
+          "addressLocality": "湖口鄉",
+          "addressRegion": "新竹縣",
+          "postalCode": "303",
+          "addressCountry": "TW"
+        },
+        "priceRange": "$$$"
+      }
+    ]
+  }
+  </script>
+<script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "欣熹科技提供的 Fujikura 設備是公司貨嗎？",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "是的，欣熹科技為 Fujikura 台灣正式授權合作夥伴。我們銷售的所有設備皆為原廠公司貨，享有完整的原廠保固、韌體升級與零件供應承諾，絕非來路不明的水貨或整新機。"
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "你們提供哪些售後服務？",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "我們提供「一站式」技術服務，包含：新機操作教學、參數優化設定（針對特殊光纖）、定期校正服務、電極棒更換以及故障排除維修。我們在新竹設有專業實驗室，能快速回應您的需求。"
+        }
+      }
+    ]
+  }
+  </script>
+<style>
+    :root {
+      --main-blue: #003366;
+      --main-red: #c2000f;
+      --text-dark: #333;
+      --text-light: #444;
+      --bg-light: #f8f9fa;
+      --border: #e9ecef;
+    }
+    body { font-family: "Microsoft JhengHei", sans-serif; margin: 0; color: var(--text-dark); line-height: 1.6; }
+    
+    /* Navbar */
+    .navbar { background: var(--main-blue); padding: 0 5%; display: flex; justify-content: space-between; align-items: center; height: 70px; position: sticky; top: 0; z-index: 1000; box-shadow: 0 2px 10px rgba(0,0,0,0.1); }
+    .nav-brand { color: white; font-weight: bold; text-decoration: none; font-size: 24px; letter-spacing: 1px; }
+    .nav-menu { display: flex; gap: 20px; }
+    
+    /* 修改：將字體從 16px 改為 20px */
+    .nav-item { color: #ddd; text-decoration: none; font-size: 18px; transition: 0.3s; }
+    
+    .nav-item:hover { color: white; }
+
+    /* Hero Section */
+    .hero { 
+      background: linear-gradient(135deg, #002244 0%, #004080 100%); 
+      color: white; 
+      padding: 80px 5%; 
+      text-align: center; 
+    }
+    .hero h1 { margin: 0 0 20px 0; font-size: 38px; line-height: 1.3; font-weight: 800; }
+    .hero p { 
+      font-size: 22px; 
+      color: #e0e0e0; 
+      max-width: 900px; 
+      margin: 0 auto 40px auto; 
+      line-height: 1.8; 
+    }
+    .hero-btn { 
+      background: var(--main-red); 
+      color: white; 
+      text-decoration: none; 
+      padding: 15px 30px; 
+      border-radius: 5px; 
+      font-size: 18px; 
+      font-weight: bold; 
+      transition: 0.3s; 
+      display: inline-block;
+    }
+    .hero-btn:hover { background: #a0000c; transform: translateY(-2px); }
+
+    /* Category Section */
+    .category-section { padding: 60px 5%; max-width: 1200px; margin: 0 auto; }
+    .cat-title { 
+      text-align: center; 
+      font-size: 32px; 
+      color: var(--main-blue); 
+      margin-bottom: 40px; 
+      border-bottom: 3px solid var(--main-red); 
+      display: inline-block; 
+      padding-bottom: 10px;
+    }
+    
+    .product-grid { 
+      display: grid; 
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); 
+      gap: 30px; 
+    }
+    
+    .product-card { 
+      background: white; 
+      border: 1px solid var(--border); 
+      border-radius: 10px; 
+      overflow: hidden; 
+      transition: 0.3s; 
+      text-decoration: none; 
+      color: var(--text-dark);
+      display: flex;
+      flex-direction: column;
+    }
+    .product-card:hover { 
+      box-shadow: 0 10px 20px rgba(0,0,0,0.1); 
+      transform: translateY(-5px); 
+      border-color: var(--main-blue);
+    }
+
+    /* 第二排空白占位（保留格位但不顯示） */
+    .product-card.placeholder{
+      border: 0;
+      background: transparent;
+      box-shadow: none !important;
+      transform: none !important;
+      pointer-events: none;
+      visibility: hidden; /* 保留格位但讓卡片不可見 */
+    }
+    
+    .card-img { 
+      width: 100%; 
+      height: 250px; 
+      object-fit: contain; 
+      background: #fff; 
+      border-bottom: 1px solid var(--border);
+      padding: 20px;
+      box-sizing: border-box;
+    }
+    
+    .card-body { padding: 25px; flex-grow: 1; display: flex; flex-direction: column; }
+    .card-title { font-size: 22px; font-weight: bold; margin: 0 0 12px 0; color: var(--main-blue); }
+    .card-desc { 
+      font-size: 19px; 
+      line-height: 1.7;
+      color: #444; 
+      margin: 0 0 20px 0; 
+      flex-grow: 1; 
+    }
+    .card-link { color: var(--main-red); font-weight: bold; font-size: 16px; margin-top: auto; }
+
+    /* Text Sections */
+    .text-section { padding: 60px 5%; max-width: 1000px; margin: 0 auto; line-height: 1.8; }
+    .text-section h2 { color: var(--main-blue); font-size: 30px; margin-bottom: 20px; border-left: 5px solid var(--main-red); padding-left: 15px; }
+    .text-section p { font-size: 22px; color: #444; margin-bottom: 20px; }
+    
+    .faq-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 30px; margin-top: 30px; }
+    .faq-item { background: #fff; padding: 20px; border: 1px solid #eee; border-radius: 8px; }
+    .faq-item h3 { color: var(--main-blue); margin-top: 0; font-size: 18px; }
+    .faq-item p { font-size: 17px; color: #555; }
+
+    /* Contact / Footer */
+    .contact-bar { background: var(--main-blue); color: white; text-align: center; padding: 40px 20px; }
+    .contact-links a { color: white; margin: 0 15px; text-decoration: none; font-size: 18px; font-weight: bold; border: 1px solid white; padding: 10px 20px; border-radius: 50px; display: inline-block; margin-top: 10px; }
+    .contact-links a:hover { background: white; color: var(--main-blue); }
+    
+    footer { background: #eee; color: #666; text-align: center; padding: 20px; font-size: 20px; }
+
+    @media (max-width: 768px) {
+      .hero h1 { font-size: 28px; }
+      .nav-menu { display: none; }
+      .faq-grid { grid-template-columns: 1fr; }
+    }
+
+/* 專區文字微調：關於集團與CSR段落文字略小（由16px調整為14px） */
+#group-intro p,
+#csr p{
+  font-size: 20px;
+  line-height: 1.9;
+}
+.solution-card h3{
+      margin:0 0 10px 0;
+      font-size:22px;
+      color:var(--main-blue);
+    }
+    .solution-card p{
+      margin:0 0 12px 0;
+      font-size:19px;
+      color:#444;
+      line-height:1.7;
+    }
+    .solution-card span{
+      color:var(--main-red);
+      font-weight:bold;
+      font-size:16px;
+    }
+
+
+
+    
+
+    /* Client Performance (客戶實績) */
+    .client-grid{
+      display:grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 18px;
+      max-width: 1100px;
+      margin: 0 auto;
+    }
+    .client-card{
+      background: #fff;
+      border: 1px solid #e9ecef;
+      border-radius: 14px;
+      padding: 18px 18px 14px;
+      box-shadow: 0 6px 18px rgba(0,0,0,0.04);
+    }
+    .client-card h3{
+      margin: 0 0 10px;
+      font-size: 16px;
+      color: #0d2b6b;
+    }
+    .client-card ul{
+      margin: 0;
+      padding-left: 18px;
+      color: #333;
+      line-height: 1.7;
+      font-size: 14px;
+    }
+    @media (max-width: 980px){
+      .client-grid{ grid-template-columns: repeat(2, minmax(0, 1fr)); }
+    }
+    @media (max-width: 520px){
+      .client-grid{ grid-template-columns: 1fr; }
+    }
+/* Business Section (營業項目) */
+    .business-section{ padding: 40px 5% 10px 5%; max-width: 1200px; margin: 0 auto; }
+    .business-grid{
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 24px;
+      margin-top: 30px;
+    }
+    .business-card{
+      background: #fff;
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 22px;
+      text-decoration: none;
+      color: var(--text-dark);
+      transition: 0.3s;
+      display: block;
+    }
+    .business-card:hover{
+      box-shadow: 0 10px 20px rgba(0,0,0,0.08);
+      transform: translateY(-3px);
+      border-color: var(--main-blue);
+    }
+    .business-card--full{
+      grid-column: 1 / -1;
+      text-decoration: none;
+    }
+    .business-title{
+      margin: 0 0 10px 0;
+      color: var(--main-blue);
+      font-size: 22px;
+      font-weight: 800;
+    }
+    .business-desc{
+      margin: 0 0 14px 0;
+      color: #444;
+      font-size: 18px;
+      line-height: 1.8;
+    }
+    .business-link{
+      color: var(--main-red);
+      font-weight: 800;
+      font-size: 16px;
+    }
+    .business-actions{
+      display: flex;
+      gap: 10px;
+      flex-wrap: wrap;
+      margin-top: 8px;
+    }
+    .business-pill{
+      display: inline-block;
+      border: 1px solid var(--main-blue);
+      color: var(--main-blue);
+      text-decoration: none;
+      padding: 8px 14px;
+      border-radius: 999px;
+      font-weight: 800;
+      font-size: 15px;
+    }
+    .business-pill:hover{
+      background: var(--main-blue);
+      color: #fff;
+    }
+    .business-pill--cta{
+      border-color: var(--main-red);
+      color: var(--main-red);
+    }
+    .business-pill--cta:hover{
+      background: var(--main-red);
+      color: #fff;
+    }
+
+    @media (max-width: 900px){
+      .business-grid{ grid-template-columns: 1fr; }
+    }
+
+  </style>
+</head>
+<body>
+<nav class="navbar">
+<a class="nav-brand" href="/">欣熹科技 SHIN-SI</a>
+<div class="nav-menu">
+<a class="nav-item" href="/index.html#telecom">通訊光纖設備</a>
+<a class="nav-item" href="/index.html#specialty">特殊/製程應用</a>
+<a class="nav-item" href="/group.html">關於集團</a>
+<a class="nav-item" href="/contact.html">聯絡我們</a>
+</div>
+</nav>
+<header class="hero">
+<h1>Fujikura 台灣授權代理．原廠級銷售與維修服務</h1>
+<p>
+      欣熹科技整合集團產業資源，專注於通訊工程、FTTH 與特種光纖應用。我們提供從需求諮詢、設備交付到售後維修的一站式原廠支援，讓您享有日本 Fujikura 的頂級品質與台灣在地的即時服務。
+    </p>
+<a class="hero-btn" href="/contact.html">立即諮詢 / 索取報價</a>
+</header>
+<section aria-label="營業項目" class="business-section" id="business">
+<div style="text-align: center;"><span class="cat-title">營業項目</span></div>
+<div class="business-grid" role="list">
+<!-- 第 1 層：新增兩大類別 -->
+<a class="business-card" href="/materials/index.html" role="listitem">
+<h2 class="business-title">晶圓/半導體/先進材料</h2>
+<p class="business-desc">提供材料與晶圓相關之專案協作與供應鏈支援；晶圓加工、再生、分選等需求可於專案中對接。</p>
+<span class="business-link">前往專頁 →</span>
+</a>
+<a class="business-card" href="/equipment/index.html" role="listitem">
+<h2 class="business-title">設備/儀器/代理貿易</h2>
+<p class="business-desc">聚焦 SIAMC 石墨部件代理、丹東新東方晶體儀器代理與晶圓翹曲量測儀等方向，協助選型、交付與導入對接。</p>
+<span class="business-link">前往專頁 →</span>
+</a>
+<!-- 第 2 層：熔接機與相關項目（全寬） -->
+<div class="business-card business-card--full" role="listitem">
+<h2 class="business-title">光纖熔接機與光纖應用</h2>
+<p class="business-desc">Fujikura 台灣授權代理．涵蓋通訊工程/FTTH 與特殊光纖研發應用，提供原廠級銷售、校正與維修服務。</p>
+<div class="business-actions">
+<a class="business-pill" href="#telecom">通訊工程與 FTTH</a>
+<a class="business-pill" href="#specialty">特殊光纖 / R&amp;D</a>
+<a class="business-pill business-pill--cta" href="/contact.html">立即諮詢</a>
+</div>
+</div>
+</div>
+</section>
+<section class="category-section" id="telecom">
+<div style="text-align: center;"><span class="cat-title">通訊工程與 FTTH 解決方案</span></div>
+<div class="product-grid">
+<a class="product-card" href="/telecom/90splus.html">
+<img alt="Fujikura 90S+ Core Alignment Splicer" class="card-img" src="/images/fujikura-90splus-fusion-splicer.jpg"/>
+<div class="card-body">
+<h3 class="card-title">Fujikura 90S+</h3>
+<p class="card-desc">旗艦級核心對準熔接機，具備自動開闔防風蓋與加熱器。適合各類戶外工程，穩定性高，抗風能力強。</p>
+<span class="card-link">查看詳細規格 →</span>
+</div>
+</a>
+<a class="product-card" href="/telecom/100splus.html">
+<img alt="Fujikura 100S+ Fusion Splicer" class="card-img" src="/images/fujikura-100splus-fusion-splicer.jpg"/>
+<div class="card-body">
+<h3 class="card-title">Fujikura 100S+</h3>
+<p class="card-desc">最新極速旗艦，加熱蓋/加熱夾自動開闔與夾持。專為大量佈建工程優化，大幅縮短單芯熔接與加熱的循環時間。</p>
+<span class="card-link">查看詳細規格 →</span>
+</div>
+</a>
+<a class="product-card" href="/telecom/90r.html">
+<img alt="Fujikura 90R Ribbon Splicer" class="card-img" src="/images/fujikura-90r-ribbon-fusion-splicer.jpg"/>
+<div class="card-body">
+<h3 class="card-title">Fujikura 90R</h3>
+<p class="card-desc">12芯帶狀光纖熔接機。業界首創可更換式 V 型槽，快速解決積塵問題，提升骨幹光纜施工效率。</p>
+<span class="card-link">查看詳細規格 →</span>
+</div>
+</a>
+<a class="product-card" href="/telecom/45s.html">
+<img alt="Fujikura 45S Clad Alignment Splicer" class="card-img" src="/images/fujikura-45s-fusion-splicer.jpg"/>
+<div class="card-body">
+<h3 class="card-title">Fujikura 45S</h3>
+<p class="card-desc">FTTH 最後一哩路專用機。全球首創雙刀片連動切割功能，體積輕巧，適合宅內佈線與維運。</p>
+<span class="card-link">查看詳細規格 →</span>
+</div>
+</a>
+</div>
+</section>
+<!-- ===== 修改區塊：#specialty 卡片改為兩排 + 新增 CT115/SS110 + 空白占位 ===== -->
+<section class="category-section" id="specialty" style="background-color: #fcfcfc;">
+<div style="text-align: center;"><span class="cat-title">特殊光纖與實驗室應用 (R&amp;D / Factory)</span></div>
+<!-- Row 1: 上左 FSM100 / 上中 CT110,G / 上右 CT115 -->
+<div class="product-grid">
+<a class="product-card" href="/specialty/fsm-100.html">
+<img alt="Fujikura FSM-100 ARCMaster" class="card-img" src="/images/fujikura-fsm-100-arc-master.jpg"/>
+<div class="card-body">
+<h3 class="card-title">FSM-100 ARCMaster™</h3>
+<p class="card-desc">實驗室與產線專用。支援 PM 保偏光纖、LDF 大管徑光纖，具備專利 Split V-groove 夾具系統。</p>
+<span class="card-link">探索研發機種 →</span>
+</div>
+</a>
+<a class="product-card" href="/specialty/ct-110.html">
+<img alt="Fujikura CT-110 High Precision Cleaver" class="card-img" src="/images/fujikura-ct-110-fiber-cleaver.jpg"/>
+<div class="card-body">
+<h3 class="card-title">CT-110 / CT-111</h3>
+<p class="card-desc">大管徑高精度張力切割刀 (Tension Cleaver)。解決 LDF 易碎問題，CT-111 額外支援角度切割。</p>
+<span class="card-link">查看詳細規格 →</span>
+</div>
+</a>
+<a class="product-card" href="/specialty/ct115-series.html">
+<img alt="Fujikura CT114 大管徑光纖切割刀（示意圖）" class="card-img" src="/images/fujikura-ct114-large-diameter-cleaver.jpg"/>
+<div class="card-body">
+<h3 class="card-title">CT114 / CT115 / CT116</h3>
+<p class="card-desc">大管徑光纖切割刀系列（Large Diameter Optical Fiber Cleaver）。支援不同包層直徑範圍與設定需求，供研發與製程導入參考。</p>
+<span class="card-link">查看詳細規格 →</span>
+</div>
+</a>
+</div>
+<!-- Row 2: 下左 FSR115 / 下中 SS110 / 下右 空白占位 -->
+<div class="product-grid" style="margin-top: 30px;">
+<a class="product-card" href="/specialty/fsr-115.html">
+<img alt="Fujikura FSR-115 Recoater" class="card-img" src="/images/fujikura-fsr-115-recoater.jpg"/>
+<div class="card-body">
+<h3 class="card-title">FSR-115 Recoater</h3>
+<p class="card-desc">高可靠度光纖再塗覆機。具備自動注膠與 UV 固化，支援高強度張力測試，海底電纜製程首選。</p>
+<span class="card-link">查看詳細規格 →</span>
+</div>
+</a>
+<a class="product-card" href="/specialty/ss110.html">
+<img alt="Fujikura SS110 特殊光纖自動剝除器" class="card-img" src="/images/fujikura-ss110-fiber-stripper.jpg"/>
+<div class="card-body">
+<h3 class="card-title">SS110</h3>
+<p class="card-desc">特殊光纖自動剝除器，對應特殊光纖製程與研發應用需求。</p>
+<span class="card-link">查看詳細規格 →</span>
+</div>
+</a>
+<div aria-hidden="true" class="product-card placeholder"></div>
+</div>
+</section>
+<!-- ===== 修改區塊結束 ===== -->
+
+
+<section class="category-section" id="other-fiber-products" style="background-color: #fcfcfc;">
+<div class="container">
+<span class="cat-title">其他光纖產品</span>
+<div class="product-grid">
+<a class="product-card" href="/telecom/fiber-patchcords.html">
+<img alt="光纖跳接線：MPO/APC、SC/APC、LC/APC、LSH/APC 與 AutoShutter SC/APC" loading="lazy" src="/images/other-fiber-products-patchcords.png"/>
+<div class="card-body">
+<h3>光纖跳接線</h3>
+<p>主要用於電信機房、數據中心及區域網路，實現交換機、伺服器與光收發模組間的高速連接。它在光纖到戶（FTTH）接取與基地台傳輸中不可或缺，憑藉其抗電磁干擾與低損耗特性，確保光路訊號在醫療、工業自動化及軍事通訊系統中穩定傳輸。</p>
+<span>查看 5 種型號</span>
+</div>
+</a>
+<a class="product-card" href="/telecom/metal-tube-fire-cable_index.html">
+            <img class="card-img" src="/images/FIST%20%26%20Fire%20Resistant.png" loading="lazy" alt="光纖不鏽鋼管 / 防火光纜示意圖（FIST & Fire Resistant）" />
+            <div class="card-body">
+              <h3>光纖不鏽鋼管 / 防火光纜</h3>
+              <p>以不鏽鋼管包覆光纖，提升抗拉、耐壓與耐惡劣環境能力；並提供防火、自持、鎧裝等系列，涵蓋 6C–144C 規格供選型。</p>
+              <span>查看 5 種系列</span>
+            </div>
+          </a>
+</div>
+</div>
+</section>
+
+<section class="text-section" id="group-intro" style="background: #fff;">
+<h2>關於欣熹科技集團 (SHIN-SI Group)</h2>
+<p>
+      欣熹科技集團以「專業分工、資源整合」模式運作，核心事業涵蓋光纖通訊相關產品開發及銷售、支援資料中心（Data Center）建置與維運之光纖連結／佈線應用服務，以及半導體材料與供應鏈支援。為提供更完整且更即時的客戶服務，我們於 2014 年成立錦霆科技 JINTING Technology，提供矽材料之銷售、晶圓加工、客製化等多元技術服務；並成立睦錦科技 Mu Jin Technology，專注於矽晶圓與特殊晶圓之銷售與供應鏈支援。錦霆科技為 ISO 9001:2015 國際品質管理系統認證企業，集團致力協助客戶在半導體材料與光纖通訊等需求上，取得更具成本效益且可落地執行的整體解決方案。
+    </p>
+<div style="text-align: center; margin-top: 30px;">
+<a class="hero-btn" href="/group.html" style="background: var(--main-blue); font-size: 16px;">了解更多集團資訊 →</a>
+</div>
+</section>
+<section class="text-section" id="csr" style="background: #f8f9fa;">
+<h2>Fujikura 永續願景與 CSR</h2>
+<p>
+      作為 Fujikura 的合作夥伴，我們共同致力於實現 SDGs 永續發展目標。Fujikura 致力於通過先進的連接技術（"Tsunagu" Technology），為建設對環境友善的數位社會做出貢獻。我們銷售的每一台設備，皆符合嚴格的環保節能規範，並致力於減少碳足跡。從產品的長壽命設計到可維修性的提升，都是我們對地球永續的承諾。
+    </p>
+</section>
+<section class="text-section" id="clients" style="background: #fff;">
+<h2>客戶實績</h2>
+<p style="max-width: 980px; margin: 0 auto; text-align: center; color: #555;">
+      服務經驗涵蓋 IC 製造、封裝測試、晶圓再生與設備供應鏈等領域，協助客戶以更穩健的交付節奏推進專案。
+    </p>
+<div class="client-grid" style="margin-top: 28px;">
+<div class="client-card">
+<h3>IC Fab</h3>
+<ul>
+<li>(XMC)</li>
+<li>(YMTC)</li>
+</ul>
+</div>
+<div class="client-card">
+<h3>Assembly</h3>
+<ul>
+<li>(ASE)</li>
+<li>(SPIL)</li>
+<li>(Amkor)</li>
+<li>(ChipMos)</li>
+</ul>
+</div>
+<div class="client-card">
+<h3>Reclaim</h3>
+<ul>
+<li>RS</li>
+<li>KINIK</li>
+<li>Sciencetech</li>
+<li>Sunrise</li>
+</ul>
+</div>
+<div class="client-card">
+<h3>Equipment</h3>
+<ul>
+<li>北方華創</li>
+<li>中科信</li>
+<li>江蘇魯汶</li>
+<li>ASTRON</li>
+</ul>
+</div>
+</div>
+</section>
+<section class="text-section" id="faq">
+<h2>常見問題 (FAQ)</h2>
+<div class="faq-grid">
+<div class="faq-item">
+<h3>公司貨與水貨的差異？</h3>
+<p>購買公司貨享有完整的原廠保固、免費韌體更新及原廠零件供應。水貨常面臨維修無門、零件缺料或校正數據不準確的風險，長期使用成本反而更高。</p>
+</div>
+<div class="faq-item">
+<h3>設備故障如何送修？</h3>
+<p>請聯繫欣熹科技服務中心。我們提供快速檢測服務，若為一般耗材更換或校正，通常可在短時間內完成；若需更換精密組件，我們將使用原廠零件進行修復。</p>
+</div>
+<div class="faq-item">
+<h3>是否提供教育訓練？</h3>
+<p>有的。針對採購新機的客戶，我們提供完整的交機教育訓練，包含基礎操作、日常保養清潔及簡易故障排除，確保您的團隊能立即上手。</p>
+</div>
+<div class="faq-item">
+<h3>實驗室需要特殊參數怎麼辦？</h3>
+<p>這正是我們的強項。針對 FSM-100 系列等研發機種，我們提供實驗室等級的參數開發支援，協助您針對特殊光纖（如光子晶體光纖）調校最佳放電參數。</p>
+</div>
+</div>
+</section>
+<section class="contact-bar" id="contact">
+<h2>聯絡我們 / 索取報價</h2>
+<p>無論是新機採購、舊機維修或特殊光纖熔接需求，歡迎隨時聯繫。</p>
+<div class="contact-links">
+<a href="tel:035972556">📞 03-5972556</a>
+<a href="mailto:service@shin-si.com.tw">✉️ service@shin-si.com.tw</a>
+</div>
+</section>
+<footer>
+<p>© 欣熹科技 SHIN-SI TECHNOLOGY | Fujikura 台灣授權代理</p>
+<p>地址：新竹縣湖口鄉中華路13號 | 電話：03-5972556</p>
+</footer>
+<!-- SSI NAV LINK NORMALIZER (do not remove) -->
+<script>
+(function(){
+  try {
+    var path = (location.pathname || '').replace(/\\/g, '/');
+    var parts = path.split('/').filter(Boolean);
+    var file = parts.length ? parts[parts.length - 1] : '';
+    var inSub = /\/(materials|equipment|telecom|specialty)\//.test(path);
+
+    // Persist the active root index filename for local testing (e.g., index_updated_v14.html)
+    if (!inSub && /^index.*\.html$/i.test(file)) {
+      try { localStorage.setItem('ssi_root_index', file); } catch(e) {}
+    }
+
+    var rootIndex = 'index.html';
+    try {
+      var stored = localStorage.getItem('ssi_root_index');
+      if (stored && /^index.*\.html$/i.test(stored)) rootIndex = stored;
+    } catch(e) {}
+
+    var prefix = inSub ? '../' : '';
+
+    // If we're already on an index*.html at root, prefer in-page anchors
+    var onRootIndex = (!inSub && /^index.*\.html$/i.test(file));
+    var telecomHref  = onRootIndex ? '#telecom'  : (prefix + rootIndex + '#telecom');
+    var specialHref  = onRootIndex ? '#specialty': (prefix + rootIndex + '#specialty');
+    var groupHref    = inSub ? '../group.html'   : 'group.html';
+    var contactHref  = inSub ? '../contact.html' : 'contact.html';
+
+    var map = {
+      '通訊光纖設備': telecomHref,
+      '熔接機': telecomHref,
+      '特殊/製程應用': specialHref,
+      '特殊光纖': specialHref,
+      '關於集團': groupHref,
+      '關於我們': groupHref,
+      '聯絡我們': contactHref
+    };
+
+    // Update nav links by text match
+    var anchors = document.querySelectorAll('nav a, header a');
+    anchors.forEach(function(a){
+      var t = (a.textContent || '').trim();
+      if (map[t]) a.setAttribute('href', map[t]);
+    });
+  } catch (e) {
+    // no-op
+  }
+})();
+</script>
+</body>
+</html>

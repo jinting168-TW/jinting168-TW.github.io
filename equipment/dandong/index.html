@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>丹東新東方晶體儀器代理｜欣熹科技</title>
+  <meta name="description" content="欣熹科技代理丹東新東方晶體儀器：以 X-Ray 繞射量測為核心，提供晶棒/晶圓定向、Notch 量測、快速篩選與自動化對接方案（SECS/GEM、E84 等，以原廠文件與實際配置為準）。" />
+  <style>
+    :root{
+      --bg:#f7f8fb;
+      --card:#ffffff;
+      --line:rgba(15,23,42,.12);
+      --text:rgba(15,23,42,.92);
+      --muted:rgba(15,23,42,.68);
+      --main-blue:#003366;
+      --main-red:#c2000f;
+      --shadow:0 10px 24px rgba(2,6,23,.10);
+      --radius:18px;
+    }
+
+    /* Navbar (match SIAMC / main site) */
+    .navbar{
+      background: var(--main-blue);
+      padding: 0 5%;
+      display:flex;
+      justify-content: space-between;
+      align-items:center;
+      height:70px;
+      position: sticky;
+      top:0;
+      z-index:1000;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    }
+    .nav-brand{
+      color:#fff;
+      font-weight:800;
+      text-decoration:none;
+      font-size:24px;
+      letter-spacing:1px;
+      white-space:nowrap;
+    }
+    .nav-menu{
+      display:flex;
+      align-items:center;
+      justify-content:flex-end;
+      gap:20px;
+      flex-wrap:nowrap;
+      white-space:nowrap;
+    }
+    .nav-item{
+      color:#ddd;
+      text-decoration:none;
+      font-size:18px;
+      transition:0.3s;
+      white-space:nowrap;
+    }
+    .nav-item:hover{color:#fff;}
+    @media (max-width: 768px){
+      .nav-menu{display:none;}
+    }
+    *{box-sizing:border-box}
+    body{margin:0;font-family:system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,"Noto Sans TC","PingFang TC","Microsoft JhengHei",sans-serif;color:var(--text);background:var(--bg);}
+    a{color:inherit;text-decoration:none}
+    .wrap{max-width:1100px;margin:0 auto;padding:0 20px}
+    /* NAV (module) */
+    .nav{position:sticky;top:0;z-index:50;background:var(--main-blue);backdrop-filter: blur(10px);border-bottom:0}
+    .nav-inner{display:flex;align-items:center;justify-content:space-between;gap:14px;padding:12px 0}
+    .brand{display:flex;align-items:center;gap:10px;color:#fff}
+    .brand-mark{width:12px;height:12px;border-radius:999px;background:var(--main-red);box-shadow:0 0 0 6px rgba(194,0,15,.18)}
+    .brand-title{font-weight:800;letter-spacing:.2px;color:#fff}
+    .nav-links{display:flex;align-items:center;gap:16px;color:rgba(255,255,255,.88);font-weight:650}
+    .nav-links a{padding:8px 10px;border-radius:10px}
+    .nav-links a:hover{background:rgba(255,255,255,.12);color:#fff}
+    /* Buttons (module) */
+    .btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;padding:10px 14px;border-radius:12px;border:1px solid transparent;font-weight:750}
+    .btn-primary{background:var(--main-red);color:#fff;box-shadow:0 10px 20px rgba(194,0,15,.22)}
+    .btn-primary:hover{filter:brightness(1.05)}
+    .btn-outline{background:transparent;border-color:rgba(15,23,42,.22);color:var(--text)}
+    .hero .btn-outline{border-color:rgba(255,255,255,.55);color:#fff}
+    .hero .btn-outline:hover{background:rgba(255,255,255,.12)}
+    .btn-outline:hover{background:rgba(2,6,23,.04)}
+    /* Hero */
+    .hero{padding:58px 0 34px;background:linear-gradient(135deg,#002244 0%,#004080 100%);color:#fff;border-radius:18px;margin-top:18px}
+    .kicker{display:inline-flex;gap:8px;align-items:center;color:rgba(255,255,255,.85);font-weight:750}
+    .kicker-dot{width:8px;height:8px;border-radius:999px;background:var(--main-red)}
+    h1{margin:10px 0 10px;font-size:34px;line-height:1.15}
+    .hero h1{color:#fff}
+    .lead{max-width:900px;color:rgba(255,255,255,.88);line-height:1.75}
+    .hero-actions{margin-top:16px;display:flex;gap:10px;flex-wrap:wrap}
+    
+    .hero h1, .hero .lead { text-align: center; margin-left: auto; margin-right: auto; }
+    .hero-actions { justify-content: center; }
+/* Sections */
+    .section{padding:22px 0}
+    .section h2{margin:0 0 12px;font-size:20px}
+    .grid{display:grid;grid-template-columns:repeat(12,1fr);gap:16px}
+    .card{grid-column:span 4;background:var(--card);border:1px solid var(--line);border-radius:var(--radius);box-shadow:var(--shadow);overflow:hidden}
+    .card .pad{padding:18px}
+    .card h3{margin:0 0 8px;font-size:18px;color:var(--main-blue)}
+    .card p{margin:0;color:var(--muted);line-height:1.65}
+    .tagrow{display:flex;flex-wrap:wrap;gap:8px;margin-top:12px}
+    .tag{
+      display: inline-block;
+      padding: 6px 10px;
+      border-radius: 999px;
+      font-size: 14px;
+      font-weight: 800;
+      color: var(--main-blue);
+      background: #f3f7ff;
+      border: 1px solid #d7e3f4;
+    }
+    .mini{margin-top:14px;border-top:1px solid rgba(15,23,42,.12);padding-top:12px;color:var(--muted);font-size:13px;line-height:1.7}
+    .mini b{color:var(--text)}
+    /* CTA Bar (module) */
+    .cta-bar{margin:16px 0 28px;background:rgba(2,6,23,.03);border:1px solid var(--line);border-radius:var(--radius);padding:16px;display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap}
+    .cta-bar .title{font-weight:800}
+    .cta-bar .sub{color:var(--muted);font-size:13px;margin-top:4px;line-height:1.6}
+    /* Footer (module) */
+    .footline{display:flex;flex-wrap:wrap;gap:8px;align-items:center;justify-content:space-between}
+    .footlinks{display:flex;flex-wrap:wrap;gap:10px;align-items:center}
+    .footlinks a{color:#fff;font-weight:700}
+    .footlinks a:hover{opacity:.88}
+    /* Responsive */
+    @media (max-width: 980px){
+      .card{grid-column:span 6}
+      h1{font-size:30px}
+    }
+    @media (max-width: 640px){
+      .card{grid-column:span 12}
+      .nav-links{gap:8px}
+      .nav-links a{padding:8px}
+    }
+    footer {
+          background: var(--main-blue);
+          color: #ddd;
+          padding: 26px 5%;
+          margin-top: 46px;
+        }
+    footer a { color: #fff; text-decoration: none; }
+
+
+    /* Core items layout (modular) */
+    .core-stack .card-wide{grid-column: span 12;}
+    .hcard{display:flex;gap:18px;align-items:stretch;}
+    .hcard-text{flex:1;min-width:0;}
+    .hcard-media{width:320px;max-width:40%;display:flex;align-items:center;justify-content:center;}
+    .hcard-media .card-media{width:100%;margin:0;}
+    .hcard-media img{width:100%;height:auto;object-fit:contain;display:block;border-radius:12px;}
+    @media (max-width: 980px){
+      .hcard{flex-direction:column;}
+      .hcard-media{width:100%;max-width:100%;}
+    }
+
+
+    /* DXL-A1018 page additions (scoped to existing classes) */
+    .hcard--split{display:flex;gap:22px;align-items:stretch;}
+    .hcard--split .hcard-body{flex:1;min-width:0;}
+    .hcard--split .hcard-media{width:42%;max-width:420px;display:flex;align-items:center;justify-content:center;}
+    .media-img{width:100%;height:auto;object-fit:contain;border-radius:14px;background:#fff;}
+    @media (max-width: 980px){
+      .hcard--split{flex-direction:column;}
+      .hcard--split .hcard-media{width:100%;max-width:100%;}
+    }
+    .table-wrap{overflow-x:auto;}
+    .spec-table{width:100%;border-collapse:collapse;}
+    .spec-table th,.spec-table td{padding:12px 14px;border-bottom:1px solid #e9edf3;text-align:left;vertical-align:top;}
+    .spec-table th{width:220px;color:#0b2f53;background:#f7f9fc;font-weight:700;}
+    .note{margin-top:10px;color:#6b7280;font-size:14px;line-height:1.6;}
+    .grid2{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px;}
+    
+    .stack{display:flex;flex-direction:column;gap:18px;}
+    .stack .card{width:100%;}
+@media (max-width: 900px){.grid2{grid-template-columns:1fr;}}
+    .faq h3{margin-top:0;}
+</style>
+</head>
+
+<body>
+  <!-- NAV (module) -->
+  <header class="nav">
+    <div class="wrap nav-inner">
+<nav aria-label="主導覽" class="navbar">
+  <a class="nav-brand" href="#" id="nav-home">欣熹科技 SHIN-SI</a>
+  <div class="nav-menu" aria-label="站內導覽">
+    <a href="#" class="nav-item" id="nav-telecom">通訊光纖設備</a>
+    <a href="#" class="nav-item" id="nav-specialty">特殊/製程應用</a>
+    <a href="#" class="nav-item" id="nav-group">關於集團</a>
+    <a href="#" class="nav-item" id="nav-contact">聯絡我們</a>
+  </div>
+</nav>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <!-- HERO -->
+    <section class="hero">
+
+<h1>DXL-A1018｜12 吋晶圓快速篩選量測系統</h1>
+<p>
+  丹東新東方晶體儀器提供以 X-Ray 量測為核心的晶圓定向/Notch 與端面相關參數量測方案。DXL-A1018
+  針對 12 吋晶圓快速篩選與分級需求設計，支援自動化產線對接（如 SECS/GEM、E84 等），並可依精度需求提供不同配置。
+</p>
+
+
+</section>
+
+    <!-- CORE -->
+    
+<section class="section">
+  <div class="section-hd">
+    <div class="section-bar"></div>
+    <h2>產品介紹</h2>
+  </div>
+
+  <div class="hcard hcard--split">
+    <div class="hcard-body">
+      <h3>自動化快速篩選｜12 吋晶圓量測與分級</h3>
+      <p>
+        DXL-A1018 以自動化節拍為目標，將晶向/Notch 相關量測與資料輸出整合於同一設備流程，適用於產線
+        快速篩選、分級與追溯需求。可依需求選配不同精度規格（如 ±0.008° 或 ±0.004°）。
+      </p>
+      <ul class="bullets">
+        <li>雙精度配置選項：±0.008° / ±0.004°</li>
+        <li>支援自動化產線對接：SECS/GEM、E84、UDP、TCP/IP</li>
+        <li>可搭配條碼/ID 追溯與資料輸出流程（依實際配置）</li>
+      </ul>
+    </div>
+    <div class="hcard-media">
+      <img src="/images/dandong-dxl-a1018.jpg" alt="DXL-A1018 12 吋晶圓快速篩選量測系統設備外觀" class="media-img"/>
+    </div>
+  </div>
+
+  <div class="section-hd" style="margin-top:32px;">
+    <div class="section-bar"></div>
+    <h2>主要規格</h2>
+  </div>
+
+  <div class="card">
+    <div class="table-wrap">
+      <table class="spec-table" aria-label="DXL-A1018 主要規格">
+        <tbody>
+          <tr><th>適用尺寸</th><td>12 吋（300 mm）晶圓</td></tr>
+          <tr><th>量測架構</th><td>雙 X-Ray 架構：同步量測晶圓端面四向與 Notch/參考邊（依文件描述）</td></tr>
+          <tr><th>晶向判定</th><td>&lt;111&gt; / &lt;110&gt; / &lt;100&gt;</td></tr>
+          <tr><th>角度量測範圍（參考）</th><td>X 軸 ±75°；Y 軸 ±60°</td></tr>
+          <tr><th>量測精度（選配）</th><td>±0.008° / ±0.004°</td></tr>
+          <tr><th>上料/載具相容</th><td>FOUP／FOSB／Ring Frame Cassette；可對接 OHT/AGV（依文件描述）</td></tr>
+          <tr><th>Loadport 配置</th><td>標準 3 個 Loadport（可擴展）</td></tr>
+          <tr><th>分揀/輸出</th><td>支援 OK/NG 分揀；可依需求建立晶圓 ID 檔案追溯流程</td></tr>
+          <tr><th>通訊/自動化</th><td>SECS/GEM、E84、UDP、TCP/IP</td></tr>
+          <tr><th>產能（參考）</th><td>晶向分揀約 50 片/小時；角度量測（單方向）約 60 片/小時</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="note">註：以上為原廠文件之參考描述；實際配置、節拍與驗收條件請以報價與規格書為準。</p>
+  </div>
+
+  <div class="section-hd" style="margin-top:32px;">
+    <div class="section-bar"></div>
+    <h2>適用情境</h2>
+  </div>
+
+  <div class="stack">
+          <div class="card">
+            <h3>12 吋晶圓晶向分級/分揀</h3>
+            <p>面向量產分選與來料檢驗，支援依晶向進行快速分級與分揀；晶向判定包含 <strong>&lt;111&gt; / &lt;110&gt; / &lt;100&gt;</strong>（依原廠文件）。</p>
+          </div>
+          <div class="card">
+            <h3>Notch／參考邊同步量測</h3>
+            <p>雙 X-Ray 架構可同步量測晶圓端面四向與 Notch/參考邊資訊，並支援角度量測範圍（參考）：<strong>X 軸 ±75°、Y 軸 ±60°</strong>。</p>
+          </div>
+          <div class="card">
+            <h3>自動化產線對接與追溯</h3>
+            <p>相容 FOUP/FOSB/Ring Frame Cassette，標準 <strong>3 個 Loadport</strong>（可擴展），可對接 OHT/AGV；通訊支援 <strong>SECS/GEM、E84、UDP、TCP/IP</strong>，便於與 MES/自動化系統整合。</p>
+          </div>
+        </div>
+      </div>
+
+  <div class="section-hd" style="margin-top:32px;">
+    <div class="section-bar"></div>
+    <h2>常見問題（FAQ）</h2>
+  </div>
+
+  <div class="stack">
+          <div class="card">
+            <h3>Q：DXL-A1018 的量測精度有哪些選項？</h3>
+            <p>A：原廠文件提供兩種精度規格：<strong>±0.008°</strong>（標準）與 <strong>±0.004°</strong>（高精度配置）。</p>
+          </div>
+          <div class="card">
+            <h3>Q：可支援哪些自動化/通訊協定？</h3>
+            <p>A：支援 <strong>SECS/GEM</strong>，並可搭配 <strong>E84</strong> 通訊；同時提供 <strong>UDP、TCP/IP</strong> 等介面，便於對接產線與 MES。</p>
+          </div>
+          <div class="card">
+            <h3>Q：可相容哪些載具？Loadport 有幾個？</h3>
+            <p>A：文件描述相容 <strong>FOUP / FOSB / Ring Frame Cassette</strong>；標準配置為 <strong>3 個 Loadport</strong>（可擴展），並可對接 <strong>OHT/AGV</strong>。</p>
+          </div>
+          <div class="card">
+            <h3>Q：角度量測範圍是多少？</h3>
+            <p>A：原廠文件提供參考範圍：<strong>X 軸 ±75°</strong>、<strong>Y 軸 ±60°</strong>（實際以配置/驗收為準）。</p>
+          </div>
+          <div class="card">
+            <h3>Q：產能如何評估？</h3>
+            <p>A：文件提供參考節拍：晶向分揀約 <strong>50 片/小時</strong>；角度量測（單方向）約 <strong>60 片/小時</strong>。實際會受量測策略與來料狀態影響。</p>
+          </div>
+        </div>
+      </div>
+</section>
+
+
+    <!-- CTA BAR -->
+    <section class="section">
+      <div class="cta-bar">
+        <div>
+          <div class="title">需要選型建議或索取原廠規格？</div>
+          <div class="sub">請提供晶體材料、尺寸（6/8/12 吋）、精度需求與自動化介面（SECS/GEM、E84 等），我們協助對接評估。</div>
+        </div>
+        <div style="display:flex;gap:10px;flex-wrap:wrap">
+          <a class="btn btn-primary" id="cta-contact-bottom" href="#">前往聯絡表單</a>
+          <a class="btn btn-outline" id="cta-back-bottom" href="#">返回設備/代理專頁</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER (module) -->
+  <footer>
+  <div>© 欣熹科技 SHIN-SI TECHNOLOGY</div>
+  <div style="margin-top:8px;">
+    主線產品：
+    <a href="#" id="ft-telecom">熔接機</a> ｜ <a href="#" id="ft-specialty">特殊光纖</a> ｜ <a href="#" id="ft-contact">聯絡我們</a>
+  </div>
+</footer>
+
+  <!-- LINK RESOLVER (module): keeps links stable across versioned filenames, always targets directory paths/index.html -->
+  <script>
+(function(){
+  // Modular link resolver (directory-based). Works for versioned filenames.
+  var p = (location.pathname || "").replace(/\\/g,'/');
+  var parts = p.split('/').filter(Boolean);
+
+  // depth=2 for /equipment/<brand>/ ; depth=1 for /equipment/ ; depth=0 for root
+  var depth = 0;
+  if (parts.length >= 2 && parts[parts.length-2].toLowerCase() === 'dandong') depth = 2;
+  else if (parts.length >= 2 && parts[parts.length-2].toLowerCase() === 'equipment') depth = 1;
+  else if (parts.length >= 3 && parts[parts.length-3].toLowerCase() === 'equipment') depth = 2;
+
+  var prefix = depth === 2 ? '../../' : (depth === 1 ? '../' : './');
+
+  function setHref(id, href){
+    var el = document.getElementById(id);
+    if (el) el.setAttribute('href', href);
+  }
+
+  // Top nav
+  setHref('nav-home', prefix + 'index.html');
+  setHref('nav-telecom', prefix + 'index.html#telecom');
+  setHref('nav-specialty', prefix + 'index.html#specialty');
+  setHref('nav-group', prefix + 'group.html');
+  setHref('nav-contact', prefix + 'contact.html');
+
+  // Page CTAs (Hero)
+  setHref('cta-spec', prefix + 'contact.html');
+  setHref('cta-back', '../index.html');
+
+  // CTA bar
+  setHref('cta-contact-bottom', prefix + 'contact.html');
+  setHref('cta-back-bottom', '../index.html');
+
+// Footer links (optional ids if present)
+  setHref('ft-telecom', prefix + 'index.html#telecom');
+  setHref('ft-specialty', prefix + 'index.html#specialty');
+  setHref('ft-contact', prefix + 'contact.html');
+})();
+</script>
+</body>
+</html>

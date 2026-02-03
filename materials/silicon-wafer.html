@@ -1,0 +1,486 @@
+<!doctype html>
+<html lang="zh-TW">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>矽晶圓 Silicon Wafer｜Bare / Test / Dummy｜欣熹科技 SHIN-SI</title>
+  <meta name="description" content="矽晶圓（Silicon Wafer）專頁：Bare / Test / Dummy。包含 Oxide / Aluminum Wafer 膜層類型與厚度、Silicon Bare Wafer 基本規格，以及 Semicon-grade particle wafer（Test Wafer）之包裝示意與粒子規格表。" />
+  <meta name="robots" content="index,follow" />
+
+  <style>
+    :root{
+      --main-blue:#003366;
+      --main-red:#c2000f;
+      --text:#333;
+      --muted:#555;
+      --bg:#f8f9fa;
+      --border:#e9ecef;
+      --head-bg:#0b58a2;
+    }
+    *{box-sizing:border-box}
+    body{
+      margin:0;
+      font-family:"Microsoft JhengHei",system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,"Noto Sans",sans-serif;
+      background:var(--bg);
+      color:var(--text);
+      line-height:1.65;
+    }
+
+    /* Navbar */
+    .navbar{
+      background:var(--main-blue);
+      padding:0 5%;
+      height:70px;
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      position:sticky;
+      top:0;
+      z-index:1000;
+      box-shadow:0 2px 10px rgba(0,0,0,.12);
+    }
+    .nav-brand{
+      color:#fff;
+      text-decoration:none;
+      font-weight:900;
+      font-size:22px;
+      letter-spacing:.5px;
+      white-space:nowrap;
+    }
+    .nav-menu{display:flex;gap:20px;align-items:center}
+    .nav-item{
+      color:#ddd;
+      text-decoration:none;
+      font-size:18px;
+      transition:.2s;
+      white-space:nowrap;
+    }
+    .nav-item:hover{color:#fff}
+
+    /* Layout */
+    .wrap{max-width:1100px;margin:0 auto;padding:0 5%}
+
+    .hero{
+      background:linear-gradient(135deg,#002244 0%,#004080 100%);
+      color:#fff;
+      padding:58px 0 52px;
+    }
+    .hero h1{
+      margin:0 0 12px 0;
+      font-size:34px;
+      line-height:1.25;
+      font-weight:900;
+    }
+    .hero p{
+      margin:0;
+      color:#e7e7e7;
+      font-size:19px;
+      line-height:1.85;
+      max-width:980px;
+    }
+    .hero-actions{
+      margin-top:18px;
+      display:flex;
+      gap:10px;
+      flex-wrap:wrap;
+    }
+    .btn{
+      display:inline-block;
+      text-decoration:none;
+      font-weight:900;
+      padding:12px 18px;
+      border-radius:999px;
+      border:1px solid transparent;
+      font-size:16px;
+    }
+    .btn-primary{background:var(--main-red);color:#fff}
+    .btn-primary:hover{background:#a0000c}
+    .btn-ghost{border-color:rgba(255,255,255,.6);color:#fff}
+    .btn-ghost:hover{background:rgba(255,255,255,.12)}
+
+    /* Sections */
+    .section{background:#fff;padding:52px 0}
+
+    /* Panels */
+    .stack{
+      display:flex;
+      flex-direction:column;
+      gap:16px;
+    }
+    .panel{
+      background:#fff;
+      border:1px solid var(--border);
+      border-radius:14px;
+      overflow:hidden;
+      box-shadow:0 6px 18px rgba(0,0,0,.04);
+      color:var(--text);
+    }
+
+    /* Rule: text-left / image-right */
+    .panel-row{
+      display:grid;
+      grid-template-columns: 1fr 320px;
+      gap:0;
+      align-items:stretch;
+    }
+    .panel-body{padding:16px 18px 14px}
+
+    /* Fixed standards */
+    .card-title{
+      margin:0 0 10px 0;
+      font-size:22px;
+      color:var(--main-blue);
+      font-weight:900;
+      line-height:1.35;
+    }
+    .subtable-title{
+      margin:16px 0 10px 0;
+      font-size:16px;
+      font-weight:900;
+      color:#0d2b6b;
+      line-height:1.35;
+    }
+
+    .panel-body ul{
+      margin:0;
+      padding-left:18px;
+      color:#444;
+      font-size:16px;
+      line-height:1.75;
+    }
+    .img{
+      width:100%;
+      height:220px;
+      object-fit:contain;
+      background:#fff;
+      border-left:1px solid var(--border);
+      padding:14px;
+    }
+
+    /* Table blocks */
+    .table-wrap{padding:16px 18px 18px}
+    .spec-table{
+      width:100%;
+      border-collapse:collapse;
+      border:1px solid var(--border);
+      border-radius:12px;
+      overflow:hidden;
+      background:#fff;
+    }
+    .spec-table th,
+    .spec-table td{
+      padding:12px 12px;
+      border-bottom:1px solid var(--border);
+      border-right:1px solid var(--border);
+      vertical-align:top;
+      text-align:left;
+      font-size:15px;
+      line-height:1.6;
+      color:#333;
+      background:#fff;
+    }
+    .spec-table tr:last-child th,
+    .spec-table tr:last-child td{border-bottom:none}
+    .spec-table th:last-child,
+    .spec-table td:last-child{border-right:none}
+
+    .spec-table thead th{
+      background:var(--head-bg);
+      color:#fff;
+      font-weight:900;
+      border-right:1px solid rgba(255,255,255,.25);
+    }
+    .spec-table thead th:last-child{border-right:none}
+    .spec-table tbody th{
+      width:24%;
+      font-weight:900;
+      color:#0d2b6b;
+      background:#f4f7fb;
+    }
+    .mono{font-variant-numeric:tabular-nums}
+
+    /* Top images row (two images) */
+    .img-grid{
+      display:grid;
+      grid-template-columns: 1fr 1fr;
+      gap:12px;
+      margin-bottom:14px;
+    }
+    .img-box{
+      border:1px solid var(--border);
+      border-radius:12px;
+      background:#fff;
+      overflow:hidden;
+    }
+    .img-box img{
+      width:100%;
+      height:220px;
+      object-fit:contain;
+      display:block;
+      background:#fff;
+      padding:12px;
+    }
+    .img-cap{
+      border-top:1px solid var(--border);
+      padding:10px 12px;
+      font-size:14px;
+      color:#444;
+      background:#f9fafc;
+      font-weight:900;
+    }
+
+    /* Contact bar */
+    .contact-bar{
+      background:var(--main-blue);
+      color:#fff;
+      text-align:center;
+      padding:44px 18px;
+    }
+    .contact-bar h2{margin:0 0 10px 0;font-size:26px;font-weight:900}
+    .contact-bar p{margin:0 0 16px 0;color:#e7e7e7;font-size:16px;line-height:1.8}
+    .contact-actions{display:flex;gap:10px;justify-content:center;flex-wrap:wrap}
+    .pill{
+      display:inline-block;
+      padding:10px 16px;
+      border-radius:999px;
+      text-decoration:none;
+      font-weight:900;
+      border:1px solid rgba(255,255,255,.7);
+      color:#fff;
+    }
+    .pill:hover{background:rgba(255,255,255,.12)}
+    .pill-cta{border-color:transparent;background:var(--main-red)}
+    .pill-cta:hover{background:#a0000c}
+
+    footer{
+      background:#eee;
+      color:#666;
+      text-align:center;
+      padding:18px 12px;
+      font-size:16px;
+    }
+
+    @media (max-width: 980px){
+      .img-grid{grid-template-columns:1fr}
+      .img-box img{height:240px}
+    }
+    @media (max-width: 900px){
+      .panel-row{grid-template-columns:1fr}
+      .img{
+        border-left:none;
+        border-top:1px solid var(--border);
+        height:240px;
+      }
+    }
+    @media (max-width: 768px){
+      .nav-menu{display:none}
+      .hero h1{font-size:28px}
+      .hero p{font-size:18px}
+    }
+  </style>
+</head>
+
+<body>
+  <nav class="navbar">
+    <a class="nav-brand" href="/">欣熹科技 SHIN-SI</a>
+    <div class="nav-menu">
+      <a class="nav-item" href="/index.html#telecom">通訊光纖設備</a>
+      <a class="nav-item" href="/index.html#specialty">特殊/製程應用</a>
+      <a class="nav-item" href="/group.html">關於集團</a>
+      <a class="nav-item" href="/contact.html">聯絡我們</a>
+    </div>
+  </nav>
+
+  <header class="hero">
+    <div class="wrap">
+      <h1>矽晶圓（Silicon Wafer）｜Bare / Test / Dummy</h1>
+      <p>
+        Silicon Wafer指的是矽半導體積體電路製作所用的矽晶圓，是生產積體電路所用的載體。晶圓的規格以其直徑來區分，越大的晶圓能乘載的積體電路就越多，生產成本也就越低，但同時也考驗了廠商的材料技術及生產技術。矽晶圓是最常見的半導體材料，並且被廣泛運用於各項高科技工業產品
+      </p>
+
+      <div class="hero-actions">
+        <a class="btn btn-primary" href="/contact.html">立即洽詢</a>
+        <a class="btn btn-ghost" href="/">返回材料專區</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="section">
+      <div class="wrap">
+
+        <div class="stack">
+
+          <!-- 常見用途 -->
+          <div class="panel">
+            <div class="panel-row">
+              <div class="panel-body">
+                <h2 class="card-title">常見用途</h2>
+                <ul>
+                  <li>集成電路</li>
+                  <li>檢測器/傳感器器件</li>
+                  <li>MEMS製造</li>
+                  <li>光電元件</li>
+                  <li>太陽能電池</li>
+                </ul>
+              </div>
+              <img class="img" src="/images/materials-silicon-wafer.jpg" alt="矽晶圓 Silicon Wafer" />
+            </div>
+          </div>
+
+          <!-- Oxide / Aluminum Wafer -->
+          <div class="panel">
+            <div class="table-wrap">
+              <div class="card-title">Oxide / Aluminum Wafer（4&quot; / 6&quot; / 8&quot; / 12&quot;）</div>
+              <table class="spec-table" aria-label="Oxide / Aluminum Wafer thin film specification table">
+                <thead>
+                  <tr>
+                    <th scope="col">Size of Wafer</th>
+                    <th scope="col">Oxide / Aluminum Wafer 4&quot; &nbsp; 6&quot; &nbsp; 8&quot; &nbsp; 12&quot;</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th scope="row">Type</th>
+                    <td>Oxide Film / Aluminum Film</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Film Thickness (Å)</th>
+                    <td>
+                      <div>Oxide Film: <span class="mono">1000 Å ~ 20,000 Å</span></div>
+                      <div>Aluminum Film: <span class="mono">1000 Å ~ 10,000 Å</span></div>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+
+          <!-- Semicon-grade particle wafer -->
+          <div class="panel">
+            <div class="table-wrap">
+              <div class="card-title">Semicon-grade particle wafer</div>
+
+              <div class="img-grid" aria-label="Semicon-grade particle wafer packaging images">
+                <div class="img-box">
+                  <img src="/images/semicon-grade-particle-wafer-fosb.jpg" alt="Semicon-grade particle wafer packaging: FOSB" />
+                  <div class="img-cap">FOSB</div>
+                </div>
+                <div class="img-box">
+                  <img src="/images/semicon-grade-particle-wafer-vacuum-seal-fosb.jpg" alt="Semicon-grade particle wafer packaging: Vacuum seal FOSB" />
+                  <div class="img-cap">Vacuum seal FOSB</div>
+                </div>
+              </div>
+
+              <div class="subtable-title">Wafer Type Particle Control（4&quot; / 6&quot; / 8&quot; / 12&quot;）</div>
+              <table class="spec-table" aria-label="Wafer type particle control table">
+                <thead>
+                  <tr>
+                    <th scope="col" style="width:90px;">No.</th>
+                    <th scope="col">Wafer Type</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr><th scope="row">1</th><td>Prime Wafer</td></tr>
+                  <tr><th scope="row">2</th><td>New Monitor Wafer</td></tr>
+                  <tr><th scope="row">3</th><td>New Test Wafer</td></tr>
+                  <tr><th scope="row">4</th><td>New Spacer Wafer</td></tr>
+                  <tr><th scope="row">5</th><td>Reclaimed Wafer</td></tr>
+                  <tr><th scope="row">6</th><td>Spacer Wafer</td></tr>
+                  <tr><th scope="row">7</th><td>Dummy Wafer</td></tr>
+                </tbody>
+              </table>
+
+              <div class="subtable-title">8&quot; / 12&quot; LPD, Particle Size (um) &amp; Particle counts (ea)</div>
+              <table class="spec-table" aria-label="LPD particle size and counts table">
+                <thead>
+                  <tr>
+                    <th scope="col" style="width:90px;">Item</th>
+                    <th scope="col">8&quot; , 12&quot; &nbsp; LPD, Particle Size (um)</th>
+                    <th scope="col">8&quot; , 12&quot; &nbsp; Particle counts (ea)</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr><th scope="row">1</th><td class="mono">0.026</td><td class="mono">100</td></tr>
+                  <tr><th scope="row">2</th><td class="mono">0.037</td><td class="mono">100</td></tr>
+                  <tr><th scope="row">3</th><td class="mono">0.045</td><td class="mono">100</td></tr>
+                  <tr><th scope="row">4</th><td class="mono">0.09</td><td class="mono">50-100</td></tr>
+                  <tr><th scope="row">5</th><td class="mono">0.12</td><td class="mono">50-100-200</td></tr>
+                  <tr><th scope="row">6</th><td class="mono">0.2</td><td class="mono">50</td></tr>
+                  <tr><th scope="row">7</th><td class="mono">0.3</td><td class="mono">30</td></tr>
+                  <tr><th scope="row">8</th><td class="mono">1</td><td class="mono">200</td></tr>
+                  <tr><th scope="row">9</th><td class="mono">2</td><td class="mono">2000</td></tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+
+          <!-- Silicon Bare Wafer -->
+          <div class="panel">
+            <div class="table-wrap">
+              <div class="card-title">Silicon Bare Wafer</div>
+
+              <div class="img-grid" aria-label="Silicon bare wafer images">
+                <div class="img-box">
+                  <img src="/images/silicon-bare-wafer.jpg" alt="Silicon bare wafer (12 inch) photo" />
+                  <div class="img-cap">Wafer</div>
+                </div>
+                <div class="img-box">
+                  <img src="/images/silicon-bare-wafer-pizza-box.jpg" alt="12-inch wafer pizza box packaging" />
+                  <div class="img-cap">12&quot; Pizza box</div>
+                </div>
+              </div>
+
+              <table class="spec-table" aria-label="Silicon bare wafer specification table">
+                <thead>
+                  <tr>
+                    <th scope="col">Size of Wafer</th>
+                    <th scope="col">Silicon Bare Wafer 4&quot; &nbsp; 6&quot; &nbsp; 8&quot; &nbsp; 12&quot;</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th scope="row">Type</th>
+                    <td>P type / N type</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Res</th>
+                    <td>&lt; 0.1 ohm-cm / 0~100 ohm-cm / &gt; 100 ohm-cm</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Thickness</th>
+                    <td>
+                      <div>4&quot; : <span class="mono">500~600 um T</span></div>
+                      <div>6&quot; : <span class="mono">600~700 um T</span></div>
+                      <div>8&quot; : <span class="mono">600~800 um T</span></div>
+                      <div>&gt;12&quot; : <span class="mono">500~1100 um T</span></div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Orientation</th>
+                    <td>(100)</td>
+                  </tr>
+                </tbody>
+              </table>
+
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <section class="contact-bar">
+      <h2>聯絡我們 / 索取報價</h2>
+      <p>如需對接直徑、用途（Bare/Test/Dummy）、交期與驗收條件，請直接填寫表單或以電話/Email 聯繫。</p>
+      <div class="contact-actions">
+        <a class="pill pill-cta" href="/contact.html">前往聯絡表單</a>
+        <a class="pill" href="tel:035972556">電話：03-5972556</a>
+        <a class="pill" href="mailto:service@shin-si.com.tw">Email：service@shin-si.com.tw</a>
+      </div>
+    </section>
+  </main>
+
+  <footer>© 欣熹科技 SHIN-SI TECHNOLOGY</footer>
+</body>
+</html>

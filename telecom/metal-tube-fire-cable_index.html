@@ -1,0 +1,550 @@
+<!DOCTYPE html>
+
+<html lang="zh-TW">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width,initial-scale=1" name="viewport"/>
+<title>光纖不鏽鋼管 / 防火光纜｜欣熹科技</title>
+<meta content="光纖不鏽鋼管與防火光纜系列：金屬管光纖、單一不鏽鋼管防火、自持型、鋼線鎧裝（6C–144C），適用惡劣環境與防火需求。" name="description"/>
+<style>
+
+:root{
+      --main-blue:#003366;
+      --main-red:#c2000f;
+      --dark:#333;
+      --muted:#666;
+      --bg:#f5f7fa;
+      --card:#fff;
+      --line:#e9e9e9;
+      --focus:#1a73e8;
+      --text:#333;
+      --text-light:#666;
+      --red:var(--main-red);
+    }
+    body{ font-family:"Microsoft JhengHei",sans-serif; margin:0; color:var(--dark); line-height:1.7; background:#fff; font-size:18px; }
+        .navbar{
+      background:var(--main-blue);
+      padding:0 5%;
+      height:70px;
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      position:sticky;
+      top:0;
+      z-index:1000;
+      box-shadow:0 2px 10px rgba(0,0,0,.12);
+    }
+    .nav-brand{
+      color:#fff;
+      text-decoration:none;
+      font-weight:800;
+      letter-spacing:.5px;
+      font-size:22px;
+      white-space:nowrap;
+    }
+    .nav-menu{display:flex; gap:20px; align-items:center}
+    .nav-item{
+      color:#ddd;
+      text-decoration:none;
+      font-size:18px;
+      transition:.2s;
+      white-space:nowrap;
+    }
+    .nav-item:hover{color:#fff}
+
+
+    .hero{ background:linear-gradient(135deg,#002244 0%,#004080 100%); color:#fff; padding:54px 5%; }
+    .hero-inner{ max-width:1200px; margin:0 auto; display:grid; grid-template-columns:1.2fr .8fr; gap:28px; align-items:center; }
+    .hero h1{ margin:0 0 10px 0; font-size:34px; line-height:1.25; }
+    .hero p{ margin:0; color:#e7e7e7; font-size:22px; }
+    .hero-bullets{ margin:18px 0 0 0; padding-left:22px; color:#f0f0f0; font-size:20px; }
+    .hero-card{ background:rgba(255,255,255,.08); border:1px solid rgba(255,255,255,.18); border-radius:14px; overflow:hidden; }
+    .hero-card img{ width:100%; height:320px; object-fit:contain; display:block; background:#ffffff; }
+    .hero-card .cap{ padding:12px 14px; font-size:13px; color:#f2f2f2; }
+
+    
+    .hero-img-note{ padding:6px 14px 0 14px; font-size:13px; color:#f2f2f2; text-align:right; }
+.container{ max-width:1200px; margin:0 auto; padding:34px 5% 60px 5%; }
+    .crumb{ font-size:13px; color:#666; margin:0 0 18px 0; }
+    .crumb a{ color:#1a73e8; text-decoration:none; }
+    .crumb a:hover{ text-decoration:underline; }
+
+    .section{ margin-top:28px; }
+    .section h2{ color:var(--main-blue); margin:0 0 12px 0; font-size:30px; }
+    .section p{ margin:0; color:var(--dark); }
+
+    .grid{ display:grid; grid-template-columns:repeat(auto-fit,minmax(260px,1fr)); gap:18px; margin-top:14px; }
+    .box{ background:var(--bg); border:1px solid #e6eef6; border-radius:12px; padding:16px; }
+    .box h3{ margin:0 0 8px 0; font-size:22px; color:var(--main-blue); }
+    .box ul{ margin:0; padding-left:22px; color:var(--dark); font-size:16px; }
+    .tagrow{ display:flex; gap:8px; flex-wrap:wrap; margin-top:10px; }
+    .tag{ display:inline-block; font-size:12px; background:#eef3f9; border:1px solid #dde7f2; color:#2b3b52; padding:4px 10px; border-radius:999px; }
+
+    table{ width:100%; border-collapse:collapse; background:#fff; border:1px solid var(--line); border-radius:12px; overflow:hidden; }
+    th,td{ padding:14px 14px; border-bottom:1px solid var(--line); vertical-align:top; font-size:18px; }
+    th{ width:32%; background:#f8f9fa; text-align:left; color:var(--main-blue); }
+    tr:last-child td, tr:last-child th{ border-bottom:none; }
+
+    .cta{ margin-top:34px; background:var(--main-blue); color:#fff; border-radius:14px; padding:22px; display:flex; flex-wrap:wrap; justify-content:space-between; align-items:center; gap:12px; }
+    .cta strong{ font-size:18px; }
+    .cta a{ display:inline-block; background:var(--main-red); color:#fff; text-decoration:none; padding:12px 18px; border-radius:10px; font-weight:700; }
+    .cta a:hover{ background:#c2000f; }
+
+    footer{ padding:24px 0; background:#eee; }
+
+
+
+    .footer-brand-block{ background:var(--main-blue); color:#fff; padding:14px 16px; border-radius:14px; }
+    .footer-brand-block .footer-title{ color:#fff; }
+    .footer-brand-block .footer-brand-desc{ color:#fff; font-size:16px; margin:6px 0 0 0; }
+/* FSM-100 型號差異表：5 欄均等 */
+table.model-diff{ width:100%; table-layout:fixed; }
+table.model-diff th, table.model-diff td{
+  width:20%;
+  word-break:break-word;
+  overflow-wrap:anywhere;
+}
+table.model-diff th{ width:20% !important; }
+
+    /* FSM-100 專用：讓寬表格在手機上可以橫向滑動，不破壞版型 */
+    @media (max-width:920px){
+      .hero-inner{ grid-template-columns:1fr; }
+      .hero-card img{ height:240px; }
+      .scroll-table { display: block; overflow-x: auto; white-space: nowrap; }
+    }
+  /* Page-specific additions */
+  .lead-note{margin:0 0 14px 0;color:var(--text);}
+  .product-list{display:grid;grid-template-columns:repeat(2,1fr);gap:16px;}
+  @media (max-width: 840px){ .product-list{grid-template-columns:1fr;} }
+  .pitem{display:flex;gap:14px;align-items:flex-start;}
+  .pthumb{flex:0 0 140px;}
+  .pthumb img{width:140px;height:92px;object-fit:contain;border:1px solid var(--line);border-radius:14px;background:#fff;}
+  .pmeta h3{margin:0 0 6px 0;font-size:18px;}
+  .pmeta p{margin:0;color:var(--text-light);}
+  .pactions{margin-top:10px;display:flex;gap:10px;flex-wrap:wrap;}
+  .btn{display:inline-block;padding:10px 12px;border-radius:12px;border:1px solid var(--line);background:#fff;color:var(--main-blue);font-weight:700;text-decoration:none;}
+  .btn.primary{background:var(--main-red);border-color:var(--main-red);color:#fff;}
+  .btn.primary:hover{background:#c2000f;border-color:#c2000f;}
+  .hint{font-size:13px;color:var(--text-light);margin-top:8px;}
+  
+
+  /* Spec tables */
+  .spec-table{width:100%;border-collapse:collapse;font-size:.95rem;margin-top:.75rem}
+  .spec-table th,.spec-table td{border:1px solid var(--line);padding:.55rem .6rem;vertical-align:top}
+  .spec-table thead th{background:rgba(11,59,128,.06);text-align:left}
+  .spec-note{margin-top:.5rem;color:var(--muted);font-size:.92rem}
+  .tag{display:inline-block;background:rgba(210,37,42,.09);color:var(--red);border:1px solid rgba(210,37,42,.18);padding:.15rem .45rem;border-radius:999px;font-size:.78rem;font-weight:700}
+  .subgrid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:1rem}
+  @media (max-width:860px){.subgrid{grid-template-columns:1fr}}
+  /* Image gallery modal */
+  .img-grid{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:1rem}
+  @media (max-width:1024px){.img-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+  .img-card{background:#fff;border:1px solid var(--line);border-radius:14px;overflow:hidden;box-shadow:0 10px 30px rgba(15,23,42,.06)}
+  .img-card img{width:100%;height:160px;object-fit:contain;display:block;background:#fff}
+  .img-card .cap{padding:.7rem .85rem;color:var(--muted);font-size:.92rem}
+  .modal{position:fixed;inset:0;display:none;align-items:center;justify-content:center;background:rgba(2,6,23,.72);z-index:1000;padding:2rem}
+  .modal.open{display:flex}
+  .modal-inner{max-width:min(1100px,100%);max-height:90vh;background:#0b1220;border-radius:16px;overflow:hidden;box-shadow:0 20px 60px rgba(0,0,0,.45);display:flex;flex-direction:column}
+  .modal-header{display:flex;align-items:center;justify-content:space-between;padding:.9rem 1rem;color:#e5e7eb}
+  .modal-title{font-weight:800;font-size:1rem}
+  .modal-close{background:transparent;border:1px solid rgba(255,255,255,.18);color:#e5e7eb;border-radius:10px;padding:.35rem .6rem;cursor:pointer}
+  .modal-body{background:#000}
+  .modal-body img{display:block;max-width:100%;max-height:80vh;margin:0 auto}
+
+    /* MODULE: Equal column tables (requested) */
+    table.equal-cols{ table-layout:fixed; width:100%; }
+    table.equal-cols th, table.equal-cols td{ width:auto !important; overflow-wrap:anywhere; word-break:break-word; }
+    table.equal-cols thead th{ text-align:left; }
+
+    /* MODULE: Modal zoom controls */
+    .modal-inner{ max-width:min(1600px,98vw); max-height:94vh; }
+    .modal-header{ gap:10px; }
+    .modal-actions{ display:flex; align-items:center; gap:8px; }
+    .modal-tool{ background:transparent; border:1px solid rgba(255,255,255,.35); color:#e5e7eb; border-radius:10px; padding:.35rem .55rem; cursor:pointer; font-weight:700; }
+    .modal-tool:hover{ border-color:rgba(255,255,255,.65); }
+    .modal-body{ background:#000; }
+    .modal-body.fit{ display:flex; align-items:center; justify-content:center; }
+    .modal-body.fit img{ max-width:100%; max-height:82vh; margin:0 auto; }
+    .modal-body.zoom{ overflow:auto; padding:10px; display:block; }
+    .modal-body.zoom img{ max-width:none; max-height:none; margin:0; }
+
+    /* MODULE: Footer typography */
+    .footer{ color:#333; font-size:16px; }
+    .footer-title{ font-size:18px; font-weight:800; margin-bottom:10px; }
+    .footer-link{ display:block; color:#333; text-decoration:none; font-size:16px; margin:6px 0; }
+    .footer-link:hover{ text-decoration:underline; }
+    .footer-bottom{ margin-top:18px; color:#555; font-size:16px; }
+    .footer-brand-block{ background:var(--main-blue); color:#fff; padding:16px 18px; border-radius:14px; }
+    .footer-brand-block .footer-title{ color:#fff; font-size:18px; margin-bottom:8px; }
+    .footer-brand-block .footer-brand-desc{ color:#fff; font-size:18px; margin:0; }
+    .footer-grid{ display:grid; grid-template-columns:1.25fr .9fr; gap:18px; align-items:start; }
+
+</style>
+</head>
+<body data-site-root-folder="欣熹網站">
+<!-- MODULE: NAVBAR (sync with materials/index.html) -->
+<nav class="navbar">
+<a class="nav-brand" href="/">欣熹科技 SHIN-SI</a>
+<div class="nav-menu">
+<a class="nav-item" href="/index.html#telecom">通訊光纖設備</a>
+<a class="nav-item" href="/index.html#specialty">特殊/製程應用</a>
+<a class="nav-item" href="/group.html">關於集團</a>
+<a class="nav-item" href="/contact.html">聯絡我們</a>
+</div>
+</nav>
+<!-- /MODULE: NAVBAR -->
+<main>
+<section class="hero">
+<div class="container">
+<div class="hero-grid">
+<div class="hero-copy">
+<p class="kicker">其他光纖產品</p>
+<h1>光纖不鏽鋼管 / 防火光纜</h1>
+<p class="lead">
+              以不鏽鋼管成型技術包覆光纖，提升抗拉、抗側壓、耐惡劣環境能力；並可依場域需求選用防火、自持或鋼線鎧裝結構，滿足機房、工廠與戶外佈線的可靠性要求。
+            </p>
+<div class="btn-row">
+<a class="btn primary" href="/contact.html">立即洽詢/索取報價</a>
+<a class="btn" href="/index.html#other-fiber-products">返回其他光纖產品</a>
+</div>
+<p class="spec-note">如需其他芯數/外徑或客製結構，可提供需求條件協助選型。</p>
+</div>
+<div class="hero-media">
+<div class="hero-card">
+<img alt="光纖不鏽鋼管與防火光纜示意圖" src="/images/FIST%20%26%20Fire%20Resistant.png"/>
+<div class="hero-img-note">示意圖</div>
+<div class="hero-card-body">
+<strong>系列重點</strong>
+<ul class="bullets">
+<li>金屬管包覆：保護光纖，降低後段加工損傷風險</li>
+<li>耐環境：抗拉、抗壓、耐高低溫、抗惡劣環境</li>
+<li>防火：多款符合 IEC 60331-25（&gt;=750°C, 90min）需求之結構</li>
+<li>選型範圍：6C–144C（依款式）</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section class="section">
+<div class="container">
+<h2>5 種系列一覽</h2>
+<div class="cards">
+<article class="card">
+<div class="card-body">
+<div style="display:flex;gap:.6rem;align-items:center;flex-wrap:wrap;">
+<h3 style="margin:0;">光纖不鏽鋼管 <span class="muted" style="font-weight:700;">Optical Fiber in Metal Tube</span></h3>
+</div>
+<p>將光纖置於不鏽鋼管內並注入緩衝材料，提供加工與環境保護；適用耐壓、抗鼠咬、極端溫度與混合纜等應用。</p>
+<table class="spec-table equal-cols">
+<thead><tr><th>Fiber Count</th><th>6</th><th>12</th><th>24</th><th>48</th></tr></thead>
+<tbody>
+<tr><td>Cable Diameter (mm)</td><td>1.5</td><td>2.0</td><td>2.6</td><td>3.4</td></tr>
+<tr><td>Cable Weight (kg/km)</td><td>8.0</td><td>10.5</td><td>16.5</td><td>24.5</td></tr>
+<tr><td>Max. Tensile Load (N)</td><td>7200</td><td>990</td><td>1100</td><td>1300</td></tr>
+<tr><td>Max. Crush Resistance (N/100mm)</td><td>4000</td><td>2000</td><td>1500</td><td>1000</td></tr>
+<tr><td>Min. Bending Radius</td><td>40 × OD</td><td>40 × OD</td><td>40 × OD</td><td>40 × OD</td></tr>
+<tr><td>Operating Temp.</td><td>-30°C ~ +60°C</td><td>-30°C ~ +60°C</td><td>-30°C ~ +60°C</td><td>-30°C ~ +60°C</td></tr>
+</tbody>
+</table>
+<div class="spec-note">OD = Cable Diameter（外徑）。</div>
+</div>
+</article>
+<article class="card">
+<div class="card-body">
+<h3 style="margin:0;">單一不鏽鋼管防火光纜 <span class="tag">防火</span></h3>
+<p>外層增加保護層與抗張元件，提升整體機械強度並兼顧防鼠咬；可依需求增加加耐燃/防火等特性。</p>
+<ul class="bullets">
+<li>依原廠資料：符合 IEC 60331-25（&gt;=750°C, 90min，維持訊號通路）</li>
+</ul>
+<table class="spec-table equal-cols">
+<thead><tr><th>Fiber Count</th><th>6</th><th>12</th><th>24</th></tr></thead>
+<tbody>
+<tr><td>Tube Diameter (mm)</td><td>1.5</td><td>2.0</td><td>2.6</td></tr>
+<tr><td>Cable Diameter (mm)</td><td>6.0</td><td>6.5</td><td>7.0</td></tr>
+<tr><td>Cable Weight (kg/km)</td><td>50</td><td>55</td><td>65</td></tr>
+<tr><td>Max. Tensile Load (N)</td><td>1700</td><td>1700</td><td>1700</td></tr>
+<tr><td>Max. Crush Resistance (N/100mm)</td><td>4000</td><td>4000</td><td>4000</td></tr>
+<tr><td>Min. Bending Radius</td><td>Loaded 30×OD / Unloaded 15×OD</td><td>Loaded 30×OD / Unloaded 15×OD</td><td>Loaded 30×OD / Unloaded 15×OD</td></tr>
+<tr><td>Operating Temp.</td><td>-30°C ~ +60°C</td><td>-30°C ~ +60°C</td><td>-30°C ~ +60°C</td></tr>
+</tbody>
+</table>
+</div>
+</article>
+<article class="card">
+<div class="card-body">
+<h3 style="margin:0;">單一不鏽鋼管自持型防火光纜 <span class="tag">自持</span> <span class="tag">防火</span></h3>
+<p>在防火結構上增加自持（吊掛）設計，適用戶外或需簡化支撐結構的佈線情境。</p>
+<ul class="bullets">
+<li>依原廠資料：符合 IEC 60331-25（&gt;=750°C, 90min，維持訊號通路）</li>
+</ul>
+<table class="spec-table equal-cols">
+<thead><tr><th>Fiber Count</th><th>6</th><th>12</th><th>24</th></tr></thead>
+<tbody>
+<tr><td>Tube Diameter (mm)</td><td>1.5</td><td>2.0</td><td>2.6</td></tr>
+<tr><td>Cable Size (mm)</td><td>6.0×11.0</td><td>6.0×11.5</td><td>7.0×12.0</td></tr>
+<tr><td>Cable Weight (kg/km)</td><td>75</td><td>80</td><td>90</td></tr>
+<tr><td>Max. Tensile Load (N)</td><td>1700</td><td>1700</td><td>1700</td></tr>
+<tr><td>Max. Crush Resistance (N/100mm)</td><td>4000</td><td>4000</td><td>4000</td></tr>
+<tr><td>Min. Bending Radius</td><td>Loaded 30×OD / Unloaded 15×OD</td><td>Loaded 30×OD / Unloaded 15×OD</td><td>Loaded 30×OD / Unloaded 15×OD</td></tr>
+<tr><td>Operating Temp.</td><td>-30°C ~ +60°C</td><td>-30°C ~ +60°C</td><td>-30°C ~ +60°C</td></tr>
+</tbody>
+</table>
+</div>
+</article>
+<article class="card">
+<div class="card-body">
+<h3 style="margin:0;">單一不鏽鋼管鋼線鎧裝防火光纜 <span class="tag">鎧裝</span> <span class="tag">防火</span></h3>
+<p>外層採鋼線鎧裝與雙層護套，提升耐壓與抗惡劣環境能力；適合工廠、隧道、管線槽等高保護需求。</p>
+<ul class="bullets">
+<li>依原廠資料：符合 IEC 60331-25（&gt;=750°C, 90min，維持訊號通路）</li>
+</ul>
+<table class="spec-table equal-cols">
+<thead><tr><th>Fiber Count</th><th>6</th><th>12</th><th>24</th><th>48</th></tr></thead>
+<tbody>
+<tr><td>Tube Diameter (mm)</td><td>1.5</td><td>2.0</td><td>2.6</td><td>3.4</td></tr>
+<tr><td>Cable Diameter (mm)</td><td>10.5</td><td>11.0</td><td>11.5</td><td>12.5</td></tr>
+<tr><td>Cable Weight (kg/km)</td><td>200</td><td>225</td><td>255</td><td>290</td></tr>
+<tr><td>Max. Tensile Load (N)</td><td>5000</td><td>5000</td><td>5000</td><td>5000</td></tr>
+<tr><td>Max. Crush Resistance (N/100mm)</td><td>5000</td><td>5000</td><td>5000</td><td>5000</td></tr>
+<tr><td>Min. Bending Radius</td><td>Loaded 30×OD / Unloaded 15×OD</td><td>Loaded 30×OD / Unloaded 15×OD</td><td>Loaded 30×OD / Unloaded 15×OD</td><td>Loaded 30×OD / Unloaded 15×OD</td></tr>
+<tr><td>Operating Temp.</td><td>-30°C ~ +60°C</td><td>-30°C ~ +60°C</td><td>-30°C ~ +60°C</td><td>-30°C ~ +60°C</td></tr>
+</tbody>
+</table>
+</div>
+</article>
+<article class="card">
+<div class="card-body">
+<h3 style="margin:0;">不鏽鋼管鋼線鎧裝防火光纜 <span class="tag">高芯數</span> <span class="tag">鎧裝</span> <span class="tag">防火</span></h3>
+<p>高芯數（96/144C）版本，外層鋼線鎧裝，適用骨幹/主幹段或高密度佈線需求。</p>
+<ul class="bullets">
+<li>依原廠資料：符合 IEC 60331-25（&gt;=750°C, 90min，維持訊號通路）</li>
+</ul>
+<table class="spec-table">
+<thead><tr><th>Fiber Count</th><th>96</th><th>144</th></tr></thead>
+<tbody>
+<tr><td>Tube Diameter (mm)</td><td>2.0</td><td>2.0</td></tr>
+<tr><td>Cable Diameter (mm)</td><td>18.0</td><td>20.5</td></tr>
+<tr><td>Cable Weight (kg/km)</td><td>680</td><td>840</td></tr>
+<tr><td>Max. Tensile Load (N)</td><td>8000</td><td>8000</td></tr>
+<tr><td>Max. Crush Resistance (N/100mm)</td><td>10000</td><td>10000</td></tr>
+<tr><td>Min. Bending Radius</td><td>Loaded 30×OD / Unloaded 15×OD</td><td>Loaded 30×OD / Unloaded 15×OD</td></tr>
+<tr><td>Operating Temp.</td><td>-30°C ~ +60°C</td><td>-30°C ~ +60°C</td></tr>
+</tbody>
+</table>
+</div>
+</article>
+</div>
+<div class="spacer"></div>
+<h2>光學特性（Optical Characteristics）</h2>
+<table class="spec-table equal-cols">
+<thead><tr><th>Fiber Type</th><th>G.652D</th><th>G.657A1</th><th>OM1</th><th>OM2</th></tr></thead>
+<tbody>
+<tr><td>Wavelength (nm)</td><td>1310/1550</td><td>1310/1550</td><td>850/1300</td><td>850/1300</td></tr>
+<tr><td>Attenuation (dB/km)</td><td>0.4/0.3</td><td>0.4/0.3</td><td>3.0/1.0</td><td>3.0/1.0</td></tr>
+</tbody>
+</table>
+<p class="spec-note">上表為原廠資料中的典型光學參數示意；實際以指定光纖等級與交付規格為準。</p>
+</div>
+</section>
+<section class="section" id="datasheets">
+<div class="container">
+<h2>原廠資料圖（點擊放大）</h2>
+<div class="img-grid">
+<div class="img-card">
+<img alt="原廠資料圖 31：光纖不鏽鋼管" data-full="/images/metal-tube-fiber-31.jpg" src="/images/metal-tube-fiber-31.jpg"/>
+<div class="cap">31｜光纖不鏽鋼管（6/12/24/48C）</div>
+</div>
+<div class="img-card">
+<img alt="原廠資料圖 32：單一不鏽鋼管防火光纜" data-full="/images/metal-tube-fiber-32.jpg" src="/images/metal-tube-fiber-32.jpg"/>
+<div class="cap">32｜單一不鏽鋼管防火光纜（6/12/24C）</div>
+</div>
+<div class="img-card">
+<img alt="原廠資料圖 33：單一不鏽鋼管自持型防火光纜" data-full="/images/metal-tube-fiber-33.jpg" src="/images/metal-tube-fiber-33.jpg"/>
+<div class="cap">33｜自持型防火光纜（6/12/24C）</div>
+</div>
+<div class="img-card">
+<img alt="原廠資料圖 34：單一不鏽鋼管鋼線鎧裝防火光纜" data-full="/images/metal-tube-fiber-34.jpg" src="/images/metal-tube-fiber-34.jpg"/>
+<div class="cap">34｜鋼線鎧裝防火光纜（6/12/24/48C）</div>
+</div>
+<div class="img-card">
+<img alt="原廠資料圖 35：不鏽鋼管鋼線鎧裝防火光纜" data-full="/images/metal-tube-fiber-35.jpg" src="/images/metal-tube-fiber-35.jpg"/>
+<div class="cap">35｜鋼線鎧裝防火光纜（96/144C）</div>
+</div>
+</div>
+</div>
+</section>
+</main>
+<footer class="footer">
+<div class="container">
+<div class="footer-grid">
+<div class="footer-brand-block">
+<div class="footer-title">欣熹科技</div>
+<p class="muted footer-brand-desc">半導體耗材與通訊光纖設備整合供應與技術支援。</p>
+</div>
+<div>
+<div class="footer-title">快速連結</div>
+<!-- MODULE: QUICK LINKS (keep relative paths consistent with NAVBAR) -->
+<a class="footer-link" href="/index.html#telecom">通訊光纖設備</a>
+<a class="footer-link" href="/index.html#specialty">特殊/製程應用</a>
+<a class="footer-link" href="/group.html">關於集團</a>
+<a class="footer-link" href="/contact.html">聯絡我們</a>
+<!-- /MODULE: QUICK LINKS -->
+</div>
+</div>
+<div class="footer-bottom">© <span id="year"></span> SHIN-SI Technology. All rights reserved.</div>
+</div>
+</footer>
+<!-- Image modal -->
+<div aria-label="圖片放大檢視" aria-modal="true" class="modal" id="imgModal" role="dialog">
+<div class="modal-inner">
+<div class="modal-header"><div class="modal-title" id="modalTitle">圖片檢視</div><div class="modal-actions"><button class="modal-tool" id="zoomFit" type="button">適合</button><button class="modal-tool" id="zoom100" type="button">100%</button><button class="modal-tool" id="zoomIn" type="button">＋</button><button class="modal-tool" id="zoomOut" type="button">－</button><button aria-label="關閉" class="modal-close modal-tool modal-close" id="modalClose" type="button">關閉</button></div></div>
+<div class="modal-body fit">
+<img alt="" id="modalImg" src=""/>
+</div>
+</div>
+</div>
+<script>/* MODULE: UI wiring (year + image modal) */
+document.addEventListener('DOMContentLoaded', function () {
+  // Footer year
+  var yearEl = document.getElementById('year');
+  if (yearEl) yearEl.textContent = String(new Date().getFullYear());
+
+  // Image modal
+  var modal = document.getElementById('imgModal');
+  var modalImg = document.getElementById('modalImg');
+  var modalTitle = document.getElementById('modalTitle');
+  var modalClose = document.getElementById('modalClose');
+
+  
+  var modalBody = modal ? modal.querySelector('.modal-body') : null;
+  var zoomFit = document.getElementById('zoomFit');
+  var zoom100 = document.getElementById('zoom100');
+  var zoomIn = document.getElementById('zoomIn');
+  var zoomOut = document.getElementById('zoomOut');
+  var zoom = 1;
+  var naturalW = 0;
+function openModal(src, alt) {
+    if (!modal || !modalImg) return;
+    modal.classList.add('open');
+    modalImg.src = src;
+        zoom = 1;
+    naturalW = 0;
+    if (modalBody) { modalBody.classList.remove('zoom'); modalBody.classList.add('fit'); }
+    modalImg.style.width = '';
+modalImg.alt = alt || '';
+    if (modalTitle) modalTitle.textContent = alt || '圖片檢視';
+    document.body.style.overflow = 'hidden';
+  }
+
+  function closeModal() {
+    if (!modal || !modalImg) return;
+    modal.classList.remove('open');
+    modalImg.src='';
+    document.body.style.overflow = '';
+    if (modalTitle) modalTitle.textContent = '圖片檢視';
+  }
+
+  // Make the whole card clickable (image + caption)
+  document.querySelectorAll('.img-card').forEach(function (card) {
+    var img = card.querySelector('img');
+    if (!img) return;
+    card.style.cursor = 'zoom-in';
+    card.addEventListener('click', function () {
+      openModal(img.dataset.full || img.src, img.alt);
+    });
+  });
+
+
+  function setFit() {
+    if (!modalBody) return;
+    modalBody.classList.remove('zoom');
+    modalBody.classList.add('fit');
+    modalImg.style.width = '';
+  }
+
+  function applyZoom() {
+    if (!modalBody) return;
+    // default base width from naturalWidth if available
+    var base = naturalW || modalImg.naturalWidth || 0;
+    if (!base) {
+      // fallback: scale by viewport width
+      modalBody.classList.remove('fit');
+      modalBody.classList.add('zoom');
+      modalImg.style.width = Math.round(100 * zoom) + 'vw';
+      return;
+    }
+    modalBody.classList.remove('fit');
+    modalBody.classList.add('zoom');
+    modalImg.style.width = Math.round(base * zoom) + 'px';
+  }
+
+  if (modalImg) {
+    modalImg.addEventListener('load', function () {
+      naturalW = modalImg.naturalWidth || 0;
+      if (modalBody && modalBody.classList.contains('zoom')) applyZoom();
+    });
+  }
+
+  if (zoomFit) zoomFit.addEventListener('click', function(){ setFit(); });
+  if (zoom100) zoom100.addEventListener('click', function(){ zoom = 1; applyZoom(); });
+  if (zoomIn) zoomIn.addEventListener('click', function(){ zoom = Math.min(6, zoom * 1.25); applyZoom(); });
+  if (zoomOut) zoomOut.addEventListener('click', function(){ zoom = Math.max(0.5, zoom / 1.25); applyZoom(); });
+
+  // Error handler (helps diagnose missing image paths)
+  if (modalImg) {
+    modalImg.addEventListener('error', function () {
+      if (modalTitle) modalTitle.textContent = '圖片讀取失敗（請確認 /images 路徑）';
+    });
+  }
+
+  if (modalClose) modalClose.addEventListener('click', closeModal);
+  if (modal) modal.addEventListener('click', function (e) {
+    if (e.target === modal) closeModal();
+  });
+  window.addEventListener('keydown', function (e) {
+    if (e.key === 'Escape' && modal && modal.classList.contains('open')) closeModal();
+  });
+});</script>
+<script data-module="link-normalizer">/* MODULE: Link Normalizer (file:// fallback for root-absolute links) */
+(function () {
+  if (location.protocol !== 'file:') return;
+
+  var rootFolder = (document.body && document.body.dataset && document.body.dataset.siteRootFolder) || '欣熹網站';
+  var path = decodeURIComponent(location.pathname || '');
+  var parts = path.split('/').filter(Boolean);
+
+  // Try to locate the site root folder name in the file path.
+  var idx = -1;
+  for (var i = parts.length - 1; i >= 0; i--) {
+    if (parts[i] === rootFolder) { idx = i; break; }
+  }
+  if (idx === -1) return;
+
+  // Depth from current folder back to the site root folder.
+  var depth = parts.length - idx - 2; // exclude rootFolder itself and the filename
+  if (depth < 0) depth = 0;
+  var prefix = '';
+  for (var d = 0; d < depth; d++) prefix += '../';
+
+  // Rewrite root-absolute href/src (e.g. "/contact.html") into file-relative (e.g. "../../contact.html")
+  var rewrite = function (val) {
+    if (!val || val.charAt(0) !== '/') return val;
+    return prefix + val.slice(1);
+  };
+
+  var links = document.querySelectorAll('a[href^="/"]');
+  links.forEach(function (a) { a.setAttribute('href', rewrite(a.getAttribute('href'))); });
+
+  // Optional: if you later use root-absolute image paths, this keeps them working in file:// too.
+    // Images: rewrite both src and data-full (modal uses data-full)
+  var imgs = document.querySelectorAll('img[src^="/"], img[data-full^="/"]');
+  imgs.forEach(function (img) {
+    var s = img.getAttribute('src');
+    if (s && s.charAt(0) === '/') img.setAttribute('src', rewrite(s));
+    var f = img.getAttribute('data-full');
+    if (f && f.charAt(0) === '/') img.setAttribute('data-full', rewrite(f));
+  });
+})();</script></body>
+</html>
