@@ -28,20 +28,11 @@
   }
   </script>
 
-  <script type="application/ld+json">
-  {
-    "@context":"https://schema.org",
-    "@type":"ProductGroup",
-    "name":"Fujikura Large Diameter Optical Fiber Cleaver Series (CT114/CT115/CT116)",
-    "brand":{"@type":"Brand","name":"Fujikura"},
-    "description":"Large Diameter Optical Fiber Cleaver series. Fiber type: Silica fiber. CT114 cladding dia. 80–660μm; CT115/CT116 cladding dia. 80–1250μm. Coating dia. 81–3182μm. Cleave length setting range 30–75mm. CT115/CT116: auto backstop adjustment with motor; CT116 supports angled cleaving approx. 0°–15°.",
-    "hasVariant":[
-      {"@type":"Product","name":"Fujikura CT114 Large Diameter Optical Fiber Cleaver","model":"CT114"},
-      {"@type":"Product","name":"Fujikura CT115 Large Diameter Optical Fiber Cleaver","model":"CT115"},
-      {"@type":"Product","name":"Fujikura CT116 Large Diameter Optical Fiber Cleaver","model":"CT116"}
-    ]
-  }
-  </script>
+  <!-- NOTE:
+    Removed ProductGroup/hasVariant structured data to avoid "Product snippets" critical issue:
+    Must specify hasVariant.offers / review / aggregateRating.
+    (B2B inquiry page without public pricing should not claim ProductGroup snippets.)
+  -->
 
   <script type="application/ld+json">
   {
