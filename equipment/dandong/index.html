@@ -338,9 +338,19 @@
   var p = (location.pathname || "").replace(/\\/g,'/');
   var parts = p.split('/').filter(Boolean);
 
-  // depth=2 for /equipment/<brand>/ ; depth=1 for /equipment/ ; depth=0 for root
+  /*
+    FIX: handle /materials/<slug>/... depth properly
+    - /materials/pecvd-dlc/index.html => depth 2 => prefix '../../'
+    This prevents 404 for group/contact etc.
+  */
   var depth = 0;
-  if (parts.length >= 2 && parts[parts.length-2].toLowerCase() === 'dandong') depth = 2;
+
+  // materials/<slug>/...
+  if (parts.length >= 2 && parts[0].toLowerCase() === 'materials') {
+    depth = 2;
+  }
+  // legacy equipment/dandong logic (kept)
+  else if (parts.length >= 2 && parts[parts.length-2].toLowerCase() === 'dandong') depth = 2;
   else if (parts.length >= 2 && parts[parts.length-2].toLowerCase() === 'equipment') depth = 1;
   else if (parts.length >= 3 && parts[parts.length-3].toLowerCase() === 'equipment') depth = 2;
 
@@ -355,21 +365,20 @@
   setHref('nav-home', prefix + 'index.html');
   setHref('nav-telecom', prefix + 'index.html#telecom');
   setHref('nav-specialty', prefix + 'index.html#specialty');
-  setHref('nav-group', prefix + 'group.html');
-  setHref('nav-contact', prefix + 'contact.html');
-
-  // Page CTAs (Hero)
-  setHref('cta-spec', prefix + 'contact.html');
-  setHref('cta-back', '../index.html');
+  setHref('nav-group', prefix + 'group.html');     // FIXED by prefix='../../' under materials
+  setHref('nav-contact', prefix + 'contact.html'); // FIXED by prefix='../../' under materials
 
   // CTA bar
-  setHref('cta-contact-bottom', prefix + 'contact.html');
-  setHref('cta-back-bottom', '../index.html');
+  setHref('cta-contact-bottom', prefix + 'contact.html'); // FIXED
+  setHref('cta-back-bottom', '../index.html');            // kept as-is
 
-// Footer links (optional ids if present)
+  // Footer links
   setHref('ft-telecom', prefix + 'index.html#telecom');
-  setHref('ft-specialty', prefix + 'index.html#specialty');
-  setHref('ft-contact', prefix + 'contact.html');
+
+  // FIX: "特殊光纖" should go to telecom section, not specialty/process section
+  setHref('ft-specialty', prefix + 'index.html#telecom');
+
+  setHref('ft-contact', prefix + 'contact.html'); // FIXED
 })();
 </script>
 </body>
