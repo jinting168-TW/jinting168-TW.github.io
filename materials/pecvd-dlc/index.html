@@ -7,6 +7,30 @@
   <meta name="description" content="PECVD DLC 鍍膜：高硬度、低摩擦、耐磨耗與耐腐蝕特性；應用於汽車、精密機械、消費電子、醫療與光學。提供需求對接與交付驗收協作。" />
   <meta name="robots" content="index,follow" />
 
+  <!-- Canonical（保守 SEO：絕對網址；目錄型 URL） -->
+  <link rel="canonical" href="https://www.shin-si.com/materials/pecvd-dlc/" />
+
+  <!-- Open Graph（保守 SEO：不影響版面功能） -->
+  <meta property="og:title" content="PECVD DLC 鍍膜｜欣熹科技 SHIN-SI" />
+  <meta property="og:description" content="PECVD DLC 鍍膜：高硬度、低摩擦、耐磨耗與耐腐蝕特性；提供需求對接與交付驗收協作。" />
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="欣熹科技 SHIN-SI TECHNOLOGY" />
+  <meta property="og:url" content="https://www.shin-si.com/materials/pecvd-dlc/" />
+  <meta property="og:image" content="https://www.shin-si.com/images/logo.png" />
+
+  <!-- Structured Data：BreadcrumbList（避免導覽標記 id/URL 無效；不加入 Product/Offer） -->
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"BreadcrumbList",
+    "itemListElement":[
+      {"@type":"ListItem","position":1,"name":"首頁","item":"https://www.shin-si.com/"},
+      {"@type":"ListItem","position":2,"name":"材料專區","item":"https://www.shin-si.com/materials/"},
+      {"@type":"ListItem","position":3,"name":"PECVD DLC 鍍膜","item":"https://www.shin-si.com/materials/pecvd-dlc/"}
+    ]
+  }
+  </script>
+
   <style>
 
     :root{
@@ -271,15 +295,15 @@
       .hero p{font-size:18px}
       .section-title{font-size:26px}
     }
-  
+
 
     /* PECVD DLC page extras */
     .breadcrumb{color:#e7e7e7; font-size:15px; margin-bottom:10px}
     .badge{display:inline-block; padding:6px 10px; border-radius:999px; background:rgba(255,255,255,.12); border:1px solid rgba(255,255,255,.22); font-weight:800; font-size:13px; letter-spacing:.2px}
     .table-note{margin-top:10px; color:#666; font-size:14px; line-height:1.7}
     .card-img.tall{height:260px}
-    
-  
+
+
     /* Lightbox (點擊放大圖片) */
     .lightbox{
       position: fixed;
@@ -330,8 +354,8 @@
   <nav class="navbar">
     <a class="nav-brand" href="/">欣熹科技 SHIN-SI</a>
     <div class="nav-menu">
-      <a class="nav-item" href="/index.html#telecom">通訊光纖設備</a>
-      <a class="nav-item" href="/index.html#specialty">特殊/製程應用</a>
+      <a class="nav-item" href="/#telecom">通訊光纖設備</a>
+      <a class="nav-item" href="/#specialty">特殊/製程應用</a>
       <a class="nav-item" href="/group.html">關於集團</a>
       <a class="nav-item" href="/contact.html">聯絡我們</a>
     </div>
@@ -344,7 +368,8 @@
       <p>PECVD DLC 鍍膜因具備極高硬度與低摩擦係數，廣泛應用於半導體設備及各產業零部件的抗刮保護層，並在精密模具中強化脫模性與耐磨度。石油鑽採之配件鍍上厚DLC膜層更可延長壽命減少更換頻率降低成本 ! 可依照客戶規格需求討論 (如靜電規格與鍍Si應用)!</p>
       <div class="hero-actions">
         <a class="btn btn-primary" href="/contact.html">立即洽詢 / 索取報價</a>
-        <a class="btn btn-ghost" href="/">返回材料專區</a>
+        <!-- 修復導向：返回材料專區（原本是 / ） -->
+        <a class="btn btn-ghost" href="/materials/">返回材料專區</a>
       </div>
     </div>
   </header>
