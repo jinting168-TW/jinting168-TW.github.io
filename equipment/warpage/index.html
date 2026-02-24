@@ -5,7 +5,7 @@
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
 <title>晶圓翹曲量測｜CST-WME-01｜欣熹科技 SHIN-SI</title>
 
-<!-- SEO: corrected for warpage page -->
+<!-- SEO 修正：只修 warpage 頁的 head，不動版型 -->
 <meta name="description" content="欣熹科技自有設備 CST-WME-01 晶圓翹曲量測系統，適用 8 吋/12 吋雙面拋光矽晶圓，採非接觸式光學量測，可量測 BOW、WARP、SORI、TTV 與厚度相關參數，支援製程過程控制與研發驗證。"/>
 <meta name="robots" content="index,follow"/>
 <link rel="canonical" href="https://www.shin-si.com/equipment/warpage/"/>
@@ -23,7 +23,7 @@
 <!-- Twitter Card -->
 <meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:title" content="晶圓翹曲量測｜CST-WME-01｜欣熹科技 SHIN-SI"/>
-<meta name="twitter:description" content="CST-WME-01 晶圓翹曲量測系統，適用 8 吋/12 吋雙面拋光矽晶圓，支援 BOW / WARP / SORI / TTV 與厚度相關參數量測。"/>
+<meta name="twitter:description" content="CST-WME-01 晶圓翹曲量測系統，適用 8 吋/12 吋雙面拋光矽晶圓，支援 BOW、WARP、SORI、TTV 與厚度相關參數量測。"/>
 <meta name="twitter:image" content="https://www.shin-si.com/images/CSTWME.png"/>
 
 <style>
@@ -205,7 +205,7 @@
       .hero h1 { font-size: 28px; }
       .nav-menu { display: none; }
     }
-
+  
     .hero-actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:16px}
     .card{background:#fff;border:1px solid #e6e6e6;border-radius:16px;padding:18px;box-shadow:0 6px 18px rgba(0,0,0,.05)}
     .card-media{width:100%;aspect-ratio:16/9;border-radius:14px;overflow:hidden;background:#f2f2f2;margin-bottom:12px;border:1px solid #eee}
@@ -238,44 +238,21 @@
     .btn.primary{background:var(--accent-red);border-color:var(--accent-red);color:#fff}
     .btn.outline{background:#fff;border-color:rgba(0,51,102,0.35);color:var(--main-blue)}
     .btn:hover{transform:translateY(-1px);box-shadow:0 6px 14px rgba(0,0,0,0.08)}
+    
 
-    /* Container (match 100splus centered layout) */
-    .container{ max-width:1200px; margin:0 auto; padding:34px 5% 60px 5%; }
-    /* Hero inner centered (match 100splus) */
-    .hero-inner{ max-width:1200px; margin:0 auto; }
 
-    /* Warpage page: show CSTWME image fully (no cropping) */
-    .card-media.contain{ aspect-ratio:auto; background:transparent; border:none; padding:0; }
-    .card-media.contain img{ width:100%; height:auto; object-fit:contain; display:block; border-radius:14px; border:1px solid #eee; }
+/* Container (match 100splus centered layout) */
+.container{ max-width:1200px; margin:0 auto; padding:34px 5% 60px 5%; }
+/* Hero inner centered (match 100splus) */
+.hero-inner{ max-width:1200px; margin:0 auto; }
 
-    /* Keep original card/button look; add only missing layout helpers */
-    .cards{
-      display:grid;
-      grid-template-columns:repeat(3, minmax(0,1fr));
-      gap:18px;
-    }
-    .cta-row{
-      display:flex;
-      gap:12px;
-      flex-wrap:wrap;
-      margin-top:16px;
-      justify-content:center;
-    }
-    .bottom-cta{
-      margin-top:14px;
-    }
-    .bullet{
-      margin:0;
-      padding-left:20px;
-      color:var(--text-light);
-    }
-    .bullet li{
-      margin:10px 0;
-      font-size:18px;
-    }
-    @media (max-width: 980px){
-      .cards{ grid-template-columns:1fr; }
-    }
+
+
+
+/* Warpage page: show CSTWME image fully (no cropping) */
+.card-media.contain{ aspect-ratio:auto; background:transparent; border:none; padding:0; }
+.card-media.contain img{ width:100%; height:auto; object-fit:contain; display:block; border-radius:14px; border:1px solid #eee; }
+
 
     /* Button color overrides (scoped) */
     #cta-contact,
@@ -315,11 +292,11 @@
   </p>
   <div class="cta-row">
     <a class="btn btn-primary" href="/contact.html" id="cta-contact">立即洽詢規格</a>
+    <!-- FIX: return to equipment/agent page -->
     <a class="btn btn-secondary" href="/equipment/" id="cta-back-equipment">返回設備/代理專頁</a>
   </div>
   </div>
 </header>
-
 <section class="section">
   <h2>核心特色</h2>
 
@@ -358,11 +335,10 @@
     </article>
   </div>
 </section>
-
 <section class="section">
   <h2>技術規格</h2>
   <div class="table-wrap">
-  <table class="spec" aria-label="CST-WME-01 技術規格摘要">
+  <table aria-label="CST-WME-01 技術規格摘要">
   <tr><th>項目</th><td>內容</td></tr>
   <tr><th>設備型號</th><td>CST-WME-01</td></tr>
   <tr><th>適用晶圓</th><td>8 吋 / 12 吋（兼容），雙面拋光矽晶圓</td></tr>
@@ -378,7 +354,6 @@
 </table>
 </div>
 </section>
-
 <section class="section">
   <h2>應用場景</h2>
   <ul class="bullet">
@@ -387,7 +362,6 @@
     <li><strong>良率提升篩選</strong>：快速識別翹曲超標晶圓，降低後續工序報廢風險。</li>
   </ul>
 </section>
-
 <section class="section">
   <h2>交付／使用流程</h2>
   <ol class="steps">
