@@ -4,8 +4,81 @@
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
 <title>晶圓翹曲量測｜CST-WME-01｜欣熹科技 SHIN-SI</title>
-<meta content="欣熹科技代理 SIAMC 半導體級石墨部件與加值服務：多孔石墨 P401、PyC/TaC 塗層、精密加工與檢測能力，協助 SiC 晶體生長與外延等製程導入。" name="description"/>
-<link href="/equipment/siamc/" rel="canonical"/>
+<meta name="description" content="欣熹科技自有設備 CST-WME-01 晶圓翹曲量測系統，適用 8 吋/12 吋雙面拋光矽晶圓，採非接觸式光學量測，可量測 BOW、WARP、SORI、TTV 與厚度相關參數，支援製程過程控制與研發驗證。"/>
+<meta name="robots" content="index,follow"/>
+<link rel="canonical" href="https://www.shin-si.com/equipment/warpage/"/>
+
+<!-- Open Graph -->
+<meta property="og:type" content="website"/>
+<meta property="og:site_name" content="欣熹科技 SHIN-SI TECHNOLOGY"/>
+<meta property="og:locale" content="zh_TW"/>
+<meta property="og:title" content="晶圓翹曲量測｜CST-WME-01｜欣熹科技 SHIN-SI"/>
+<meta property="og:description" content="CST-WME-01 晶圓翹曲量測系統，適用 8 吋/12 吋雙面拋光矽晶圓，採非接觸式光學量測，可量測 BOW、WARP、SORI、TTV 與厚度相關參數。"/>
+<meta property="og:url" content="https://www.shin-si.com/equipment/warpage/"/>
+<meta property="og:image" content="https://www.shin-si.com/images/CSTWME.png"/>
+<meta property="og:image:alt" content="CST-WME-01 晶圓翹曲量測系統"/>
+
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:title" content="晶圓翹曲量測｜CST-WME-01｜欣熹科技 SHIN-SI"/>
+<meta name="twitter:description" content="CST-WME-01 晶圓翹曲量測系統，適用 8 吋/12 吋雙面拋光矽晶圓，支援 BOW/WARP/SORI/TTV 與厚度相關參數量測。"/>
+<meta name="twitter:image" content="https://www.shin-si.com/images/CSTWME.png"/>
+
+<!-- JSON-LD: Product + FAQPage -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Product",
+  "name": "CST-WME-01 晶圓翹曲量測系統",
+  "brand": {
+    "@type": "Brand",
+    "name": "欣熹科技 SHIN-SI"
+  },
+  "category": "Wafer Measurement Equipment",
+  "image": "https://www.shin-si.com/images/CSTWME.png",
+  "description": "適用 8 吋/12 吋雙面拋光矽晶圓的非接觸式光學翹曲量測系統，可量測 BOW、WARP、SORI、TTV 與厚度相關參數。",
+  "url": "https://www.shin-si.com/equipment/warpage/",
+  "manufacturer": {
+    "@type": "Organization",
+    "name": "欣熹科技 SHIN-SI TECHNOLOGY",
+    "url": "https://www.shin-si.com/"
+  }
+}
+</script>
+
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"FAQPage",
+  "mainEntity":[
+    {
+      "@type":"Question",
+      "name":"CST-WME-01 可量測哪些參數？",
+      "acceptedAnswer":{
+        "@type":"Answer",
+        "text":"可量測 BOW、WARP、SORI、TTV，以及 CENTER THK、AVERAGE THK 等厚度相關參數。"
+      }
+    },
+    {
+      "@type":"Question",
+      "name":"適用哪些晶圓尺寸？",
+      "acceptedAnswer":{
+        "@type":"Answer",
+        "text":"適用 8 吋與 12 吋雙面拋光矽晶圓（兼容）。"
+      }
+    },
+    {
+      "@type":"Question",
+      "name":"量測方式與速度為何？",
+      "acceptedAnswer":{
+        "@type":"Answer",
+        "text":"採非接觸式光學量測；檢測速度參考約 1–2 片/分鐘，會依掃描線數與路徑設定而異。"
+      }
+    }
+  ]
+}
+</script>
+
 <style>
     :root {
   --accent-red: #c2000f;
@@ -65,6 +138,7 @@
       color: white;
       padding: 70px 5%;
       text-align: center; /* requested: center */
+      border-radius: 16px;
     }
     .hero h1 {
       margin: 0 0 14px 0;
@@ -185,7 +259,7 @@
       .hero h1 { font-size: 28px; }
       .nav-menu { display: none; }
     }
-  
+
     .hero-actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:16px}
     .card{background:#fff;border:1px solid #e6e6e6;border-radius:16px;padding:18px;box-shadow:0 6px 18px rgba(0,0,0,.05)}
     .card-media{width:100%;aspect-ratio:16/9;border-radius:14px;overflow:hidden;background:#f2f2f2;margin-bottom:12px;border:1px solid #eee}
@@ -215,38 +289,61 @@
     .btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;
          padding:10px 14px;border-radius:10px;border:1px solid rgba(0,0,0,0.15);
          text-decoration:none;font-weight:700;line-height:1;background:#fff;color:var(--main-blue)}
+    .btn-primary,
     .btn.primary{background:var(--accent-red);border-color:var(--accent-red);color:#fff}
+    .btn-secondary,
     .btn.outline{background:#fff;border-color:rgba(0,51,102,0.35);color:var(--main-blue)}
     .btn:hover{transform:translateY(-1px);box-shadow:0 6px 14px rgba(0,0,0,0.08)}
     
+    /* Container (match 100splus centered layout) */
+    .container{ max-width:1200px; margin:0 auto; padding:34px 5% 60px 5%; }
+    /* Hero inner centered (match 100splus) */
+    .hero-inner{ max-width:1200px; margin:0 auto; }
 
+    /* Warpage page: show CSTWME image fully (no cropping) */
+    .card-media.contain{ aspect-ratio:auto; background:transparent; border:none; padding:0; }
+    .card-media.contain img{ width:100%; height:auto; object-fit:contain; display:block; border-radius:14px; border:1px solid #eee; }
 
-/* Container (match 100splus centered layout) */
-.container{ max-width:1200px; margin:0 auto; padding:34px 5% 60px 5%; }
-/* Hero inner centered (match 100splus) */
-.hero-inner{ max-width:1200px; margin:0 auto; }
+    /* Buttons row / bottom cta (missing in original styles, added without changing layout intent) */
+    .cta-row{
+      display:flex;
+      gap:12px;
+      flex-wrap:wrap;
+      margin-top:16px;
+      justify-content:center;
+    }
+    .bottom-cta{
+      margin-top:18px;
+      display:flex;
+      justify-content:flex-start;
+    }
 
+    /* Cards layout used by this page */
+    .cards{
+      display:grid;
+      grid-template-columns:repeat(3, minmax(0,1fr));
+      gap:18px;
+    }
+    @media (max-width: 980px){
+      .cards{ grid-template-columns:1fr; }
+    }
 
-
-
-/* Warpage page: show CSTWME image fully (no cropping) */
-.card-media.contain{ aspect-ratio:auto; background:transparent; border:none; padding:0; }
-.card-media.contain img{ width:100%; height:auto; object-fit:contain; display:block; border-radius:14px; border:1px solid #eee; }
-
+    /* Bullet list used by this page */
+    .bullet{
+      margin:0;
+      padding-left:20px;
+      color:var(--text-light);
+    }
+    .bullet li{
+      margin:10px 0;
+      font-size:18px;
+    }
 
     /* Button color overrides (scoped) */
     #cta-contact,
     #cta-back-equipment,
     #cta-contact-bottom{
-      background: var(--main-red);
-      border-color: var(--main-red);
-      color: #fff;
-    }
-    #cta-contact:hover,
-    #cta-back-equipment:hover,
-    #cta-contact-bottom:hover{
-      background: #a0000c;
-      border-color: #a0000c;
+      border-radius: 10px;
     }
 
 </style>
@@ -255,10 +352,10 @@
 <nav class="navbar" aria-label="主導覽">
   <a class="nav-brand" href="/">欣熹科技 SHIN-SI</a>
   <div class="nav-menu">
-    <a class="nav-item" href="/index.html#telecom">通訊光纖設備</a>
-    <a class="nav-item" href="/index.html#specialty">特殊/製程應用</a>
-    <a class="nav-item" href="/group.html">關於集團</a>
-    <a class="nav-item" href="/contact.html">聯絡我們</a>
+    <a class="nav-item" href="/#telecom">通訊光纖設備</a>
+    <a class="nav-item" href="/#specialty">特殊/製程應用</a>
+    <a class="nav-item" href="/group/">關於集團</a>
+    <a class="nav-item" href="/contact/">聯絡我們</a>
   </div>
 </nav>
 
@@ -271,12 +368,12 @@
     可量測 <strong>BOW / WARP / SORI / TTV</strong> 與厚度相關參數，支援製程過程控制與研發驗證。
   </p>
   <div class="cta-row">
-    <a class="btn btn-primary" href="/contact.html" id="cta-contact">立即洽詢規格</a>
-    <!-- FIX: return to equipment/agent page -->
+    <a class="btn btn-primary" href="/contact/" id="cta-contact">立即洽詢規格</a>
     <a class="btn btn-secondary" href="/equipment/" id="cta-back-equipment">返回設備/代理專頁</a>
   </div>
   </div>
 </header>
+
 <section class="section">
   <h2>核心特色</h2>
 
@@ -315,25 +412,27 @@
     </article>
   </div>
 </section>
+
 <section class="section">
   <h2>技術規格</h2>
   <div class="table-wrap">
-  <table aria-label="CST-WME-01 技術規格摘要">
-  <tr><th>項目</th><td>內容</td></tr>
-  <tr><th>設備型號</th><td>CST-WME-01</td></tr>
-  <tr><th>適用晶圓</th><td>8 吋 / 12 吋（兼容），雙面拋光矽晶圓</td></tr>
-  <tr><th>量測參數</th><td>BOW / WARP / SORI / TTV / CENTER THK / AVERAGE THK</td></tr>
-  <tr><th>量程</th><td>WARP &gt; 200 μm；THK 500–1500 μm</td></tr>
-  <tr><th>檢測方式</th><td>光學量測（非接觸式）</td></tr>
-  <tr><th>檢測速度（參考）</th><td>約 1–2 片/分鐘（依掃描線數/路徑設定）</td></tr>
-  <tr><th>上料方式</th><td>手動</td></tr>
-  <tr><th>設備重量</th><td>1000 kg</td></tr>
-  <tr><th>外形尺寸（W×D×H）</th><td>1260 × 990 × 1560 mm</td></tr>
-  <tr><th>功率</th><td>2.5 kW</td></tr>
-  <tr><th>使用環境</th><td>恆溫、隔振、萬級及以上潔淨環境</td></tr>
-</table>
-</div>
+    <table class="spec" aria-label="CST-WME-01 技術規格摘要">
+      <tr><th>項目</th><td>內容</td></tr>
+      <tr><th>設備型號</th><td>CST-WME-01</td></tr>
+      <tr><th>適用晶圓</th><td>8 吋 / 12 吋（兼容），雙面拋光矽晶圓</td></tr>
+      <tr><th>量測參數</th><td>BOW / WARP / SORI / TTV / CENTER THK / AVERAGE THK</td></tr>
+      <tr><th>量程</th><td>WARP &gt; 200 μm；THK 500–1500 μm</td></tr>
+      <tr><th>檢測方式</th><td>光學量測（非接觸式）</td></tr>
+      <tr><th>檢測速度（參考）</th><td>約 1–2 片/分鐘（依掃描線數/路徑設定）</td></tr>
+      <tr><th>上料方式</th><td>手動</td></tr>
+      <tr><th>設備重量</th><td>1000 kg</td></tr>
+      <tr><th>外形尺寸（W×D×H）</th><td>1260 × 990 × 1560 mm</td></tr>
+      <tr><th>功率</th><td>2.5 kW</td></tr>
+      <tr><th>使用環境</th><td>恆溫、隔振、萬級及以上潔淨環境</td></tr>
+    </table>
+  </div>
 </section>
+
 <section class="section">
   <h2>應用場景</h2>
   <ul class="bullet">
@@ -342,6 +441,7 @@
     <li><strong>良率提升篩選</strong>：快速識別翹曲超標晶圓，降低後續工序報廢風險。</li>
   </ul>
 </section>
+
 <section class="section">
   <h2>交付／使用流程</h2>
   <ol class="steps">
@@ -352,7 +452,7 @@
   </ol>
 
   <div class="bottom-cta">
-    <a class="btn btn-primary" href="/contact.html" id="cta-contact-bottom">前往聯絡表單</a>
+    <a class="btn btn-primary" href="/contact/" id="cta-contact-bottom">前往聯絡表單</a>
   </div>
 
   <p class="note note-bottom">註：以上為參考值，非特定用途保證值；尺寸/供貨範圍與驗收條件請以報價與原廠規格書為準。</p>
@@ -363,7 +463,7 @@
   <div>© 欣熹科技 SHIN-SI TECHNOLOGY</div>
   <div style="margin-top:10px; font-size:18px; line-height:1.7;">
     主線產品：
-    <a href="/index.html#telecom">熔接機</a> ｜ <a href="/index.html#specialty">特殊光纖</a> ｜ <a href="/contact.html">聯絡我們</a>
+    <a href="/#telecom">熔接機</a> ｜ <a href="/#specialty">特殊光纖</a> ｜ <a href="/contact/">聯絡我們</a>
   </div>
 </footer>
 </body>
