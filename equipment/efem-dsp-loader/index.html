@@ -183,15 +183,8 @@
       padding: 16px;
       box-sizing: border-box;
     }
-    .media-cap {
-      padding: 12px 16px;
-      font-size: 16px;
-      color: #666;
-      background: var(--bg-light);
-      border-top: 1px solid var(--border);
-    }
 
-    /* Specs table (clean table) */
+    /* Specs table */
     .spec-table {
       width: 100%;
       border-collapse: collapse;
@@ -217,7 +210,7 @@
       border-bottom: none;
     }
 
-    /* Footer (match equipment index) */
+    /* Footer */
     footer {
       background: var(--main-blue);
       color: #ddd;
@@ -240,8 +233,8 @@
     <div class="nav-menu">
       <a href="/#telecom" class="nav-item">通訊光纖設備</a>
       <a href="/#specialty" class="nav-item">特殊/製程應用</a>
-      <a href="/group/" class="nav-item">關於集團</a>
-      <a href="/contact/" class="nav-item">聯絡我們</a>
+      <a href="/group.html" class="nav-item">關於集團</a>
+      <a href="/contact.html" class="nav-item">聯絡我們</a>
     </div>
   </nav>
 
@@ -250,7 +243,7 @@
       <h1>DSP 工藝大尺寸矽片衬底自動上下料設備</h1>
       <p>面向 DSP 相關製程產線，支援<strong>自動取放</strong>與<strong>穩定傳輸</strong>，有效降低人工干預並提升上/下游設備協同效率；可依產線節拍與介面需求進行整合導入。</p>
       <div class="hero-cta">
-        <a class="btn btn-primary" href="/contact/">立即洽詢規格</a>
+        <a class="btn btn-primary" href="/contact.html">立即洽詢規格</a>
         <a class="btn btn-ghost" href="/equipment/">返回設備/代理專頁</a>
       </div>
     </div>
@@ -305,70 +298,20 @@
       <div class="card" style="background: var(--bg-light);">
         <h3 style="margin-bottom:8px;">需要評估整線對接或節拍？</h3>
         <p style="margin-bottom:14px;">請提供你的產線流程、上下游設備型式與預期節拍，我們可協助釐清對接方式與交付邊界。</p>
-        <a class="btn btn-primary" href="/contact/">前往聯絡表單</a>
+        <a class="btn btn-primary" href="/contact.html">前往聯絡表單</a>
       </div>
     </section>
   </main>
 
   <footer>
     <div>© 欣熹科技 SHIN-SI TECHNOLOGY</div>
-    <div class="ft-line">主線產品： <a href="/#telecom">熔接機</a> ｜ <a href="/#specialty">特殊光纖</a> ｜ <a href="/contact/">聯絡我們</a></div>
+    <div class="ft-line">主線產品： <a href="/#telecom">熔接機</a> ｜ <a href="/#specialty">特殊光纖</a> ｜ <a href="/contact.html">聯絡我們</a></div>
   </footer>
 
-  <!-- SSI NAV LINK NORMALIZER (retained for compatibility; SEO-critical links are static) -->
+  <!-- Link normalizer disabled to avoid overriding static SEO-safe hrefs on subpages -->
   <script>
   (function(){
-    try {
-      var path = (location.pathname || '').replace(/\\/g, '/');
-      var parts = path.split('/').filter(Boolean);
-      var file = parts.length ? parts[parts.length - 1] : '';
-
-      function getRootPrefix() {
-        var sections = ['materials','equipment','telecom','specialty'];
-        var idx = -1;
-        for (var i=0;i<parts.length;i++){
-          if (sections.indexOf(parts[i]) !== -1) { idx = i; break; }
-        }
-        if (idx === -1) return '';
-        var levels = (parts.length - 1) - idx;
-        return '../'.repeat(levels);
-      }
-
-      var rootPrefix = getRootPrefix();
-
-      if (!rootPrefix && /^index.*\.html$/i.test(file)) {
-        try { localStorage.setItem('ssi_root_index', file); } catch(e) {}
-      }
-
-      var rootIndex = 'index.html';
-      try {
-        var stored = localStorage.getItem('ssi_root_index');
-        if (stored && /^index.*\.html$/i.test(stored)) rootIndex = stored;
-      } catch(e) {}
-
-      var onRootIndex = (!rootPrefix && /^index.*\.html$/i.test(file));
-
-      var telecomHref  = onRootIndex ? '#telecom'   : (rootPrefix + rootIndex + '#telecom');
-      var specialHref  = onRootIndex ? '#specialty' : (rootPrefix + rootIndex + '#specialty');
-      var groupHref    = rootPrefix + 'group/';
-      var contactHref  = rootPrefix + 'contact/';
-
-      var map = {
-        '通訊光纖設備': telecomHref,
-        '熔接機': telecomHref,
-        '特殊/製程應用': specialHref,
-        '特殊光纖': specialHref,
-        '關於集團': groupHref,
-        '關於我們': groupHref,
-        '聯絡我們': contactHref
-      };
-
-      var anchors = document.querySelectorAll('nav a, header a, footer a');
-      anchors.forEach(function(a){
-        var t = (a.textContent || '').trim();
-        if (map[t]) a.setAttribute('href', map[t]);
-      });
-    } catch (e) {}
+    // disabled intentionally
   })();
   </script>
 </body>
