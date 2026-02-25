@@ -6,6 +6,25 @@
 <meta content="width=device-width,initial-scale=1" name="viewport"/>
 <title>光纖不鏽鋼管 / 防火光纜｜欣熹科技</title>
 <meta content="光纖不鏽鋼管與防火光纜系列：金屬管光纖、單一不鏽鋼管防火、自持型、鋼線鎧裝（6C–144C），適用惡劣環境與防火需求。" name="description"/>
+<meta name="robots" content="index,follow"/>
+<link rel="canonical" href="https://www.shin-si.com/telecom/metal-tube-fire-cable_index.html"/>
+
+<!-- Open Graph -->
+<meta property="og:locale" content="zh_TW"/>
+<meta property="og:type" content="product"/>
+<meta property="og:site_name" content="欣熹科技 SHIN-SI TECHNOLOGY"/>
+<meta property="og:title" content="光纖不鏽鋼管 / 防火光纜｜欣熹科技"/>
+<meta property="og:description" content="光纖不鏽鋼管與防火光纜系列：金屬管光纖、單一不鏽鋼管防火、自持型、鋼線鎧裝（6C–144C），適用惡劣環境與防火需求。"/>
+<meta property="og:url" content="https://www.shin-si.com/telecom/metal-tube-fire-cable_index.html"/>
+<meta property="og:image" content="https://www.shin-si.com/images/FIST%20%26%20Fire%20Resistant.png"/>
+<meta property="og:image:alt" content="光纖不鏽鋼管與防火光纜系列示意圖"/>
+
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:title" content="光纖不鏽鋼管 / 防火光纜｜欣熹科技"/>
+<meta name="twitter:description" content="光纖不鏽鋼管與防火光纜系列：金屬管光纖、單一不鏽鋼管防火、自持型、鋼線鎧裝（6C–144C），適用惡劣環境與防火需求。"/>
+<meta name="twitter:image" content="https://www.shin-si.com/images/FIST%20%26%20Fire%20Resistant.png"/>
+
 <style>
 
 :root{
@@ -186,8 +205,8 @@ table.model-diff th{ width:20% !important; }
 <nav class="navbar">
 <a class="nav-brand" href="/">欣熹科技 SHIN-SI</a>
 <div class="nav-menu">
-<a class="nav-item" href="/index.html#telecom">通訊光纖設備</a>
-<a class="nav-item" href="/index.html#specialty">特殊/製程應用</a>
+<a class="nav-item" href="/#telecom">通訊光纖設備</a>
+<a class="nav-item" href="/#specialty">特殊/製程應用</a>
 <a class="nav-item" href="/group.html">關於集團</a>
 <a class="nav-item" href="/contact.html">聯絡我們</a>
 </div>
@@ -205,7 +224,7 @@ table.model-diff th{ width:20% !important; }
             </p>
 <div class="btn-row">
 <a class="btn primary" href="/contact.html">立即洽詢/索取報價</a>
-<a class="btn" href="/index.html#other-fiber-products">返回其他光纖產品</a>
+<a class="btn" href="/#other-fiber-products">返回其他光纖產品</a>
 </div>
 <p class="spec-note">如需其他芯數/外徑或客製結構，可提供需求條件協助選型。</p>
 </div>
@@ -386,8 +405,8 @@ table.model-diff th{ width:20% !important; }
 <div>
 <div class="footer-title">快速連結</div>
 <!-- MODULE: QUICK LINKS (keep relative paths consistent with NAVBAR) -->
-<a class="footer-link" href="/index.html#telecom">通訊光纖設備</a>
-<a class="footer-link" href="/index.html#specialty">特殊/製程應用</a>
+<a class="footer-link" href="/#telecom">通訊光纖設備</a>
+<a class="footer-link" href="/#specialty">特殊/製程應用</a>
 <a class="footer-link" href="/group.html">關於集團</a>
 <a class="footer-link" href="/contact.html">聯絡我們</a>
 <!-- /MODULE: QUICK LINKS -->
@@ -506,45 +525,5 @@ modalImg.alt = alt || '';
   window.addEventListener('keydown', function (e) {
     if (e.key === 'Escape' && modal && modal.classList.contains('open')) closeModal();
   });
-});</script>
-<script data-module="link-normalizer">/* MODULE: Link Normalizer (file:// fallback for root-absolute links) */
-(function () {
-  if (location.protocol !== 'file:') return;
-
-  var rootFolder = (document.body && document.body.dataset && document.body.dataset.siteRootFolder) || '欣熹網站';
-  var path = decodeURIComponent(location.pathname || '');
-  var parts = path.split('/').filter(Boolean);
-
-  // Try to locate the site root folder name in the file path.
-  var idx = -1;
-  for (var i = parts.length - 1; i >= 0; i--) {
-    if (parts[i] === rootFolder) { idx = i; break; }
-  }
-  if (idx === -1) return;
-
-  // Depth from current folder back to the site root folder.
-  var depth = parts.length - idx - 2; // exclude rootFolder itself and the filename
-  if (depth < 0) depth = 0;
-  var prefix = '';
-  for (var d = 0; d < depth; d++) prefix += '../';
-
-  // Rewrite root-absolute href/src (e.g. "/contact.html") into file-relative (e.g. "../../contact.html")
-  var rewrite = function (val) {
-    if (!val || val.charAt(0) !== '/') return val;
-    return prefix + val.slice(1);
-  };
-
-  var links = document.querySelectorAll('a[href^="/"]');
-  links.forEach(function (a) { a.setAttribute('href', rewrite(a.getAttribute('href'))); });
-
-  // Optional: if you later use root-absolute image paths, this keeps them working in file:// too.
-    // Images: rewrite both src and data-full (modal uses data-full)
-  var imgs = document.querySelectorAll('img[src^="/"], img[data-full^="/"]');
-  imgs.forEach(function (img) {
-    var s = img.getAttribute('src');
-    if (s && s.charAt(0) === '/') img.setAttribute('src', rewrite(s));
-    var f = img.getAttribute('data-full');
-    if (f && f.charAt(0) === '/') img.setAttribute('data-full', rewrite(f));
-  });
-})();</script></body>
+});</script></body>
 </html>
