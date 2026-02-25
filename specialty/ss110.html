@@ -5,6 +5,24 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>SS110｜特殊光纖自動剝除器｜欣熹科技 SHIN-SI</title>
   <meta name="description" content="Fujikura SS110 特殊光纖自動剝除器：自動剝除機構提供易操作與穩定剝除品質；可更換刀片對應多種尺寸組合（80/160、125/900、250/400、400/550 μm），並支援 RFID 自動選擇剝除程式。" />
+  <meta name="robots" content="index,follow" />
+  <link rel="canonical" href="https://www.shin-si.com/specialty/ss110.html" />
+
+  <!-- Open Graph -->
+  <meta property="og:locale" content="zh_TW" />
+  <meta property="og:type" content="product" />
+  <meta property="og:site_name" content="欣熹科技 SHIN-SI TECHNOLOGY" />
+  <meta property="og:title" content="SS110｜特殊光纖自動剝除器｜欣熹科技 SHIN-SI" />
+  <meta property="og:description" content="Fujikura SS110 特殊光纖自動剝除器：自動剝除機構提供易操作與穩定剝除品質；可更換刀片對應多種尺寸組合（80/160、125/900、250/400、400/550 μm），並支援 RFID 自動選擇剝除程式。" />
+  <meta property="og:url" content="https://www.shin-si.com/specialty/ss110.html" />
+  <meta property="og:image" content="https://www.shin-si.com/images/fujikura-ss110-fiber-stripper.jpg" />
+  <meta property="og:image:alt" content="Fujikura SS110 特殊光纖自動剝除器" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="SS110｜特殊光纖自動剝除器｜欣熹科技 SHIN-SI" />
+  <meta name="twitter:description" content="Fujikura SS110 特殊光纖自動剝除器：自動剝除機構提供易操作與穩定剝除品質；可更換刀片對應多種尺寸組合（80/160、125/900、250/400、400/550 μm），並支援 RFID 自動選擇剝除程式。" />
+  <meta name="twitter:image" content="https://www.shin-si.com/images/fujikura-ss110-fiber-stripper.jpg" />
 
   <!-- Structured Data (keep claims neutral; no upgraded marketing) -->
   <script type="application/ld+json">
@@ -12,7 +30,7 @@
     "@context":"https://schema.org",
     "@type":"Organization",
     "name":"欣熹科技 Shin Si Technology Co., Ltd.",
-    "url":"../index.html",
+    "url":"https://www.shin-si.com",
     "telephone":"+886-3-5972556"
   }
   </script>
@@ -22,9 +40,9 @@
     "@context":"https://schema.org",
     "@type":"BreadcrumbList",
     "itemListElement":[
-      {"@type":"ListItem","position":1,"name":"首頁","item":"../index.html"},
-      {"@type":"ListItem","position":2,"name":"特殊/製程應用","item":"../index.html#specialty"},
-      {"@type":"ListItem","position":3,"name":"SS110","item":"ss110.html"}
+      {"@type":"ListItem","position":1,"name":"首頁","item":"https://www.shin-si.com/"},
+      {"@type":"ListItem","position":2,"name":"特殊/製程應用","item":"https://www.shin-si.com/#specialty"},
+      {"@type":"ListItem","position":3,"name":"SS110","item":"https://www.shin-si.com/specialty/ss110.html"}
     ]
   }
   </script>
@@ -38,7 +56,7 @@
     "brand":{"@type":"Brand","name":"Fujikura"},
     "category":"Specialty Fiber Stripper",
     "image":[
-      "../images/fujikura-ss110-fiber-stripper.jpg"
+      "https://www.shin-si.com/images/fujikura-ss110-fiber-stripper.jpg"
     ],
     "description":"Fujikura SS110 特殊光纖自動剝除器：自動剝除機構提供易操作與穩定剝除品質；可更換刀片對應多種尺寸組合（80/160、125/900、250/400、400/550 μm），並支援 RFID 自動選擇剝除程式。"
   }
@@ -302,8 +320,8 @@
   <nav class="navbar">
     <a href="/" class="nav-brand">欣熹科技 <span>SHIN-SI</span></a>
     <div class="nav-menu">
-      <a href="/index.html#telecom" class="nav-item">通訊光纖設備</a>
-      <a href="/index.html#specialty" class="nav-item">特殊/製程應用</a>
+      <a href="/#telecom" class="nav-item">通訊光纖設備</a>
+      <a href="/#specialty" class="nav-item">特殊/製程應用</a>
       <a href="/group.html" class="nav-item">關於集團</a>
       <a href="/contact.html" class="nav-item">聯絡我們</a>
     </div>
@@ -336,7 +354,7 @@
 
   <main class="container">
     <p class="crumb">
-      <a href="/">首頁</a> / <a href="/index.html#specialty">特殊/製程應用</a> / SS110
+      <a href="/">首頁</a> / <a href="/#specialty">特殊/製程應用</a> / SS110
     </p>
 
     <section class="section">
@@ -430,40 +448,6 @@
 
   <script>
     document.getElementById('y').textContent = new Date().getFullYear();
-
-    /*
-      SSI NAV LINK NORMALIZER (kept for your local testing workflow)
-      - Keeps subpage nav stable even if index filename changes (index_updated_vX.html)
-      - Does NOT affect SEO on real hosting (still plain <a href=...> links)
-    */
-    (function(){
-      try{
-        var HOME_KEY = "shinsi_home";
-        var path = location.pathname || "";
-        var file = path.split("/").pop() || "";
-        if (/^index(?:_updated_v\d+)?\.html$/i.test(file)) {
-          try { localStorage.setItem(HOME_KEY, file); } catch(e){}
-        }
-        var home = "index.html";
-        try{
-          var stored = localStorage.getItem(HOME_KEY);
-          if (stored && /^index(?:_updated_v\d+)?\.html$/i.test(stored)) home = stored;
-        } catch(e){}
-        var homeRel = "../" + home;
-
-        var nav = document.querySelectorAll(".navbar .nav-item");
-        if (nav && nav.length >= 4) {
-          nav[0].href = homeRel + "#telecom";
-          nav[1].href = homeRel + "#specialty";
-          nav[2].href="/group.html";
-          nav[3].href="/contact.html";
-        }
-        var brand = document.querySelector(".nav-brand");
-        if (brand) brand.href = homeRel;
-      }catch(e){
-        /* no-op */
-      }
-    })();
   </script>
 </body>
 </html>
