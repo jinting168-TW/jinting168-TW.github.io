@@ -8,6 +8,12 @@
 <meta name="description" content="欣熹科技 (Shin-Si) 為 Fujikura 台灣授權代理，提供最新光纖熔接機 (90S+, 45S, FSM-100) 銷售、原廠級維修與校正服務。另供應半導體關鍵材料：矽晶圓、SiC、石英部件與先進製程設備導入。"/>
 <meta name="keywords" content="Fujikura, 台灣代理, 光纖熔接機, 90S+, 45S, FSM-100, 熔接機維修, 矽晶圓, SiC, 半導體材料, 錦霆集團"/>
 <link rel="canonical" href="https://www.shin-si.com/"/>
+
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="48x48" href="/favicon-48x48.png">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+
 <meta property="og:type" content="website"/>
 <meta property="og:site_name" content="欣熹科技 SHIN-SI TECHNOLOGY"/>
 <meta property="og:title" content="Fujikura 台灣授權代理｜光纖熔接機 & 半導體材料｜欣熹科技 SHIN-SI"/>
@@ -119,6 +125,32 @@
     }
     .hero-btn:hover { background: #a0000c; transform: translateY(-2px); }
 
+    .hero-tags{
+      margin: 28px auto 0 auto;
+      max-width: 980px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 12px;
+    }
+    .hero-tag{
+      display: inline-block;
+      color: #fff;
+      text-decoration: none;
+      border: 1px solid rgba(255,255,255,0.55);
+      background: rgba(255,255,255,0.08);
+      padding: 9px 16px;
+      border-radius: 999px;
+      font-size: 16px;
+      font-weight: 700;
+      transition: 0.3s;
+    }
+    .hero-tag:hover{
+      background: rgba(255,255,255,0.18);
+      border-color: rgba(255,255,255,0.85);
+      transform: translateY(-1px);
+    }
+
     /* Category Section */
     .category-section { padding: 60px 5%; max-width: 1200px; margin: 0 auto; }
     .cat-title { 
@@ -206,6 +238,8 @@
       .hero h1 { font-size: 28px; }
       .nav-menu { display: none; }
       .faq-grid { grid-template-columns: 1fr; }
+      .hero-tags{ gap: 10px; }
+      .hero-tag{ font-size: 15px; padding: 8px 14px; }
     }
 
 /* 專區文字微調：關於集團與CSR段落文字略小（由16px調整為14px） */
@@ -363,6 +397,13 @@
       欣熹科技整合集團產業資源，專注於通訊工程、FTTH 與特種光纖應用。我們提供從需求諮詢、設備交付到售後維修的一站式原廠支援，讓您享有日本 Fujikura 的頂級品質與台灣在地的即時服務。
     </p>
 <a class="hero-btn" href="/contact.html">立即諮詢 / 索取報價</a>
+<div class="hero-tags" aria-label="熱門 Fujikura 熔接機型號">
+<a class="hero-tag" href="/telecom/90splus.html">Fujikura 90S+</a>
+<a class="hero-tag" href="/telecom/100splus.html">Fujikura 100S</a>
+<a class="hero-tag" href="/telecom/90r.html">Fujikura 90R</a>
+<a class="hero-tag" href="/telecom/45s.html">Fujikura 45S</a>
+<a class="hero-tag" href="/specialty/fsm-100.html">FSM-100 ARCMaster</a>
+</div>
 </header>
 <section aria-label="營業項目" class="business-section" id="business">
 <div style="text-align: center;"><span class="cat-title">營業項目</span></div>
