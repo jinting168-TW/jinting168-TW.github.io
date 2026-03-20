@@ -1,0 +1,741 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>光纖熔接機常見問題 FAQ｜熔接損耗・校正・維修・選型｜欣熹科技 SHIN-SI</title>
+  <meta name="description" content="整理光纖熔接機常見問題，涵蓋熔接損耗、Arc Calibration、對準異常、清潔保養、故障維修與冷接/熔接差異，協助工程與採購快速判斷。" />
+  <meta name="robots" content="index,follow" />
+  <link rel="canonical" href="https://www.shin-si.com/telecom/fiber-splicer-faq.html" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="欣熹科技 SHIN-SI TECHNOLOGY" />
+  <meta property="og:locale" content="zh_TW" />
+  <meta property="og:title" content="光纖熔接機常見問題 FAQ｜熔接損耗・校正・維修・選型｜欣熹科技 SHIN-SI" />
+  <meta property="og:description" content="整理光纖熔接機常見問題，涵蓋熔接損耗、Arc Calibration、對準異常、清潔保養、故障維修與冷接/熔接差異，協助工程與採購快速判斷。" />
+  <meta property="og:url" content="https://www.shin-si.com/telecom/fiber-splicer-faq.html" />
+  <meta property="og:image" content="https://www.shin-si.com/images/fujikura-90splus.jpg" />
+  <meta property="og:image:alt" content="光纖熔接機常見問題 FAQ｜欣熹科技 SHIN-SI" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="光纖熔接機常見問題 FAQ｜熔接損耗・校正・維修・選型｜欣熹科技 SHIN-SI" />
+  <meta name="twitter:description" content="整理光纖熔接機常見問題，涵蓋熔接損耗、Arc Calibration、對準異常、清潔保養、故障維修與冷接/熔接差異，協助工程與採購快速判斷。" />
+  <meta name="twitter:image" content="https://www.shin-si.com/images/fujikura-90splus.jpg" />
+
+  <style>
+    :root{
+      --main-blue:#003d73;
+      --deep-blue:#002b52;
+      --accent-red:#c20000;
+      --text:#1b1f23;
+      --muted:#4b5563;
+      --bg:#ffffff;
+      --card:#ffffff;
+      --soft:#f8fafc;
+      --border:#e5e7eb;
+      --shadow:0 8px 20px rgba(0,0,0,0.06);
+      --radius:18px;
+      --maxw:1120px;
+    }
+
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{
+      margin:0;
+      font-family:system-ui,-apple-system,"Segoe UI",Roboto,"Noto Sans TC","PingFang TC","Microsoft JhengHei",Arial,sans-serif;
+      color:var(--text);
+      background:var(--bg);
+      line-height:1.7;
+    }
+    img{max-width:100%;display:block}
+    a{color:inherit}
+
+    .navbar{
+      background:var(--main-blue);
+      padding:0 5%;
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+      height:70px;
+      position:sticky;
+      top:0;
+      z-index:1000;
+      box-shadow:0 2px 10px rgba(0,0,0,.10);
+    }
+    .nav-brand{
+      color:#fff;
+      font-weight:800;
+      text-decoration:none;
+      font-size:24px;
+      letter-spacing:1px;
+      white-space:nowrap;
+    }
+    .nav-menu{
+      display:flex;
+      gap:22px;
+      align-items:center;
+      flex-wrap:wrap;
+      justify-content:flex-end;
+    }
+    .nav-item{
+      color:#e5e7eb;
+      text-decoration:none;
+      font-size:18px;
+      transition:.2s;
+      white-space:nowrap;
+    }
+    .nav-item:hover{color:#fff}
+
+    .container{
+      max-width:var(--maxw);
+      margin:0 auto;
+      padding:0 22px;
+    }
+
+    .hero-wrap{
+      padding:42px 0 22px;
+    }
+    .hero{
+      background:linear-gradient(180deg,var(--main-blue),var(--deep-blue));
+      color:#fff;
+      border-radius:24px;
+      padding:46px 40px 38px;
+      box-shadow:var(--shadow);
+      text-align:center;
+    }
+    .hero h1{
+      margin:0 0 14px;
+      font-size:40px;
+      line-height:1.25;
+      letter-spacing:.2px;
+    }
+    .hero p{
+      margin:0 auto 22px;
+      max-width:860px;
+      font-size:18px;
+      color:#f3f4f6;
+    }
+    .cta-row{
+      display:flex;
+      gap:14px;
+      justify-content:center;
+      flex-wrap:wrap;
+      margin-top:8px;
+    }
+    .btn{
+      display:inline-flex;
+      align-items:center;
+      justify-content:center;
+      min-width:170px;
+      padding:11px 18px;
+      border-radius:12px;
+      text-decoration:none;
+      font-weight:800;
+      font-size:16px;
+      border:1px solid transparent;
+      transition:.2s;
+    }
+    .btn-primary{
+      background:var(--accent-red);
+      color:#fff;
+    }
+    .btn-primary:hover{filter:brightness(.95)}
+    .btn-secondary{
+      background:#fff;
+      color:var(--main-blue);
+      border-color:#d1d5db;
+    }
+    .btn-secondary:hover{background:#f8fafc}
+
+    .section{
+      padding:16px 0 8px;
+    }
+    .section h2{
+      font-size:28px;
+      color:var(--main-blue);
+      margin:18px 0 12px;
+      display:flex;
+      align-items:center;
+      gap:12px;
+    }
+    .section h2::before{
+      content:"";
+      width:5px;
+      height:28px;
+      background:var(--accent-red);
+      border-radius:10px;
+      display:inline-block;
+      flex:0 0 auto;
+    }
+    .section-intro{
+      margin:0 0 18px;
+      color:var(--muted);
+      font-size:16px;
+    }
+
+    .quick-nav{
+      display:grid;
+      grid-template-columns:repeat(4,1fr);
+      gap:16px;
+      margin:8px 0 10px;
+    }
+    .quick-card{
+      background:#fff;
+      border:1px solid var(--border);
+      border-radius:16px;
+      padding:18px 16px;
+      text-decoration:none;
+      box-shadow:0 3px 12px rgba(0,0,0,.04);
+      transition:.2s;
+    }
+    .quick-card:hover{
+      transform:translateY(-2px);
+      box-shadow:0 8px 18px rgba(0,0,0,.08);
+      border-color:#cfd8e3;
+    }
+    .quick-card h3{
+      margin:0 0 6px;
+      font-size:19px;
+      color:var(--main-blue);
+    }
+    .quick-card p{
+      margin:0;
+      color:var(--muted);
+      font-size:15px;
+      line-height:1.7;
+    }
+
+    .faq-group{
+      margin:12px 0 22px;
+      background:var(--soft);
+      border:1px solid var(--border);
+      border-radius:20px;
+      padding:18px;
+    }
+    .faq-group-title{
+      font-size:24px;
+      color:var(--main-blue);
+      margin:0 0 8px;
+      font-weight:900;
+    }
+    .faq-group-desc{
+      margin:0 0 14px;
+      color:var(--muted);
+    }
+
+    .faq-list{
+      display:grid;
+      gap:12px;
+    }
+    details.faq-item{
+      background:#fff;
+      border:1px solid var(--border);
+      border-radius:16px;
+      overflow:hidden;
+      box-shadow:0 2px 10px rgba(0,0,0,.03);
+    }
+    details.faq-item[open]{
+      border-color:#d4dbe4;
+      box-shadow:0 6px 18px rgba(0,0,0,.06);
+    }
+    .faq-item summary{
+      list-style:none;
+      cursor:pointer;
+      padding:18px 20px;
+      font-weight:800;
+      color:var(--text);
+      display:flex;
+      align-items:flex-start;
+      justify-content:space-between;
+      gap:16px;
+      font-size:18px;
+    }
+    .faq-item summary::-webkit-details-marker{display:none}
+    .faq-item summary::after{
+      content:"+";
+      color:var(--accent-red);
+      font-size:26px;
+      line-height:1;
+      font-weight:700;
+      flex:0 0 auto;
+      margin-top:-2px;
+    }
+    .faq-item[open] summary::after{
+      content:"−";
+    }
+    .faq-answer{
+      padding:0 20px 18px;
+      color:var(--muted);
+      font-size:16px;
+      line-height:1.9;
+    }
+
+    .product-grid{
+      display:grid;
+      grid-template-columns:repeat(4,1fr);
+      gap:18px;
+      margin-top:10px;
+    }
+    .product-card{
+      background:#fff;
+      border:1px solid var(--border);
+      border-radius:18px;
+      padding:20px 18px 18px;
+      box-shadow:0 3px 14px rgba(0,0,0,.04);
+      display:flex;
+      flex-direction:column;
+      gap:10px;
+    }
+    .product-card h3{
+      margin:0;
+      color:var(--main-blue);
+      font-size:22px;
+      line-height:1.35;
+    }
+    .product-card p{
+      margin:0;
+      color:var(--muted);
+      font-size:15px;
+      line-height:1.75;
+      flex-grow:1;
+    }
+    .product-card a{
+      margin-top:4px;
+      align-self:flex-start;
+      text-decoration:none;
+      font-weight:800;
+      color:var(--accent-red);
+    }
+    .product-card a:hover{text-decoration:underline}
+
+    .cta-box{
+      background:linear-gradient(180deg,#f8fbff,#eef5fb);
+      border:1px solid #d9e3ee;
+      border-radius:22px;
+      padding:28px 24px;
+      text-align:center;
+      box-shadow:0 4px 16px rgba(0,0,0,.04);
+      margin-top:8px;
+    }
+    .cta-box h2{
+      justify-content:center;
+      margin-top:0;
+    }
+    .cta-box h2::before{display:none}
+    .cta-box p{
+      margin:0 auto 18px;
+      max-width:860px;
+      color:var(--muted);
+      font-size:16px;
+    }
+
+    footer{
+      margin-top:34px;
+      background:var(--main-blue);
+      color:#fff;
+      padding:22px 0;
+    }
+    footer .container{text-align:center}
+    footer a{
+      color:#fff;
+      text-decoration:none;
+      border-bottom:1px solid rgba(255,255,255,.35);
+      padding-bottom:1px;
+    }
+    footer a:hover{border-bottom-color:#fff}
+    .footer-line{
+      margin-top:10px;
+      font-size:18px;
+      line-height:1.7;
+    }
+
+    @media (max-width: 1024px){
+      .quick-nav{grid-template-columns:repeat(2,1fr)}
+      .product-grid{grid-template-columns:repeat(2,1fr)}
+    }
+    @media (max-width: 768px){
+      .navbar{
+        height:auto;
+        padding:14px 5%;
+        align-items:flex-start;
+        flex-direction:column;
+        gap:10px;
+      }
+      .nav-menu{
+        gap:14px 18px;
+        justify-content:flex-start;
+      }
+      .nav-item{font-size:16px}
+      .hero{
+        padding:34px 22px 30px;
+        text-align:left;
+      }
+      .hero h1{
+        font-size:30px;
+      }
+      .hero p{
+        font-size:16px;
+        margin-left:0;
+      }
+      .cta-row{
+        justify-content:flex-start;
+      }
+      .quick-nav,
+      .product-grid{
+        grid-template-columns:1fr;
+      }
+      .section h2{
+        font-size:24px;
+      }
+      .faq-item summary{
+        font-size:17px;
+        padding:16px 16px;
+      }
+      .faq-answer{
+        padding:0 16px 16px;
+        font-size:15px;
+      }
+    }
+  </style>
+
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"FAQPage",
+    "mainEntity":[
+      {
+        "@type":"Question",
+        "name":"為什麼光纖熔接後損耗還是很高？",
+        "acceptedAnswer":{
+          "@type":"Answer",
+          "text":"熔接後損耗偏高，常見原因包括切割角度不佳、裸纖污染、V 槽或夾具有灰塵、放纖位置不正，或熔接模式與纖種不匹配。若系統仍出現連線不穩或插損偏高，建議重新清潔、重切、重熔，並搭配 OTDR 或光功率計確認。"
+        }
+      },
+      {
+        "@type":"Question",
+        "name":"熔接機顯示的 loss 值準嗎？是否還要用 OTDR 或光功率計確認？",
+        "acceptedAnswer":{
+          "@type":"Answer",
+          "text":"熔接機顯示的 loss 值通常屬於機台估算，可作為現場參考，但不建議作為最終驗收依據。若涉及正式工程、品質驗收或異常排查，仍建議搭配 OTDR 或光功率計交叉確認。"
+        }
+      },
+      {
+        "@type":"Question",
+        "name":"為什麼會出現氣泡、燒接不良或熔接值異常？",
+        "acceptedAnswer":{
+          "@type":"Answer",
+          "text":"這類情況常與纖端污染、切割不良、電極老化、arc 狀態不穩或參數未校正有關。建議先檢查清潔狀況、重新切割裸纖，並確認電極與 Arc Calibration 是否正常。"
+        }
+      },
+      {
+        "@type":"Question",
+        "name":"V 槽、夾具、鏡頭多久要清一次？",
+        "acceptedAnswer":{
+          "@type":"Answer",
+          "text":"清潔頻率應依使用量與施工環境調整。若在戶外、粉塵較多或連續大量熔接的情況下，建議提高清潔頻率；若出現對準異常或熔接值波動，也應優先檢查並清潔 V 槽、夾具與鏡頭。"
+        }
+      },
+      {
+        "@type":"Question",
+        "name":"什麼情況需要做 Arc Calibration？",
+        "acceptedAnswer":{
+          "@type":"Answer",
+          "text":"當更換纖種、環境條件改變、長時間未使用，或連續出現燒接品質異常時，都建議重新執行 Arc Calibration。其目的在於讓放電條件重新匹配目前的纖種、環境與機台狀態。"
+        }
+      },
+      {
+        "@type":"Question",
+        "name":"電極與切割刀多久要檢查或更換？",
+        "acceptedAnswer":{
+          "@type":"Answer",
+          "text":"電極與切割刀屬於消耗件，建議依使用量、切割品質與熔接穩定性定期檢查。若出現切面不佳、損耗偏高、燒接不穩或校正效果有限，就應評估清潔、調整或更換。"
+        }
+      },
+      {
+        "@type":"Question",
+        "name":"熔接機出現 alignment error 該先檢查什麼？",
+        "acceptedAnswer":{
+          "@type":"Answer",
+          "text":"建議先檢查纖端切割品質、V 槽與夾具是否有灰塵或纖屑、鏡頭是否乾淨，以及放纖位置是否正確。若完成清潔與重切後仍持續異常，再進一步考慮校正或送修。"
+        }
+      },
+      {
+        "@type":"Question",
+        "name":"motor overrun / X-Y 軸異常是什麼意思？",
+        "acceptedAnswer":{
+          "@type":"Answer",
+          "text":"這類訊息通常表示機器在對位或推進過程中，某一軸的動作超出預期範圍。可能原因包括夾持不穩、污染、校正失準，或軸向機構異常；若清潔與校正後仍反覆出現，建議交由專業維修檢查。"
+        }
+      },
+      {
+        "@type":"Question",
+        "name":"哪些問題可以現場排除，哪些建議送修？",
+        "acceptedAnswer":{
+          "@type":"Answer",
+          "text":"像是切割不良、V 槽污染、鏡頭髒污、放纖位置不正、模式設定不符或未做 Arc Calibration，通常可先在現場排除。若同一錯誤持續發生、軸向動作異常、對焦異常或熔接品質長期不穩，則建議送修。"
+        }
+      },
+      {
+        "@type":"Question",
+        "name":"冷接和熔接差在哪？",
+        "acceptedAnswer":{
+          "@type":"Answer",
+          "text":"冷接是機械式接續，施工門檻較低，適合臨時性、低頻率或家用短距離應用；熔接則是透過放電融合光纖，通常在長期穩定性、接續品質與正式工程應用上更具優勢。"
+        }
+      },
+      {
+        "@type":"Question",
+        "name":"家用 FTTH / FTTR 有需要買熔接機嗎？",
+        "acceptedAnswer":{
+          "@type":"Answer",
+          "text":"多數家用 FTTH / FTTR 場景，不一定需要自行購買熔接機。若只是單次施工、裝修預埋或偶發接續，通常由安裝人員處理較有效率；若有持續施工需求或較高接續品質要求，才較值得評估設備投資。"
+        }
+      },
+      {
+        "@type":"Question",
+        "name":"新手選購熔接機，除了價格還要看什麼？",
+        "acceptedAnswer":{
+          "@type":"Answer",
+          "text":"除了價格，還應評估適用纖種、對準方式、熔接效率、加熱效率、清潔維護便利性、耗材供應、維修支援與後續校正保養是否容易。對多數使用者而言，穩定性與後續支援往往比單次購入成本更重要。"
+        }
+      }
+    ]
+  }
+  </script>
+</head>
+<body>
+  <nav class="navbar" aria-label="主導覽">
+    <a class="nav-brand" href="/">欣熹科技 SHIN-SI</a>
+    <div class="nav-menu">
+      <a class="nav-item" href="/#telecom">通訊光纖設備</a>
+      <a class="nav-item" href="/#specialty">特殊/製程應用</a>
+      <a class="nav-item" href="/group.html">關於集團</a>
+      <a class="nav-item" href="/contact.html">聯絡我們</a>
+    </div>
+  </nav>
+
+  <div class="container hero-wrap">
+    <section class="hero" aria-label="FAQ 主視覺">
+      <h1>光纖熔接機常見問題 FAQ</h1>
+      <p>
+        本頁整理光纖熔接機常見問題，涵蓋熔接損耗、對準異常、Arc Calibration、清潔保養、故障維修，以及冷接與熔接差異，
+        協助工程、採購與維修人員更快速判斷適用方案。
+      </p>
+      <div class="cta-row">
+        <a class="btn btn-primary" href="/contact.html">立即諮詢 / 索取報價</a>
+        <a class="btn btn-secondary" href="/#telecom">查看熔接機產品</a>
+      </div>
+    </section>
+  </div>
+
+  <main class="container">
+    <section class="section" aria-label="快速導覽">
+      <h2>快速導覽</h2>
+      <p class="section-intro">
+        可依需求直接跳至對應主題：使用品質、保養校正、故障維修與選型應用。
+      </p>
+      <div class="quick-nav">
+        <a class="quick-card" href="#quality">
+          <h3>使用與熔接品質</h3>
+          <p>熔接損耗、loss 值判讀、氣泡與燒接異常。</p>
+        </a>
+        <a class="quick-card" href="#maintenance">
+          <h3>保養與校正</h3>
+          <p>V 槽清潔、電極與切割刀、Arc Calibration。</p>
+        </a>
+        <a class="quick-card" href="#repair">
+          <h3>故障與維修</h3>
+          <p>alignment error、motor overrun、送修判斷。</p>
+        </a>
+        <a class="quick-card" href="#selection">
+          <h3>選型與應用</h3>
+          <p>冷接 vs 熔接、FTTH / FTTR、選購重點。</p>
+        </a>
+      </div>
+    </section>
+
+    <section class="section" id="quality" aria-label="使用與熔接品質">
+      <div class="faq-group">
+        <h2 class="faq-group-title">使用與熔接品質</h2>
+        <p class="faq-group-desc">
+          這一區聚焦在最常見的熔接品質問題，例如損耗偏高、loss 值判讀，以及氣泡或燒接異常等情況。
+        </p>
+        <div class="faq-list">
+          <details class="faq-item" open>
+            <summary>為什麼光纖熔接後損耗還是很高？</summary>
+            <div class="faq-answer">
+              熔接後損耗偏高，常見原因包括切割角度不佳、裸纖污染、V 槽或夾具有灰塵、放纖位置不正，或熔接模式與纖種不匹配。若系統仍出現連線不穩或插損偏高，建議重新清潔、重切、重熔，並搭配 OTDR 或光功率計確認。
+            </div>
+          </details>
+
+          <details class="faq-item">
+            <summary>熔接機顯示的 loss 值準嗎？是否還要用 OTDR 或光功率計確認？</summary>
+            <div class="faq-answer">
+              熔接機顯示的 loss 值通常屬於機台估算，可作為現場參考，但不建議作為最終驗收依據。若涉及正式工程、品質驗收或異常排查，仍建議搭配 OTDR 或光功率計交叉確認。
+            </div>
+          </details>
+
+          <details class="faq-item">
+            <summary>為什麼會出現氣泡、燒接不良或熔接值異常？</summary>
+            <div class="faq-answer">
+              這類情況常與纖端污染、切割不良、電極老化、arc 狀態不穩或參數未校正有關。建議先檢查清潔狀況、重新切割裸纖，並確認電極與 Arc Calibration 是否正常。
+            </div>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="maintenance" aria-label="保養與校正">
+      <div class="faq-group">
+        <h2 class="faq-group-title">保養與校正</h2>
+        <p class="faq-group-desc">
+          日常保養與正確校正，往往比單次熔接速度更影響長期穩定性。此區整理清潔頻率、Arc Calibration 與耗材檢查重點。
+        </p>
+        <div class="faq-list">
+          <details class="faq-item">
+            <summary>V 槽、夾具、鏡頭多久要清一次？</summary>
+            <div class="faq-answer">
+              清潔頻率應依使用量與施工環境調整。若在戶外、粉塵較多或連續大量熔接的情況下，建議提高清潔頻率；若出現對準異常或熔接值波動，也應優先檢查並清潔 V 槽、夾具與鏡頭。
+            </div>
+          </details>
+
+          <details class="faq-item">
+            <summary>什麼情況需要做 Arc Calibration？</summary>
+            <div class="faq-answer">
+              當更換纖種、環境條件改變、長時間未使用，或連續出現燒接品質異常時，都建議重新執行 Arc Calibration。其目的在於讓放電條件重新匹配目前的纖種、環境與機台狀態。
+            </div>
+          </details>
+
+          <details class="faq-item">
+            <summary>電極與切割刀多久要檢查或更換？</summary>
+            <div class="faq-answer">
+              電極與切割刀屬於消耗件，建議依使用量、切割品質與熔接穩定性定期檢查。若出現切面不佳、損耗偏高、燒接不穩或校正效果有限，就應評估清潔、調整或更換。
+            </div>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="repair" aria-label="故障與維修">
+      <div class="faq-group">
+        <h2 class="faq-group-title">故障與維修</h2>
+        <p class="faq-group-desc">
+          這一區協助判斷現場常見異常訊息，區分哪些問題可先自行排除，哪些情況建議由專業維修進一步檢查。
+        </p>
+        <div class="faq-list">
+          <details class="faq-item">
+            <summary>熔接機出現 alignment error 該先檢查什麼？</summary>
+            <div class="faq-answer">
+              建議先檢查纖端切割品質、V 槽與夾具是否有灰塵或纖屑、鏡頭是否乾淨，以及放纖位置是否正確。若完成清潔與重切後仍持續異常，再進一步考慮校正或送修。
+            </div>
+          </details>
+
+          <details class="faq-item">
+            <summary>motor overrun / X-Y 軸異常是什麼意思？</summary>
+            <div class="faq-answer">
+              這類訊息通常表示機器在對位或推進過程中，某一軸的動作超出預期範圍。可能原因包括夾持不穩、污染、校正失準，或軸向機構異常；若清潔與校正後仍反覆出現，建議交由專業維修檢查。
+            </div>
+          </details>
+
+          <details class="faq-item">
+            <summary>哪些問題可以現場排除，哪些建議送修？</summary>
+            <div class="faq-answer">
+              像是切割不良、V 槽污染、鏡頭髒污、放纖位置不正、模式設定不符或未做 Arc Calibration，通常可先在現場排除。若同一錯誤持續發生、軸向動作異常、對焦異常或熔接品質長期不穩，則建議送修。
+            </div>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="selection" aria-label="選型與應用">
+      <div class="faq-group">
+        <h2 class="faq-group-title">選型與應用</h2>
+        <p class="faq-group-desc">
+          若您正在評估冷接與熔接差異、家用 FTTH / FTTR 是否需要自備熔接機，或新手該如何選型，可先參考以下整理。
+        </p>
+        <div class="faq-list">
+          <details class="faq-item">
+            <summary>冷接和熔接差在哪？</summary>
+            <div class="faq-answer">
+              冷接是機械式接續，施工門檻較低，適合臨時性、低頻率或家用短距離應用；熔接則是透過放電融合光纖，通常在長期穩定性、接續品質與正式工程應用上更具優勢。
+            </div>
+          </details>
+
+          <details class="faq-item">
+            <summary>家用 FTTH / FTTR 有需要買熔接機嗎？</summary>
+            <div class="faq-answer">
+              多數家用 FTTH / FTTR 場景，不一定需要自行購買熔接機。若只是單次施工、裝修預埋或偶發接續，通常由安裝人員處理較有效率；若有持續施工需求或較高接續品質要求，才較值得評估設備投資。
+            </div>
+          </details>
+
+          <details class="faq-item">
+            <summary>新手選購熔接機，除了價格還要看什麼？</summary>
+            <div class="faq-answer">
+              除了價格，還應評估適用纖種、對準方式、熔接效率、加熱效率、清潔維護便利性、耗材供應、維修支援與後續校正保養是否容易。對多數使用者而言，穩定性與後續支援往往比單次購入成本更重要。
+            </div>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" aria-label="相關產品">
+      <h2>相關光纖熔接機產品</h2>
+      <p class="section-intro">
+        若您需要依施工場景、纖種、效率與維修需求選擇適合機型，可先參考以下產品頁。
+      </p>
+
+      <div class="product-grid">
+        <article class="product-card">
+          <h3>Fujikura 90S+</h3>
+          <p>面向主流工程施工需求的核心對準熔接機，兼顧穩定性、效率與現場操作便利性。</p>
+          <a href="/telecom/90splus.html">查看產品詳情 →</a>
+        </article>
+
+        <article class="product-card">
+          <h3>Fujikura 45S</h3>
+          <p>適合日常施工與多場景使用，兼顧機動性與實務操作效率。</p>
+          <a href="/telecom/45s.html">查看產品詳情 →</a>
+        </article>
+
+        <article class="product-card">
+          <h3>Fujikura 90R</h3>
+          <p>適用帶狀光纖與高效率需求場景，支援多芯接續應用。</p>
+          <a href="/telecom/90r.html">查看產品詳情 →</a>
+        </article>
+
+        <article class="product-card">
+          <h3>Fujikura FSM-100</h3>
+          <p>面向特殊光纖與製程應用，可對應更高階的接續與研發需求。</p>
+          <a href="/specialty/fsm-100.html">查看產品詳情 →</a>
+        </article>
+      </div>
+    </section>
+
+    <section class="section" aria-label="頁尾洽詢">
+      <div class="cta-box">
+        <h2>需要選型建議、維修支援或正式報價？</h2>
+        <p>
+          若您需要依施工場景、纖種、熔接效率與維修需求評估適合機型，或希望進一步了解熔接機保養、維修與耗材支援，
+          歡迎與欣熹科技聯繫。
+        </p>
+        <div class="cta-row">
+          <a class="btn btn-primary" href="/contact.html">聯絡我們</a>
+          <a class="btn btn-secondary" href="/#telecom">查看產品</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <div>© 欣熹科技 SHIN-SI TECHNOLOGY</div>
+      <div class="footer-line">
+        主線產品：
+        <a href="/#telecom">熔接機</a> ｜ <a href="/#specialty">特殊光纖</a> ｜ <a href="/contact.html">聯絡我們</a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
