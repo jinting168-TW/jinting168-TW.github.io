@@ -382,6 +382,91 @@
     @media (max-width: 900px){
       .business-grid{ grid-template-columns: 1fr; }
     }
+    /* Service Garden */
+    .service-garden{
+      padding: 60px 5%;
+      max-width: 1100px;
+      margin: 0 auto;
+      background: #fff;
+    }
+    .service-garden h2{
+      color: var(--main-blue);
+      font-size: 30px;
+      margin: 0 0 24px 0;
+      border-left: 5px solid var(--main-red);
+      padding-left: 15px;
+    }
+    .service-garden-list{
+      border-top: 1px solid var(--border);
+      margin: 0;
+      padding: 0;
+    }
+    .service-garden-item{
+      border-bottom: 1px solid var(--border);
+    }
+    .service-garden-item summary{
+      list-style: none;
+      cursor: pointer;
+      padding: 20px 42px 20px 0;
+      font-size: 21px;
+      font-weight: 800;
+      color: var(--main-blue);
+      position: relative;
+      line-height: 1.6;
+    }
+    .service-garden-item summary::-webkit-details-marker{
+      display: none;
+    }
+    .service-garden-item summary::after{
+      content: "+";
+      position: absolute;
+      right: 8px;
+      top: 50%;
+      transform: translateY(-50%);
+      color: var(--main-red);
+      font-size: 26px;
+      font-weight: 800;
+    }
+    .service-garden-item[open] summary::after{
+      content: "−";
+    }
+    .service-garden-content{
+      padding: 0 0 24px 0;
+      max-width: 920px;
+    }
+    .service-garden-content p{
+      margin: 0 0 14px 0;
+      color: #444;
+      font-size: 18px;
+      line-height: 1.9;
+    }
+    .service-garden-content a{
+      display: inline-block;
+      margin-top: 4px;
+      color: var(--main-red);
+      font-weight: 800;
+      text-decoration: none;
+      border-bottom: 1px solid transparent;
+    }
+    .service-garden-content a:hover{
+      border-bottom-color: var(--main-red);
+    }
+    @media (max-width: 768px){
+      .service-garden{
+        padding: 44px 5%;
+      }
+      .service-garden h2{
+        font-size: 26px;
+      }
+      .service-garden-item summary{
+        font-size: 18px;
+        padding-right: 36px;
+      }
+      .service-garden-content p{
+        font-size: 17px;
+      }
+    }
+
 </style>
 </head>
 <body>
@@ -544,6 +629,39 @@
 </div>
 </a>
 </div>
+</div>
+</section>
+
+<section class="service-garden" id="service-garden">
+<h2>服務園地</h2>
+<div class="service-garden-list">
+
+<details class="service-garden-item">
+<summary>100R 新款多芯熔接機發表</summary>
+<div class="service-garden-content">
+<p>
+Fujikura 發表 100R Kit series 多芯光纖熔接機，可支援單芯至最多 16 芯 ribbon fiber 熔接，適合資料中心、高芯數光纖施工等大量接續應用。
+</p>
+<p>
+100R 採用新型 FH-80 系列 optical fiber holder 與自動光纖就位功能，可減少重新放置光纖的次數；並具備 Fiber Ends Gap Correction 與夾持力調整功能，有助於提升熔接品質。更換 V-groove 後，也可對應不同 ribbon fiber 規格。
+</p>
+<a href="https://www.optic-product.fujikura.com/fusion-splicers/telecommunication-uses/mass-fusion-splicer-100r-kit-series/" target="_blank" rel="noopener noreferrer">查看 Fujikura 100R 原廠資訊 →</a>
+</div>
+</details>
+
+<details class="service-garden-item">
+<summary>Fujikura 光纖熔接教育訓練與支援資源</summary>
+<div class="service-garden-content">
+<p>
+Fujikura 提供光纖熔接相關教育訓練與支援資源，內容涵蓋光纖處理、光纖通信、安裝施工、測試程序，以及依專案需求選擇合適設備等說明。
+</p>
+<p>
+欣熹科技為 Fujikura 台灣授權代理，可協助客戶了解 Fujikura 光纖熔接機、切割刀與相關工具之操作、保養、維修與產品選型需求。
+</p>
+<a href="https://www.optic-product.fujikura.com/support-resources_services/fiber-optic-fusion-splicing-training/" target="_blank" rel="noopener noreferrer">查看 Fujikura 原廠訓練資源 →</a>
+</div>
+</details>
+
 </div>
 </section>
 
