@@ -5,8 +5,8 @@
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
 
 <title>光纖熔接機｜欣熹科技 SHIN-SI｜Fujikura 台灣授權代理</title>
-<meta name="description" content="光纖熔接機台灣代理與維修服務。欣熹科技為 Fujikura 台灣授權代理，提供 100S、90S+、90R、45S、FSM-100 等熔接機銷售、原廠級維修、校正與操作訓練。"/>
-<meta name="keywords" content="Fujikura, 台灣代理, 光纖熔接機, 90S+, 45S, FSM-100, 熔接機維修, 矽晶圓, SiC, 半導體材料, 錦霆集團"/>
+<meta name="description" content="光纖熔接機台灣代理與維修服務。欣熹科技為 Fujikura 台灣授權代理，提供 100R、100S、90R、90S+、45S、FSM-100 等熔接機銷售、原廠級維修、校正與操作訓練。"/>
+<meta name="keywords" content="Fujikura, 台灣代理, 光纖熔接機, 100R, 100R12, 100R16, 100S, 90R, 90S+, 45S, FSM-100, 熔接機維修, 矽晶圓, SiC, 半導體材料, 錦霆集團"/>
 <link rel="canonical" href="https://www.shin-si.com/"/>
 
 <link rel="icon" href="/favicon.ico" sizes="any">
@@ -467,6 +467,11 @@
       }
     }
 
+
+    /* 100R 首頁上架：通訊熔接機桌面版固定 3 欄，依序 3 + 2。只作用於此產品區。 */
+    .telecom-product-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+    @media (max-width: 900px) { .telecom-product-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+    @media (max-width: 610px) { .telecom-product-grid { grid-template-columns: 1fr; } }
 </style>
 </head>
 <body>
@@ -483,7 +488,7 @@
 <header class="hero">
 <h1>光纖熔接機｜欣熹科技 SHIN-SI｜Fujikura 台灣授權代理</h1>
 <p>
-      欣熹科技為 Fujikura 台灣授權代理，提供光纖熔接機銷售、維修、校正與操作訓練服務，機種涵蓋 100S、90S+、90R、45S 與 FSM-100。服務範圍包含通訊工程、FTTH、資料中心與特殊光纖應用。
+      欣熹科技為 Fujikura 台灣授權代理，提供光纖熔接機銷售、維修、校正與操作訓練服務，機種涵蓋 100R、100S、90R、90S+、45S 與 FSM-100。服務範圍包含通訊工程、FTTH、資料中心與特殊光纖應用。
 </p>
 <a class="hero-btn" href="/contact.html">立即諮詢 / 索取報價</a>
 <div class="hero-tags" aria-label="熱門 Fujikura 熔接機型號與 FAQ">
@@ -523,12 +528,12 @@
 
 <section class="category-section" id="telecom">
 <div style="text-align: center;"><span class="cat-title">通訊工程與 FTTH 解決方案</span></div>
-<div class="product-grid">
-<a class="product-card" href="/telecom/90splus.html">
-<img alt="Fujikura 90S+ Core Alignment Splicer" class="card-img" src="/images/fujikura-90splus-fusion-splicer.jpg"/>
+<div class="product-grid telecom-product-grid">
+<a class="product-card" href="/telecom/100r.html">
+<img alt="Fujikura 100R12 多芯帶狀光纖熔接機（100R Kit series）" class="card-img" src="/images/fujikura-100r-fusion-splicer.jpg" loading="lazy"/>
 <div class="card-body">
-<h3 class="card-title">Fujikura 90S+</h3>
-<p class="card-desc">旗艦級核心對準熔接機，具備自動開闔防風蓋與加熱器。適合各類戶外工程，穩定性高，抗風能力強。</p>
+<h3 class="card-title">Fujikura 100R</h3>
+<p class="card-desc">新款多芯帶狀光纖熔接機，可依客戶需求選擇 4、12 或 16 芯機型（12 芯為基本選項）；具備自動光纖就位、端面間距校正與可更換式 V 型槽，適合高密度光纖接續工程。</p>
 <span class="card-link">查看詳細規格 →</span>
 </div>
 </a>
@@ -545,6 +550,14 @@
 <div class="card-body">
 <h3 class="card-title">Fujikura 90R</h3>
 <p class="card-desc">12芯帶狀光纖熔接機。業界首創可更換式 V 型槽，快速解決積塵問題，提升骨幹光纜施工效率。</p>
+<span class="card-link">查看詳細規格 →</span>
+</div>
+</a>
+<a class="product-card" href="/telecom/90splus.html">
+<img alt="Fujikura 90S+ Core Alignment Splicer" class="card-img" src="/images/fujikura-90splus-fusion-splicer.jpg"/>
+<div class="card-body">
+<h3 class="card-title">Fujikura 90S+</h3>
+<p class="card-desc">旗艦級核心對準熔接機，具備自動開闔防風蓋與加熱器。適合各類戶外工程，穩定性高，抗風能力強。</p>
 <span class="card-link">查看詳細規格 →</span>
 </div>
 </a>
@@ -640,7 +653,7 @@
 <summary>100R 新款多芯熔接機發表</summary>
 <div class="service-garden-content">
 <p>
-Fujikura 發表 100R Kit series 多芯光纖熔接機，可支援單芯至最多 16 芯 ribbon fiber 熔接，適合資料中心、高芯數光纖施工等大量接續應用。
+Fujikura 發表 100R Kit series 多芯光纖熔接機，可依需求選擇 4、12 或 16 芯機型，12 芯為基本選項，最高支援 16 芯帶狀光纖接續，適合資料中心及高芯數光纖施工。
 </p>
 <p>
 100R 採用新型 FH-80 系列 optical fiber holder 與自動光纖就位功能，可減少重新放置光纖的次數；並具備 Fiber Ends Gap Correction 與夾持力調整功能，有助於提升熔接品質。更換 V-groove 後，也可對應不同 ribbon fiber 規格。
